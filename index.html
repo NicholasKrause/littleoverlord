@@ -142,6 +142,14 @@ Praesent ac lectus eu felis feugiat dignissim eget eget elit. Nulla facilisi. Et
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TimelineMax.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+<script type="text/javascript" src="skrollr.min.js"></script>
+<script type="text/javascript">
+    var s = skrollr.init({
+    render: function(data) {
+    document.querySelector('.scrollpos').innerHTML = data.curTop;
+    }
+    });
+</script>
 	<style>
 table {width: 100%;}
 hr { 
