@@ -3,15 +3,155 @@
 	{
 		"selected_items":
 		[
+			[
+				"tr",
+				"transform"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"pa",
+				"padding-top"
+			],
+			[
+				"FB",
+				"FBAPPID"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"removeA",
+				"removeAttr"
+			],
+			[
+				"check",
+				"checkbox"
+			],
+			[
+				"set",
+				"setTimeout"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"cust",
+				"cust-accrd--content"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"D",
+				"dotted"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"he",
+				"header	Tag"
+			],
+			[
+				"f",
+				"font-weight"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"bor",
+				"border-bottom"
+			],
+			[
+				"fi",
+				"figure"
+			],
+			[
+				"max-",
+				"max-height"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"ar",
+				"article	Tag"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"lin",
+				"line-height"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "/C/neo/neos_proj/2016/littleoverlord/publish.bat",
+			"file": "/C/2016/littleoverlord/index.html",
+			"settings":
+			{
+				"buffer_size": 10151,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/2016/littleoverlord/.gitignore",
+			"settings":
+			{
+				"buffer_size": 578,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/2016/littleoverlord/publish.bat",
 			"settings":
 			{
 				"buffer_size": 71,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/2016/littleoverlord/404.html",
+			"settings":
+			{
+				"buffer_size": 494,
 				"line_ending": "Windows"
 			}
 		}
@@ -46,33 +186,172 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-	],
 	"file_history":
 	[
-		"/C/neo/neos_proj/2016/chi_capstone_prototype2/index.html",
-		"/C/neo/neos_proj/2016/chi_capstone_prototype2/signage.html",
-		"/C/2016/ltd_ecomm_quick_audit/dotgif.js",
-		"/D/ltd_auto_image/gconfig.js",
-		"/D/ltd_auto_image/gulp4file.js",
-		"/C/neo/neos_proj/2016/neos_ux_cookbook/ever-present-living-style-guide-ltdc/pattern_input_type_sandbox.html",
-		"/C/neo/neos_proj/2016/ltd_auto_image/unit_test/unit_test.bat",
-		"/C/neo/neos_proj/2016/ltd_auto_image/gconfig.js",
-		"/C/neo/neos_proj/2016/ltd_auto_image/gulpfile.js",
-		"/C/2016/ltd_image_audit/gulpfile.js",
-		"/C/neo/neos_proj/2016/ltd_ecomm_audit/stage2.js",
-		"/C/go.bat"
+		"/C/2016/is-ecom-labs/index.html",
+		"/C/2016/is-ecom-labs/video1.html",
+		"/C/2016/is-ecom-labs/faq-modal.html",
+		"/C/2016/is-ecom-labs/faq.html",
+		"/C/branches/Summer-Release-2016/trunk/modules/estore/j2ee/estore.war/catalog/catalog_quick_order.jsp",
+		"/C/branches/Summer-Release-2016/trunk/modules/estore/j2ee/estore.war/common/FAQ-Clicked-On-Contact-Us-Open-v2.jsp",
+		"/C/branches/Summer-Release-2016/trunk/modules/estore/j2ee/estore.war/media/global/scripts/foundation/js/init.js",
+		"/C/branches/Summer-Release-2016/trunk/modules/estore/j2ee/estore.war/common/FAQ-Clicked-On-Contact-Us-Open.jsp",
+		"/C/branches/Summer-Release-2016/trunk/modules/estore/j2ee/estore.war/catalog/horizontalCarouselContentArea.jsp",
+		"/C/branches/Summer-Release-2016/trunk/modules/estore/j2ee/estore.war/media/global/styles/foundation/css/lsc-design-skin.css",
+		"/C/branches/Summer-Release-2016/trunk/modules/estore/j2ee/estore.war/catalog/includes/inc_product_images_and_media.jsp",
+		"/C/branches/BackToSchool-Rel-2016/trunk/modules/estore/j2ee/estore.war/catalog/includes/inc_personalized_form.jsp",
+		"/C/2016/qc_585/qc_585_snippet.html",
+		"/C/branches/Summer-Release-2016/trunk/docs/design/ltd_standard_responsive.html",
+		"/C/branches/Summer-Rel-2016/trunk/modules/estore/j2ee/estore.war/media/global/scripts/social_ltd.js",
+		"/C/branches/Summer-Rel-2016/trunk/modules/estore/j2ee/estore.war/media/global/scripts/social_ls.js",
+		"/C/branches/Summer-Rel-2016/trunk/modules/estore/j2ee/estore.war/catalog/includes/inc_social_media.jsp",
+		"/C/branches/Spring-Rel-2016/trunk/modules/estore/j2ee/estore.war/catalog/includes/social_media_icons_svg.content",
+		"/C/branches/Summer-Rel-2016/trunk/modules/estore/j2ee/estore.war/media/global/styles/foundation/css/resp_t2_t3.css",
+		"/C/branches/Summer-Rel-2016/trunk/modules/estore/j2ee/estore.war/my_account/includes/inc_edit_credit_card_responsive.jsp",
+		"/C/branches/Summer-Rel-2016/trunk/modules/estore/j2ee/estore.war/checkout/shipping_acap.jsp",
+		"/C/branches/Summer-Rel-2016/trunk/modules/estore/j2ee/estore.war/checkout/includes/inc_display_addresses_acap.jsp",
+		"/C/branches/Summer-Rel-2016/trunk/modules/estore/j2ee/estore.war/my_account/order_history/shipment_tracking_details.jsp",
+		"/C/branches/Summer-Rel-2016/trunk/modules/estore/j2ee/estore.war/my_account/order_history/modals/multiple_shipments.jsp",
+		"/C/branches/Summer-Rel-2016/trunk/modules/estore/j2ee/estore.war/media/global/scripts/application-non-responsive.js",
+		"/C/branches/Summer-Rel-2016/trunk/modules/estore/j2ee/estore.war/media/ltd/scripts/application.js",
+		"/C/branches/Summer-Rel-2016/trunk/modules/estore/j2ee/estore.war/checkout/includes/inc_footer_acap.jsp",
+		"/C/branches/Summer-Rel-2016/trunk/modules/estore/j2ee/estore.war/catalog/includes/inc_description_and_cta.jsp",
+		"/C/branches/Summer-Rel-2016/trunk/modules/estore/j2ee/estore.war/checkout/includes/inc_display_credit_cards_acap.jsp",
+		"/C/branches/Summer-Rel-2016/trunk/modules/estore/j2ee/estore.war/checkout/includes/inc_select_credit_card_acap.jsp",
+		"/C/branches/Summer-Rel-2016/trunk/modules/estore/j2ee/estore.war/cartridges/ArticleCategoryResultsList/ArticleCategoryResultsList.jsp",
+		"/C/branches/Summer-Rel-2016/trunk/modules/estore/j2ee/estore.war/common/includes/inc_cart_header.jsp",
+		"/C/branches/Summer-Rel-2016/trunk/modules/estore/j2ee/estore.war/common/includes/inc_header_responsive.jsp",
+		"/C/branches/Summer-Rel-2016/trunk/modules/estore/j2ee/estore.war/common/includes/contentRender/slideShow.jsp",
+		"/C/branches/Summer-Rel-2016/trunk/modules/estore/j2ee/estore.war/common/includes/contentRender/linkedImage.jsp",
+		"/C/branches/Summer-Rel-2016/trunk/modules/estore/j2ee/estore.war/common/includes/contentRender/imageCarousel.jsp",
+		"/C/branches/Summer-Rel-2016/trunk/modules/estore/j2ee/estore.war/global/gadgets/productImgLTD.jsp",
+		"/C/branches/Summer-Rel-2016/trunk/modules/estore/j2ee/estore.war/catalog/modals/includes/inc_product_images_and_media.jsp",
+		"/C/branches/Summer-Rel-2016/trunk/modules/estore/j2ee/estore.war/catalog/includes/inc_product_images_and_media.jsp",
+		"/C/branches/Summer-Release-2016/trunk/modules/estore/html/ltd_maintenance.html",
+		"/C/branches/Summer-Release-2016/trunk/modules/admin/j2ee/admin.war/adminutility/utility_user_maintenance.jsp",
+		"/C/branches/Summer-Release-2016/trunk/modules/admin/j2ee/admin.war/common/includes/inc_header.jsp",
+		"/C/2016/2016_ltdc_svg_maint/LAK_100114_uc-01.svg",
+		"/C/2016/2016_ltdc_svg_maint/LTD_100114_uc-01.svg",
+		"/C/Users/skrause1/Downloads/LAK_100114_uc-01.svg",
+		"/C/2016/2016_ltdc_svg_maint/maintenance-ls.html",
+		"/C/2016/2016_ltdc_svg_maint/maintenance-ltd.html",
+		"/C/branches/Summer-Rel-2016/trunk/modules/estore/j2ee/estore.war/media/global/scripts/application-responsive.js",
+		"/C/2016/neos_ux_cookbook/ever-present-living-style-guide-site/templ_footer.html",
+		"/C/2016/neos_ux_cookbook/ever-present-living-style-guide-ltdc/templ_footer.html",
+		"/C/2016/tealiumiq/tealiumiq_badges.html",
+		"/C/2016/sublime_projects/2016_Summer-Rel.sublime-project",
+		"/C/branches/Summer-Rel-2016/trunk/modules/estore/j2ee/estore.war/checkout/includes/shopping_cart/edit_account_address.jsp",
+		"/C/2016/ltd_auto_image/unit_test.bat",
+		"/C/2016/ltd_auto_image/gulpfile.js",
+		"/C/ltdc_atg_dev/gulpfile.js",
+		"//ecomlegacyqa/c$/ltd_auto_image/lai_purge_archives.bat",
+		"//ecomlegacyqa/c$/ltd_auto_image/ltd_auto_image_product.bat",
+		"//ecomlegacyqa/c$/ltd_auto_image/ltd_auto_image_static.bat",
+		"//ecomlegacyqa/c$/ltd_auto_image/lai_watch_static.bat",
+		"//ecomlegacyqa/c$/ltd_auto_image/lai_watch_product.bat",
+		"//ecomlegacyqa/c$/ltd_auto_image/gconfig_static.js",
+		"//ecomlegacyqa/c$/ltd_auto_image/gconfig_product.js",
+		"//ecomlegacyqa/c$/ltd_auto_image/gulpfile_static.js",
+		"//ecomlegacyqa/c$/ltd_auto_image/gulpfile_product.js",
+		"/C/2016/ltd_auto_image/package.json",
+		"//ecomlegacyqa/c$/ltd_auto_image/gulpfile.js",
+		"/C/2016/njs_static/index.html",
+		"/C/2016/ltd_auto_image/node_modules/doit.bat",
+		"/C/2016/ltd_auto_image/gulp.js",
+		"/C/branches/Spring-Rel-2016/trunk/modules/estore/j2ee/estore.war/media/global/styles/foundation/css/resp_t2_t3.css",
+		"/C/branches/Spring-Rel-2016/trunk/modules/estore/j2ee/estore.war/media/global/scripts/application-responsive.js",
+		"/C/branches/Spring-Rel-2016/trunk/modules/estore/j2ee/estore.war/global/gadgets/productImgLTD.jsp",
+		"/C/2016/neos_ux_cookbook/ever-present-living-style-guide-ltdc/pattern-test-instance.html",
+		"/C/2016/neos_ux_cookbook/ever-present-living-style-guide-ltdc/pattern-srcset-gen.html",
+		"/C/branches/Spring-Rel-2016/trunk/modules/estore/j2ee/estore.war/media/global/scripts/foundation/js/init.js",
+		"/C/branches/Spring-Rel-2016/trunk/modules/estore/j2ee/estore.war/cartridges/ResultsListArticle/ResultsListArticle.jsp",
+		"/C/2016/owl_pattern/owl_pattern.html",
+		"/C/branches/Spring-Rel-2016/trunk/modules/estore/j2ee/estore.war/media/global/scripts/social_ltd.js",
+		"/C/branches/Spring-Rel-2016/trunk/modules/estore/j2ee/estore.war/media/global/scripts/social_ls.js",
+		"/C/branches/Spring-Rel-2016/trunk/modules/estore/j2ee/estore.war/my_account/index.jsp",
+		"/C/branches/Spring-Rel-2016/trunk/modules/estore/j2ee/estore.war/common/page_banners_acap.jsp",
+		"/C/branches/Spring-Rel-2016/trunk/modules/estore/j2ee/estore.war/media/global/scripts/resp_t2_t3.js",
+		"/C/branches/Spring-Rel-2016/trunk/modules/estore/j2ee/estore.war/media/global/styles/foundation/css/ltd-design-skin.css",
+		"/C/branches/Spring-Rel-2016/trunk/modules/compress_media.xml",
+		"/C/branches/Spring-Rel-2016/trunk/modules/estore/j2ee/estore.war/checkout/purchase.jsp",
+		"/C/branches/Spring-Rel-2016/trunk/modules/estore/j2ee/estore.war/checkout/order_commit.jsp",
+		"/C/branches/Spring-Rel-2016/trunk/modules/estore/j2ee/estore.war/catalog/catalog_quick_order.jsp",
+		"/C/branches/Spring-Rel-2016/trunk/modules/estore/j2ee/estore.war/checkout/order_summary_product_details_acap.jsp",
+		"/C/branches/Spring-Rel-2016/trunk/modules/estore/j2ee/estore.war/catalog/includes/inc_tell_a_friend.jsp",
+		"/C/branches/Spring-Rel-2016/trunk/modules/estore/j2ee/estore.war/cartridges/SocialMedia/SocialMedia.jsp",
+		"/C/branches/Spring-Rel-2016/trunk/modules/estore/j2ee/estore.war/my_account/includes/inc_address_book_responsive.jsp",
+		"/C/branches/Spring-Rel-2016/trunk/modules/estore/j2ee/estore.war/my_account/manage_account.jsp",
+		"/C/branches/Spring-Rel-2016/trunk/modules/estore/j2ee/estore.war/common/includes/inc_header_responsive.jsp",
+		"/C/branches/Spring-Rel-2016/trunk/modules/estore/j2ee/estore.war/cartridges/RelatedProductResultsList/RelatedProductResultsList.jsp",
+		"/C/branches/QA2-Patch-Rel-2016/trunk/modules/estore/j2ee/estore.war/catalog/includes/inc_product_images_and_media.jsp",
+		"/C/branches/QA2-Patch-Rel-2016/trunk/modules/estore/j2ee/estore.war/catalog/includes/inc_social_media.jsp",
+		"/C/branches/Spring-Rel-2016/trunk/modules/estore/j2ee/estore.war/catalog/includes/inc_social_media.jsp",
+		"/C/branches/Spring-Rel-2016/trunk/modules/estore/j2ee/estore.war/common/includes/tmp/inc_header_responsive - Copy.jsp",
+		"/C/branches/Spring-Rel-2016/trunk/modules/estore/j2ee/estore.war/catalog/includes/inc_category_featured_products.jsp",
+		"/C/2016/neos_ux_cookbook/ever-present-living-style-guide-ltdc/templ_contents.html",
+		"/C/branches/Spring-Rel-2016/trunk/modules/estore/j2ee/estore.war/catalog/includes/inc_product_images_and_media.jsp",
+		"/C/2016/neos_ux_cookbook/social-media-ux-ltdc/c.html",
+		"/C/branches/DefectFixes-Rel-2016/trunk/modules/estore/j2ee/estore.war/catalog/includes/inc_social_media.jsp",
+		"/C/Oracle/images/include.html",
+		"/C/branches/JavaScript-Cleanup-Rel/trunk/modules/estore/j2ee/estore.war/catalog/includes/inc_social_media.jsp",
+		"/C/branches/Spring-Rel-2016/trunk/modules/estore/j2ee/estore.war/checkout/shopping_cart.jsp",
+		"/C/branches/QA2-Patch-Rel-2016/trunk/modules/compress_media.xml",
+		"/C/branches/Spring-Rel-2016/trunk/modules/estore/j2ee/estore.war/services/inc_header_responsive.jsp",
+		"/C/branches/Spring-Rel-2016/trunk/modules/estore/j2ee/estore.war/catalog/includes/inc_category_childproducts.jsp",
+		"/C/branches/Spring-Rel-2016/trunk/modules/estore/j2ee/estore.war/media/global/scripts/foundation/js/foundation/foundation.interchange.js",
+		"/C/branches/Spring-Rel-2016/trunk/modules/estore/j2ee/estore.war/common/includes/contentRender/emailSignup-leftNav.jsp",
+		"/C/branches/Spring-Rel-2016/trunk/modules/estore/j2ee/estore.war/common/includes/contentRender/linkedImage.jsp",
+		"/C/branches/Spring-Rel-2016/trunk/modules/estore/j2ee/estore.war/common/includes/contentRender/emailSignup.jsp",
+		"/C/branches/Spring-Rel-2016/trunk/modules/estore/j2ee/estore.war/catalog/includes/inc_childproducts_promo.jsp",
+		"/C/branches/Spring-Rel-2016/trunk/modules/estore/j2ee/estore.war/catalog/includes/inc_browsing_history.jsp",
+		"/C/branches/Spring-Rel-2016/trunk/modules/estore/j2ee/estore.war/catalog/bv_review.jsp",
+		"/C/branches/Spring-Rel-2016/trunk/modules/estore/j2ee/estore.war/cartridges/ArticleCategoryResultsList/ArticleCategoryResultsList.jsp",
+		"/C/branches/Spring-Rel-2016/trunk/modules/estore/j2ee/estore.war/checkout/order_confirmation.jsp",
+		"/C/branches/Spring-Rel-2016/trunk/modules/estore/j2ee/estore.war/media/global/styles/foundation/css/lsc-design-skin.css",
+		"/C/branches/Spring-Rel-2016/trunk/modules/estore/j2ee/estore.war/checkout/includes/inc_footer_acap.jsp",
+		"/C/branches/Spring-Rel-2016/trunk/modules/estore/j2ee/estore.war/WEB-INF/weblogic.xml",
+		"/C/branches/DefectFixes-Rel-2016/trunk/modules/estore/j2ee/estore.war/checkout/order_confirmation.jsp",
+		"/C/branches/DefectFixes-Rel-2016/trunk/modules/estore/j2ee/estore.war/media/global/styles/foundation/css/resp_t2_t3.css",
+		"/C/branches/DefectFixes-Rel-2016/trunk/modules/estore/j2ee/estore.war/checkout/shopping_cart.jsp",
+		"/C/branches/DefectFixes-Rel-2016/trunk/modules/estore/j2ee/estore.war/media/global/scripts/tealeaf.js",
+		"/C/branches/DefectFixes-Rel-2016/trunk/modules/estore/j2ee/estore.war/checkout/includes/inc_footer.jsp",
+		"/C/branches/DefectFixes-Rel-2016/trunk/modules/estore/j2ee/estore.war/checkout/includes/inc_footer_acap.jsp"
 	],
 	"find":
 	{
-		"height": 39.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 117.0,
 		"where_history":
 		[
+			"C:\\branches\\BackToSchool-Rel-2016",
+			"C:\\branches\\Summer-Release-2016",
+			"C:\\2016\\neos_ux_cookbook",
+			"C:\\branches\\Summer-Rel-2016\\trunk\\modules\\estore\\j2ee\\estore.war",
+			"C:\\2016\\ltd_auto_image",
+			"C:\\branches\\Spring-Rel-2016\\trunk\\modules\\estore\\j2ee\\estore.war",
+			"C:\\branches\\DefectFixes-Rel-2016\\trunk\\modules\\estore\\j2ee\\estore.war",
+			"C:\\branches\\JavaScript-Cleanup-Rel\\trunk\\modules\\estore\\j2ee\\estore.war\\",
+			"C:\\branches\\JavaScript-Cleanup-Rel\\trunk\\modules\\estore\\j2ee\\estore.war\\**\\*.js",
+			"C:\\branches\\JavaScript-Cleanup-Rel\\trunk\\modules\\estore\\j2ee\\estore.war",
+			"C:\\branches\\DefectFixes-Rel-2016\\trunk\\modules\\estore\\j2ee\\estore.war",
+			"C:\\branches\\JavaScript-Cleanup-Rel\\trunk\\modules\\estore\\j2ee\\estore.war\\",
+			"C:\\branches\\JavaScript-Cleanup-Rel\\trunk\\modules\\estore\\j2ee\\estore.war\\ *.js",
+			"C:\\branches\\JavaScript-Cleanup-Rel\\trunk\\modules\\estore\\j2ee\\estore.war\\**\\*.js",
+			"C:\\branches\\JavaScript-Cleanup-Rel\\trunk\\modules\\estore\\j2ee\\estore.war",
+			"C:\\branches\\DefectFixes-Rel-2016\\trunk\\modules\\estore\\j2ee\\estore.war",
+			"C:\\branches\\Track2-Article-Rel\\trunk\\modules\\estore\\j2ee\\estore.war",
+			"C:\\branches\\JavaScript-Cleanup-Rel\\trunk\\modules\\estore\\j2ee\\estore.war",
+			"C:\\branches\\Track2-Article-Rel",
+			"C:\\branches\\eVo-201506-01\\trunk\\modules\\estore\\j2ee\\estore.war",
+			"<open files>",
+			"C:\\branches\\eVo-201506-01\\trunk\\modules\\estore\\j2ee\\estore.war",
+			"<open files>",
+			"C:\\branches\\eVo-201506-01\\trunk\\modules\\estore\\j2ee\\estore.war",
+			"C:\\Oracle\\Middleware\\user_projects\\domains\\base_domain\\servers\\commerce\\stage\\ATG\\ATG.ear\\estore.war\\my_account",
+			"C:\\branches\\eVo-201506-01\\trunk\\modules\\estore\\j2ee\\estore.war\\my_account"
 		]
 	},
 	"find_state":
@@ -80,18 +359,134 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"	&nbsp;",
-			"<div ",
+			"http",
+			"/images/",
+			"faq_ansr",
+			"answer</div>",
+			"<span style=\" font-size: small;\">",
+			" faq-quest\">",
+			"faq-quest\">",
+			"faq_quest",
+			"small",
+			"button",
+			"brand",
+			"large",
+			"999",
+			"st_hd_ini",
+			"resp_btn_brand_s",
+			"resp_btn_brand",
+			"expanded resp_btn_brand button small respn_button_grp",
+			"medium",
+			"resp_btn_brand",
+			"respn_button_grp",
+			"small ",
+			"expand",
+			"resp_btn_brand",
+			"ltd_buttn",
+			"resp_btn_brand",
+			"respn_button_grp",
+			"href=\"//",
+			"setTimeout",
+			"setTime",
+			"personalization_correct",
+			"checkbox",
+			".click(",
+			"personalization_correct",
+			"{",
+			"ipsum lorem",
+			"h1",
+			"9999999999999999999999999",
+			"todo",
+			"hrzcar-hero-cpy",
+			"$(document).ready(function(){",
+			"$(document).ready(function{",
+			"no2",
 			"<br>",
-			"neodigm.github",
-			"imagemin",
-			"end",
-			"finish",
-			"bgYellow",
-			"orange",
-			"magenta",
-			"wait",
-			"images_product"
+			"orbit",
+			"Orbit",
+			"small-10 columns pdp-images",
+			"</script>",
+			"indicator.gif",
+			"indexOf",
+			"numItems",
+			"cat2_header_responsive_styles",
+			"cat2_",
+			"class=\"heroCopy2\"",
+			"figure",
+			"-copy",
+			"cpy",
+			"h1",
+			"hrzcar-hero-copy",
+			"isELIgnored",
+			"-->",
+			"pageContext",
+			"contentAreaName",
+			"oN-",
+			"FAQ",
+			"Request Account Information",
+			"faq_header_description",
+			"We are committed to providing unique products at tremendous value",
+			"numItemsTop",
+			"div",
+			"aside",
+			"div",
+			"aside",
+			"prod",
+			"hero-",
+			"rz-ca",
+			"maing",
+			"LAK_100114_uc.jpg",
+			"COUPON",
+			"view_tealiumiq_badges",
+			"QC 7",
+			"equals",
+			"redeemCouponPageUrl",
+			"\"userRole\").",
+			" id=\"adminhead\" class=\"adminhead\"",
+			"Beyond its",
+			"pop().",
+			"split(\"/\").pop()",
+			"split",
+			"loadrecaptcha",
+			"loadrecaptcha(true)",
+			"QC 709",
+			"inter",
+			"onclick=\"smallImageSelectedOnListing",
+			"<a href=\"javascript:void(0)\">",
+			"<div class=\"image-container\">",
+			".loc",
+			"svg",
+			"709",
+			"responsive",
+			"fast-container",
+			"data-isrc",
+			"<img",
+			"data-isrc",
+			"linkedImage.jsp",
+			".gif",
+			"spacer",
+			"spacer.gif",
+			"style=\"height:auto;\"",
+			"535",
+			"324",
+			"-",
+			"471",
+			"5 - ",
+			"SRCSET",
+			"brand-logo--img",
+			"id=\"branding\"",
+			"branding",
+			"js_brand",
+			"FB.init",
+			"bSMIhasLoaded",
+			"js-smi--a_progr",
+			"script",
+			"smi--svg",
+			"smi--svg__twt",
+			"fig__pint",
+			"'",
+			"jQuery",
+			"    display: inline-block;\n    vertical-align: 8px;"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -99,22 +494,86 @@
 		"regex": false,
 		"replace_history":
 		[
+			"2BA6CB",
+			"em;",
+			"em ",
+			"rem ",
+			"\"resp_fire\"",
+			".current.",
+			"<span class=\"resp_fire\">",
+			".current."
 		],
 		"reverse": false,
 		"show_context": true,
 		"use_buffer2": true,
 		"whole_word": false,
-		"wrap": true
+		"wrap": false
 	},
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/C/neo/neos_proj/2016/littleoverlord/publish.bat",
+					"file": "/C/2016/littleoverlord/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10151,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								188,
+								188
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/2016/littleoverlord/.gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 578,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/2016/littleoverlord/publish.bat",
 					"semi_transient": false,
 					"settings":
 					{
@@ -125,8 +584,8 @@
 						"selection":
 						[
 							[
-								71,
-								71
+								0,
+								0
 							]
 						],
 						"settings":
@@ -137,7 +596,35 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/2016/littleoverlord/404.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 494,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								107,
+								107
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -145,7 +632,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 39.0
+		"height": 31.0
 	},
 	"input":
 	{
@@ -182,7 +669,7 @@
 	"project": "lol.sublime-project",
 	"replace":
 	{
-		"height": 74.0
+		"height": 58.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -191,26 +678,30 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"art",
+				"C:\\Oracle\\Middleware\\user_projects\\domains\\base_domain\\servers\\commerce\\stage\\ATG\\ATG.ear\\estore.war\\checkout\\t2_art_proto.jsp"
+			]
 		],
 		"width": 0.0
 	},
 	"select_project":
 	{
-		"height": 0.0,
+		"height": 500.0,
 		"last_filter": "",
 		"selected_items":
 		[
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"select_symbol":
 	{
-		"height": 0.0,
+		"height": 392.0,
 		"last_filter": "",
 		"selected_items":
 		[
 		],
-		"width": 0.0
+		"width": 664.0
 	},
 	"selected_group": 0,
 	"settings":
@@ -220,7 +711,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 337.0,
+	"side_bar_width": 188.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
