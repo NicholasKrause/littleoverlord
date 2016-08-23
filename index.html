@@ -5,11 +5,11 @@
 		<title>LTOL</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
-	<body>
+	<body >
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css">
 <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Roboto+Slab|Architects+Daughter|Open+Sans' type='text/css'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css" media="all" />
-
+<div class="scrollpos"></div>
 		<section class="row">
 			<header class="hero--header columns small-12 color-back__lol1 text-center">
 				<h1 class="caption--p__roboto color-text__white text-center">
@@ -142,16 +142,16 @@ Praesent ac lectus eu felis feugiat dignissim eget eget elit. Nulla facilisi. Et
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TimelineMax.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.3.1/vivus.min.js"></script>
-<script type="text/javascript" src="js/skrollr.min.js"></script>
+<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.3.1/vivus.min.js"></script>  -->
+<!--<script type="text/javascript" src="js/skrollr.min.js"></script>  -->
 <script type="text/javascript">
-    var s = skrollr.init({
-    render: function(data) {
-    document.querySelector('.scrollpos').innerHTML = data.curTop;
-    }
-    });
+    //var s = skrollr.init({
+    //render: function(data) {
+    //document.querySelector('.scrollpos').innerHTML = data.curTop;
+    //}
+    //});
 </script>
-	<style>
+<style>
 table {width: 100%;}
 hr { 
     border: 0;
@@ -217,7 +217,14 @@ hr {
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
 }
-	</style>
+</style>
+<style>
+/*Foundation overrides*/
+.AAAtitle-bar {
+	background-color: #7D2A35;
+}
+</styel>
+
 
 	<script>
 		$(document).ready(function(){
