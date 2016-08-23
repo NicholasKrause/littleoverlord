@@ -45,14 +45,22 @@ Test Caption &nbsp; <i class="fa fa-paper-plane color-text__white"></i>
     </ul>
   </div>
 </div>
--->
+
+
 <div data-sticky-container>
-  <div class="title-bar" data-sticky data-options="marginTop:0;" style="width:100%">
+  <div class="title-bar" data-sticky data-options="marginTop:0" style="width:100%">
     <div class="title-bar-left">99999999999</div>
     <div class="title-bar-right">9999999999999</div>
   </div>
 </div>
+-->
 
+<div data-sticky-container>
+  <div class="title-bar" data-sticky data-options="marginTop:0;" style="width:100%" data-top-anchor="1">
+    <div class="title-bar-left">999999</div>
+    <div class="title-bar-right">999999</div>
+  </div>
+</div>
 
 
 
@@ -141,11 +149,12 @@ Praesent ac lectus eu felis feugiat dignissim eget eget elit. Nulla facilisi. Et
 	</body>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.js"></script>
+<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/plugins/foundation.sticky.js"></script>-->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TimelineMax.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
-<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.3.1/vivus.min.js"></script>  -->
-<!--<script type="text/javascript" src="js/skrollr.min.js"></script>  -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.3.1/vivus.min.js"></script>
+<script type="text/javascript" src="js/skrollr.min.js"></script>
 <script type="text/javascript">
     //var s = skrollr.init({
     //render: function(data) {
@@ -165,7 +174,7 @@ hr {
 .fa {color: #ff0000;}
 
 .hero--header {
-	height: 176px;
+	height: 120px;
 	background-color: #EE0000;
 
 }
@@ -222,15 +231,16 @@ hr {
 </style>
 <style>
 /*Foundation overrides*/
-.AAAtitle-bar {
+.title-bar {
 	background-color: #7D2A35;
+	height: 56px;
 }
-</styel>
+</style>
 
 
 	<script>
 		$(document).ready(function(){
-			'use strict';
+			//'use strict';
 			$(document).foundation();
 		});
 	</script>
