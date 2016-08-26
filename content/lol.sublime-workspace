@@ -127,7 +127,7 @@
 			"file": "/C/2016/littleoverlord/index.html",
 			"settings":
 			{
-				"buffer_size": 10151,
+				"buffer_size": 11035,
 				"line_ending": "Windows"
 			}
 		},
@@ -135,7 +135,7 @@
 			"file": "/C/2016/littleoverlord/.gitignore",
 			"settings":
 			{
-				"buffer_size": 578,
+				"buffer_size": 616,
 				"line_ending": "Windows"
 			}
 		},
@@ -359,6 +359,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"<!-- Content -->",
+			"'",
+			"https:",
 			"http",
 			"/images/",
 			"faq_ansr",
@@ -483,10 +486,7 @@
 			"script",
 			"smi--svg",
 			"smi--svg__twt",
-			"fig__pint",
-			"'",
-			"jQuery",
-			"    display: inline-block;\n    vertical-align: 8px;"
+			"fig__pint"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -512,7 +512,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -521,15 +521,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10151,
+						"buffer_size": 11035,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								188,
-								188
+								10903,
+								10903
 							]
 						],
 						"settings":
@@ -537,10 +537,10 @@
 							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3816.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -549,15 +549,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 578,
+						"buffer_size": 616,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								70,
+								70
 							]
 						],
 						"settings":
@@ -568,7 +568,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{

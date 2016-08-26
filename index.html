@@ -8,8 +8,10 @@
 	<body >
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css" type="text/css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Architects+Daughter|Open+Sans" type="text/css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css" media="all" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css" media="all">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" type="text/css">
+<link rel="stylesheet" href="http://vjs.zencdn.net/5.11.6/video-js.css" rel="stylesheet">
+
 <div class="scrollpos"></div>
 		<section class="row">
 			<header class="hero--header columns small-12 color-back__lol1 text-center">
@@ -19,7 +21,26 @@ Test Caption &nbsp; <i class="fa fa-paper-plane color-text__white"></i>
 			</header>
 		</section>
 
+<head>
+  <link href="http://vjs.zencdn.net/5.11.6/video-js.css" rel="stylesheet">
 
+  <!-- If you'd like to support IE8 -->
+  <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+</head>
+
+<body>
+  <video id="my-video" class="video-js" controls preload="auto" width="640" height="264"
+  poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+    <source src="MY_VIDEO.mp4" type='video/mp4'>
+    <source src="MY_VIDEO.webm" type='video/webm'>
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a web browser that
+      <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+    </p>
+  </video>
+
+  <script src="http://vjs.zencdn.net/5.11.6/video.js"></script>
+</body>
 
 <!--
 <div class="top-bar">
@@ -154,6 +175,7 @@ Praesent ac lectus eu felis feugiat dignissim eget eget elit. Nulla facilisi. Et
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.3.1/vivus.min.js"></script>
+<script type="text/javascript" src="http://vjs.zencdn.net/5.11.6/video.js"></script>
 <script type="text/javascript" src="js/skrollr.min.js"></script>
 <script type="text/javascript">
     //var s = skrollr.init({
