@@ -57,9 +57,11 @@ Test Caption &nbsp; <i class="fa fa-paper-plane color-text__white"></i>
 </div>
 -->
 
+
+
 <div data-sticky-container>
   <div class="title-bar" data-sticky data-options="marginTop:0;" style="width:100%" data-top-anchor="1">
-    <nav class="text-center">
+    <nav class="hide-for-small-only">
     	<lu>
     		<il class="prinav--li">
     			<a class="prinav--a" href="#">
@@ -95,6 +97,29 @@ Test Caption &nbsp; <i class="fa fa-paper-plane color-text__white"></i>
     </nav>
   </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+<span class="label color-back__lol01">Secondary</span>
+<span class="label color-back__lol02">Success</span>
+<span class="label color-back__lol03">Alert</span>
+<span class="label color-back__lol04">Warning</span>
+<span class="label color-back__lol05">Warning</span>
+
+
+
+
+
+
+
 
 
 
@@ -194,6 +219,31 @@ Praesent ac lectus eu felis feugiat dignissim eget eget elit. Nulla facilisi. Et
     //});
 </script>
 <style>
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+	
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
+	
+}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+	
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+	
+}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+	
+}
+
 table {width: 100%;}
 hr { 
     border: 0;
@@ -212,6 +262,9 @@ hr {
 .prinav--li {
 	float: left;
 	margin: 6px 24px 0 0;
+}
+.prinav--li:nth-child(1) {
+	margin-left: 20vw;
 }
 .prinav--a {
 
