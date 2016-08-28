@@ -5,7 +5,7 @@
 		<title>LTOL</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
-	<body >
+	<body class="theme__day">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Architects+Daughter|Open+Sans" type="text/css">
 
@@ -14,192 +14,91 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" type="text/css">
 <link rel="stylesheet" href="http://vjs.zencdn.net/5.11.6/video-js.css" rel="stylesheet">
 
-<div class="scrollpos"></div>
-		<section class="row">
-			<header class="hero--header columns small-12 color-back__lol1 text-center">
-				<h1 class="caption--p__roboto color-text__white text-center">
-Test Caption &nbsp; <i class="fa fa-paper-plane color-text__white"></i>
-				</h1>
-			</header>
-		</section>
 
-<!--
-<div class="top-bar">
-  <div class="top-bar-left">
-    <ul class="dropdown menu" data-dropdown-menu>
-      <li class="menu-text">Site Title</li>
-      <li>
-        <a href="#">One</a>
-        <ul class="menu vertical">
-          <li><a href="#">One</a></li>
-          <li><a href="#">Two</a></li>
-          <li><a href="#">Three</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Two</a></li>
-      <li><a href="#">Three</a></li>
-    </ul>
-  </div>
-  <div class="top-bar-right">
-    <ul class="menu">
-      <li><input type="search" placeholder="Search"></li>
-      <li><button type="button" class="button">Search</button></li>
-    </ul>
-  </div>
-</div>
+	<div class="off-canvas-wrapper">
+		<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+			<div class="off-canvas position-left" id="offCanvas" data-off-canvas>
 
+				<!-- Close button -->
+				<button class="close-button" aria-label="Close menu" type="button" data-close>
+					<span aria-hidden="true">&times;</span>
+				</button>
 
-<div data-sticky-container>
-  <div class="title-bar" data-sticky data-options="marginTop:0" style="width:100%">
-    <div class="title-bar-left">99999999999</div>
-    <div class="title-bar-right">9999999999999</div>
-  </div>
-</div>
--->
+				<!-- Menu -->
+				<ul class="vertical menu">
+					<li><a href="#">Foundation</a></li>
+					<li><a href="#">Dot</a></li>
+					<li><a href="#">ZURB</a></li>
+					<li><a href="#">Com</a></li>
+					<li><a href="#">Slash</a></li>
+					<li><a href="#">Sites</a></li>
+				</ul>
 
+			</div>
 
-
-<div data-sticky-container>
-  <div class="title-bar" data-sticky data-options="marginTop:0;" style="width:100%" data-top-anchor="1">
-    <nav class="hide-for-small-only">
-    	<lu>
-    		<il class="prinav--li">
-    			<a class="prinav--a" href="#">
-    				<p class="caption--a__righteous">HOME</p>
-    			</a>
-     		</il>   			
-    		<il class="prinav--li">
-    			<a class="prinav--a" href="#">
-    				<p class="caption--a__righteous">ABOUT</p>
-    			</a>
-     		</il>   			
-    		<il class="prinav--li">
-    			<a class="prinav--a" href="#">
-    				<p class="caption--a__righteous">VIDEO</p>
-    			</a>
-     		</il>   			
-    		<il class="prinav--li">
-    			<a class="prinav--a" href="#">
-    				<p class="caption--a__righteous">WORDS</p>
-    			</a>
-     		</il>   			
-    		<il class="prinav--li">
-    			<a class="prinav--a" href="#">
-    				<p class="caption--a__righteous">PODCASTS</p>
-    			</a>
-     		</il>   			
-    		<il class="prinav--li">
-    			<a class="prinav--a" href="#">
-    				<p class="caption--a__righteous">CONTACT</p>
-    			</a>
-    		</li>
-    	</lu>
-    </nav>
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
+			<div class="off-canvas-content" data-off-canvas-content>
+				<!-- page content begin -->
+				<div class="scrollpos"></div>
+				<section class="row">
+					<header class="hero--header columns small-12 color-back__lol1 text-center">
+						<h1 class="caption--p__roboto color-text__white text-center">
+						Test Caption &nbsp; <i class="fa fa-paper-plane color-text__white"></i>
+						</h1>
+					</header>
+				</section>
+				<div data-sticky-container>
+				  <div class="prinav title-bar" data-sticky data-options="marginTop:0;" style="width:100%" data-top-anchor="1">
+				    <nav class="prinav--nav hide-for-small-only">
+				    	<ul class="prinav--ul">
+				    		<li class="prinav--li">
+				    			<a class="prinav--a" href="#HOME" data-act="prin_home">
+				    				<p class="caption--a__righteous">HOME</p>
+				    			</a>
+				     		</li>   			
+				    		<li class="prinav--li">
+				    			<a class="prinav--a" href="#ABOUT" data-act="prin_about">
+				    				<p class="caption--a__righteous">ABOUT</p>
+				    			</a>
+				     		</li>   			
+				    		<li class="prinav--li">
+				    			<a class="prinav--a" href="#VIDEO" data-act="prin_video">
+				    				<p class="caption--a__righteous">VIDEO</p>
+				    			</a>
+				     		</li>   			
+				    		<li class="prinav--li">
+				    			<a class="prinav--a" href="#WORDS" data-act="prin_words">
+				    				<p class="caption--a__righteous">WORDS</p>
+				    			</a>
+				     		</li>   			
+				    		<li class="prinav--li">
+				    			<a class="prinav--a" href="#PODCASTS" data-act="prin_podcasts">
+				    				<p class="caption--a__righteous">PODCASTS</p>
+				    			</a>
+				     		</li>   			
+				    		<li class="prinav--li">
+				    			<a class="prinav--a" href="#CONTACT" data-act="prin_contact">
+				    				<p class="caption--a__righteous">CONTACT</p>
+				    			</a>
+				    		</li>
+				    	</ul>
+				    </nav>
+				  </div>
+				</div>
+<button type="button" class="button" data-toggle="offCanvas">Open Menu</button>
 <span class="label color-back__lol01">Secondary</span>
 <span class="label color-back__lol02">Success</span>
 <span class="label color-back__lol03">Alert</span>
 <span class="label color-back__lol04">Warning</span>
 <span class="label color-back__lol05">Warning</span>
 
-
-
-
-
-
-
-
-
-
-		<figure class="horz-spacer"></figure>
-		<section class="row">
-			<aside class="columns small-12 medium-8 large-8">
-
-				<p class="caption--p__roboto color-text__lol2">
-Caption
-				</p>
-				<p class="caption--p__opensans color-text__lol3">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget arcu porta, eleifend eros vitae, tempor turpis. Pellentesque scelerisque, nibh a aliquam interdum, turpis nibh mollis erat, sagittis egestas augue elit a tortor. Fusce efficitur eros vitae vulputate vulputate. Fusce egestas elit vitae rhoncus egestas. Duis laoreet accumsan odio vitae hendrerit. Mauris tempus a augue et tristique. Quisque tempor eros dui, et ornare sapien rutrum et. Nunc quis fermentum purus. Phasellus posuere purus vitae consequat tincidunt.
-				</p>
-			</aside>
-
-			<aside class="columns small-12 medium-4 large-4 text-center">
-				<a class="text-center" href="https://chrome.google.com/webstore/detail/ever-present-living-style/ohkgmjcjlcomjjlkdcannaoagjccpehg?hl=en-US&gl=US" target="_blank">
-Nulla gravida ligula ut aliquet maximus. Maecenas sollicitudin enim velit, eget rutrum sapien hendrerit eget. Pellentesque pulvinar augue non arcu commodo pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque nec elit interdum, dignissim magna at, fringilla mauris. Praesent a egestas lorem. Suspendisse a ligula id velit rhoncus gravida. Mauris vel arcu et risus molestie volutpat sed malesuada dui. Pellentesque tincidunt enim eget ipsum luctus, rutrum blandit nisi suscipit. Fusce interdum lorem eu dolor facilisis ultricies. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean tempor erat ac enim egestas, nec semper neque eleifend. Vestibulum arcu metus, condimentum sed dapibus nec, viverra a dui. Vestibulum sit amet ex purus. Curabitur vulputate ante vel tincidunt interdum. In nec est ligula.
-				</a>
-			</aside>
-		</section>
-		<section class="row"><div class="columns small-12"><hr></div></section>
-		<section class="row">
-			<aside class="columns small-12 medium-8 large-8 push-4">
-				<p class="caption--p__roboto color-text__lol2">
-Nulla gravida ligula ut aliquet maximus
-				</p>
-				<p class="caption--p__opensans color-text__lol3">
-The living style guide is a collection of design patterns, components, and guidelines for creating a unified UX. It provides access to the core visual and interaction design patterns so that you can follow established best practices and build experiences that have a consistent look and feel.
-				</p>
-			</aside>
-			<aside class="columns small-12 medium-4 large-4 pull-8 text-center">
-<a class="text-center" href="https://docs.google.com/document/d/1aMxbxZMYKq3zSp5SrpSSdyHKZlFskO8waD3jsvQoSlM/edit?usp=sharing" target="_blank">
-Praesent ac lectus eu felis feugiat dignissim eget eget elit. Nulla facilisi. Etiam in bibendum lorem. Curabitur sed sodales leo. Phasellus vitae molestie magna. Suspendisse consequat eget massa sed fermentum. Morbi laoreet diam elementum, vehicula tellus eget, malesuada mauris. Fusce laoreet erat a pharetra varius. Vestibulum maximus in risus et bibendum. Aliquam viverra pulvinar risus non maximus. Vivamus non iaculis tellus, rhoncus tempor velit. Duis odio massa, pretium nec lacus a, ullamcorper maximus est.
-</a>
-			</aside>
-		</section>
-		<section class="row"><div class="columns small-12"><hr></div></section>
-		<section class="row">
-			<div class="columns small-12 medium-8">
-<table border="0" cellpadding="2" cellspacing="2">
-<tbody>
-<tr>
-<td>
-<p class="article--table_lab__roboto">Clarity</p>
-<p class="text-center">
-<i class="fa fa-check-circle-o fa-2x"></i></p>
-</td>
-<td>
-<p class="caption--p__opensans color-text__lol06">Eliminate ambiguity. Enable people to see, understand, and act with confidence.</p>
-</td>
-</tr><tr>
-<td><p class="article--table_lab__roboto">Efficiency</p>
-<p class="text-center"><i class="fa fa-check-square fa-2x"></i></p>
-</td>
-<td>
-<p class="caption--p__opensans color-text__lol06">Streamline and optimize workflows. Intelligently anticipate needs to help people shop better, smarter, and faster.</p>
-</td>
-</tr><tr>
-<td><p class="article--table_lab__roboto">Consistency</p>
-<p class="text-center"><i class="fa fa-check-square-o fa-2x"></i></p>
-</td>
-<td>
-<p class="caption--p__opensans color-text__lol06">Create familiarity and strengthen intuition by applying the same solution to the same problem.</p>
-</td></tr>
-</tbody></table>
+<figure class="horz-spacer"></figure>
+<section class="row"><div class="columns small-12"><hr></div></section>
+<section class="row"><div class="columns small-12"><hr></div></section>
+<section class="row"><div class="columns small-12"><hr></div></section>
+				<!-- page content end -->
 			</div>
-			<div class="columns small-12 medium-4 text-center">
-Praesent ac lectus eu felis feugiat dignissim eget eget elit. Nulla facilisi. Etiam in bibendum lorem. Curabitur sed sodales leo. Phasellus vitae molestie magna. Suspendisse consequat eget massa sed fermentum. Morbi laoreet diam elementum, vehicula tellus eget, malesuada mauris. Fusce laoreet erat a pharetra varius. Vestibulum maximus in risus et bibendum. Aliquam viverra pulvinar risus non maximus. Vivamus non iaculis tellus, rhoncus tempor velit. Duis odio massa, pretium nec lacus a, ullamcorper maximus est.
-			</div>
-		</section>
-
-		<section class="row"><div class="columns small-12"><hr></div></section>
-		
-		<section class="row">
-			<nav class="columns small-12 text-center">
-Praesent ac lectus eu felis feugiat dignissim eget eget elit. Nulla facilisi. Etiam in bibendum lorem. Curabitur sed sodales leo. Phasellus vitae molestie magna. Suspendisse consequat eget massa sed fermentum. Morbi laoreet diam elementum, vehicula tellus eget, malesuada mauris. Fusce laoreet erat a pharetra varius. Vestibulum maximus in risus et bibendum. Aliquam viverra pulvinar risus non maximus. Vivamus non iaculis tellus, rhoncus tempor velit. Duis odio massa, pretium nec lacus a, ullamcorper maximus est.
-			</nav>
-		</section>
-		
+		</div>
+	</div>
 
 	</body>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
@@ -219,29 +118,56 @@ Praesent ac lectus eu felis feugiat dignissim eget eget elit. Nulla facilisi. Et
     //});
 </script>
 <style>
+.theme__day .prinav {
+	overflow: hidden;
+}
+.theme__day .prinav--nav {
+	overflow: hidden;
+}
+.theme__day .prinav--ul {
+	margin: 0 0 0 20vw;
+}
+.theme__day .prinav--li {
+	float: left;
+	margin: 6px 14px 14px 14px;
+	/*border-bottom: solid 1px #EDBA08;*/
+}
+.theme__day .prinav--a {
+
+}
+.theme__day .prinav--li p{
+	color: #B4BA6C;
+	margin: 0;
+
+}
+.theme__day .prinav--li:hover p{
+	color: #FEFFC2;
+	margin: 0;
+
+}
 /* Small only */
 @media screen and (max-width: 39.9375em) {
-	
+
 }
 
 /* Medium and up */
 @media screen and (min-width: 40em) {
-	
+
 }
 
 /* Medium only */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-	
+
 }
 
 /* Large and up */
 @media screen and (min-width: 64em) {
-	
+
 }
 
 /* Large only */
 @media screen and (min-width: 64em) and (max-width: 74.9375em) {
-	
+
 }
 
 table {width: 100%;}
@@ -252,25 +178,11 @@ hr {
 }
 
 .horz-spacer {max-height: 12px;}
-.fa {color: #ff0000;}
+.fa {color: #7D2A35;}
 
 .hero--header {
 	height: 120px;
 	background-color: #EE0000;
-}
-
-.prinav--li {
-	float: left;
-	margin: 6px 24px 0 0;
-}
-.prinav--li:nth-child(1) {
-	margin-left: 20vw;
-}
-.prinav--a {
-
-}
-.prinav--a > p{
-
 }
 
 .caption--a__righteous{
@@ -278,33 +190,22 @@ hr {
 	font-size: 1.1em;
 	font-weight: 400;
 	line-height: 1.5;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	color: #B4BA6C;
 }
-.caption--a__righteous:hover{
-	color: #fff;
-}
+
 .caption--p__architectsdaughter{
 	font-family: "Architects Daughter", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 1.1em;
 	font-weight: 400;
 	line-height: 1.5;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
 }
 .caption--p__roboto{
 	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 1.4em;
 	font-weight: 500;
 	line-height: 1.5;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
 }
 .caption--p__opensans{
 	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
 }
 .color-text__black{color: #000;}
 .color-text__white{color: #FFF;}
@@ -339,7 +240,7 @@ hr {
 /*Foundation overrides*/
 .title-bar {
 	background-color: #7D2A35;
-	height: 56px;
+	height: 54px;
 }
 </style>
 
