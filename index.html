@@ -39,7 +39,7 @@
 			<div class="off-canvas-content" data-off-canvas-content>
 				<!-- page content begin -->
 				<div class="scrollpos"></div>
-<!--
+
 				<section class="row">
 					<header class="hero--header columns small-12 color-back__lol1 text-center">
 						<h1 class="caption--p__roboto color-text__white text-center">
@@ -47,9 +47,12 @@
 						</h1>
 					</header>
 				</section>
--->
+
 				<div data-sticky-container>
 				  <div class="prinav title-bar" data-sticky data-options="marginTop:0;" style="width:100%" data-top-anchor="1">
+				  	<nav class="show-for-small">
+				  		<p><i class="fa fa-bars"></i></p>
+				  	</nav>
 				    <nav class="prinav--nav hide-for-small-only">
 				    	<ul class="prinav--ul">
 				    		<li class="prinav--li">
@@ -84,6 +87,7 @@
 				    		</li>
 				    	</ul>
 				    </nav>
+
 				  </div>
 				</div>
 <button type="button" class="button" data-toggle="offCanvas">Open Menu</button>
@@ -125,6 +129,7 @@
 }
 .theme__day .prinav--nav {
 	overflow: hidden;
+	margin: 0 22vw !important;
 }
 .theme__day .prinav--ul {
 	list-style-type: none;
@@ -133,6 +138,7 @@
 .theme__day .prinav--li {
 	float: left;
 	margin: 6px 14px 14px 14px;
+	width: 13%
 	/*border-bottom: solid 1px #EDBA08;*/
 }
 .theme__day .prinav--a {
@@ -160,9 +166,7 @@
 
 /* Medium only */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-	.theme__day .prinav--nav {
-		margin: 0 22vw !important;
-	}
+
 }
 
 /* Large and up */
@@ -172,9 +176,7 @@
 
 /* Large only */
 @media screen and (min-width: 64em) and (max-width: 74.9375em) {
-	.theme__day .prinav--nav {
-		margin: 0 33vw !important;
-	}
+
 }
 
 table {width: 100%;}
@@ -245,6 +247,7 @@ hr {
 </style>
 <style>
 /*Foundation overrides*/
+
 .title-bar {
 	background-color: #7D2A35;
 	height: 54px;
