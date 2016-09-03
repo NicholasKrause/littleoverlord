@@ -127,7 +127,7 @@
 			"file": "/C/2016/littleoverlord/index.html",
 			"settings":
 			{
-				"buffer_size": 8051,
+				"buffer_size": 8060,
 				"line_ending": "Windows"
 			}
 		},
@@ -188,6 +188,8 @@
 	},
 	"file_history":
 	[
+		"/C/2016/performance/aic-audit/spring_into_savings_2016_aic_audit/doit.bat",
+		"/C/2016/is-ecom-labs/aic_audit/index.html",
 		"/C/2016/is-ecom-labs/index.html",
 		"/C/2016/is-ecom-labs/video1.html",
 		"/C/2016/is-ecom-labs/faq-modal.html",
@@ -313,9 +315,7 @@
 		"/C/branches/DefectFixes-Rel-2016/trunk/modules/estore/j2ee/estore.war/checkout/order_confirmation.jsp",
 		"/C/branches/DefectFixes-Rel-2016/trunk/modules/estore/j2ee/estore.war/media/global/styles/foundation/css/resp_t2_t3.css",
 		"/C/branches/DefectFixes-Rel-2016/trunk/modules/estore/j2ee/estore.war/checkout/shopping_cart.jsp",
-		"/C/branches/DefectFixes-Rel-2016/trunk/modules/estore/j2ee/estore.war/media/global/scripts/tealeaf.js",
-		"/C/branches/DefectFixes-Rel-2016/trunk/modules/estore/j2ee/estore.war/checkout/includes/inc_footer.jsp",
-		"/C/branches/DefectFixes-Rel-2016/trunk/modules/estore/j2ee/estore.war/checkout/includes/inc_footer_acap.jsp"
+		"/C/branches/DefectFixes-Rel-2016/trunk/modules/estore/j2ee/estore.war/media/global/scripts/tealeaf.js"
 	],
 	"find":
 	{
@@ -359,6 +359,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"        ",
+			"       ",
+			"      ",
+			"     ",
+			"    ",
+			"   ",
+			"  ",
+			"fa-",
+			"top-bar",
 			"prinav",
 			"auto",
 			"<!-- Content -->",
@@ -477,16 +486,7 @@
 			"-",
 			"471",
 			"5 - ",
-			"SRCSET",
-			"brand-logo--img",
-			"id=\"branding\"",
-			"branding",
-			"js_brand",
-			"FB.init",
-			"bSMIhasLoaded",
-			"js-smi--a_progr",
-			"script",
-			"smi--svg"
+			"SRCSET"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -521,19 +521,32 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8051,
+						"buffer_size": 8060,
 						"regions":
 						{
+							"bookmarks":
+							{
+								"flags": 144,
+								"icon": "bookmark",
+								"regions":
+								[
+									[
+										2099,
+										2099
+									],
+									[
+										5560,
+										5560
+									]
+								],
+								"scope": "bookmarks"
+							}
 						},
 						"selection":
 						[
 							[
-								5873,
-								5873
-							],
-							[
-								6079,
-								6079
+								2129,
+								2129
 							]
 						],
 						"settings":
@@ -541,7 +554,7 @@
 							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2538.0,
+						"translation.y": 632.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -572,7 +585,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -616,8 +629,8 @@
 						"selection":
 						[
 							[
-								107,
-								107
+								494,
+								494
 							]
 						],
 						"settings":
@@ -625,10 +638,10 @@
 							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 414.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
