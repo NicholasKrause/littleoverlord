@@ -6,91 +6,108 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body class="theme__day">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Architects+Daughter|Open+Sans" type="text/css">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css" type="text/css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css" media="all">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" type="text/css">
-<link rel="stylesheet" href="https://vjs.zencdn.net/5.11.6/video-js.css" rel="stylesheet">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css"
+type="text/css">	
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Architects+Daughter|Open+Sans|Righteous"
+type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css"
+type="text/css" media="all">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+type="text/css">
+<link rel="stylesheet" href="https://vjs.zencdn.net/5.11.6/video-js.css"
+type="text/css">
 
 	<div class="off-canvas-wrapper">
 		<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-			<div class="off-canvas position-left" id="offCanvas" data-off-canvas>
-
-				<!-- Close button -->
+			<aside class="off-canvas position-left" id="offCanvas" data-off-canvas>
+				<!-- Off Canvas begin -->
 				<button class="close-button" aria-label="Close menu" type="button" data-close>
-					<span aria-hidden="true">&times;</span>
+					<span aria-hidden="true"><i class="fa-brand fa fa-times-circle"></i></span>
 				</button>
-
 				<!-- Menu -->
 				<ul class="vertical menu">
-					<li><a href="#">Foundation</a></li>
-					<li><a href="#">Dot</a></li>
-					<li><a href="#">ZURB</a></li>
-					<li><a href="#">Com</a></li>
-					<li><a href="#">Slash</a></li>
-					<li><a href="#">Sites</a></li>
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">ABOUT</a></li>
+					<li><a href="#">VIDEO</a></li>
+					<li><a href="#">WORDS</a></li>
+					<li><a href="#">PODCASTS</a></li>
+					<li><a href="#">CONTACT</a></li>
+					<li><a href="#">Theme switch</a></li>
 				</ul>
-
-			</div>
+				<!-- Off Canvas end -->
+			</aside>
 
 			<div class="off-canvas-content" data-off-canvas-content>
-				<!-- page content begin -->
+				<!-- Page Content begin -->
 				<div class="scrollpos"></div>
 
-				<section class="row">
-					<header class="hero--header columns small-12 color-back__lol1 text-center">
-						<h1 class="caption--p__roboto color-text__white text-center">
-						Test Caption &nbsp; <i class="fa fa-paper-plane color-text__white"></i>
+				<section class="row hero--header color-back__lol1">
+					<div class="column small-5 xcallout">
+						<img src="http://placeholdit.imgix.net/~text?txtsize=33&txt=brand112&w=112&h=112">
+					</div>
+					<div class="column small-7 xcallout">
+						<h1 class="caption--p__righteous color-text__white text-center">
+ResponsiveDesign.com
 						</h1>
-					</header>
+						<h2 class="caption--p__righteous color-text__white text-center">
+Curated by an infinite number of monkeys on the information superhighway
+						</h2>
+					</div>
+
 				</section>
 
 				<div data-sticky-container>
 				  <div class="prinav title-bar" data-sticky data-options="marginTop:0;" style="width:100%" data-top-anchor="1">
-				  	<nav class="show-for-small">
-				  		<p><i class="fa fa-bars"></i></p>
+				  	<nav class="show-for-small-only"  data-toggle="offCanvas">
+				  		<p><i class="fa-brand fa fa-bars fa-2x"></i></p>
 				  	</nav>
 				    <nav class="prinav--nav hide-for-small-only">
 				    	<ul class="prinav--ul">
 				    		<li class="prinav--li">
-				    			<a class="prinav--a" href="#HOME" data-act="prin_home">
-				    				<p class="caption--a__righteous">999999</p>
+				    			<a class="prinav--a" href="#HOME" data-act="prinv_home">
+				    				<p class="caption--p__righteous">999999</p>
 				    			</a>
 				     		</li>   			
 				    		<li class="prinav--li">
-				    			<a class="prinav--a" href="#ABOUT" data-act="prin_about">
-				    				<p class="caption--a__righteous">999999</p>
+				    			<a class="prinav--a" href="#ABOUT" data-act="prinv_about">
+				    				<p class="caption--p__righteous">999999</p>
 				    			</a>
 				     		</li>   			
 				    		<li class="prinav--li">
-				    			<a class="prinav--a" href="#VIDEO" data-act="prin_video">
-				    				<p class="caption--a__righteous">999999</p>
+				    			<a class="prinav--a" href="#VIDEO" data-act="prinv_video">
+				    				<p class="caption--p__righteous">999999</p>
 				    			</a>
 				     		</li>   			
 				    		<li class="prinav--li">
-				    			<a class="prinav--a" href="#WORDS" data-act="prin_words">
-				    				<p class="caption--a__righteous">999999</p>
+				    			<a class="prinav--a" href="#WORDS" data-act="prinv_words">
+				    				<p class="caption--p__righteous">999999</p>
 				    			</a>
 				     		</li>   			
 				    		<li class="prinav--li">
-				    			<a class="prinav--a" href="#PODCASTS" data-act="prin_podcasts">
-				    				<p class="caption--a__righteous">999999</p>
+				    			<a class="prinav--a" href="#PODCASTS" data-act="prinv_podcasts">
+				    				<p class="caption--p__righteous">999999</p>
 				    			</a>
 				     		</li>   			
 				    		<li class="prinav--li">
-				    			<a class="prinav--a" href="#CONTACT" data-act="prin_contact">
-				    				<p class="caption--a__righteous">999999</p>
+				    			<a class="prinav--a" href="#CONTACT" data-act="prinv_contact">
+				    				<p class="caption--p__righteous">999999</p>
 				    			</a>
 				    		</li>
 				    	</ul>
+
+<div class="prinav-switch switch tiny">
+  <input class="switch-input" id="yes-no" type="checkbox" name="exampleSwitch">
+  <label class="switch-paddle" for="yes-no">
+    <span class="switch-active" aria-hidden="true">  <i class="fa-brand fa fa-moon-o"></i></span>
+    <span class="switch-inactive" aria-hidden="true"><i class="fa-brand fa fa-sun-o"></i></span>
+  </label>
+</div>
+				 
 				    </nav>
 
 				  </div>
 				</div>
-<button type="button" class="button" data-toggle="offCanvas">Open Menu</button>
+
 <span class="label color-back__lol01">Secondary</span>
 <span class="label color-back__lol02">Success</span>
 <span class="label color-back__lol03">Alert</span>
@@ -98,10 +115,10 @@
 <span class="label color-back__lol05">Warning</span>
 
 <figure class="horz-spacer"></figure>
-<section class="row"><div class="columns small-12"><hr></div></section>
-<section class="row"><div class="columns small-12"><hr></div></section>
-<section class="row"><div class="columns small-12"><hr></div></section>
-				<!-- page content end -->
+<section class="row"><div class="column small-12"><hr></div></section>
+<section class="row"><div class="column small-12"><hr></div></section>
+<section class="row"><div class="column small-12"><hr></div></section>
+				<!-- Page Content end -->
 			</div>
 		</div>
 	</div>
@@ -109,7 +126,6 @@
 	</body>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.js"></script>
-<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/plugins/foundation.sticky.js"></script>-->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TimelineMax.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
@@ -154,6 +170,10 @@
 	margin: 0;
 
 }
+.theme_day .prinav-switch {
+	position: relative;
+    float: right;
+}
 /* Small only */
 @media screen and (max-width: 39.9375em) {
 
@@ -187,14 +207,16 @@ hr {
 }
 
 .horz-spacer {max-height: 12px;}
-.fa {color: #7D2A35;}
+.theme__day  .fa-brand {color: #B4BA6C;}
+.theme__day  .fa-brand:hover {color: #FEFFC2;}
 
 .hero--header {
 	height: 120px;
 	background-color: #EE0000;
+    background: linear-gradient(to right, #EE0000 1%,#a9737e 99%);
 }
 
-.caption--a__righteous{
+.caption--p__righteous{
 	font-family: "Righteous", cursive;
 	font-size: 1.1em;
 	font-weight: 400;
@@ -233,17 +255,6 @@ hr {
 .color-back__lol04{background-color:#B4BA6C;}
 .color-back__lol05{background-color:#FEFFC2;}
 
-.article--table_lab__roboto{
-	color: #BC8213;	
-	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	text-align: center;
-	font-size: 16px;
-	font-weight: normal;
-	margin: 2px;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	text-rendering: optimizeLegibility;
-}
 </style>
 <style>
 /*Foundation overrides*/
