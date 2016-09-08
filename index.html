@@ -278,7 +278,9 @@ hr {
 		$(document).ready(function(){
 			//'use strict';
 			$(document).foundation();
-			new Vivus('svgLgo', {duration: 600}, function(){});
+			new Vivus('svgLgo', {duration: 600}, function(){
+				TweenLite.to( $(".hero--header"), 4, {ease: Expo.easeOut, backgroundPosition: "-444px 0px"});
+			});
 		});
 	</script>
 </html>
