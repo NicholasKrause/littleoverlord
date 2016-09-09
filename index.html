@@ -52,11 +52,10 @@ type="text/css">
 						<h1 class="caption--p__pattaya color-text__white text-center">
 ResponsiveDesign.com
 						</h1>
-						<h2 class="caption--p__righteous color-text__white text-center">
+						<h2 class="caption--p__pattaya color-text__lol5 text-center">
 Snark curated by an infinite number of monkeys
 						</h2>
 					</div>
-
 				</section>
 
 				<div data-sticky-container>
@@ -99,8 +98,8 @@ Snark curated by an infinite number of monkeys
 				    	</ul>
 
 <div class="prinav-switch switch tiny">
-  <input id="inputSwitch" class="switch-input" name="inputSwitch" type="checkbox">
-  <label class="switch-paddle" for="inputSwitch">
+  <input id="js-theme--input" class="switch-input" name="js-theme--input" type="checkbox">
+  <label class="switch-paddle" for="js-theme--input">
     <span class="switch-active" aria-hidden="true">  <i class="fa-brand fa fa-moon-o"></i></span>
     <span class="switch-inactive" aria-hidden="true"><i class="fa-brand fa fa-sun-o"></i></span>
   </label>
@@ -213,12 +212,10 @@ hr {
 
 .hero--header {
 	height: 120px;
-	background-color: #EE0000;
-    background: linear-gradient( to right, 
-	rgba(125, 42, 53, 1.00), 
-	rgba(254,  0,  0, 0.56)
-	),
-    url( img/lol_hero_star_bg.png );
+  background: #7D2A35;
+  background-image: url( img/lol_hero_star_bg_1.png );
+  background-image: url( img/lol_hero_star_bg_1.png ), linear-gradient(#7D2A35, #ff0000);
+
 }
 
 .caption--p__roboto{
@@ -241,7 +238,7 @@ hr {
 }
 .caption--p__pattaya{
 	font-family: "pattaya", cursive;
-	font-size: 1.1em;
+	font-size: 1.4em;
 	font-weight: 400;
 	line-height: 1.5;
 }
@@ -276,11 +273,16 @@ hr {
 
 	<script>
 		$(document).ready(function(){
-			//'use strict';
+			'use strict';
 			$(document).foundation();
-			new Vivus('svgLgo', {duration: 600}, function(){
-				TweenLite.to( $(".hero--header"), 4, {ease: Expo.easeOut, backgroundPosition: "-444px 0px"});
+			new Vivus('svgLgo', {duration: 100}, function(){
+				moveHeroBg();
 			});
+			function moveHeroBg(){
+				var width = 2400, speed = 60, duration = width / speed,
+				endPosition = width - (speed / 60); //adjust the end position assuming 60fps
+				TweenMax.to($(".hero--header"), duration, {css:{backgroundPosition:endPosition + "px 0"}, repeat:-1, ease:Linear.easeNone});
+			}
 		});
 	</script>
 </html>
