@@ -130,17 +130,30 @@ Snark curated by an infinite number of monkeys
 <span class="label color-back__lol04">#B4BA6C</span>
 <span class="label color-back__lol05">#FEFFC2</span>
 
-<div class="prinav-switch switch tiny">
-  <input id="js-theme--input" class="switch-input" name="js-theme--input" type="checkbox">
-  <label class="switch-paddle" for="js-theme--input">
-    <span class="switch-active" aria-hidden="true">  <i class="fa-brand fa fa-moon-o"></i></span>
-    <span class="switch-inactive" aria-hidden="true"><i class="fa-brand fa fa-sun-o"></i></span>
-  </label>
-</div>
-
 <section class="row"><div class="column small-12"><hr></div></section>
 <section class="row"><div class="column small-12"><hr></div></section>
 <section class="row"><div class="column small-12"><hr></div></section>
+				<footer class="row">
+					<section class="row"><div class="column small-12"><hr></div></section>
+					<div class="column small-9">
+						<p class="caption--p__roboto text-center">
+(c)2010-2016 Little OverLord, LLC.  All rights reserved.
+						</p>
+					</div>
+					<div class="column small-2">
+						<div id="js-prinav-switch" class="prinav-switch switch large"
+						data-theme="theme__day">
+							<input id="js-theme--input" class="switch-input" name="js-theme--inputName" type="checkbox">
+							<label class="switch-paddle" for="js-theme--input">
+								<span class="switch-active" aria-hidden="true">  <i class="fa-brand fa fa-moon-o fa-lg" style="margin: 0 0 2px 6px;"></i></span>
+								<span class="switch-inactive" aria-hidden="true"><i class="fa-brand fa fa-sun-o fa-lg"></i></span>
+							</label>
+						</div>
+					</div>
+					<div class="column small-1">
+<br>
+					</div>
+				</footer>
 				<!-- Page Content end -->
 			</div>
 		</div>
@@ -256,7 +269,7 @@ hr {
 
 .caption--p__roboto{
 	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 1.4em;
+	font-size: .9em;
 	font-weight: 500;
 	line-height: 1.5;
 }
@@ -303,7 +316,12 @@ hr {
 </style>
 <style>
 /*Foundation overrides*/
-
+.switch-paddle {
+	background-color: #917A56;
+}
+input:checked~.switch-paddle {
+    background: #7D2A35;
+}
 .title-bar {
 	background-color: #7D2A35;
 	height: 54px;
@@ -312,6 +330,16 @@ hr {
 	<script>
 		$(document).ready(function(){
 			'use strict';
+$("#js-prinav-switch").on("change", function( e ){
+	//e.preventDefault();
+console.log("xxxx"+ $( this ).attr("data-theme"));
+	if( $( this ).attr("data-theme") === "theme__day" ){
+		$( this ).attr("data-theme", "theme__night");
+	} else {
+		$( this ).attr("data-theme", "theme__day");
+	}
+	$("body").removeClass("theme__day").removeClass("theme__night").addClass($( this ).attr("data-theme"));
+});
 			$(document).foundation();
 			new Vivus("svgLOL", {duration: 96}, function(){
 				$("#svgLgo").removeClass("blind");
@@ -322,6 +350,7 @@ hr {
 				endPosition = width - (speed / 60);
 				//TweenMax.to($(".hero--header"), duration, {css:{backgroundPosition:endPosition + "px 0"}, repeat:-1, ease:Linear.easeNone});
 			}
+			console.log("Hey, what up?");
 		});
 	</script>
 </html>
