@@ -136,7 +136,7 @@
 			"file": "/C/2016/littleoverlord/index.html",
 			"settings":
 			{
-				"buffer_size": 19823,
+				"buffer_size": 19925,
 				"line_ending": "Windows"
 			}
 		},
@@ -521,7 +521,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -536,8 +536,8 @@
 						"selection":
 						[
 							[
-								197,
-								197
+								160,
+								81
 							]
 						],
 						"settings":
@@ -549,7 +549,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -558,15 +558,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 19823,
+						"buffer_size": 19925,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								18589,
-								18589
+								19401,
+								19401
 							]
 						],
 						"settings":
@@ -575,10 +575,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 4914.0,
+						"translation.y": 5364.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -594,8 +594,8 @@
 						"selection":
 						[
 							[
-								70,
-								70
+								405,
+								405
 							]
 						],
 						"settings":
@@ -606,7 +606,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -662,7 +662,7 @@
 						"translation.y": 414.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
