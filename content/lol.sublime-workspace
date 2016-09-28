@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"wid",
+				"width"
+			],
+			[
 				"data-",
 				"data-prinv"
 			],
@@ -43,7 +47,8 @@
 			"file": "/C/neo/neos_proj/2016/littleoverlord/index.html",
 			"settings":
 			{
-				"buffer_size": 33104,
+				"buffer_size": 33764,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
@@ -144,6 +149,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			";",
+			"ccard",
+			"hero--header",
+			"star",
 			"ccard",
 			".off-canvas ",
 			" .off-canvas-wrapper",
@@ -267,11 +276,7 @@
 			"prinav-a",
 			"righteous",
 			"Righteous",
-			"div",
-			"center",
-			"/",
-			"/ ",
-			"'"
+			"div"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -326,15 +331,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 33104,
+						"buffer_size": 33764,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								31928,
-								31928
+								27880,
+								27880
 							]
 						],
 						"settings":
@@ -343,7 +348,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 21750.0,
+						"translation.y": 13686.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
