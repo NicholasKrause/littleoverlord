@@ -254,25 +254,25 @@ body.theme__night {
 	background-color: #917A56 !important;
 }
 .ccard {
-border-radius: 6px 24px;
-border-color: #DDDDDD;
-height: 256px;
-position: relative;
-overflow: hidden;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;	
+	border-radius: 6px 24px;
+	border-color: #DDDDDD;
+	height: 256px;
 }
 
 .ccard:before {
     content:"";
     position: absolute;
-    background:#020307 url("lol_hero_star_bg.png") no-repeat ;
-    
-    background-position:top center ;
-    color:#fff;
-    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    background:#fff3d9 url("img/lol_hero_star_bg.png") no-repeat;
+    background-position:0 0;
+    -webkit-animation: mymove 5s infinite;
+    xxxxxxxxxxxxxbackground-color: #edba08;
     animation: mymove 5s infinite;
-    width:100%;
-    height:100%;    
-    z-index:1;
+    width:768px;
+    height:768px;    
+    z-index:-1;
 }
 
 @-webkit-keyframes mymove {
@@ -518,7 +518,7 @@ input:checked~.switch-paddle {
 				$(".content-section").addClass("blind");
 				$( "#js-"+$( this ).attr("data-prinv") ).removeClass("blind");
 			});
-			console.log("Dude, what up?");
+			console.log("Dude, what up?  Nick K. in da house!");
 		});
 	</script>
 </html>
