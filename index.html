@@ -262,26 +262,25 @@ body.theme__night {
 	height: 256px;
 }
 
-.ccard:before {
+.ccard:hover::before {
     content:"";
     position: absolute;
     background:#fff3d9 url("img/lol_hero_star_bg.png") no-repeat;
     background-position:0 0;
-    -webkit-animation: mymove 5s infinite;
-    xxxxxxxxxxxxxbackground-color: #edba08;
-    animation: mymove 5s infinite;
+    -webkit-animation: ccard_anim_bg 6s infinite;
+    animation: ccard_anim_bg 6s infinite;
     width:768px;
     height:768px;    
     z-index:-1;
 }
 
-@-webkit-keyframes mymove {
-    50% {-webkit-transform: rotate(180deg);}
+@-webkit-keyframes ccard_anim_bg {
+    80% {-webkit-transform: rotate(90deg);}
 }
 
 /* Standard syntax */
-@keyframes mymove {
-    50% {transform: rotate(180deg);}
+@keyframes ccard_anim_bg {
+    80% {transform: rotate(90deg);}
 }
 .theme__day footer p {
 	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
