@@ -15,4 +15,4 @@ It's very easy to make some words **bold** and other words *italic* with Markdow
 
 ![Alt text](https://nicholaskrause.github.io/littleoverlord/android-chrome-192x192.png "Optional title")
 
-Tags
+GAMES|WRESTLING|MOVIES|COMICS|GEAR
