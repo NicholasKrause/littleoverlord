@@ -47,7 +47,7 @@
 			"file": "/C/neo/neos_proj/2016/littleoverlord/index.html",
 			"settings":
 			{
-				"buffer_size": 33721,
+				"buffer_size": 34028,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -149,6 +149,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"1",
+			"-4",
+			"0%",
+			"90",
+			"important",
+			"px",
+			"50",
+			"mymove",
 			"768px",
 			";",
 			"ccard",
@@ -268,15 +276,7 @@
 			"Label",
 			"label",
 			"Label",
-			"label",
-			"Label",
-			"label",
-			"Label",
-			"\"prinav-li\"",
-			"\"prinav\"",
-			"prinav-a",
-			"righteous",
-			"Righteous"
+			"label"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -331,15 +331,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 33721,
+						"buffer_size": 34028,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								28129,
-								28129
+								23674,
+								23674
 							]
 						],
 						"settings":
@@ -348,7 +348,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 14226.0,
+						"translation.y": 9870.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

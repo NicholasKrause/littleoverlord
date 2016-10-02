@@ -150,21 +150,41 @@ Snark curated by an infinite number of monkeys
 				<section id="js-prinv_hom" class="content-section">
 					<h1 class="text-center caption--p__pattaya">Home</h1>
 					<section class="row">
-						<div class="column small-12 medium-9">
-							<article class="ccard callout warning">
-								The NXT problem
-							</article>
-							<article class="ccard callout warning">
-								xxxxxxxxxxx
-							</article>
+						<div class="column small-12 medium-12 large-9">
+							<section class="row">
+								<div id="js-cntnt--art__hom" class="column small-12">
+									<!--  content article begin  -->
+									<article class="ccard callout warning">
+										<h1  class="ccard-title">The NXT problem</h1>
+										<h2  class="ccard-subtitle">Trevor Goodchild Oct 2016</h2>
+										<section class="row">
+											<div class="column small-12 medium-3">
+												<img class="ccard-thn" 
+													src="http://placeholdit.imgix.net/~text?txtsize=33&txt=thn108-192&w=192&h=108">
+											</div>
+											<div class="column small-12 medium-9">
+												<figure class="resp_qtr_height"></figure>
+												<p class="ccard-summary">Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+											</div>
+										</section>
+									</article>
+									<article class="ccard callout warning">
+										The NXT problem
+									</article>
+									<!--  content article end  -->
+								</div>
+							</section>
 						</div>
-						<div class="column small-12 medium-3">
-							<article class="ccard callout warning">
-								xxxxxxxxxxx
-							</article>
-							<article class="ccard callout warning">
-								xxxxxxxxxxx
-							</article>
+						<div class="column small-12 medium-12 large-3">
+							<section class="row">
+								<div id="js-cntnt--asd__hom" class="column small-12">
+									<!--  content aside   begin  -->
+									<aside class="ccard callout warning">
+WIKI API
+									</aside>
+									<!--  content aside   end  -->
+								</div>
+							</section>
 						</div>
 					</section>
 				</section>
@@ -262,8 +282,10 @@ Snark curated by an infinite number of monkeys
 body.theme__night {
 	background-color: #917A56 !important;
 }
+.resp_full_height {height: 14px;} .resp_half_height {height: 8px;} .resp_qtr_height {height: 4px;}
+
 .ccard {
-	padding: 0 !important;
+	padding: 8 !important;
 	position: relative;
 	overflow: hidden;
 	z-index: 1;	
@@ -272,17 +294,46 @@ body.theme__night {
 	height: 256px;
 }
 
+.ccard:hover { cursor: pointer; }
+
 .ccard:hover::before {
     content:"";
     position: absolute;
     top: -96px; left: -96px;
     background:#fff3d9 url("img/lol_hero_star_bg.png") no-repeat;
-    xxxbackground-position: -64px -64px -64px -64px;
-    -webkit-animation: ccard_anim_bg 6s infinite;
+    /*-webkit-animation: ccard_anim_bg 6s infinite;*/
     animation: ccard_anim_bg 6s infinite;
     width: 768px;
     height: 768px;    
     z-index:-1;
+}
+.ccard-title {
+	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1.2em;
+	font-weight: 500;
+	line-height: 1.5;
+	color: #7D2A35;
+	text-align: center;
+}
+.ccard-subtitle {
+	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: .8em;
+	font-weight: 300;
+	line-height: .8;
+	color: #7D2A35;
+	text-align: center;
+}
+.ccard-thn {
+	min-width: 192px;
+	height: auto;
+}
+.ccard-summary {
+	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	font-weight: 300;
+	line-height: 1.2;
+	color: #000;
+	text-align: justify;
 }
 /*
 @-webkit-keyframes ccard_anim_bg {
@@ -528,7 +579,7 @@ input:checked~.switch-paddle {
 				$(".content-section").addClass("blind");
 				$( "#js-"+$( this ).attr("data-prinv") ).removeClass("blind");
 			});
-			console.log("Dude, what up?  Nick K. in da house!");
+			console.log("Dude, what up?  Nick the K. in da house!");
 		});
 	</script>
 </html>
