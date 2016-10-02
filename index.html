@@ -164,7 +164,7 @@ Snark curated by an infinite number of monkeys
 													data-isrc="http://placeholdit.imgix.net/~text?txtsize=33&txt=thn108-192&w=192&h=108">
 											</div>
 											<div class="column small-12 medium-9">
-												<p class="ccard-summary">Ideally I would've liked to start this article off by detailing what exactly NXT is. For those not in the know, NXT started as the developmental branch of WWE. World Wrestling Entertainment previously had many developmental territories under their umbrella, however, these organizations purposefully had minimal exposure and few ways for their developing talents to connect with potential fans. The formation of NXT, a proper developmental brand with both a weekly television and frequent touring, allowed new, fresh signees of the wrestling juggernaut’s roster pool a chance to perform in front of moderate-sized crowds and hone their skills in the various wrestling crafts before debuting on the big stage. In hindsight, NXT seems like something that should’ve always been around. This, however, was not the case until late 2014. At that time, the new developmental brand was exactly like what someone trying to imagine it now would picture. It had some fresh blood right out of both the independent wrestling scene and the WWE performance center. It taped in front of relatively small crowds and it showcased some exciting wrestling with the obvious expected flaws of more green performers. This was alright, because at the time everyone knew what NXT was and more importantly, NXT knew what NXT was. </p>
+												<p class="ccard-summary">Ideally I would've liked to start this article off by detailing what exactly NXT is. For those not in the know, NXT started as the developmental branch of WWE. World Wrestling Entertainment previously had many developmental territories under their umbrella, however, these organizations purposefully had minimal exposure and few ways for their developing talents to connect with potential fans. The formation of NXT, a proper developmental brand with both a weekly television and frequent touring, allowed new, fresh signees of the wrestling juggernaut's roster pool a chance to perform in front of moderate-sized crowds and hone their skills in the various wrestling crafts before debuting on the big stage. In hindsight, NXT seems like something that should've always been around. This, however, was not the case until late 2014. At that time, the new developmental brand was exactly like what someone trying to imagine it now would picture. It had some fresh blood right out of both the independent wrestling scene and the WWE performance center. It taped in front of relatively small crowds and it showcased some exciting wrestling with the obvious expected flaws of more green performers. This was alright, because at the time everyone knew what NXT was and more importantly, NXT knew what NXT was. </p>
 											</div>
 										</section>
 									</article>
@@ -177,7 +177,7 @@ Snark curated by an infinite number of monkeys
 													src="img/vid_1.png">
 											</div>
 											<div class="column small-12 medium-9">
-												<p class="ccard-summary">Ideally I would've liked to start this article off by detailing what exactly NXT is. For those not in the know, NXT started as the developmental branch of WWE. World Wrestling Entertainment previously had many developmental territories under their umbrella, however, these organizations purposefully had minimal exposure and few ways for their developing talents to connect with potential fans. </p>
+												<p class="ccard-summary">Ideally I would've liked to start this article off by detailing what exactly NXT is. For those not in the know, NXT started as the developmental branch of WWE. World Wrestling Entertainment previously had many developmental territories under their umbrella, however, these organizations purposefully had minimal exposure and few ways for their developing talents to connect with potential fans. The formation of NXT, a proper developmental brand with both a weekly television and frequent touring, allowed new, fresh signees of the wrestling juggernaut's roster pool a chance to perform in front of moderate-sized crowds and hone their skills in the various wrestling crafts before debuting on the big stage. In hindsight, NXT seems like something that should've always been around. This, however, was not the case until late 2014. At that time, the new developmental brand was exactly like what someone trying to imagine it now would picture. It had some fresh blood right out of both the independent wrestling scene and the WWE performance center. It taped in front of relatively small crowds and it showcased some exciting wrestling with the obvious expected flaws of more green performers. This was alright, because at the time everyone knew what NXT was and more importantly, NXT knew what NXT was. </p>
 											</div>
 										</section>
 									</article>
@@ -301,6 +301,10 @@ body.theme__night {
 	z-index: 1;	
 	border-radius: 6px 24px;
 	height: 256px;
+}
+
+.ccard__expand {
+	height: inherit !important;
 }
 
 .theme__day .ccard {
@@ -590,12 +594,16 @@ input:checked~.switch-paddle {
 			function moveHeroBg(){
 				var width = 2400, speed = 60, duration = width / speed,
 				endPosition = width - (speed / 60);
-				TweenMax.to($(".hero--header"), duration, {css:{backgroundPosition:endPosition + "px 0"}, repeat:-1, ease:Linear.easeNone});
+				//TweenMax.to($(".hero--header"), duration, {css:{backgroundPosition:endPosition + "px 0"}, repeat:-1, ease:Linear.easeNone});
 			}
 			$(".prinav--a").on("click", function( e ){
 				$(".content-section").addClass("blind");
 				$( "#js-"+$( this ).attr("data-prinv") ).removeClass("blind");
 			});
+			$(".ccard").on("click", function( e ){
+				$(".ccard").each(function(){ $( this ).removeClass("ccard__expand"); }); 
+				$( this ).addClass("ccard__expand");
+			})
 			console.log("Dude, what up?  Nick the K. in da house!");
 		});
 	</script>
