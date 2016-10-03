@@ -594,7 +594,7 @@ input:checked~.switch-paddle {
 			function moveHeroBg(){
 				var width = 2400, speed = 60, duration = width / speed,
 				endPosition = width - (speed / 60);
-				//TweenMax.to($(".hero--header"), duration, {css:{backgroundPosition:endPosition + "px 0"}, repeat:-1, ease:Linear.easeNone});
+				TweenMax.to($(".hero--header"), duration, {css:{backgroundPosition:endPosition + "px 0"}, repeat:-1, ease:Linear.easeNone});
 			}
 			$(".prinav--a").on("click", function( e ){
 				$(".content-section").addClass("blind");
