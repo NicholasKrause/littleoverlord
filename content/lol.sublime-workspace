@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"fig",
+				"figure\tTag"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"med",
+				"medium-5"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
 				"wid",
 				"width"
 			],
@@ -36,19 +56,19 @@
 	"buffers":
 	[
 		{
-			"file": "/C/neo/neos_proj/2016/littleoverlord/publish.bat",
+			"file": "/C/neo/neos_proj/2016/littleoverlord/index.html",
 			"settings":
 			{
-				"buffer_size": 71,
+				"buffer_size": 37947,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/neo/neos_proj/2016/littleoverlord/index.html",
+			"file": "/C/neo/neos_proj/2016/littleoverlord/publish.bat",
 			"settings":
 			{
-				"buffer_size": 34028,
-				"encoding": "UTF-8",
+				"buffer_size": 71,
 				"line_ending": "Windows"
 			}
 		},
@@ -149,6 +169,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"’",
+			"ccard-subtitle",
+			"EDBA08",
+			"ccard-subtitle",
+			"text-center",
+			"caption--p__pattaya",
+			"article",
 			"1",
 			"-4",
 			"0%",
@@ -269,14 +296,7 @@
 			"label",
 			"Label",
 			"label",
-			"Label",
-			"label",
-			"Label",
-			"label",
-			"Label",
-			"label",
-			"Label",
-			"label"
+			"Label"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -294,11 +314,40 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
+					"file": "/C/neo/neos_proj/2016/littleoverlord/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 37947,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								37928,
+								37928
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 26640.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
 					"file": "/C/neo/neos_proj/2016/littleoverlord/publish.bat",
 					"semi_transient": false,
 					"settings":
@@ -322,36 +371,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/C/neo/neos_proj/2016/littleoverlord/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 34028,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								23674,
-								23674
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 9870.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -380,7 +400,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -409,7 +429,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
