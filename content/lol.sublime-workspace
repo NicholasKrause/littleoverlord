@@ -59,7 +59,7 @@
 			"file": "/C/neo/neos_proj/2016/littleoverlord/index.html",
 			"settings":
 			{
-				"buffer_size": 37947,
+				"buffer_size": 37906,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -96,14 +96,6 @@
 				"buffer_size": 1742,
 				"line_ending": "Windows"
 			}
-		},
-		{
-			"file": "/C/neo/neos_proj/2016/littleoverlord/wtf.html",
-			"settings":
-			{
-				"buffer_size": 6900,
-				"line_ending": "Windows"
-			}
 		}
 	],
 	"build_system": "",
@@ -138,6 +130,7 @@
 	},
 	"file_history":
 	[
+		"/C/neo/neos_proj/2016/littleoverlord/wtf.html",
 		"/C/neo/neos_proj/2016/simple_audit_mixed_content/mixed_content.txt",
 		"/C/neo/neos_proj/2016/simple_audit_mixed_content/mixed_content.js",
 		"/C/neo/neos_proj/2016/chi_capstone_prototype2/index.html",
@@ -169,6 +162,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"ccard__expand",
+			"summary",
+			"ccard-summary",
+			"subtitle",
+			"Open Sans",
+			"p__rocksalt",
+			"Salt",
+			"salt",
+			"Salt",
 			"’",
 			"ccard-subtitle",
 			"EDBA08",
@@ -287,16 +289,7 @@
 			"lu",
 			" color-back_lol",
 			"color-back_lol0",
-			"caption--a__righteous",
-			"a__righteous",
-			"{}",
-			"  @",
-			"    ",
-			" Label",
-			"label",
-			"Label",
-			"label",
-			"Label"
+			"caption--a__righteous"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -323,15 +316,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 37947,
+						"buffer_size": 37906,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								37928,
-								37928
+								31001,
+								31001
 							]
 						],
 						"settings":
@@ -340,7 +333,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 26640.0,
+						"translation.y": 15990.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -453,34 +446,6 @@
 						{
 							"syntax": "Packages/HTML/HTML.sublime-syntax",
 							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "/C/neo/neos_proj/2016/littleoverlord/wtf.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6900,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1159,
-								1159
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
