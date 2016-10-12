@@ -578,14 +578,14 @@ var oTabContent;    //    Chrome Tab
 
 var oAJAXReq = new XMLHttpRequest();    //    Get Sounds
 var aAudioBuffer = new Array(10);    //    Store Sound files
-var fetchSoundConfig = {sound_max: 1, sound_current: 1};    //    Sound limits
+var fetchSoundConfig = {sound_max: 10, sound_current: 1};    //    Sound limits
 
 fetchSound();
 
 function fetchSound(){
     //    AJAX a single sound binary
-    oAJAXReq.open("GET", "au/" + fetchSoundConfig.sound_current + ".mp3", true);
-console.log( "audio 1 | " + "au/" + fetchSoundConfig.sound_current + ".mp3" );
+    oAJAXReq.open("GET", "au/s" + fetchSoundConfig.sound_current + ".mp3", true);
+console.log( "audio 1 | " + "au/s" + fetchSoundConfig.sound_current + ".mp3" );
     oAJAXReq.responseType = "arraybuffer";
     oAJAXReq.send();
     oAJAXReq.onload = fetchSoundonload;
@@ -647,6 +647,7 @@ console.log( "audio 2 | " + nSound );
 				$( "#js-"+$( this ).attr("data-prinv") ).removeClass("blind");
 			});
 			$(".ccard").on("click", function( e ){
+				playAudioFile( 2 );
 				$(".ccard").each(function(){ $( this ).removeClass("ccard__expand"); }); 
 				$( this ).addClass("ccard__expand");
 			})
