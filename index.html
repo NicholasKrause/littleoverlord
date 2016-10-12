@@ -642,6 +642,7 @@ console.log( "audio 2 | " + nSound );
 				TweenMax.to($(".hero--header"), duration, {css:{backgroundPosition:endPosition + "px 0"}, repeat:-1, ease:Linear.easeNone});
 			}
 			$(".prinav--a").on("click", function( e ){
+				playAudioFile( 1 );
 				$(".content-section").addClass("blind");
 				$( "#js-"+$( this ).attr("data-prinv") ).removeClass("blind");
 			});
