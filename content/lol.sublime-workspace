@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"mak",
+				"makeId"
+			],
+			[
 				"marg",
 				"margin-bottom"
 			],
@@ -56,10 +60,19 @@
 	"buffers":
 	[
 		{
+			"file": "/C/neo/neos_proj/2016/is-ecom-labs/faq.html",
+			"settings":
+			{
+				"buffer_size": 43333,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "/C/neo/neos_proj/2016/littleoverlord/index.html",
 			"settings":
 			{
-				"buffer_size": 37906,
+				"buffer_size": 38001,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -162,6 +175,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"sHash",
+			"history",
+			"replaceState",
+			"CnfState",
+			"CnfState.hist",
+			"js-no-hist",
+			"js-no-hist\"",
 			"ccard__expand",
 			"summary",
 			"ccard-summary",
@@ -282,14 +302,7 @@
 			"<li ",
 			"<li",
 			"il",
-			"theme__day",
-			"theme-day",
-			"prinav",
-			"\t-webkit-font-smoothing: antialiased;\n\t-moz-osx-font-smoothing: grayscale;",
-			"lu",
-			" color-back_lol",
-			"color-back_lol0",
-			"caption--a__righteous"
+			"theme__day"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -312,19 +325,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/C/neo/neos_proj/2016/littleoverlord/index.html",
+					"file": "/C/neo/neos_proj/2016/is-ecom-labs/faq.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 37906,
+						"buffer_size": 43333,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								31001,
-								31001
+								41126,
+								41126
 							]
 						],
 						"settings":
@@ -333,7 +346,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 15990.0,
+						"translation.y": 28842.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -341,6 +354,35 @@
 				},
 				{
 					"buffer": 1,
+					"file": "/C/neo/neos_proj/2016/littleoverlord/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 38001,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1097,
+								1097
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 16488.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
 					"file": "/C/neo/neos_proj/2016/littleoverlord/publish.bat",
 					"semi_transient": false,
 					"settings":
@@ -364,11 +406,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "/C/neo/neos_proj/2016/littleoverlord/json/video_1.json",
 					"semi_transient": false,
 					"settings":
@@ -393,11 +435,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "/C/neo/neos_proj/2016/littleoverlord/img/lol_lgo_brand-01.svg",
 					"semi_transient": false,
 					"settings":
@@ -422,11 +464,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "/C/neo/neos_proj/2016/neos_ux_cookbook/ever-present-living-style-guide/ext/scott_c_krause/ever_present_living_style_guide.html",
 					"semi_transient": false,
 					"settings":
@@ -451,7 +493,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
