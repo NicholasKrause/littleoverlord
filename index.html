@@ -624,8 +624,10 @@ console.log( "audio 2 | " + nSound );
 			// theme switch
 			$("#js-prinav-switch").on("change", function( e ){
 				if( $( this ).attr("data-theme") === "theme__day" ){
+					playAudioFile( 3 );
 					$( this ).attr("data-theme", "theme__night");
 				} else {
+					playAudioFile( 4 );
 					$( this ).attr("data-theme", "theme__day");
 				}
 				$("body").removeClass("theme__day").removeClass("theme__night").addClass($( this ).attr("data-theme"));
