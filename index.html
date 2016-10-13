@@ -584,6 +584,7 @@ input:checked~.switch-paddle {
 </style>
 	<script>
 		'use strict';
+getContent();
 		var oAudContx = new AudioContext();    //    HTML5 Audio
 		var oAJAXReq = new XMLHttpRequest();   //    Get Sounds
 		var aAudioBuffer = new Array(10);      //    Store Sound files
@@ -679,9 +680,7 @@ function artc(date, title_short, title_long, img, text, links, theme, tag, tags)
 getContent();
 function getContent(){
 alert("yikes 1");
-	$("#xxx").load("content/words-1.md",function(){
-alert("yikes 2");
-	});
+	$("#xxx").load("content/words-1.md");
 }
 
 	</script>
