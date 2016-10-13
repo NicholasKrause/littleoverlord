@@ -584,7 +584,6 @@ input:checked~.switch-paddle {
 </style>
 	<script>
 		'use strict';
-getContent();
 		var oAudContx = new AudioContext();    //    HTML5 Audio
 		var oAJAXReq = new XMLHttpRequest();   //    Get Sounds
 		var aAudioBuffer = new Array(10);      //    Store Sound files
@@ -630,6 +629,7 @@ getContent();
 		};
 		$(document).ready(function(){
 			$(document).foundation();
+getContent();
 			// theme switch
 			$("#js-prinav-switch").on("change", function( e ){
 				if( $( this ).attr("data-theme") === "theme__day" ){
@@ -664,7 +664,7 @@ getContent();
 			})
 			console.log("Dude, what up?  Nick the K. in da house!");
 		});
-getContent();
+
 function getContent(){
 alert("yikes 1");
 	$("#xxx").load("content/words-1.md");
