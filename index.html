@@ -108,7 +108,9 @@ Snark curated by an infinite number of monkeys
 				</section>
 
 				<div data-sticky-container>
-				  <div class="prinav title-bar" data-sticky data-options="marginTop:0;" style="width:100%" data-top-anchor="1">
+				  <div class="prinav title-bar" data-sticky data-options="marginTop:0;stickyOn:small"
+				   xxxdata-options="stickTo:top; ;"
+				  style="width:100%" data-top-anchor="1">
 				  	<nav class="prinav--nav__hamb show-for-small-only" data-toggle="offCanvas">
 				  		<p><i class="fa-brand fa fa-bars fa-2x"></i></p>
 				  	</nav>
@@ -311,6 +313,10 @@ body.theme__night {
 .ccard__expand {
 	height: inherit !important;
 }
+.ccard__expand:hover {
+	cursor: default !important;
+}
+	
 
 .theme__day .ccard {
 	border-color: #917A56;
