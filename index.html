@@ -583,6 +583,7 @@ input:checked~.switch-paddle {
 
 </style>
 	<script>
+		'use strict';
 		var oAudContx = new AudioContext();    //    HTML5 Audio
 		var oAJAXReq = new XMLHttpRequest();   //    Get Sounds
 		var aAudioBuffer = new Array(10);      //    Store Sound files
@@ -627,7 +628,6 @@ input:checked~.switch-paddle {
 		 		catch( e ){}
 		};
 		$(document).ready(function(){
-			'use strict';
 			$(document).foundation();
 			// theme switch
 			$("#js-prinav-switch").on("change", function( e ){
@@ -676,5 +676,13 @@ function artc(date, title_short, title_long, img, text, links, theme, tag, tags)
 	this.tags        = tags;
 }
 
+getContent();
+function getContent(){
+	$("#xxx").load("content/words-1.md",function(){
+
+	});
+}
+
 	</script>
+<article id="xxx">xxx</article>
 </html>
