@@ -294,7 +294,11 @@ body.theme__night {
 	background-color: #917A56 !important;
 }
 .resp_full_height {height: 14px;} .resp_half_height {height: 8px;} .resp_qtr_height {height: 4px;}
-
+::selection {
+    background: #fff600;
+    color: #7D2A35;
+    text-shadow: none;
+}
 .ccard {
 	padding: 8 !important;
 	position: relative;
@@ -355,11 +359,11 @@ body.theme__night {
 }
 .ccard-summary {
 	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 1.2em;
-	font-weight: 300;
+	font-size: 15px;
+	font-weight: normal;
 	line-height: 1.4em;
 	color: #222;
-	height: 96px;
+	xxxxxheight: 16px !important;
 }
 /*
 @-webkit-keyframes ccard_anim_bg {
@@ -573,51 +577,49 @@ input:checked~.switch-paddle {
 
 </style>
 	<script>
-var oAudContx = new AudioContext();    //    HTML5 Audio
-var oTabContent;    //    Chrome Tab
+		var oAudContx = new AudioContext();    //    HTML5 Audio
+		var oAJAXReq = new XMLHttpRequest();   //    Get Sounds
+		var aAudioBuffer = new Array(10);      //    Store Sound files
+		var fetchSoundConfig = {sound_max: 10, sound_current: 1};    //    Sound limits
 
-var oAJAXReq = new XMLHttpRequest();    //    Get Sounds
-var aAudioBuffer = new Array(10);    //    Store Sound files
-var fetchSoundConfig = {sound_max: 10, sound_current: 1};    //    Sound limits
+		fetchSound();
 
-fetchSound();
+		function fetchSound(){
+		    //    AJAX a single sound binary
+		    oAJAXReq.open("GET", "au/s" + fetchSoundConfig.sound_current + ".mp3", true);
+		    oAJAXReq.responseType = "arraybuffer";
+		    oAJAXReq.send();
+		    oAJAXReq.onload = fetchSoundonload;
+		}
 
-function fetchSound(){
-    //    AJAX a single sound binary
-    oAJAXReq.open("GET", "au/s" + fetchSoundConfig.sound_current + ".mp3", true);
-console.log( "audio 1 | " + "au/s" + fetchSoundConfig.sound_current + ".mp3" );
-    oAJAXReq.responseType = "arraybuffer";
-    oAJAXReq.send();
-    oAJAXReq.onload = fetchSoundonload;
-}
-
-function fetchSoundonload() {
-    //    The audio file has loaded via AJAX
-    oAudContx.decodeAudioData(oAJAXReq.response, function (decAudBuf) {
-        aAudioBuffer[ fetchSoundConfig.sound_current ] = decAudBuf;
-        fetchSoundConfig.sound_current = fetchSoundConfig.sound_current + 1;
-        if(fetchSoundConfig.sound_current <= fetchSoundConfig.sound_max){
-            oAJAXReq = new XMLHttpRequest();
-            oAJAXReq.responseType = "arraybuffer";
-            fetchSound( fetchSoundConfig.sound_current );
-        }
-    });
-};
+		function fetchSoundonload() {
+		    //    The audio file has loaded via AJAX
+		    oAudContx.decodeAudioData(oAJAXReq.response, function (decAudBuf) {
+		        aAudioBuffer[ fetchSoundConfig.sound_current ] = decAudBuf;
+		        fetchSoundConfig.sound_current = fetchSoundConfig.sound_current + 1;
+		        if(fetchSoundConfig.sound_current <= fetchSoundConfig.sound_max){
+		            oAJAXReq = new XMLHttpRequest();
+		            oAJAXReq.responseType = "arraybuffer";
+		            fetchSound( fetchSoundConfig.sound_current );
+		        }
+		    });
+		};
  
-function playAudioFile( nSound ) {
-    //    Play MP3 if sound toggle is true
-console.log( "audio 2 | " + nSound );
-        var oSrc = oAudContx.createBufferSource();
-        var volume = oAudContx.createGain();
-        oSrc.buffer = aAudioBuffer[nSound];
-        volume.gain.value = 0.0;
-        oSrc.connect(volume);  
-        volume.connect(oAudContx.destination);
-        oSrc.connect(oAudContx.destination);
-        volume.gain.value = 0.0;
-        oSrc.start(oAudContx.currentTime);
- 
-};
+		function playAudioFile( nSound ) {
+		    //    Play MP3 if sound toggle is true
+				try{
+			        var oSrc = oAudContx.createBufferSource();
+			        var volume = oAudContx.createGain();
+			        oSrc.buffer = aAudioBuffer[nSound];
+			        volume.gain.value = 0.0;
+			        oSrc.connect(volume);  
+			        volume.connect(oAudContx.destination);
+			        oSrc.connect(oAudContx.destination);
+			        volume.gain.value = 0.0;
+			        oSrc.start(oAudContx.currentTime);
+		 		}
+		 		catch( e ){}
+		};
 		$(document).ready(function(){
 			'use strict';
 			$(document).foundation();
