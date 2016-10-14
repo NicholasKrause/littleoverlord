@@ -157,7 +157,8 @@ Snark curated by an infinite number of monkeys
 							<section class="row">
 								<div id="js-cntnt--art__hom" class="column small-12">
 									<!--  content article begin  -->
-									<article class="ccard callout warning">
+									<article class="ccard callout warning" 
+									data-title_short="the_nxt_problem">
 										<h1  class="ccard-title">The NXT problem</h1>
 										<h2  class="ccard-subtitle">Trevor Goodchild | Oct 2016</h2>
 										<section class="row">
@@ -171,7 +172,8 @@ Snark curated by an infinite number of monkeys
 											</div>
 										</section>
 									</article>
-									<article class="ccard callout warning">
+									<article class="ccard callout warning"
+									data-title_short="big_trouble_little_china_game">
 										<h1  class="ccard-title">Big Trouble Little China Game</h1>
 										<h2  class="ccard-subtitle">Trevor Goodchild | Oct 2017</h2>
 										<section class="row">
@@ -180,7 +182,9 @@ Snark curated by an infinite number of monkeys
 													src="img/vid_1.png">
 											</div>
 											<div class="column small-12 medium-9">
-												<p class="ccard-summary">This just in!  Neo Studios has announced that it will be releasing a Big Trouble Little China Game exclusively on the Sinclair ZX81.  This is so exciting because it means that the same talent that brought you the Corvette guessing game and the Advance to Adventure bar trivia game will now use thier vast talent to make a game about truck drivers and Chinese black magic.  Yikes. </p>
+												<p class="ccard-summary">This just in!  Neo Studios has announced that it will be releasing a Big Trouble Little China Game exclusively on the Sinclair ZX81.  This is so exciting because it means that the same talent that brought you the Corvette guessing game and the Advance to Adventure bar trivia game will now use thier vast talent to make a game about truck drivers and Chinese black magic.  Yikes.
+
+												This just in!  Neo Studios has announced that it will be releasing a Big Trouble Little China Game exclusively on the Sinclair ZX81.  This is so exciting because it means that the same talent that brought you the Corvette guessing game and the Advance to Adventure bar trivia game will now use thier vast talent to make a game about truck drivers and Chinese black magic.  Yikes. </p>
 											</div>
 										</section>
 									</article>
@@ -192,7 +196,8 @@ Snark curated by an infinite number of monkeys
 							<section class="row">
 								<div id="js-cntnt--asd__hom" class="column small-12">
 									<!--  content aside   begin  -->
-									<aside class="ccard callout warning">
+									<aside class="ccard callout warning"
+									data-title_short="wiki_api">
 WIKI API
 									</aside>
 									<!--  content aside   end  -->
@@ -584,10 +589,11 @@ input:checked~.switch-paddle {
 </style>
 	<script>
 		'use strict';
+		var CnfState = {"hist": true};
 		var oAudContx = new AudioContext();    //    HTML5 Audio
 		var oAJAXReq = new XMLHttpRequest();   //    Get Sounds
-		var aAudioBuffer = new Array(10);      //    Store Sound files
-		var fetchSoundConfig = {sound_max: 10, sound_current: 1};    //    Sound limits
+		var aAudioBuffer = new Array(5);      //    Store Sound files
+		var fetchSoundConfig = {sound_max: 5, sound_current: 1};    //    Sound limits
 
 		fetchSound();
 
@@ -628,12 +634,15 @@ input:checked~.switch-paddle {
 		 		catch( e ){}
 		};
 		$(document).ready(function(){
+			
 			$(document).foundation();
+				history.replaceState({"uid_hash":"hom"}, document.location, "#hom");
+
 getContent();
 			// theme switch
 			$("#js-prinav-switch").on("change", function( e ){
 				if( $( this ).attr("data-theme") === "theme__day" ){
-					playAudioFile( 3 );
+					playAudioFile( 5 );
 					$( this ).attr("data-theme", "theme__night");
 				} else {
 					playAudioFile( 4 );
@@ -658,9 +667,17 @@ getContent();
 				$( "#js-"+$( this ).attr("data-prinv") ).removeClass("blind");
 			});
 			$(".ccard").on("click", function( e ){
-				playAudioFile( 2 );
-				$(".ccard").each(function(){ $( this ).removeClass("ccard__expand"); }); 
-				$( this ).addClass("ccard__expand");
+				if( !$( this ).hasClass("ccard__expand") ){
+					var sHash = makeId( $( this ).attr("data-title_short") );
+					playAudioFile( 3 );
+					$(".ccard").each(function(){ $( this ).removeClass("ccard__expand"); }); 
+					$( this ).addClass("ccard__expand");
+					if( !CnfState.hist ){
+						CnfState.hist = true;
+					}else{
+						history.pushState({"uid_hash":sHash}, sHash, "#" + sHash);
+					}
+				}
 			})
 			console.log("Dude, what up?  Nick the K. in da house!");
 		});
@@ -687,7 +704,7 @@ console.log( oArtc );
 } 
 function Artc(artc_type, title_short, pub_date, read_time, author, title_long, summary_quote, body_1, img_1_alt, img_1_src, img_1_title, body_2, img_2_alt, img_2_src, img_2_title, body_3, tags){
 	this.artc_type     = artc_type;
-	this.title_short   = title_short;
+	this.title_short   = title_short; // see fn makeId - must be unique within dom
 	this.pub_date      = pub_date;
 	this.read_time     = read_time;
 	this.author        = author;
@@ -703,6 +720,21 @@ function Artc(artc_type, title_short, pub_date, read_time, author, title_long, s
 	this.img_2_title   = img_2_title;
 	this.body_3        = body_3;
 	this.tags          = tags;
+}
+window.addEventListener("popstate", function( e ) {
+	if (typeof e.state.uid_hash !== "undefined") {
+		if( e.state.uid_hash === "hom" ){
+				$(".ccard").each(function(){ $( this ).removeClass("ccard__expand"); }); 
+		}else{
+			//if( !$( "[data-title_short='"+e.state.uid_hash +"']" ).hasClass("faq-panel__active") ){
+				CnfState.hist = false;
+				$(  "[data-title_short='"+e.state.uid_hash +"']"  ).click();	
+			//}
+		}	
+	}
+});
+function makeId( title_short ){
+	return title_short.toLowerCase().replace(/\W+/g,"-");
 }
 
 
