@@ -665,11 +665,26 @@ getContent();
 			console.log("Dude, what up?  Nick the K. in da house!");
 		});
 
+var artcs = new Artcs();
+
 function getContent(){
-alert("yikes 1");
-	$("#xxx").load("content/words-1.md");
+alert("yikes a");
+	//$("#xxx").load("content/words-1.md");
+	$.ajax({
+		url: "content/words-1.md",
+		context: document.body
+	}).done(function( data ) {
+console.log( data );
+		$( this ).addClass( "done" );
+	});
 }
-function artc(date, title_short, title_long, img, text, links, theme, tag, tags){
+function Artcs(){
+	this.aArtcs = [];
+	this.addArtc = function( oArtc ){
+		this.aArtcs.push( oArtc );
+	};
+}
+function Artc(date, title_short, title_long, img, text, links, theme, tag, tags){
 	this.date        = date;
 	this.title_short = title_short;
 	this.title_long  = title_long;
