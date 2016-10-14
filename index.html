@@ -671,31 +671,39 @@ function getContent(){
 alert("yikes a");
 	//$("#xxx").load("content/words-1.md");
 	$.ajax({
-		url: "content/words-1.md",
+		url: "content/wrd-1.md",
 		context: document.body
 	}).done(function( data ) {
 console.log( data );
-		$( this ).addClass( "done" );
+		artcs.addArtc( data );
 	});
 }
 function Artcs(){
 	this.aArtcs = [];
 	this.addArtc = function( oArtc ){
+console.log( oArtc );		
 		this.aArtcs.push( oArtc );
 	};
+} 
+function Artc(artc_type, title_short, pub_date, read_time, author, title_long, summary_quote, body_1, img_1_alt, img_1_src, img_1_title, body_2, img_2_alt, img_2_src, img_2_title, body_3, tags){
+	this.artc_type     = artc_type;
+	this.title_short   = title_short;
+	this.pub_date      = pub_date;
+	this.read_time     = read_time;
+	this.author        = author;
+	this.title_long    = title_long;
+	this.summary_quote = summary_quote;
+	this.body_1        = body_1;
+	this.img_1_alt     = img_1_alt;
+	this.img_1_src     = img_1_src;
+	this.img_1_title   = img_1_title;
+	this.body_2        = body_2;
+	this.img_2_alt     = img_2_alt;
+	this.img_2_src     = img_2_src;
+	this.img_2_title   = img_2_title;
+	this.body_3        = body_3;
+	this.tags          = tags;
 }
-function Artc(date, title_short, title_long, img, text, links, theme, tag, tags){
-	this.date        = date;
-	this.title_short = title_short;
-	this.title_long  = title_long;
-	this.img         = img;
-	this.text        = text;
-	this.links       = links;
-	this.theme       = theme;
-	this.tag         = tag;
-	this.tags        = tags;
-}
-
 
 
 	</script>
