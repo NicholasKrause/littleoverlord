@@ -630,7 +630,7 @@ input:checked~.switch-paddle {
 		var CnfState = {"hist": true};
 		var oAudContx = new AudioContext();    //    HTML5 Audio
 		var oAJAXReq = new XMLHttpRequest();   //    Get Sounds
-		var aAudioBuffer = new Array(5);      //    Store Sound files
+		var aAudioBuffer = new Array(5);       //    Store Sound files
 		var fetchSoundConfig = {sound_max: 5, sound_current: 1};    //    Sound limits
 
 		fetchSound();
@@ -692,7 +692,7 @@ input:checked~.switch-paddle {
 			// Hero Ani
 			new Vivus("svgLOL", {duration: 96}, function(){
 				$("#svgLgo").removeClass("blind");
-				new Vivus("svgLgo", {duration: 176}, function(){ moveHeroBg(); })
+				//new Vivus("svgLgo", {duration: 176}, function(){ moveHeroBg(); })
 			});
 			function moveHeroBg(){
 				var width = 2400, speed = 60, duration = width / speed,
@@ -721,16 +721,17 @@ input:checked~.switch-paddle {
 		});
 
 var artcs = new Artcs();
-var cnfGetCont = {"doc_types":["wrd","vid","pod"], "currentMD" : 1, "currentType": 0};
+var getContConfig = {"doc_types":["wrd","vid","pod"], "currentMD" : 1, "currentType": 0};
 function getContent(){
 	$.ajax({
-		url: "content/" + (cnfGetCont.doc_types[cnfGetCont.currentType]) + "-" + (cnfGetCont.currentMD++) + ".md",
+		url: "content/" + (getContConfig.doc_types[getContConfig.currentType]) + "-" + (getContConfig.currentMD++) + ".md",
 		statusCode: { 404: function() {
-			if( cnfGetCont.currentType !== cnfGetCont.doc_types.length ){
-				cnfGetCont.currentType++;
-				cnfGetCont.currentMD = 1;
+			if( getContConfig.currentType !== getContConfig.doc_types.length ){
+				getContConfig.currentType++;
+				getContConfig.currentMD = 1;
 				getContent(); // recur
 			}
+			//  nada mas
 		}}
 	}).done(function( data ) {
 		artcs.addArtc( data );
