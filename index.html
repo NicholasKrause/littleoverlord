@@ -636,9 +636,9 @@ input:checked~.switch-paddle {
 		$(document).ready(function(){
 			
 			$(document).foundation();
+				getContent();		
 				history.replaceState({"uid_hash":"hom"}, document.location, "#hom");
 
-getContent();
 			// theme switch
 			$("#js-prinav-switch").on("change", function( e ){
 				if( $( this ).attr("data-theme") === "theme__day" ){
@@ -683,22 +683,29 @@ getContent();
 		});
 
 var artcs = new Artcs();
-
+var cnfGetCont = {"doc_types":["wrd","vid","pod"], "currentMD" : 1, "currentType": 0};
 function getContent(){
-	//$("#xxx").load("content/words-1.md");
 	$.ajax({
-		url: "content/wrd-1.md",
-		context: document.body
+		url: "content/" + (cnfGetCont.doc_types[cnfGetCont.currentType]) + "-" + (cnfGetCont.currentMD++) + ".md",
+		statusCode: { 404: function() {
+			if( cnfGetCont.currentType !== cnfGetCont.doc_types.length ){
+				cnfGetCont.currentType++;
+				cnfGetCont.currentMD = 1;
+				getContent(); // recur
+			}
+		}}
 	}).done(function( data ) {
-console.log( data );
 		artcs.addArtc( data );
+		getContent(); // recur
 	});
 }
 function Artcs(){
-	this.aArtcs = [];
+	var aArtcs = [];
+	this.aArtcs = aArtcs;
 	this.addArtc = function( oArtc ){
-console.log( oArtc );		
+		
 		this.aArtcs.push( oArtc );
+console.log( aArtcs[ aArtcs.length-1] );		
 	};
 } 
 function Artc(artc_type, title_short, pub_date, read_time, author, title_long, summary_quote, body_1, img_1_alt, img_1_src, img_1_title, body_2, img_2_alt, img_2_src, img_2_title, body_3, tags){
