@@ -628,6 +628,7 @@ input:checked~.switch-paddle {
 	<script>
 		'use strict';
 		var CnfState = {"hist": true};
+/*		
 		var oAudContx = new AudioContext();    //    HTML5 Audio
 		var oAJAXReq = new XMLHttpRequest();   //    Get Sounds
 		var aAudioBuffer = new Array(5);       //    Store Sound files
@@ -655,10 +656,11 @@ input:checked~.switch-paddle {
 		        }
 		    });
 		};
- 
+ */
 		function playAudioFile( nSound ) {
 		    //    Play MP3 if sound toggle is true
 				try{
+/*
 			        var oSrc = oAudContx.createBufferSource();
 			        var volume = oAudContx.createGain();
 			        oSrc.buffer = aAudioBuffer[nSound];
@@ -668,6 +670,7 @@ input:checked~.switch-paddle {
 			        oSrc.connect(oAudContx.destination);
 			        volume.gain.value = 0.0;
 			        oSrc.start(oAudContx.currentTime);
+*/
 		 		}
 		 		catch( e ){}
 		};
