@@ -36,6 +36,285 @@ type="text/css">
 <link rel="stylesheet" href="https://vjs.zencdn.net/5.11.6/video-js.css"
 type="text/css">		
 <meta name="google-site-verification" content="dUgDRKt8aTN_LAm9oP28gPQCt7ssFgG0hVtsu3Ce6Yw" />
+<style>
+body.theme__night {
+	background-color: #917A56 !important;
+}
+.resp_full_height {height: 14px;} .resp_half_height {height: 8px;} .resp_qtr_height {height: 4px;}
+::selection {
+    background: #fff600;
+    color: #7D2A35;
+    text-shadow: none;
+}
+.ccard {
+	padding: 8 !important;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;	
+	border-radius: 6px 24px;
+	height: 256px;
+}
+
+.ccard__expand {
+	height: inherit !important;
+}
+.ccard__expand:hover {
+	cursor: default !important;
+}
+
+.theme__day .ccard {
+	border-color: #917A56;
+}
+.theme__night .ccard {
+	border-color: #7D2A35;
+}
+.ccard:hover { 
+	cursor: pointer;
+	border-color: #EE0000;
+ }
+.ccard:hover::before {
+    content:"";
+    position: absolute;
+    top: -96px; left: -96px;
+    background:#fff3d9 url("img/lol_hero_star_bg.png") no-repeat;
+    /*-webkit-animation: ccard_anim_bg 6s infinite;*/
+    animation: ccard_anim_bg 6s infinite;
+    width: 768px;
+    height: 768px;    
+    z-index:-1;
+}
+.ccard-title {
+	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1.2em;
+	font-weight: 500;
+	line-height: 1.5;
+	color: #7D2A35;
+	text-align: center;
+}
+.ccard-subtitle {
+	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: .8em;
+	font-weight: 300;
+	line-height: .8;
+	color: #7D2A35;
+	text-align: center;
+	margin-bottom: 12px;
+}
+.ccard-thn {
+	min-width: 192px;
+	height: auto;
+}
+.ccard-summary {
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 1.4em;
+	color: #222;
+}
+
+@keyframes ccard_anim_bg {
+    50% {transform: rotate(90deg);}
+}
+.theme__day footer p {
+	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: .8em;
+	font-weight: 500;
+	line-height: .9;
+	text-align: center;
+	color: #917A56;
+}
+.theme__night footer p {
+	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: .8em;
+	font-weight: 500;
+	line-height: .9;
+	text-align: center;
+	color: #FEFFC2;
+}
+
+.prinav {
+	overflow: hidden;
+}
+.prinav--nav {
+	overflow: hidden;
+	margin: 0 8vw !important;
+}
+.prinav--nav__hamb {
+	margin-top: 6px;
+}
+.prinav--ul {
+	list-style-type: none;
+}
+.prinav--li {
+	float: left;
+	margin: 6px 10px 14px 10px;
+	width: 6vw;
+}
+.prinav--li__long {
+	width: 8vw;
+}
+.theme__day .prinav--li p{
+	color: #B4BA6C;
+	margin: 0;
+}
+.theme__day .prinav--li p:hover{
+	color: #FEFFC2;
+}
+.theme__night .prinav--li p{
+	color: #FEFFC2;
+	margin: 0;
+}
+.theme__night .prinav--li p:hover{
+	color: #B4BA6C;
+}
+.theme__day .lftnav--li p{
+	color: #B4BA6C;
+	margin: 0;
+}
+.theme__day .lftnav--li p:hover{
+	color: #FEFFC2;
+}
+.theme__night .lftnav--li p{
+	color: #FEFFC2;
+	margin: 0;
+}
+.theme__night .lftnav--li p:hover{
+	color: #B4BA6C;
+}
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+	.prinav--li {
+		width: 10vw;
+	}
+	.prinav--li__long {
+		width: 12vw;
+	}
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
+
+}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+	.prinav--li {
+		width: 10vw;
+	}
+	.prinav--li__long {
+		width: 12vw;
+	}
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+
+}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+
+}
+
+table {width: 100%;}
+.theme__day hr { 
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(145, 122, 86, 1), rgba(0, 0, 0, 0));
+}
+.theme__night hr { 
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(254, 255, 194, 1), rgba(0, 0, 0, 0));
+}
+.theme__day .fa-brand {color: #B4BA6C;}
+.theme__day .fa-brand:hover {color: #FEFFC2;}
+
+.theme__night .fa-brand {color: #FEFFC2;}
+.theme__night .fa-brand:hover {color: #B4BA6C;}
+
+.hero--header {
+	height: 120px;
+	background: #7D2A35;
+	background-image: url( img/lol_hero_star_bg_1.png );
+	background-image: url( img/lol_hero_star_bg_1.png ), linear-gradient(#7D2A35, #ff0000);
+	padding-top: 10px;
+}
+.caption--p__roboto{
+	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: .9em;
+	font-weight: 500;
+	line-height: 1.5;
+}
+.caption--p__opensans{
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1.4em;
+	font-weight: 500;
+	line-height: 1.5;
+}
+.caption--p__righteous{
+	font-family: "Righteous", cursive;
+	font-size: 1.1em;
+	font-weight: 400;
+	line-height: 1.5;
+}
+.caption--p__pattaya{
+	font-family: "pattaya", cursive;
+	font-size: 1.4em;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+.color-text__black{color: #000;}
+.color-text__white{color: #FFF;}
+.color-back__black{background-color: #000;}
+.color-back__white{background-color: #FFF;}
+
+.color-text__lol1{color:#7D2A35;}
+.color-text__lol2{color:#EE0000;}
+.color-text__lol3{color:#917A56;}
+.color-text__lol4{color:#B4BA6C;}
+.color-text__lol5{color:#FEFFC2;}
+
+.color-back__lol01{background-color:#7D2A35;}
+.color-back__lol02{background-color:#EE0000;}
+.color-back__lol03{background-color:#917A56;}
+.color-back__lol04{background-color:#B4BA6C;}
+.color-back__lol05{background-color:#FEFFC2;}
+
+.resp_full_height {height: 14px;}
+.resp_full_height {height: 8px;}
+.no-padding {padding: 0 !important;}
+.blind {display: none;}
+</style>
+<style>
+/*Foundation overrides*/
+.theme__day .off-canvas-wrapper{
+	background-color: #7D2A35;
+}
+.theme__night .off-canvas-wrapper{
+	background-color: #917A56;
+}
+.theme__day .off-canvas{
+	background-color: #7D2A35;
+}
+.theme__night .off-canvas{
+	background-color: #917A56;
+}
+.theme__night .off-canvas-content {
+	background-color: #917A56;
+}
+.switch-paddle {
+	background-color: #917A56;
+}
+input:checked~.switch-paddle {
+    background: #7D2A35;
+}
+.title-bar {
+	background-color: #7D2A35;
+	height: 54px;
+}
+</style>
 	</head>
 	<body class="theme__day">
 
@@ -50,32 +329,32 @@ type="text/css">
 				<!-- Menu -->
 				<ul class="vertical menu">
 				    		<li class="lftnav--li">
-				    			<a class="prinav--a" href="#HOME" data-prinv="prinv_hom">
+				    			<a class="prinav--a" href="#hom" data-prinv="prinv_hom">
 				    				<p class="caption--p__righteous text-center">HOME</p>
 				    			</a>
 				     		</li>   			
 				    		<li class="lftnav--li">
-				    			<a class="prinav--a" href="#ABOUT" data-prinv="prinv_abt">
+				    			<a class="prinav--a" href="#abt" data-prinv="prinv_abt">
 				    				<p class="caption--p__righteous text-center">ABOUT</p>
 				    			</a>
 				     		</li>   			
 				    		<li class="lftnav--li">
-				    			<a class="prinav--a" href="#VIDEO" data-prinv="prinv_vid">
+				    			<a class="prinav--a" href="#vid" data-prinv="prinv_vid">
 				    				<p class="caption--p__righteous text-center">VIDEO</p>
 				    			</a>
 				     		</li>   			
 				    		<li class="lftnav--li">
-				    			<a class="prinav--a" href="#WORDS" data-prinv="prinv_wrd">
+				    			<a class="prinav--a" href="#wrd" data-prinv="prinv_wrd">
 				    				<p class="caption--p__righteous text-center">WORDS</p>
 				    			</a>
 				     		</li>   			
 				    		<li class="lftnav--li">
-				    			<a class="prinav--a" href="#PODCASTS" data-prinv="prinv_pod">
+				    			<a class="prinav--a" href="#pod" data-prinv="prinv_pod">
 				    				<p class="caption--p__righteous text-center">PODCASTS</p>
 				    			</a>
 				     		</li>   			
 				    		<li class="lftnav--li">
-				    			<a class="prinav--a" href="#CONTACT" data-prinv="prinv_cnt">
+				    			<a class="prinav--a" href="#cnt" data-prinv="prinv_cnt">
 				    				<p class="caption--p__righteous text-center">CONTACT</p>
 				    			</a>
 				    		</li>
@@ -116,32 +395,32 @@ Snark curated by an infinite number of monkeys
 				    <nav class="prinav--nav hide-for-small-only">
 				    	<ul class="prinav--ul">
 				    		<li class="prinav--li">
-				    			<a class="prinav--a" href="#HOME" data-prinv="prinv_hom">
+				    			<a class="prinav--a" href="#hom" data-prinv="prinv_hom">
 				    				<p class="caption--p__righteous">HOME</p>
 				    			</a>
 				     		</li>   			
 				    		<li class="prinav--li">
-				    			<a class="prinav--a" href="#ABOUT" data-prinv="prinv_abt">
+				    			<a class="prinav--a" href="#abt" data-prinv="prinv_abt">
 				    				<p class="caption--p__righteous">ABOUT</p>
 				    			</a>
 				     		</li>   			
 				    		<li class="prinav--li">
-				    			<a class="prinav--a" href="#VIDEO" data-prinv="prinv_vid">
+				    			<a class="prinav--a" href="#vid" data-prinv="prinv_vid">
 				    				<p class="caption--p__righteous">VIDEO</p>
 				    			</a>
 				     		</li>   			
 				    		<li class="prinav--li">
-				    			<a class="prinav--a" href="#WORDS" data-prinv="prinv_wrd">
+				    			<a class="prinav--a" href="#wrd" data-prinv="prinv_wrd">
 				    				<p class="caption--p__righteous">WORDS</p>
 				    			</a>
 				     		</li>   			
 				    		<li class="prinav--li__long prinav--li">
-				    			<a class="prinav--a" href="#PODCASTS" data-prinv="prinv_pod">
+				    			<a class="prinav--a" href="#pod" data-prinv="prinv_pod">
 				    				<p class="caption--p__righteous">PODCASTS</p>
 				    			</a>
 				     		</li>   			
 				    		<li class="prinav--li">
-				    			<a class="prinav--a" href="#CONTACT" data-prinv="prinv_cnt">
+				    			<a class="prinav--a" href="#cnt" data-prinv="prinv_cnt">
 				    				<p class="caption--p__righteous">CONTACT</p>
 				    			</a>
 				    		</li>
@@ -326,8 +605,8 @@ WIKI API
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.3.1/vivus.min.js"></script>
-<999 type="text/javascript" 999="https://vjs.zencdn.net/5.11.6/video.js"></999>
-<999 type="text/javascript" 999="js/skrollr.min.js"></999>
+<script type="text/javascript" src="https://vjs.zencdn.net/5.11.6/video.js"></script>
+<script type="text/javascript" src="js/skrollr.min.js"></script>
 <script type="text/javascript">
     //var s = skrollr.init({
     //render: function(data) {
@@ -335,307 +614,20 @@ WIKI API
     //}
     //});
 </script>
-<style>
-body.theme__night {
-	background-color: #917A56 !important;
-}
-.resp_full_height {height: 14px;} .resp_half_height {height: 8px;} .resp_qtr_height {height: 4px;}
-::selection {
-    background: #fff600;
-    color: #7D2A35;
-    text-shadow: none;
-}
-.ccard {
-	padding: 8 !important;
-	position: relative;
-	overflow: hidden;
-	z-index: 1;	
-	border-radius: 6px 24px;
-	height: 256px;
-}
-
-.ccard__expand {
-	height: inherit !important;
-}
-.ccard__expand:hover {
-	cursor: default !important;
-}
-	
-
-.theme__day .ccard {
-	border-color: #917A56;
-}
-
-.theme__night .ccard {
-	border-color: #7D2A35;
-}
-
-.ccard:hover { 
-	cursor: pointer;
-	border-color: #EE0000;
- }
-
-.ccard:hover::before {
-    content:"";
-    position: absolute;
-    top: -96px; left: -96px;
-    background:#fff3d9 url("img/lol_hero_star_bg.png") no-repeat;
-    /*-webkit-animation: ccard_anim_bg 6s infinite;*/
-    animation: ccard_anim_bg 6s infinite;
-    width: 768px;
-    height: 768px;    
-    z-index:-1;
-}
-.ccard-title {
-	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 1.2em;
-	font-weight: 500;
-	line-height: 1.5;
-	color: #7D2A35;
-	text-align: center;
-}
-.ccard-subtitle {
-	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: .8em;
-	font-weight: 300;
-	line-height: .8;
-	color: #7D2A35;
-	text-align: center;
-	margin-bottom: 12px;
-}
-.ccard-thn {
-	min-width: 192px;
-	height: auto;
-}
-.ccard-summary {
-	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 15px;
-	font-weight: normal;
-	line-height: 1.4em;
-	color: #222;
-}
-/*
-@-webkit-keyframes ccard_anim_bg {
-    1% {-webkit-transform: rotate(180deg);}
-}
-*/
-/* Standard syntax */
-@keyframes ccard_anim_bg {
-    50% {transform: rotate(90deg);}
-}
-.theme__day footer p {
-	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: .8em;
-	font-weight: 500;
-	line-height: .9;
-	text-align: center;
-	color: #917A56;
-}
-.theme__night footer p {
-	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: .8em;
-	font-weight: 500;
-	line-height: .9;
-	text-align: center;
-	color: #FEFFC2;
-}
-
-.prinav {
-	overflow: hidden;
-}
-.prinav--nav {
-	overflow: hidden;
-	margin: 0 8vw !important;
-}
-.prinav--nav__hamb {
-	margin-top: 6px;
-}
-.prinav--ul {
-	list-style-type: none;
-}
-.prinav--li {
-	float: left;
-	margin: 6px 10px 14px 10px;
-	width: 6vw;
-}
-.prinav--li__long {
-	width: 8vw;
-}
-.theme__day .prinav--li p{
-	color: #B4BA6C;
-	margin: 0;
-}
-.theme__day .prinav--li p:hover{
-	color: #FEFFC2;
-}
-.theme__night .prinav--li p{
-	color: #FEFFC2;
-	margin: 0;
-}
-.theme__night .prinav--li p:hover{
-	color: #B4BA6C;
-}
-.theme__day .lftnav--li p{
-	color: #B4BA6C;
-	margin: 0;
-}
-.theme__day .lftnav--li p:hover{
-	color: #FEFFC2;
-}
-.theme__night .lftnav--li p{
-	color: #FEFFC2;
-	margin: 0;
-}
-.theme__night .lftnav--li p:hover{
-	color: #B4BA6C;
-}
-/* Small only */
-@media screen and (max-width: 39.9375em) {
-	.prinav--li {
-		width: 10vw;
-	}
-	.prinav--li__long {
-		width: 12vw;
-	}
-}
-
-/* Medium and up */
-@media screen and (min-width: 40em) {
-
-}
-
-/* Medium only */
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
-	.prinav--li {
-		width: 10vw;
-	}
-	.prinav--li__long {
-		width: 12vw;
-	}
-}
-
-/* Large and up */
-@media screen and (min-width: 64em) {
-
-}
-
-/* Large only */
-@media screen and (min-width: 64em) and (max-width: 74.9375em) {
-
-}
-
-table {width: 100%;}
-.theme__day hr { 
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(145, 122, 86, 1), rgba(0, 0, 0, 0));
-}
-.theme__night hr { 
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(254, 255, 194, 1), rgba(0, 0, 0, 0));
-}
-
-.theme__day .fa-brand {color: #B4BA6C;}
-.theme__day .fa-brand:hover {color: #FEFFC2;}
-
-.theme__night .fa-brand {color: #FEFFC2;}
-.theme__night .fa-brand:hover {color: #B4BA6C;}
-
-.hero--header {
-	height: 120px;
-	background: #7D2A35;
-	background-image: url( img/lol_hero_star_bg_1.png );
-	background-image: url( img/lol_hero_star_bg_1.png ), linear-gradient(#7D2A35, #ff0000);
-	padding-top: 10px;
-}
-.caption--p__roboto{
-	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: .9em;
-	font-weight: 500;
-	line-height: 1.5;
-}
-.caption--p__opensans{
-	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 1.4em;
-	font-weight: 500;
-	line-height: 1.5;
-}
-.caption--p__righteous{
-	font-family: "Righteous", cursive;
-	font-size: 1.1em;
-	font-weight: 400;
-	line-height: 1.5;
-}
-.caption--p__pattaya{
-	font-family: "pattaya", cursive;
-	font-size: 1.4em;
-	font-weight: 400;
-	line-height: 1.5;
-}
-
-.color-text__black{color: #000;}
-.color-text__white{color: #FFF;}
-.color-back__black{background-color: #000;}
-.color-back__white{background-color: #FFF;}
-
-.color-text__lol1{color:#7D2A35;}
-.color-text__lol2{color:#EE0000;}
-.color-text__lol3{color:#917A56;}
-.color-text__lol4{color:#B4BA6C;}
-.color-text__lol5{color:#FEFFC2;}
-
-.color-back__lol01{background-color:#7D2A35;}
-.color-back__lol02{background-color:#EE0000;}
-.color-back__lol03{background-color:#917A56;}
-.color-back__lol04{background-color:#B4BA6C;}
-.color-back__lol05{background-color:#FEFFC2;}
-
-.resp_full_height {height: 14px;}
-.resp_full_height {height: 8px;}
-.no-padding {padding: 0 !important;}
-.blind {display: none;}
-</style>
-<style>
-/*Foundation overrides*/
-.theme__day .off-canvas-wrapper{
-	background-color: #7D2A35;
-}
-.theme__night .off-canvas-wrapper{
-	background-color: #917A56;
-}
-.theme__day .off-canvas{
-	background-color: #7D2A35;
-}
-.theme__night .off-canvas{
-	background-color: #917A56;
-}
-.theme__night .off-canvas-content {
-	background-color: #917A56;
-}
-.switch-paddle {
-	background-color: #917A56;
-}
-input:checked~.switch-paddle {
-    background: #7D2A35;
-}
-.title-bar {
-	background-color: #7D2A35;
-	height: 54px;
-}
-
-</style>
 	<script>
 		'use strict';
-		var CnfState = {"hist": true};
-/*		
-		var oAudContx = new AudioContext();    //    HTML5 Audio
-		var oAJAXReq = new XMLHttpRequest();   //    Get Sounds
-		var aAudioBuffer = new Array(5);       //    Store Sound files
-		var fetchSoundConfig = {sound_max: 5, sound_current: 1};    //    Sound limits
+		var CnfState = {"hist": true, "audio": false};
+		var AudioContext = window.AudioContext || false; // canIuse
 
-		fetchSound();
-
+		if (AudioContext) {
+			CnfState.audio = true;
+			var oAudContx = new AudioContext();    //    HTML5 Audio
+			var oAJAXReq = new XMLHttpRequest();   //    Get Sounds
+			var aAudioBuffer = new Array(5);       //    Store Sound files
+			var fetchSoundConfig = {sound_max: 5, sound_current: 1};    //    Sound limits
+			fetchSound();			
+		}
+		
 		function fetchSound(){
 		    //    AJAX a single sound binary
 		    oAJAXReq.open("GET", "au/s" + fetchSoundConfig.sound_current + ".mp3", true);
@@ -656,29 +648,30 @@ input:checked~.switch-paddle {
 		        }
 		    });
 		};
- */
+ 
 		function playAudioFile( nSound ) {
 		    //    Play MP3 if sound toggle is true
-				try{
-/*
-			        var oSrc = oAudContx.createBufferSource();
-			        var volume = oAudContx.createGain();
-			        oSrc.buffer = aAudioBuffer[nSound];
-			        volume.gain.value = 0.0;
-			        oSrc.connect(volume);  
-			        volume.connect(oAudContx.destination);
-			        oSrc.connect(oAudContx.destination);
-			        volume.gain.value = 0.0;
-			        oSrc.start(oAudContx.currentTime);
-*/
+		    	if( CnfState.audio === true ){
+					try{
+				        var oSrc = oAudContx.createBufferSource();
+				        var volume = oAudContx.createGain();
+				        oSrc.buffer = aAudioBuffer[nSound];
+				        volume.gain.value = 0.0;
+				        oSrc.connect(volume);  
+				        volume.connect(oAudContx.destination);
+				        oSrc.connect(oAudContx.destination);
+				        volume.gain.value = 0.0;
+				        oSrc.start(oAudContx.currentTime);
+			 		}
+			 		catch( e ){}
 		 		}
-		 		catch( e ){}
 		};
 		$(document).ready(function(){
 			
 			$(document).foundation();
-$('.prinav--nav__hamb').click(function(){ false });
-				getContent();		
+				getContent();
+				$('.prinav--nav__hamb').click(function(){ false }); // off-canvas hamb safari mobile hack
+		
 				history.replaceState({"uid_hash":"hom"}, document.location, "#hom");
 
 			// theme switch
@@ -694,12 +687,12 @@ $('.prinav--nav__hamb').click(function(){ false });
 			});
 			if( (Math.random()+.5|0) === 1 ) $("#js-theme--input").click();
 			// Hero Ani
-			//new Vivus("svgLOL", {duration: 96}, function(){
-				//$("#svgLgo").removeClass("blind");
-				//new Vivus("svgLgo", {duration: 176}, function(){ moveHeroBg(); });
-			//});
-$("#svgLgo").removeClass("blind");
-moveHeroBg();
+			new Vivus("svgLOL", {duration: 96}, function(){
+				$("#svgLgo").removeClass("blind");
+				new Vivus("svgLgo", {duration: 176}, function(){ moveHeroBg(); });
+			});
+//$("#svgLgo").removeClass("blind");
+//moveHeroBg();
 			function moveHeroBg(){
 				var width = 2400, speed = 60, duration = width / speed,
 				endPosition = width - (speed / 60);
@@ -788,7 +781,5 @@ window.addEventListener("popstate", function( e ) {
 function makeId( title_short ){
 	return title_short.toLowerCase().replace(/\W+/g,"-");
 }
-
-
 	</script>
 </html>
