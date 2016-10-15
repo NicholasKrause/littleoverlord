@@ -690,11 +690,12 @@ input:checked~.switch-paddle {
 			});
 			if( (Math.random()+.5|0) === 1 ) $("#js-theme--input").click();
 			// Hero Ani
-			new Vivus("svgLOL", {duration: 96}, function(){
-				$("#svgLgo").removeClass("blind");
+			//new Vivus("svgLOL", {duration: 96}, function(){
+				//$("#svgLgo").removeClass("blind");
 				//new Vivus("svgLgo", {duration: 176}, function(){ moveHeroBg(); });
+			//});
+$("#svgLgo").removeClass("blind");
 moveHeroBg();
-			});
 			function moveHeroBg(){
 				var width = 2400, speed = 60, duration = width / speed,
 				endPosition = width - (speed / 60);
