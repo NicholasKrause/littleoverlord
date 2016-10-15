@@ -1,0 +1,33 @@
+{
+	"article": [{
+		"title_short": "A Dog walks into a bar",
+		"title_long": "An introduction to the ZX81.",
+		"author": "Trevor C. Goodchild",
+		"read_time": "",
+		"pub_date": "7/4/1893",
+		"theme": "",
+		"summary_quote": "twas a dark and stormy knight",
+		"tags": [
+			"GAMES",
+			"WRESTLING",
+			"MOVIES",
+			"COMICS",
+			"GEAR"
+		],
+		"body_1": "",
+		"img_1": {
+			"alt": "",
+			"src": ""
+		},
+		"body_2": "",
+		"img_2": {
+			"alt": "",
+			"src": ""
+		},
+		"body_3": "",
+		"img_3": {
+			"alt": "",
+			"src": ""
+		}
+	}]
+}

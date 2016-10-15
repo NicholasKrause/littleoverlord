@@ -723,9 +723,9 @@ var artcs = new Artcs();
 var getContConfig = {"doc_types":["wrd","vid","pod"], "currentMD" : 1, "currentType": 0};
 function getContent(){
 	$.ajax({
-		url: "content/" + (getContConfig.doc_types[getContConfig.currentType]) + "-" + (getContConfig.currentMD++) + ".md",
+		url: "content/" + (getContConfig.doc_types[getContConfig.currentType]) + "-" + (getContConfig.currentMD++) + ".json",
 		statusCode: { 404: function() {
-			if( getContConfig.currentType !== getContConfig.doc_types.length ){
+			if( getContConfig.currentType !== getContConfig.doc_types.length -1 ){
 				getContConfig.currentType++;
 				getContConfig.currentMD = 1;
 				getContent(); // recur
