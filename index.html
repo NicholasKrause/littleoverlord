@@ -109,8 +109,8 @@ Snark curated by an infinite number of monkeys
 
 				<div data-sticky-container>
 				  <div class="prinav title-bar" data-sticky data-options="marginTop:0;stickyOn:small"
-				  style="width:100%" data-top-anchor="1">
-				  	<nav class="prinav--nav__hamb show-for-small-only" data-toggle="offCanvas">
+				  style="width:100%" data-top-anchor="1">			  	
+					  <nav class="prinav--nav__hamb show-for-small-only" data-toggle="offCanvas">
 				  		<p><i class="fa-brand fa fa-bars fa-2x"></i></p>
 				  	</nav>
 				    <nav class="prinav--nav hide-for-small-only">
@@ -677,6 +677,7 @@ input:checked~.switch-paddle {
 		$(document).ready(function(){
 			
 			$(document).foundation();
+$('.prinav--nav__hamb').click(function(){ false });
 				getContent();		
 				history.replaceState({"uid_hash":"hom"}, document.location, "#hom");
 
