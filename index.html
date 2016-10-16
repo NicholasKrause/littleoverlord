@@ -730,9 +730,12 @@ function getContent(){
 				getContConfig.currentType++;
 				getContConfig.currentMD = 1;
 				getContent(); // recur
+			}else{ //    nada mas
+				$("#js-cntnt--art__hom").append( artcs.render("hom") );
+				$("#js-cntnt--art__hom").append( artcs.render("wrd") );
+				$("#js-cntnt--art__hom").append( artcs.render("vid") );
+				$("#js-cntnt--art__hom").append( artcs.render("pod") );	
 			}
-			//    nada mas
-			artcs.render();
 		}}
 	}).done(function( axjsn ) {
 		artcs.addArtc( (getContConfig.doc_types[getContConfig.currentType]), axjsn );
@@ -746,10 +749,21 @@ function Artcs(){
 		this.aArtcs.push( new Artc( artc_type, jsnArtc.article[0] ) );
 	};
 	this.render = function( artc_type ){
-		aArtcs.forEach(function(artc, index) {
-console.log(index);
-console.log(artc.artc_type);
+		var aArtcsFtl = aArtcs.filter( isArtc_type );
+		function isArtc_type(value, index, ar){ // filter new arr
+			if( artc_type === "hom" ){
+
+			}else{
+				if( value.artc_type === artc_type ){ //    wrd, vid or pod
+					return true;
+				}
+				return false;
+			}
+		}		
+		aArtcsFtl.forEach(function(artc, index) {
+
 		});
+return "<p>"+artc_type+"</p>";
 	}
 } 
 function Artc(artc_type, json){
@@ -773,7 +787,6 @@ function Artc(artc_type, json){
 	this.body_3           = json.body_3;
 	this.tags             = json.tags;
 	this.isHom            = false;    //  Is on the home page
-console.log( this );
 }
 //    History
 window.addEventListener("popstate", function( e ) {
