@@ -576,23 +576,6 @@ WIKI API
 			</div>
 		</section>
 	</article>
-	this.artc_type     = artc_type;
-	this.title_short   = title_short; // see fn makeId - must be unique within dom
-	this.pub_date      = pub_date;
-	this.read_time     = read_time;
-	this.author        = author;
-	this.title_long    = title_long;
-	this.summary_quote = summary_quote;
-	this.body_1        = body_1;
-	this.img_1_alt     = img_1_alt;
-	this.img_1_src     = img_1_src;
-	this.img_1_title   = img_1_title;
-	this.body_2        = body_2;
-	this.img_2_alt     = img_2_alt;
-	this.img_2_src     = img_2_src;
-	this.img_2_title   = img_2_title;
-	this.body_3        = body_3;
-	this.tags          = tags;
 </template>
 			</div>
 		</div>
@@ -749,6 +732,7 @@ function Artcs(){
 		this.aArtcs.push( new Artc( artc_type, jsnArtc.article[0] ) );
 	};
 	this.render = function( artc_type ){
+		var sMU = "";
 		var aArtcsFtl = aArtcs.filter( isArtc_type );
 		function isArtc_type(value, index, ar){ // filter new arr
 			if( artc_type === "hom" ){
@@ -761,9 +745,15 @@ function Artcs(){
 			}
 		}		
 		aArtcsFtl.forEach(function(artc, index) {
+			var aCcard =[];
+				var oTok = new Object();
+				oTok.target = "title_short";
+				oTok.source = artc.title_short;
+				aCcard.push( oTok );
+			sMU += popuTemplate("templ_ccard", aCcard);
 
 		});
-return "<p>"+artc_type+"</p>";
+return sMU;
 	}
 } 
 function Artc(artc_type, json){
