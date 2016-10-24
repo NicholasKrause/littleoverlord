@@ -469,7 +469,7 @@ Snark curated by an infinite number of monkeys
 													src="img/vid_1.png">
 											</div>
 											<div class="column small-12 medium-9">
-												<p class="ccard-summary">This just in!  Neo Studios has announced that it will be releasing a Big Trouble Little China Game exclusively on the Sinclair ZX81.  This is so exciting because it means that the same talent that brought you the Corvette guessing game and the Advance to Adventure bar trivia game will now use thier vast talent to make a game about truck drivers and Chinese black magic.  Yikes. </p>
+												<p class="ccard-summary">This just in! Neo Studios has announced that it will be releasing a Big Trouble Little China Game exclusively on the Sinclair ZX81.  This is so exciting because it means that the same talent that brought you the Corvette guessing game and the Advance to Adventure bar trivia game will now use thier vast talent to make a game about truck drivers and Chinese black magic.  Yikes.</p>
 											</div>
 										</section>
 									</article>
@@ -494,41 +494,112 @@ WIKI API
 				<section id="js-prinv_abt" class="content-section blind">
 					<h1 class="text-center caption--p__pattaya">About</h1>
 					<section class="row">
-						<div class="column small-12 medium-9">
+						<div class="column small-12 medium-12 large-9">
+							<section class="row">
+								<div id="js-cntnt--art__abt" class="column small-12">
+									<!--  content article begin  -->
+									<!--  content article end  -->
+								</div>
+							</section>
+						</div>
+						<div class="column small-12 medium-12 large-3">
+							<section class="row">
+								<div id="js-cntnt--asd__abt" class="column small-12">
+									<!--  content aside   begin  -->
+									<!--  content aside   end  -->
+								</div>
+							</section>
 						</div>
 					</section>
 				</section>
 				<section id="js-prinv_vid" class="content-section blind">
 					<h1 class="text-center caption--p__pattaya">Video</h1>
 					<section class="row">
-						<div class="column small-12 medium-9">
+						<div class="column small-12 medium-12 large-9">
+							<section class="row">
+								<div id="js-cntnt--art__vid" class="column small-12">
+									<!--  content article begin  -->
+									<!--  content article end  -->
+								</div>
+							</section>
+						</div>
+						<div class="column small-12 medium-12 large-3">
+							<section class="row">
+								<div id="js-cntnt--asd__vid" class="column small-12">
+									<!--  content aside   begin  -->
+									<!--  content aside   end  -->
+								</div>
+							</section>
 						</div>
 					</section>
 				</section>
 				<section id="js-prinv_wrd" class="content-section blind">
 					<h1 class="text-center caption--p__pattaya">Words</h1>
 					<section class="row">
-						<div class="column small-12 medium-9">
+						<div class="column small-12 medium-12 large-9">
+							<section class="row">
+								<div id="js-cntnt--art__wrd" class="column small-12">
+									<!--  content article begin  -->
+									<!--  content article end  -->
+								</div>
+							</section>
+						</div>
+						<div class="column small-12 medium-12 large-3">
+							<section class="row">
+								<div id="js-cntnt--asd__wrd" class="column small-12">
+									<!--  content aside   begin  -->
+									<!--  content aside   end  -->
+								</div>
+							</section>
 						</div>
 					</section>
 				</section>
 				<section id="js-prinv_pod" class="content-section blind">
 					<h1 class="text-center caption--p__pattaya">Podcasts</h1>
 					<section class="row">
-						<div class="column small-12 medium-9">
+						<div class="column small-12 medium-12 large-9">
+							<section class="row">
+								<div id="js-cntnt--art__pod" class="column small-12">
+									<!--  content article begin  -->
+									<!--  content article end  -->
+								</div>
+							</section>
+						</div>
+						<div class="column small-12 medium-12 large-3">
+							<section class="row">
+								<div id="js-cntnt--asd__pod" class="column small-12">
+									<!--  content aside   begin  -->
+									<!--  content aside   end  -->
+								</div>
+							</section>
 						</div>
 					</section>
 				</section>
 				<section id="js-prinv_cnt" class="content-section blind">
 					<h1 class="text-center caption--p__pattaya">Contact</h1>
 					<section class="row">
-						<div class="column small-12 medium-9">
+						<div class="column small-12 medium-12 large-9">
+							<section class="row">
+								<div id="js-cntnt--art__cnt" class="column small-12">
+									<!--  content article begin  -->
+									<!--  content article end  -->
+								</div>
+							</section>
+						</div>
+						<div class="column small-12 medium-12 large-3">
+							<section class="row">
+								<div id="js-cntnt--asd__cnt" class="column small-12">
+									<!--  content aside   begin  -->
 <a href="contact.vcf">
 	<img src="img/qr.png">
-</a>
+</a>									
+									<!--  content aside   end  -->
+								</div>
+							</section>
 						</div>
 					</section>
 				</section>
+
 
 <span class="label color-back__lol01">#7D2A35</span>
 <span class="label color-back__lol02">#EE0000</span>
@@ -603,7 +674,7 @@ WIKI API
 		var AudioContext = window.AudioContext || false; // canIuse
 
 		if (AudioContext) {
-			CnfState.audio = true;
+			CnfState.audio = true;    //    Icanuse
 			var oAudContx = new AudioContext();    //    HTML5 Audio
 			var oAJAXReq = new XMLHttpRequest();   //    Get Sounds
 			var aAudioBuffer = new Array(5);       //    Store Sound files
@@ -685,26 +756,36 @@ WIKI API
 				playAudioFile( 1 );
 				$(".content-section").addClass("blind");
 				$( "#js-"+$( this ).attr("data-prinv") ).removeClass("blind");
-			});
-			//    Card Artc Click
-			$(".ccard").on("click", function( e ){
-				if( !$( this ).hasClass("ccard__expand") ){
-					var sHash = makeId( $( this ).attr("data-title_short") );
-					playAudioFile( 3 );
-					$(".ccard").each(function(){ $( this ).removeClass("ccard__expand"); }); 
-					$( this ).addClass("ccard__expand");
-					if( !CnfState.hist ){
-						CnfState.hist = true;
-					}else{
-						history.pushState({"uid_hash":sHash}, sHash, "#" + sHash);
-					}
+				if( !CnfState.hist ){
+					CnfState.hist = true;
+				}else{
+					sHash = $( this ).attr("data-prinv");
+					history.pushState({"uid_prinv":sHash}, sHash, "#" + sHash);
 				}
-			})
-			console.log("Dude, what up?  Nick da K in da house!");
+			});
 		});
+//    We've loaded the content, let us bind
+function postContent(){
+	//    Card Artc Click
+	$(".ccard").on("click", function( e ){
+		if( !$( this ).hasClass("ccard__expand") ){
+			var sHash = makeId( $( this ).attr("data-title_short") );
+			playAudioFile( 3 );
+			$(".ccard").each(function(){ $( this ).removeClass("ccard__expand"); }); 
+			$( this ).addClass("ccard__expand");
+			if( !CnfState.hist ){
+				CnfState.hist = true;
+			}else{
+				history.pushState({"uid_hash":sHash}, sHash, "#" + sHash);
+			}
+		}
+	})
+	console.log("Dude, what up?  Nick da K in da house!");
+}
 //    Content fetch and render
 var artcs = new Artcs(); 
 var getContConfig = {"doc_types":["wrd","vid","pod"], "currentMD": 1, "currentType": 0};
+
 function getContent(){
 	$.ajax({
 		url: "content/" + (getContConfig.doc_types[getContConfig.currentType]) + "-" + (getContConfig.currentMD++) + ".json",
@@ -715,9 +796,10 @@ function getContent(){
 				getContent(); // recur
 			}else{ //    nada mas
 				$("#js-cntnt--art__hom").append( artcs.render("hom") );
-				$("#js-cntnt--art__hom").append( artcs.render("wrd") );
-				$("#js-cntnt--art__hom").append( artcs.render("vid") );
-				$("#js-cntnt--art__hom").append( artcs.render("pod") );	
+				$("#js-cntnt--art__wrd").append( artcs.render("wrd") );
+				$("#js-cntnt--art__vid").append( artcs.render("vid") );
+				$("#js-cntnt--art__pod").append( artcs.render("pod") );
+				postContent();  // bind
 			}
 		}}
 	}).done(function( axjsn ) {
@@ -753,11 +835,10 @@ function Artcs(){
 			sMU += popuTemplate("templ_ccard", aCcard);
 
 		});
-return sMU;
+		return sMU;
 	}
 } 
 function Artc(artc_type, json){
-//function Artc(artc_type, title_short, pub_date, read_time, author, title_long, summary_quote, body_1, img_1_alt, img_1_src, img_1_title, body_2, img_2_alt, img_2_src, img_2_title, body_3, tags){
 	this.artc_type        = artc_type;    //  wrd, vid, pod
 	this.title_short      = json.title_short; // see fn makeId - must be unique within dom
 	this.title_short_id   = makeId( this.title_short );
@@ -805,7 +886,7 @@ function popuTemplate( sTemplate_id, aContents ){
 		var $oTempl = $("#" + sTemplate_id);
 		var sMUout = ""; //  Might contain more than one template html
 		var sMUprc = $oTempl.html(); // In process string
-		for(var iC=0; iC < aContents.length; iC++){		
+		for( var iC=0; iC < aContents.length; iC++ ){		
 			if( sMUprc.indexOf("|") <= 0){
 				sMUout += sMUprc;
 				sMUprc = $oTempl.html();
@@ -813,7 +894,6 @@ function popuTemplate( sTemplate_id, aContents ){
 			sMUprc = sMUprc.replace(("|"+aContents[iC].target+"|"), aContents[iC].source);
 		}
 		sMUout += sMUprc;
-console.log( sMUprc );
 		return sMUout;
 	}else{
 		return "";
