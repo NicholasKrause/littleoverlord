@@ -670,7 +670,7 @@ WIKI API
 </script>
 	<script>
 		'use strict';
-		var CnfState = {"hist": true, "audio": false};
+		var CnfState = {"hist": true, "audio": false, "prinv": "prinv_hom"};
 		var AudioContext = window.AudioContext || false; // canIuse
 
 		if (AudioContext) {
@@ -727,7 +727,7 @@ WIKI API
 
 				$('.prinav--nav__hamb').click(function(){ false }); // off-canvas hamb safari mobile hack
 		
-				history.replaceState({"uid_hash":"hom"}, document.location, "#hom");
+				history.replaceState({"uid_hash":"prinv_hom"}, document.location, "#prinv_hom");
 
 			//    theme switch
 			$("#js-prinav-switch").on("change", function( e ){
@@ -755,12 +755,15 @@ WIKI API
 			$(".prinav--a").on("click", function( e ){
 				playAudioFile( 1 );
 				$(".content-section").addClass("blind");
-				$( "#js-"+$( this ).attr("data-prinv") ).removeClass("blind");
+				CnfState.prinv = $( this ).attr("data-prinv");				
+				$( "#js-" + CnfState.prinv ).removeClass("blind");
+
+//WHAT!
 				if( !CnfState.hist ){
 					CnfState.hist = true;
 				}else{
-					sHash = $( this ).attr("data-prinv");
-					history.pushState({"uid_prinv":sHash}, sHash, "#" + sHash);
+					sHash = makeId( $( this ).attr("data-title_short") );
+					history.pushState({"uid_prinv":sHash, "prinv": CnfState.prinv }, sHash, "#" + sHash);
 				}
 			});
 		});
@@ -776,7 +779,7 @@ function postContent(){
 			if( !CnfState.hist ){
 				CnfState.hist = true;
 			}else{
-				history.pushState({"uid_hash":sHash}, sHash, "#" + sHash);
+				history.pushState({"uid_hash":sHash, "prinv": CnfState.prinv }, sHash, "#" + sHash);
 			}
 		}
 	})
@@ -862,11 +865,14 @@ function Artc(artc_type, json){
 //    History
 window.addEventListener("popstate", function( e ) {
 	if (typeof e.state.uid_hash !== "undefined") {
-		if( e.state.uid_hash === "hom" ){
+		if( e.state.uid_hash === "prinv_hom" ){
 				$(".ccard").each(function(){ $( this ).removeClass("ccard__expand"); }); 
 		}else{
 			//if( !$( "[data-title_short='"+e.state.uid_hash +"']" ).hasClass("faq-panel__active") ){
 				CnfState.hist = false;
+				if( e.state.prinv !== CnfState.prinv ){
+					$("[data-prinv='prinv_abt']").click();
+				}
 				$(  "[data-title_short='"+e.state.uid_hash +"']"  ).click();	
 			//}
 		}	
