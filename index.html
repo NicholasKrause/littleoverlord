@@ -608,13 +608,12 @@ WIKI API
 <span class="label color-back__lol05">#FEFFC2</span>
 
 <section class="row"><div class="column small-12"><hr></div></section>
-<section class="row"><div class="column small-12"><hr></div></section>
-<section class="row"><div class="column small-12"><hr></div></section>
+
 				<footer class="row">
 					<section class="row"><div class="column small-12"><hr></div></section>
 					<div class="column small-9">
 						<p class="caption--p__roboto text-center">
-(c)2010-2016 Little OverLord, LLC.  All rights reserved.
+(c)2010-<span id="year-c">2017</span> Little OverLord, LLC.  All rights reserved.
 						</p>
 					</div>
 					<div class="column small-2">
@@ -641,9 +640,20 @@ WIKI API
 			<div class="column small-12 medium-3 text-center">
 				<img class="ccard-thn" 
 					src="img/vid_1.png">
+				<hr>
+				<p class="caption--p__pattaya color-text__lol3 text-center">|summary_quote|
+				</p>
+				<hr>					
 			</div>
 			<div class="column small-12 medium-9">
-				<p class="ccard-summary">||</p>
+				<p class="ccard-summary">|body_1|</p>
+				<figure class="text-center"><img src="|img_1_src|" alt="|img_1_alt|"></figure>
+				<p class="ccard-summary">|body_2|</p>
+				<figure class="text-center"><img src="|img_2_src|" alt="|img_2_alt|"></figure>
+				<p class="ccard-summary">|body_3|</p>
+				<figure class="text-center"><img src="|img_3_src|" alt="|img_3_alt|"></figure>
+				<p class="ccard-summary">|body_4|</p>
+				<figure class="text-center"><img src="|img_4_src|" alt="|img_4_alt|"></figure>
 			</div>
 		</section>
 	</article>
@@ -828,13 +838,32 @@ function Artcs(){
 				}
 				return false;
 			}
-		}		
+		}
+
 		aArtcsFtl.forEach(function(artc, index) {
+console.log( "source | " + artc.title_short );			
 			var aCcard =[];
-				var oTok = new Object();
-				oTok.target = "title_short";
-				oTok.source = artc.title_short;
-				aCcard.push( oTok );
+				aCcard.push( {"target": "title_short", "source": artc.title_short} );
+				aCcard.push( {"target": "author", "source": artc.author} );
+				aCcard.push( {"target": "read_time", "source": artc.read_time} );
+				aCcard.push( {"target": "pub_date", "source": artc.pub_date} );
+				aCcard.push( {"target": "summary_quote", "source": artc.summary_quote} );
+				aCcard.push( {"target": "body_1", "source": artc.body_1} );
+console.log( artc );
+				
+				aCcard.push( {"target": "img_1_src", "source": artc.img_1_src} );
+				aCcard.push( {"target": "img_1_alt", "source": artc.img_1_alt} );
+
+				aCcard.push( {"target": "body_2", "source": artc.body_2} );
+				aCcard.push( {"target": "img_2_src", "source": artc.img_2_src} );
+				aCcard.push( {"target": "img_2_alt", "source": artc.img_2_alt} );
+				aCcard.push( {"target": "body_3", "source": artc.body_3} );
+				aCcard.push( {"target": "img_3_src", "source": artc.img_3_src} );
+				aCcard.push( {"target": "img_3_alt", "source": artc.img_3_alt} );
+				aCcard.push( {"target": "body_4", "source": artc.body_4} );
+				aCcard.push( {"target": "img_4_src", "source": artc.img_4_src} );
+				aCcard.push( {"target": "img_4_alt", "source": artc.img_4_alt} );
+
 			sMU += popuTemplate("templ_ccard", aCcard);
 
 		});
@@ -851,14 +880,17 @@ function Artc(artc_type, json){
 	this.title_long       = json.title_long;
 	this.summary_quote    = json.summary_quote;
 	this.body_1           = json.body_1;
-	this.img_1_alt        = json.img_1_alt;
-	this.img_1_src        = json.img_1_src;
-	this.img_1_title      = json.img_1_title;
+	this.img_1_alt        = json.img_1.alt;
+	this.img_1_src        = json.img_1.src;
 	this.body_2           = json.body_2;
-	this.img_2_alt        = json.img_2_alt;
-	this.img_2_src        = json.img_2_src;
-	this.img_2_title      = json.img_2_title;
+	this.img_2_alt        = json.img_2.alt;
+	this.img_2_src        = json.img_2.src;
 	this.body_3           = json.body_3;
+	this.img_3_alt        = json.img_3.alt;
+	this.img_3_src        = json.img_3.src;
+	this.body_4           = json.body_4;
+	this.img_4_alt        = json.img_4.alt;
+	this.img_4_src        = json.img_4.src;
 	this.tags             = json.tags;
 	this.isHom            = false;    //  Is on the home page
 }

@@ -3,7 +3,7 @@
 		"title_short": "A Dog walks into a bar",
 		"title_long": "An introduction to the ZX81.",
 		"author": "Trevor C. Goodchild",
-		"read_time": "",
+		"read_time": "3 min read",
 		"pub_date": "7/4/1893",
 		"theme": "",
 		"summary_quote": "twas a dark and stormy knight",
@@ -26,6 +26,11 @@
 		},
 		"body_3": "",
 		"img_3": {
+			"alt": "",
+			"src": ""
+		},
+		"body_4": "",
+		"img_4": {
 			"alt": "",
 			"src": ""
 		}
