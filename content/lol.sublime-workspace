@@ -96,20 +96,37 @@
 	"buffers":
 	[
 		{
-			"file": "/C/neo/neos_proj/2016/is-ecom-labs/faq.html",
+			"file": "/C/neo/neos_proj/2016/littleoverlord/index.html",
 			"settings":
 			{
-				"buffer_size": 48269,
+				"buffer_size": 51460,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/neo/neos_proj/2016/littleoverlord/index.html",
+			"file": "/C/neo/neos_proj/2016/is-ecom-labs/faq-modal.html",
 			"settings":
 			{
-				"buffer_size": 49356,
+				"buffer_size": 20220,
 				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/neo/neos_proj/2016/is-ecom-labs/faq.html",
+			"settings":
+			{
+				"buffer_size": 48656,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/neo/neos_proj/2016/neos_ux_cookbook/ever-present-living-style-guide/ext/scott_c_krause/ever_present_living_style_guide.html",
+			"settings":
+			{
+				"buffer_size": 1742,
 				"line_ending": "Windows"
 			}
 		},
@@ -122,10 +139,11 @@
 			}
 		},
 		{
-			"file": "/C/neo/neos_proj/2016/neos_ux_cookbook/ever-present-living-style-guide/ext/scott_c_krause/ever_present_living_style_guide.html",
+			"file": "/C/neo/neos_proj/2016/is-ecom-labs/index.html",
 			"settings":
 			{
-				"buffer_size": 1742,
+				"buffer_size": 11572,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
@@ -158,7 +176,8 @@
 			"file": "wrd-1.json",
 			"settings":
 			{
-				"buffer_size": 523,
+				"buffer_size": 3514,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
@@ -166,7 +185,7 @@
 			"file": "wrd-2.json",
 			"settings":
 			{
-				"buffer_size": 2484,
+				"buffer_size": 2762,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -175,7 +194,8 @@
 			"file": "vid-1.json",
 			"settings":
 			{
-				"buffer_size": 523,
+				"buffer_size": 594,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
@@ -183,7 +203,8 @@
 			"file": "vid-2.json",
 			"settings":
 			{
-				"buffer_size": 523,
+				"buffer_size": 594,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
@@ -191,7 +212,8 @@
 			"file": "pod-1.json",
 			"settings":
 			{
-				"buffer_size": 523,
+				"buffer_size": 594,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
@@ -199,7 +221,8 @@
 			"file": "pod-2.json",
 			"settings":
 			{
-				"buffer_size": 523,
+				"buffer_size": 3035,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		}
@@ -274,6 +297,50 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"'",
+			"hamb",
+			"close-bu",
+			"hamb",
+			"<h1 class=\"",
+			"<h1 class",
+			"<h1 class=",
+			"<h1 class=\"",
+			"<h1 class=",
+			"<h1 class=\"",
+			"caption--h1__pattaya",
+			"caption--p__pattaya",
+			"’",
+			"*",
+			"img src",
+			"src",
+			".alt",
+			".src",
+			".alt",
+			".src",
+			"mg_2",
+			"_src",
+			"_src ",
+			"_alt",
+			"getContent",
+			"_1",
+			"src",
+			"body",
+			"_1",
+			"2016",
+			"summary_quote",
+			"pub_date",
+			"author",
+			":hover",
+			"faq-icon\"",
+			"faq-icon",
+			"faq-panel__contact",
+			"panel__contact",
+			"brand_lsc",
+			"22",
+			"faq_ansr",
+			"box-",
+			"\"body\" ",
+			"brand_lsc",
 			".brand_lsc ",
 			"btn-brand",
 			"resp_btn_teal",
@@ -357,51 +424,7 @@
 			"ccard__expand",
 			"height",
 			"fetchSoundConfig",
-			"oTabContent",
-			"au/",
-			"Au",
-			"au",
-			"playAudioFile",
-			"proto_sms_lsc_1_files",
-			"playAudioFile",
-			"sHash",
-			"history",
-			"replaceState",
-			"CnfState",
-			"CnfState.hist",
-			"js-no-hist",
-			"js-no-hist\"",
-			"ccard__expand",
-			"summary",
-			"ccard-summary",
-			"subtitle",
-			"Open Sans",
-			"p__rocksalt",
-			"Salt",
-			"salt",
-			"Salt",
-			"’",
-			"ccard-subtitle",
-			"EDBA08",
-			"ccard-subtitle",
-			"text-center",
-			"caption--p__pattaya",
-			"article",
-			"1",
-			"-4",
-			"0%",
-			"90",
-			"important",
-			"px",
-			"50",
-			"mymove",
-			"768px",
-			";",
-			"ccard",
-			"hero--header",
-			"star",
-			"ccard",
-			".off-canvas "
+			"oTabContent"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -424,11 +447,75 @@
 			[
 				{
 					"buffer": 0,
+					"file": "/C/neo/neos_proj/2016/littleoverlord/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 51460,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								44009,
+								44009
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 32834.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "/C/neo/neos_proj/2016/is-ecom-labs/faq-modal.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 20220,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								84,
+								84
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
 					"file": "/C/neo/neos_proj/2016/is-ecom-labs/faq.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 48269,
+						"buffer_size": 48656,
 						"regions":
 						{
 							"bookmarks":
@@ -438,8 +525,8 @@
 								"regions":
 								[
 									[
-										5631,
-										5631
+										5875,
+										5875
 									]
 								],
 								"scope": "bookmarks"
@@ -448,12 +535,8 @@
 						"selection":
 						[
 							[
-								1609,
-								1609
-							],
-							[
-								1717,
-								1717
+								42403,
+								42403
 							]
 						],
 						"settings":
@@ -462,27 +545,27 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 726.0,
+						"translation.y": 1437888.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "/C/neo/neos_proj/2016/littleoverlord/index.html",
+					"buffer": 3,
+					"file": "/C/neo/neos_proj/2016/neos_ux_cookbook/ever-present-living-style-guide/ext/scott_c_krause/ever_present_living_style_guide.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 49356,
+						"buffer_size": 1742,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								48440,
-								48440
+								334,
+								334
 							]
 						],
 						"settings":
@@ -491,14 +574,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 38515.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 4,
 					"file": "/C/neo/neos_proj/2016/littleoverlord/img/lol_lgo_brand-01.svg",
 					"semi_transient": false,
 					"settings":
@@ -523,24 +606,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "/C/neo/neos_proj/2016/neos_ux_cookbook/ever-present-living-style-guide/ext/scott_c_krause/ever_present_living_style_guide.html",
+					"buffer": 5,
+					"file": "/C/neo/neos_proj/2016/is-ecom-labs/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1742,
+						"buffer_size": 11572,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								623,
-								623
+								163,
+								163
 							]
 						],
 						"settings":
@@ -552,17 +635,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 11,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
+				},
 				{
-					"buffer": 4,
+					"buffer": 6,
 					"file": "/C/neo/neos_proj/2016/neos_ux_cookbook/ever-present-living-style-guide/ext/scott_c_krause/js/oscillation-overthruster.js",
 					"semi_transient": false,
 					"settings":
@@ -574,8 +651,8 @@
 						"selection":
 						[
 							[
-								5506,
-								5506
+								5457,
+								5457
 							]
 						],
 						"settings":
@@ -585,14 +662,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3474.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 7,
 					"file": "/C/neo/neos_proj/2016/neos_ux_cookbook/ever-present-living-style-guide/ext/scott_c_krause/oscillation-overthruster.html",
 					"semi_transient": false,
 					"settings":
@@ -604,8 +681,8 @@
 						"selection":
 						[
 							[
-								13825,
-								13826
+								1186,
+								1186
 							]
 						],
 						"settings":
@@ -614,14 +691,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 13536.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 12,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 8,
 					"file": "/C/neo/neos_proj/2016/short_message_service/proto/proto_sms_lsc_1.html",
 					"semi_transient": false,
 					"settings":
@@ -633,8 +710,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								4125,
+								4125
 							]
 						],
 						"settings":
@@ -643,10 +720,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3318.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 13,
 					"type": "text"
 				}
 			]
@@ -656,20 +733,20 @@
 			"sheets":
 			[
 				{
-					"buffer": 7,
+					"buffer": 9,
 					"file": "wrd-1.json",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 523,
+						"buffer_size": 3514,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								425,
-								425
+								3024,
+								3024
 							]
 						],
 						"settings":
@@ -677,28 +754,28 @@
 							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.x": 12672.0,
+						"translation.y": 324.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 10,
 					"file": "wrd-2.json",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2484,
+						"buffer_size": 2762,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								366,
-								366
+								2681,
+								2681
 							]
 						],
 						"settings":
@@ -707,27 +784,27 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 216.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 11,
 					"file": "vid-1.json",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 523,
+						"buffer_size": 594,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								588,
+								588
 							]
 						],
 						"settings":
@@ -739,82 +816,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "vid-2.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 523,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								457,
-								457
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "pod-1.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 523,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
 					"buffer": 12,
-					"file": "pod-2.json",
+					"file": "vid-2.json",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 523,
+						"buffer_size": 594,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								588,
+								588
 							]
 						],
 						"settings":
@@ -826,7 +845,65 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "pod-1.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 594,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								588,
+								588
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "pod-2.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3035,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2986,
+								2384
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 324.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -866,8 +943,8 @@
 		"cols":
 		[
 			0.0,
-			0.721796875,
-			0.8209375,
+			0.91515625,
+			0.98046875,
 			1.0
 		],
 		"rows":

@@ -684,7 +684,7 @@ WIKI API
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.3.1/vivus.min.js"></script>
 <script type="text/javascript" src="https://vjs.zencdn.net/5.11.6/video.js"></script>
-<script type="text/javascript" src="js/skrollr.min.js"></script>
+<!--  <script type="text/javascript" src="js/skrollr.min.js"></script>
 <script type="text/javascript">
     //var s = skrollr.init({
     //render: function(data) {
@@ -692,9 +692,11 @@ WIKI API
     //}
     //});
 </script>
+-->
 	<script>
 		'use strict';
 		var CnfState = {"hist": true, "audio": false, "prinv": "prinv_hom"};
+		var tweenMxHeroBG = new TimelineMax();
 		var AudioContext = window.AudioContext || false; // canIuse
 
 		if (AudioContext) {
@@ -745,11 +747,11 @@ WIKI API
 		 		}
 		};
 		$(document).ready(function(){
-			
+
 			$(document).foundation();
 				getContent();
-
-				$('.prinav--nav__hamb').click(function(){ false }); // off-canvas hamb safari mobile hack
+				$(".prinav--nav__hamb").click(function(){ playAudioFile( 3 );false }); // off-canvas hamb safari mobile hack
+				//$(".close-button").click(function(){  playAudioFile( 8 ); }); // nope
 		
 				history.replaceState({"uid_hash":"prinv_hom"}, document.location, "#prinv_hom");
 
@@ -770,10 +772,10 @@ WIKI API
 				$("#svgLgo").removeClass("blind");
 				new Vivus("svgLgo", {duration: 176}, function(){ moveHeroBg(); });
 			});
-			function moveHeroBg(){
-				var width = 2400, speed = 60, duration = width / speed,
-				endPosition = width - (speed / 60);
-				TweenMax.to($(".hero--header"), duration, {css:{backgroundPosition:endPosition + "px 0"}, repeat:-1, ease:Linear.easeNone});
+			function moveHeroBg(){	
+				var width = 2400, speed = 48, duration = width / speed,
+				endPosition = width - (speed / 48);
+				tweenMxHeroBG.to($(".hero--header"), duration, {css:{backgroundPosition:endPosition + "px 0"}, repeat:-1, ease:Linear.easeNone});
 			}
 			//    Prime Nav
 			$(".prinav--a").on("click", function( e ){
@@ -806,7 +808,16 @@ function postContent(){
 				history.pushState({"uid_hash":sHash, "prinv": CnfState.prinv }, sHash, "#" + sHash);
 			}
 		}
-	})
+	});
+	//    Card Artc hover
+$( ".ccard" ).hover(
+	function() {
+		tweenMxHeroBG.pause();
+	}, function() {
+		tweenMxHeroBG.play();
+	}
+);
+
 	console.log("Dude, what up?  Nick da K in da house!");
 }
 //    Content fetch and render
