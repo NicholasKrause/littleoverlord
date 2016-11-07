@@ -815,6 +815,7 @@ function postContent(){
 			}else{
 				history.pushState({"uid_hash":sHash, "prinv": CnfState.prinv }, sHash, "#" + sHash);
 			}
+			$(document).foundation();  //  Issue with top bar not sticky past orig scroll point
 		}
 	});
 	//    Card Artc hover
