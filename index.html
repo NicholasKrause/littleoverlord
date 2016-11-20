@@ -2,6 +2,7 @@
 <!DOCTYPE html> 
 <html>
 	<head>
+		<meta charset="utf-8">
 		<title>Little OverLord</title>
 <!-- 
 https://nicholaskrause.github.io/littleoverlord/
@@ -101,7 +102,7 @@ body.theme__night {
 	margin-bottom: 12px;
 }
 .ccard-thn {
-	min-width: 192px;
+	min-width: 12vw;
 	height: auto;
 }
 .ccard-summary {
@@ -226,11 +227,13 @@ body.theme__night {
 
 table {width: 100%;}
 .theme__day hr { 
+	margin: 2px 0 6px 0;
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(145, 122, 86, 1), rgba(0, 0, 0, 0));
 }
 .theme__night hr { 
+	margin: 2px 0 6px 0;
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(254, 255, 194, 1), rgba(0, 0, 0, 0));
@@ -250,7 +253,7 @@ table {width: 100%;}
 }
 .caption--p__roboto{
 	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: .9em;
+	font-size: .88em;
 	font-weight: 500;
 	line-height: 1.5;
 }
@@ -410,7 +413,10 @@ Snark curated by an infinite number of monkeys
 				</section>
 
 				<div data-sticky-container>
-				  <div class="prinav title-bar" data-sticky data-options="marginTop:0;stickyOn:small"
+				  <div class="prinav title-bar" data-sticky data-options="marginTop:0;stickyOn:small;marginBottom:900;"
+				  yyyydata-btm-anchor="copyr:bottom"
+				  yyyydata-anchor="copyr"
+				  yyyydata-margin-top="1"
 				  style="width:100%" data-top-anchor="1">			  	
 					  <nav class="prinav--nav__hamb show-for-small-only" data-toggle="offCanvas">
 				  		<p><i class="fa-brand fa fa-bars fa-2x"></i></p>
@@ -506,13 +512,41 @@ Snark curated by an infinite number of monkeys
 									<!--  content aside   begin  -->
 									<aside class="ccard callout warning"
 									data-title_short="wiki_api">
-WIKI API
+<p class="caption--p__pattaya color-text__lol3 text-center"
+style="margin-bottom: 4px;">Resume / CV
+</p>
 <hr>
+<p class="caption--p__roboto color-text__lol1 text-justify">Hire an innovative problem solver.  I can help you create content that reaches more people.
+</p>
+<br>
+<a class="button small expanded alert hollow"
+href="cv/Resume_Nicholas_Krause.pdf" target="_blank">Download PDF</a>
+<hr>
+<br>
+<p class="ccard-summary text-left">I’ve experience and work ethic.  I can write copy, design images and program interactive websites.
+</p>
+<!--
 <span class="label color-back__lol01">#7D2A35</span>
 <span class="label color-back__lol02">#EE0000</span>
 <span class="label color-back__lol03">#917A56</span>
 <span class="label color-back__lol04">#B4BA6C</span>
 <span class="label color-back__lol05">#FEFFC2</span>
+-->
+									</aside>
+									<aside class="ccard callout warning"
+									data-title_short="wiki_api">
+<p class="caption--p__pattaya color-text__lol3 text-center"
+style="margin-bottom: 4px;">Writing Examples
+</p>
+<hr>
+<p class="caption--p__roboto color-text__lol1 text-center">Samples of written style, tone, and voice.
+</p>
+<br>
+<a class="button small expanded alert"
+href="http://fansided.com/author/nkrause/" target="_blank">Fansided</a>
+<a class="button small expanded warning"
+href="http://zerolimitmagazine.com/movies-tv/a-look-at-jodorowskys-dune/" target="_blank">Zero Limit</a>
+<hr>
 									</aside>
 									<!--  content aside   end  -->
 								</div>
@@ -634,7 +668,7 @@ WIKI API
 				<footer class="row">
 					<section class="row"><div class="column small-12"><hr></div></section>
 					<div class="column small-9">
-						<p class="caption--p__roboto text-center">
+						<p id="copyr" class="caption--p__roboto text-center">
 (c)2010-<span id="year-c">2017</span> Little OverLord, LLC.  All rights reserved.
 						</p>
 					</div>
@@ -685,6 +719,7 @@ WIKI API
 	</div>
 
 	</body>
+<script type="text/javascript" src="https://unpkg.com/vue@2.0.8/dist/vue.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TimelineMax.min.js"></script>
@@ -815,7 +850,7 @@ function postContent(){
 			}else{
 				history.pushState({"uid_hash":sHash, "prinv": CnfState.prinv }, sHash, "#" + sHash);
 			}
-			$(document).foundation();  //  Issue with top bar not sticky past orig scroll point
+//$(document).foundation(); //  Issue with top bar not sticky past orig scroll point
 		}
 	});
 	//    Card Artc hover

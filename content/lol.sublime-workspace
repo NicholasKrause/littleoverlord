@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"hero",
+				"moveHero"
+			],
+			[
 				"resp",
 				"resp_half_height"
 			],
@@ -99,7 +103,7 @@
 			"file": "/C/neo/neos_proj/2016/littleoverlord/index.html",
 			"settings":
 			{
-				"buffer_size": 51460,
+				"buffer_size": 51965,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -109,15 +113,6 @@
 			"settings":
 			{
 				"buffer_size": 20220,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/neo/neos_proj/2016/is-ecom-labs/faq.html",
-			"settings":
-			{
-				"buffer_size": 48656,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -142,7 +137,7 @@
 			"file": "/C/neo/neos_proj/2016/is-ecom-labs/index.html",
 			"settings":
 			{
-				"buffer_size": 11572,
+				"buffer_size": 11732,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -173,46 +168,10 @@
 			}
 		},
 		{
-			"file": "wrd-1.json",
-			"settings":
-			{
-				"buffer_size": 3514,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "wrd-2.json",
-			"settings":
-			{
-				"buffer_size": 2762,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "vid-1.json",
-			"settings":
-			{
-				"buffer_size": 594,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "vid-2.json",
-			"settings":
-			{
-				"buffer_size": 594,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "pod-1.json",
 			"settings":
 			{
-				"buffer_size": 594,
+				"buffer_size": 600,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -221,7 +180,97 @@
 			"file": "pod-2.json",
 			"settings":
 			{
-				"buffer_size": 3035,
+				"buffer_size": 3040,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "pod-3.json",
+			"settings":
+			{
+				"buffer_size": 3040,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "pod-4.json",
+			"settings":
+			{
+				"buffer_size": 3040,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "vid-1.json",
+			"settings":
+			{
+				"buffer_size": 599,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "vid-2.json",
+			"settings":
+			{
+				"buffer_size": 599,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "vid-3.json",
+			"settings":
+			{
+				"buffer_size": 599,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "vid-4.json",
+			"settings":
+			{
+				"buffer_size": 599,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "wrd-1.json",
+			"settings":
+			{
+				"buffer_size": 3519,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "wrd-2.json",
+			"settings":
+			{
+				"buffer_size": 2767,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "wrd-3.json",
+			"settings":
+			{
+				"buffer_size": 3267,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "wrd-4.json",
+			"settings":
+			{
+				"buffer_size": 2767,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -297,6 +346,18 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"sticky",
+			"developmental",
+			"moveHero",
+			"console",
+			"tm1",
+			"moveHero",
+			"CnfState.moveHero",
+			"moveHero",
+			"xxx",
+			"click",
+			"60",
+			"Anim",
 			"'",
 			"hamb",
 			"close-bu",
@@ -412,19 +473,7 @@
 			"oTag",
 			"n5Tags",
 			"N5Tags",
-			"fetchSound",
-			".load",
-			"\"",
-			": {},",
-			",",
-			"\"",
-			"  \"",
-			": {},",
-			"cardSubTotal",
-			"ccard__expand",
-			"height",
-			"fetchSoundConfig",
-			"oTabContent"
+			"fetchSound"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -451,15 +500,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 51460,
+						"buffer_size": 51965,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								44009,
-								44009
+								28164,
+								28164
 							]
 						],
 						"settings":
@@ -468,16 +517,16 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 32834.0,
+						"translation.y": 284906.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -493,8 +542,8 @@
 						"selection":
 						[
 							[
-								84,
-								84
+								40,
+								40
 							]
 						],
 						"settings":
@@ -506,53 +555,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "/C/neo/neos_proj/2016/is-ecom-labs/faq.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 48656,
-						"regions":
-						{
-							"bookmarks":
-							{
-								"flags": 144,
-								"icon": "bookmark",
-								"regions":
-								[
-									[
-										5875,
-										5875
-									]
-								],
-								"scope": "bookmarks"
-							}
-						},
-						"selection":
-						[
-							[
-								42403,
-								42403
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1437888.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "/C/neo/neos_proj/2016/neos_ux_cookbook/ever-present-living-style-guide/ext/scott_c_krause/ever_present_living_style_guide.html",
 					"semi_transient": false,
 					"settings":
@@ -577,11 +584,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "/C/neo/neos_proj/2016/littleoverlord/img/lol_lgo_brand-01.svg",
 					"semi_transient": false,
 					"settings":
@@ -606,24 +613,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 4,
 					"file": "/C/neo/neos_proj/2016/is-ecom-labs/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 11572,
+						"buffer_size": 11732,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								163,
-								163
+								0,
+								0
 							]
 						],
 						"settings":
@@ -635,11 +642,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 16,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 5,
 					"file": "/C/neo/neos_proj/2016/neos_ux_cookbook/ever-present-living-style-guide/ext/scott_c_krause/js/oscillation-overthruster.js",
 					"semi_transient": false,
 					"settings":
@@ -665,11 +672,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 19,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 6,
 					"file": "/C/neo/neos_proj/2016/neos_ux_cookbook/ever-present-living-style-guide/ext/scott_c_krause/oscillation-overthruster.html",
 					"semi_transient": false,
 					"settings":
@@ -694,11 +701,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 17,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 7,
 					"file": "/C/neo/neos_proj/2016/short_message_service/proto/proto_sms_lsc_1.html",
 					"semi_transient": false,
 					"settings":
@@ -723,80 +730,22 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 18,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 10,
 			"sheets":
 			[
 				{
-					"buffer": 9,
-					"file": "wrd-1.json",
+					"buffer": 8,
+					"file": "pod-1.json",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3514,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3024,
-								3024
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 12672.0,
-						"translation.y": 324.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "wrd-2.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2762,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2681,
-								2681
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 216.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "vid-1.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 594,
+						"buffer_size": 600,
 						"regions":
 						{
 						},
@@ -805,6 +754,209 @@
 							[
 								588,
 								588
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "pod-2.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3040,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								147,
+								147
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "pod-3.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3040,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								62,
+								62
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "pod-4.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3040,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								62,
+								62
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "vid-1.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 599,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								62,
+								62
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "vid-2.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 599,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								62,
+								62
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "vid-3.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 599,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								399,
+								399
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "vid-4.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 599,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								62,
+								62
 							]
 						],
 						"settings":
@@ -820,20 +972,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 12,
-					"file": "vid-2.json",
+					"buffer": 16,
+					"file": "wrd-1.json",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 594,
+						"buffer_size": 3519,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								588,
-								588
+								70,
+								70
 							]
 						],
 						"settings":
@@ -849,20 +1001,78 @@
 					"type": "text"
 				},
 				{
-					"buffer": 13,
-					"file": "pod-1.json",
+					"buffer": 17,
+					"file": "wrd-2.json",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 594,
+						"buffer_size": 2767,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								588,
-								588
+								180,
+								180
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 44.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "wrd-3.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3267,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3154,
+								3154
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 3540.0,
+						"translation.y": 48.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "wrd-4.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2767,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2668,
+								2668
 							]
 						],
 						"settings":
@@ -875,35 +1085,6 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "pod-2.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3035,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2986,
-								2384
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 324.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -943,8 +1124,8 @@
 		"cols":
 		[
 			0.0,
-			0.91515625,
-			0.98046875,
+			0.09796875,
+			0.931640625,
 			1.0
 		],
 		"rows":
@@ -992,7 +1173,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
