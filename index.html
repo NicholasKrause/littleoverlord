@@ -1,4 +1,3 @@
-
 <!DOCTYPE html> 
 <html>
 	<head>
@@ -244,6 +243,9 @@ table {width: 100%;}
 .theme__night .fa-brand {color: #FEFFC2;}
 .theme__night .fa-brand:hover {color: #B4BA6C;}
 
+.fa-brand__focal {color: #7D2A35;}
+.fa-brand__focal:hover {color: #EE0000;}
+
 .hero--header {
 	height: 120px;
 	background: #7D2A35;
@@ -340,11 +342,16 @@ input:checked~.switch-paddle {
 	background-color: #7D2A35;
 	height: 54px;
 }
+.selfy {
+	  -webkit-transition: -webkit-transform .15s linear;
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5);
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.5);
+}
 </style>
 	</head>
 	<body class="theme__day">
-
-
 	<div class="off-canvas-wrapper">
 		<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 			<aside class="off-canvas position-left" id="offCanvas" data-off-canvas>
@@ -520,14 +527,18 @@ style="margin-bottom: 4px;">Resume / CV
 </p>
 <br>
 <a class="button small expanded alert hollow"
-href="cv/resume_nicholas_krause.pdf" target="_blank">Download PDF</a>
+href="cv/resume_nicholas_krause.pdf" target="_blank">Download CV</a>
 <hr>
+<br>
+<div class="text-center">
+	<img class="selfy" src="img/mr_magoozy.png">
+</div>
 <br>
 <p class="ccard-summary text-left">I’ve experience and work ethic.  I can write copy, design images and program interactive websites.
 </p>
 <nav class="text-center">
 	<a href="https://github.com/NicholasKrause"
-	target="blank"><i class="fa-brand fa fa-github-alt fa-3x"></i></a>
+	target="blank"><i class="fa-brand__focal fa fa-github-alt fa-2x"></i></a>
 </nav>
 <!--
 <span class="label color-back__lol01">#7D2A35</span>
