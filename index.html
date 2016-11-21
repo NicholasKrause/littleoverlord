@@ -525,6 +525,10 @@ href="cv/resume_nicholas_krause.pdf" target="_blank">Download PDF</a>
 <br>
 <p class="ccard-summary text-left">I’ve experience and work ethic.  I can write copy, design images and program interactive websites.
 </p>
+<nav class="text-center">
+	<a href="https://github.com/NicholasKrause"
+	target="blank"><i class="fa-brand fa fa-github-alt fa-3x"></i></a>
+</nav>
 <!--
 <span class="label color-back__lol01">#7D2A35</span>
 <span class="label color-back__lol02">#EE0000</span>
@@ -838,6 +842,12 @@ href="http://nicholaskrause.github.io/ign_code_foo_2016/front-end-responsive.htm
 					history.pushState({"uid_prinv":sHash, "prinv": CnfState.prinv }, sHash, "#" + sHash);
 				}
 			});
+			//  Por Temo, clone side content onto other "page" states
+			//  TODO make sticky
+			$("#js-cntnt--asd__abt").html( $("#js-cntnt--asd__hom").html() );
+			$("#js-cntnt--asd__wrd").html( $("#js-cntnt--asd__hom").html() );
+			$("#js-cntnt--asd__pod").html( $("#js-cntnt--asd__hom").html() );
+			$("#js-cntnt--asd__vid").html( $("#js-cntnt--asd__hom").html() );
 		});
 //    We've loaded the content, let us bind
 function postContent(){
