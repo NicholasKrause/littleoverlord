@@ -103,7 +103,7 @@
 			"file": "/C/neo/neos_proj/2016/littleoverlord/index.html",
 			"settings":
 			{
-				"buffer_size": 51965,
+				"buffer_size": 55085,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -137,7 +137,7 @@
 			"file": "/C/neo/neos_proj/2016/is-ecom-labs/index.html",
 			"settings":
 			{
-				"buffer_size": 11732,
+				"buffer_size": 11844,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -332,7 +332,7 @@
 	],
 	"find":
 	{
-		"height": 64.0
+		"height": 58.0
 	},
 	"find_in_files":
 	{
@@ -346,6 +346,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"p__opensans",
+			"\"aption",
+			"caption-",
+			"abt",
+			"about",
 			"sticky",
 			"developmental",
 			"moveHero",
@@ -468,12 +473,7 @@
 			"sHash",
 			"CnfState",
 			"playAudioFile",
-			"=\t",
-			"data-prinv",
-			"oTag",
-			"n5Tags",
-			"N5Tags",
-			"fetchSound"
+			"=\t"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -500,15 +500,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 51965,
+						"buffer_size": 55085,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								28164,
-								28164
+								45442,
+								45442
 							]
 						],
 						"settings":
@@ -517,10 +517,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 284906.0,
+						"translation.y": 29214.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -542,8 +542,8 @@
 						"selection":
 						[
 							[
-								40,
-								40
+								417,
+								417
 							]
 						],
 						"settings":
@@ -555,7 +555,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -622,7 +622,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 11732,
+						"buffer_size": 11844,
 						"regions":
 						{
 						},
@@ -1124,7 +1124,7 @@
 		"cols":
 		[
 			0.0,
-			0.09796875,
+			0.901875,
 			0.931640625,
 			1.0
 		],
@@ -1173,7 +1173,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},
