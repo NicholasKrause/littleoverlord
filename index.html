@@ -792,7 +792,6 @@ Photoshop CS6 Print and Web graphics
 		 		}
 		};
 		$(document).ready(function(){
-
 			$(document).foundation();
 				getContent();
 				$(".prinav--nav__hamb").click(function(){ playAudioFile( 3 );false }); // off-canvas hamb safari mobile hack
@@ -843,7 +842,11 @@ Photoshop CS6 Print and Web graphics
 			$("#js-cntnt--asd__wrd").html( $("#js-cntnt--asd__hom").html() );
 			$("#js-cntnt--asd__pod").html( $("#js-cntnt--asd__hom").html() );
 			$("#js-cntnt--asd__vid").html( $("#js-cntnt--asd__hom").html() );
-		});
+		});  //  Document Ready
+
+		$( window ).load(function(){
+		});  //  Window Load
+
 //    We've loaded the content, let us bind
 function postContent(){
 	//    Card Artc Click
@@ -889,12 +892,24 @@ function getContent(){
 				$("#js-cntnt--art__wrd").append( artcs.render("wrd") );
 				$("#js-cntnt--art__vid").append( artcs.render("vid") );
 				$("#js-cntnt--art__pod").append( artcs.render("pod") );
+				//    Replicate content on home page
+				genMainContent( "js-cntnt--art__hom", "js-cntnt--art__pod", 2);
+				genMainContent( "js-cntnt--art__hom", "js-cntnt--art__vid", 2);
+				genMainContent( "js-cntnt--art__hom", "js-cntnt--art__wrd", 2);
 				postContent();  // bind
 			}
 		}}
 	}).done(function( axjsn ) {
 		artcs.addArtc( (getContConfig.doc_types[getContConfig.currentType]), axjsn );
 		getContent(); // recur
+	});
+}
+function genMainContent( target_id, source_id, Num2Grab){ //  TODO How are you going to bind?
+	var nCnt = 0;
+	$( "#"+source_id+" .ccard" ).each(function(){
+		if( nCnt++ < Num2Grab ){
+			$("#"+target_id).html( $("#"+target_id).html() + $( this ).prop("outerHTML") );
+		}
 	});
 }
 function Artcs(){
@@ -906,6 +921,7 @@ function Artcs(){
 	this.render = function( artc_type ){
 		var sMU = "";
 		var aArtcsFtl = aArtcs.filter( isArtc_type );
+		aArtcsFtl.reverse();  //  I want the newest articles first
 		function isArtc_type(value, index, ar){ // filter new arr
 			if( artc_type === "hom" ){
 
@@ -917,8 +933,7 @@ function Artcs(){
 			}
 		}
 
-		aArtcsFtl.forEach(function(artc, index) {
-console.log( "source | " + artc.title_short );			
+		aArtcsFtl.forEach(function(artc, index) {		
 			var aCcard =[];
 				aCcard.push( {"target": "title_short", "source": artc.title_short} );
 				aCcard.push( {"target": "author", "source": artc.author} );
@@ -926,8 +941,6 @@ console.log( "source | " + artc.title_short );
 				aCcard.push( {"target": "pub_date", "source": artc.pub_date} );
 				aCcard.push( {"target": "summary_quote", "source": artc.summary_quote} );
 				aCcard.push( {"target": "body_1", "source": artc.body_1} );
-console.log( artc );
-				
 				aCcard.push( {"target": "img_1_src", "source": artc.img_1_src} );
 				aCcard.push( {"target": "img_1_alt", "source": artc.img_1_alt} );
 

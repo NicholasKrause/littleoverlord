@@ -103,7 +103,7 @@
 			"file": "/C/neo/neos_proj/2016/littleoverlord/index.html",
 			"settings":
 			{
-				"buffer_size": 55245,
+				"buffer_size": 51657,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -500,7 +500,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 55245,
+						"buffer_size": 51657,
 						"regions":
 						{
 						},
@@ -517,7 +517,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 29462.0,
+						"translation.y": 29586.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
