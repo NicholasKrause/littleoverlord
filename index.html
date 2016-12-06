@@ -704,7 +704,7 @@ Photoshop CS6 Print and Web graphics
 		<section class="row">
 			<div class="column small-12 medium-3 text-center">
 				<img class="ccard-thn" 
-					src="img/vid_1.png">
+					src="img/pod_1.png">
 				<hr>
 				<p class="caption--p__pattaya color-text__lol3 text-center">|summary_quote|
 				</p>
@@ -798,10 +798,14 @@ Photoshop CS6 Print and Web graphics
 			 		catch( e ){}
 		 		}
 		};
+		function playAudioRand( aSound ){
+			//    Either Or
+			playAudioFile( aSound[Math.random()+.5|0]);
+		}
 		$(document).ready(function(){
 			$(document).foundation();
 				getContent();
-				$(".prinav--nav__hamb").click(function(){ playAudioFile( 3 );false }); // off-canvas hamb safari mobile hack
+				$(".prinav--nav__hamb").click(function(){ playAudioRand( [3,4] );false }); // off-canvas hamb safari mobile hack
 				//$(".close-button").click(function(){  playAudioFile( 8 ); }); // nope
 		
 				history.replaceState({"uid_hash":"prinv_hom"}, document.location, "#prinv_hom");
@@ -809,15 +813,16 @@ Photoshop CS6 Print and Web graphics
 			//    theme switch
 			$("#js-prinav-switch").on("change", function( e ){
 				if( $( this ).attr("data-theme") === "theme__day" ){
-					playAudioFile( 5 );
+					playAudioRand( [3, 4] );
 					$( this ).attr("data-theme", "theme__night");
 				} else {
-					playAudioFile( 4 );
+					playAudioRand( [4, 5] );
 					$( this ).attr("data-theme", "theme__day");
 				}
 				$("body").removeClass("theme__day").removeClass("theme__night").addClass($( this ).attr("data-theme"));
 			});
-			if( (Math.random()+.5|0) === 1 ) $("#js-theme--input").click();
+			if( (Math.floor(Math.random() * 3) + 1) >= 2 ) $("#js-theme--input").click(); // 2 in 3
+			//if( (Math.random()+.5|0) === 1 ) $("#js-theme--input").click();
 			//    Hero Ani
 			new Vivus("svgLOL", {duration: 96}, function(){
 				$("#svgLgo").removeClass("blind");
@@ -830,7 +835,7 @@ Photoshop CS6 Print and Web graphics
 			}
 			//    Prime Nav
 			$(".prinav--a").on("click", function( e ){
-				playAudioFile( 1 );
+				playAudioRand( [1,4] );
 				$(".content-section").addClass("blind");
 				CnfState.prinv = $( this ).attr("data-prinv");				
 				$( "#js-" + CnfState.prinv ).removeClass("blind");
@@ -860,7 +865,7 @@ function postContent(){
 	$(".ccard").on("click", function( e ){
 		if( !$( this ).hasClass("ccard__expand") ){
 			var sHash = makeId( $( this ).attr("data-title_short") );
-			playAudioFile( 3 );
+			playAudioRand( [3, 5] );
 			$(".ccard").each(function(){ $( this ).removeClass("ccard__expand"); }); 
 			$( this ).addClass("ccard__expand");
 			if( !CnfState.hist ){
