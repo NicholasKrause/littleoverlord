@@ -346,15 +346,15 @@ input:checked~.switch-paddle {
 	height: 54px;
 }
 .selfy {
-	  -webkit-transition: -webkit-transform .15s linear;
-  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
-  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
-  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5);
-  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.5);
+	-webkit-transition: -webkit-transform .15s linear;
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5);
+	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.5);
 }
 </style>
 	</head>
-	<body class="theme__day">
+	<body class="theme__night">
 	<div class="off-canvas-wrapper">
 		<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 			<aside class="off-canvas position-left" id="offCanvas" data-off-canvas>
@@ -821,8 +821,8 @@ Photoshop CS6 Print and Web graphics
 				}
 				$("body").removeClass("theme__day").removeClass("theme__night").addClass($( this ).attr("data-theme"));
 			});
-			if( (Math.floor(Math.random() * 3) + 1) >= 2 ) $("#js-theme--input").click(); // 2 in 3
-			//if( (Math.random()+.5|0) === 1 ) $("#js-theme--input").click();
+			//if( (Math.floor(Math.random() * 3) + 1) >= 2 ) $("#js-theme--input").click(); // 2 in 3
+			//if( (Math.random()+.5|0) === 1 ) $("#js-theme--input").click(); // 0 or 1
 			//    Hero Ani
 			new Vivus("svgLOL", {duration: 96}, function(){
 				$("#svgLgo").removeClass("blind");
@@ -863,7 +863,9 @@ Photoshop CS6 Print and Web graphics
 function postContent(){
 	//    Card Artc Click
 	$(".ccard").on("click", function( e ){
-		if( !$( this ).hasClass("ccard__expand") ){
+		if( $( this ).hasClass("ccard__expand") ){
+			$( this ).removeClass("ccard__expand");
+		}else{
 			var sHash = makeId( $( this ).attr("data-title_short") );
 			playAudioRand( [3, 5] );
 			$(".ccard").each(function(){ $( this ).removeClass("ccard__expand"); }); 
