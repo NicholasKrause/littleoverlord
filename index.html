@@ -345,7 +345,7 @@ input:checked~.switch-paddle {
 	background-color: #7D2A35;
 	height: 54px;
 }
-.selfy {
+.drop-shadow {
 	-webkit-transition: -webkit-transform .15s linear;
 	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
 	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
@@ -500,7 +500,7 @@ href="cv/resume_nicholas_krause.pdf" target="_blank">Download CV</a>
 </nav>
 <br>
 <div class="text-center">
-	<img class="selfy" src="img/mr_magoozy.png">
+	<img class="drop-shadow" src="img/mr_magoozy.png">
 </div>
 <br>
 <p class="ccard-summary text-left">I’ve experience and work ethic.  I can write copy, design images and program interactive websites.
@@ -683,9 +683,9 @@ Photoshop CS6 Print and Web graphics
 					</div>
 					<div class="column small-2">
 						<div id="js-prinav-switch" class="prinav-switch switch large"
-						data-theme="theme__day">
+						data-theme="theme__night">
 							<input id="js-theme--input" class="switch-input" name="js-theme--inputName" type="checkbox">
-							<label class="switch-paddle" for="js-theme--input">
+							<label class="switch-paddle drop-shadow" for="js-theme--input">
 								<span class="switch-active" aria-hidden="true">  <i class="fa-brand fa fa-moon-o fa-lg" style="margin: 0 0 2px 6px;"></i></span>
 								<span class="switch-inactive" aria-hidden="true"><i class="fa-brand fa fa-sun-o fa-lg"></i></span>
 							</label>
@@ -704,7 +704,7 @@ Photoshop CS6 Print and Web graphics
 		<section class="row">
 			<div class="column small-12 medium-3 text-center">
 				<img class="ccard-thn" 
-					src="img/pod_1.png">
+					src="img/|thumbnail|.png">
 				<hr>
 				<p class="caption--p__pattaya color-text__lol3 text-center">|summary_quote|
 				</p>
@@ -935,7 +935,7 @@ function Artcs(){
 	this.render = function( artc_type ){
 		var sMU = "";
 		var aArtcsFtl = aArtcs.filter( isArtc_type );
-		aArtcsFtl.reverse();  //  I want the newest articles first
+		aArtcsFtl.reverse();  //  I want the newest articles first FILO
 		function isArtc_type(value, index, ar){ // filter new arr
 			if( artc_type === "hom" ){
 
@@ -957,7 +957,6 @@ function Artcs(){
 				aCcard.push( {"target": "body_1", "source": artc.body_1} );
 				aCcard.push( {"target": "img_1_src", "source": artc.img_1_src} );
 				aCcard.push( {"target": "img_1_alt", "source": artc.img_1_alt} );
-
 				aCcard.push( {"target": "body_2", "source": artc.body_2} );
 				aCcard.push( {"target": "img_2_src", "source": artc.img_2_src} );
 				aCcard.push( {"target": "img_2_alt", "source": artc.img_2_alt} );
@@ -967,7 +966,7 @@ function Artcs(){
 				aCcard.push( {"target": "body_4", "source": artc.body_4} );
 				aCcard.push( {"target": "img_4_src", "source": artc.img_4_src} );
 				aCcard.push( {"target": "img_4_alt", "source": artc.img_4_alt} );
-
+				aCcard.push( {"target": "thumbnail", "source": artc.thumbnail} );
 			sMU += popuTemplate("templ_ccard", aCcard);
 
 		});
@@ -996,7 +995,9 @@ function Artc(artc_type, json){
 	this.img_4_alt        = json.img_4.alt;
 	this.img_4_src        = json.img_4.src;
 	this.tags             = json.tags;
+	this.thumbnail        = determineTN( artc_type, this.tags );
 	this.isHom            = false;    //  Is on the home page
+console.log( "zippy | " + this.tags );
 }
 //    History
 window.addEventListener("popstate", function( e ) {
@@ -1017,6 +1018,10 @@ window.addEventListener("popstate", function( e ) {
 //    Utils
 function makeId( title_short ){
 	return title_short.toLowerCase().replace(/\W+/g,"-");
+}
+function determineTN( artc_type, tags ){
+	//    Just grab the first tag, lowercase it and thats the file name
+	return tags[0].toLowerCase();
 }
 function popuTemplate( sTemplate_id, aContents ){
 	//    Return a string after swapping an assn array (objects)
