@@ -107,7 +107,7 @@
 			"file": "/C/neo/neos_proj/2016/littleoverlord/index.html",
 			"settings":
 			{
-				"buffer_size": 51976,
+				"buffer_size": 52337,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -202,7 +202,7 @@
 			"file": "pod-4.json",
 			"settings":
 			{
-				"buffer_size": 3040,
+				"buffer_size": 3026,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -265,7 +265,7 @@
 			"file": "wrd-3.json",
 			"settings":
 			{
-				"buffer_size": 3267,
+				"buffer_size": 3268,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -504,28 +504,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 51976,
+						"buffer_size": 52337,
 						"regions":
 						{
-							"bookmarks":
-							{
-								"flags": 144,
-								"icon": "bookmark",
-								"regions":
-								[
-									[
-										42939,
-										42939
-									]
-								],
-								"scope": "bookmarks"
-							}
 						},
 						"selection":
 						[
 							[
-								39812,
-								39812
+								0,
+								0
 							]
 						],
 						"settings":
@@ -534,7 +521,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 25779.0,
+						"translation.y": 25903.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -849,15 +836,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3040,
+						"buffer_size": 3026,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								62,
-								62
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1052,15 +1039,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3267,
+						"buffer_size": 3268,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3154,
-								3154
+								0,
+								0
 							]
 						],
 						"settings":

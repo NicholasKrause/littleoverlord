@@ -1021,7 +1021,7 @@ function makeId( title_short ){
 }
 function determineTN( artc_type, tags ){
 	//    Just grab the first tag, lowercase it and thats the file name
-	return tags[0].toLowerCase();
+	return tags[0].toLowerCase() + "_1";
 }
 function popuTemplate( sTemplate_id, aContents ){
 	//    Return a string after swapping an assn array (objects)
