@@ -225,7 +225,7 @@
 			"file": "wrd-3.json",
 			"settings":
 			{
-				"buffer_size": 5495,
+				"buffer_size": 6920,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -234,7 +234,7 @@
 			"file": "wrd-4.json",
 			"settings":
 			{
-				"buffer_size": 828,
+				"buffer_size": 830,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -861,7 +861,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5495,
+						"buffer_size": 6920,
 						"regions":
 						{
 						},
@@ -890,7 +890,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 828,
+						"buffer_size": 830,
 						"regions":
 						{
 						},
