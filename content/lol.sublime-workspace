@@ -104,50 +104,10 @@
 	"buffers":
 	[
 		{
-			"file": "/C/neo/neos_proj/2016/littleoverlord/index.html",
-			"settings":
-			{
-				"buffer_size": 52337,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/neo/neos_proj/2016/is-ecom-labs/faq-modal.html",
-			"settings":
-			{
-				"buffer_size": 20220,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/neo/neos_proj/2016/neos_ux_cookbook/ever-present-living-style-guide/ext/scott_c_krause/ever_present_living_style_guide.html",
-			"settings":
-			{
-				"buffer_size": 1742,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/neo/neos_proj/2016/littleoverlord/img/lol_lgo_brand-01.svg",
-			"settings":
-			{
-				"buffer_size": 11413,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/neo/neos_proj/2016/is-ecom-labs/index.html",
-			"settings":
-			{
-				"buffer_size": 11844,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
+			"contents": "//    An endeavor by Scott C. Krause\n\ntry {\n//    Background Reference\t\nvar oBackGroundEvent = chrome.extension.getBackgroundPage();\n//    Repo base URL /wo ending slash\nvar sRepo_url = \"\";\n//    Repo Demo base URL /wo ending slash\nvar sRepo_url_demo = \"http://neodigm.github.io/ever-present-living-style-guide-site\";\n\nvar n5Tags = new N5Tags();\nvar n5Contents = new N5Contents();\n\nn5Tags.addTag( new n5Tag(\"accessibility\"  ,\"accessibility\"  ,\"296661\",\t\"Allow people with disabilities to perceive, understand, navigate, and interact with the Web\"));\nn5Tags.addTag( new n5Tag(\"browser\"        ,\"browsers\"       ,\"4D2850\",\t\"User Agents, Android, Blink, Chrome, Edge, Explorer, Firefox, Opera, Safari, Webkit\"));\nn5Tags.addTag( new n5Tag(\"color\"          ,\"colors\"         ,\"EC3A40\",\t\"Branded Color Motif, Palette, Scheme, Theme\"));\nn5Tags.addTag( new n5Tag(\"component\"      ,\"components\"     ,\"506F8D\",\t\"Bundle markup and styles into encapsulated custom HTML elements\"));\nn5Tags.addTag( new n5Tag(\"content\"        ,\"content\"        ,\"E80C7A\",\t\"Creating and distributing valuable, relevant, and consistent content\"));\nn5Tags.addTag( new n5Tag(\"crm\"            ,\"CRM\"            ,\"EEBD00\",\t\"Customer Relationship Management\"));\nn5Tags.addTag( new n5Tag(\"forms\"          ,\"forms\"          ,\"A49060\",\t\"Data input, validation and file upload\"));\nn5Tags.addTag( new n5Tag(\"imagery\"        ,\"images\"         ,\"2C6418\",\t\"Image presentation formatting and optimization\"));\nn5Tags.addTag( new n5Tag(\"media\"          ,\"media\"          ,\"4B3B32\",\t\"Video and Audio presentation and capture\"));\nn5Tags.addTag( new n5Tag(\"mobile\"         ,\"mobile\"         ,\"BF5B21\",\t\"Hybrid and Native Mobile Apps\"));\nn5Tags.addTag( new n5Tag(\"pattern\"        ,\"patterns\"       ,\"968851\",\t\"Common reusable design patterns\"));\nn5Tags.addTag( new n5Tag(\"process\"        ,\"processes\"      ,\"4CA192\",\t\"Business, Creative and Technical workflow\"));\nn5Tags.addTag( new n5Tag(\"performance\"    ,\"performance\"    ,\"DC8C3D\",\t\"Web performance optimization tuning\"));\nn5Tags.addTag( new n5Tag(\"research\"       ,\"research\"       ,\"9B3C25\",\t\"Insight through on-site observation and discovering usability issues through user testing\"));\nn5Tags.addTag( new n5Tag(\"seo\"            ,\"SEO\"            ,\"748C7A\",\t\"Search engine optimization and Marketing\"));\nn5Tags.addTag( new n5Tag(\"social\"         ,\"social\"         ,\"9E9E4D\",\t\"Social Media Platforms and Networks\"));\nn5Tags.addTag( new n5Tag(\"testing\"        ,\"testing\"        ,\"E5809C\",\t\"QA testing, user acceptance, security, defect, integration, and regression\"));\nn5Tags.addTag( new n5Tag(\"typography\"     ,\"typography\"     ,\"256069\",\t\"Text layout presentation design\"));\nn5Tags.addTag( new n5Tag(\"utility\"        ,\"utilities\"      ,\"E80C7A\",\t\"Diagnostic tools, scripts, snippets, audits, generators and templates\"));\nn5Tags.addTag( new n5Tag(\"ux\"             ,\"UX\"             ,\"DCA907\",\t\"User Experience, Computer Human Interaction and User Interface design\"));\nn5Tags.addTag( new n5Tag(\"video\"          ,\"videos\"         ,\"F24444\",\t\"HTML5 Video Player\"));\n\nfunction N5Tags(){\n\tthis.an5Tags = [];\n\tthis.addTag = function( oTag ){\n\t\tthis.an5Tags.push( oTag );\n\t};\n\tthis.getTag = function( sName_short ){\n\t\t//    Iterate, fetch and return obj given name (token)\n\t\tfor(var iCnt=0; iCnt < this.an5Tags.length; iCnt++){\n\t\t\tif( this.an5Tags[iCnt].name_short === sName_short){\n\t\t\t\treturn this.an5Tags[iCnt];\n\t\t\t}\n\t\t}\n\t}\n\tthis.addCardSub = function( sName_short, sTags_single ){\n\t\t//    Insanity - Append the name of the current tag to the end of the \n\t\t//    delimited subtotal property. (M:M)\n\t\tfor(var iCnt=0; iCnt < this.an5Tags.length; iCnt++){\n\t\t\tif( this.an5Tags[iCnt].name_short === sName_short){\n\t\t\t\tthis.an5Tags[iCnt].cardSubTotal = this.an5Tags[iCnt].cardSubTotal + sTags_single +\"|\";\n\t\t\t}\t\t\n\t\t}\n\t}\n\tthis.getCardSub = function( sName_short ){\n\t\t//    Iterate, fetch and return total given name (token)\n\t\tfor(var iCnt=0; iCnt < this.an5Tags.length; iCnt++){\n\t\t\tif( this.an5Tags[iCnt].name_short === sName_short){\n\t\t\t\treturn this.an5Tags[iCnt].cardSubTotal;\n\t\t\t}\n\t\t}\n\t}\n\tthis.getCardSubAll = function( sTagToken ){\n\t\t//    Iterate, fetch and return an array of DTO given name (token)\n\t\tvar aTag_Count = [];\n\t\tvar aCompare = [];\n\t\tvar sCompare = \"\";\n\n\t\tfor(var iCnt=0; iCnt < this.an5Tags.length; iCnt++){\n\n\t\t\tif( this.an5Tags[iCnt].cardSubTotal.length > 0 && this.an5Tags[iCnt].name_short === sTagToken){\n\t\t\t\taCompare = this.an5Tags[iCnt].cardSubTotal.split(\"|\");\n\t\t\t\tfor(var iCompare=0; iCompare < aCompare.length; iCompare++){\n\t\t\t\t\tif(sCompare.indexOf( aCompare[iCompare] ) >= 0){\n\t\t\t\t\t}else{\n\t\t\t\t\t\tsCompare += aCompare[iCompare];\n\t\t\t\t\t\tvar nOccr= 0;\n\t\t\t\t\t\tnOccr = occurrences(this.an5Tags[iCnt].cardSubTotal, aCompare[iCompare], false);\n\t\t\t\t\t\taTag_Count.push( {source: aCompare[iCompare], target: \"name_short\"});\n\t\t\t\t\t\taTag_Count.push( {source: nOccr,              target: \"tag_count\"});\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t\treturn aTag_Count;\n\t}\n\tthis.getArrayDTO = function( sAll_tags ){\n\t\t//    Given a pipe delim string return an array of DTO\n\t\t//    Source and Target for templ consumption\n\t\tvar aAll_tags = [];\n\t\tvar aAll_tags_out = [];\n\t\taAll_tags = sAll_tags.split(\"|\");\n\n\t\tfor(var iCnt=0; iCnt < aAll_tags.length; iCnt++){\n\t\t\taAll_tags_out.push( {source: aAll_tags[iCnt], target: \"tag\"});\n\t\t}\n\t\treturn aAll_tags_out;\n\t}\n}\n\nfunction n5Tag(name_short,plural,color,summary){\n\tthis.name_short = name_short;\n\tthis.plural = plural;\n\tthis.summary = summary;\n\tthis.color = color;\n\tthis.cardSubTotal = \"\";\n}\n\nfunction N5Contents(){\n\tthis.an5Contents = [];\n\tthis.addContent = function( oContent ){\n\t\tthis.an5Contents.push( oContent );\n\t};\n\tthis.getContentButtonsByType = function( sContent_type, sTag ){\n\t\t//    Given a content_type (PATTERN  TOOL-CSS  TOOL-JS  RESOURCE  DIALOG)\n\t\t//    and a tag (i.e. form) return a tokenized assc array for template consumption\n\t\t//  This may be tricky because the template might need to repeat itself....\n\t\tvar aToken =[];\n\t\tfor(var iCnt=0; iCnt < this.an5Contents.length; iCnt++){\n\t\t\tif( (this.an5Contents[iCnt].content_type === sContent_type) && (this.an5Contents[iCnt].tag === sTag) ){\n\t\t\t\tvar oTok = new Object();\n\t\t\t\t\toTok.target = \"sound\";\n\t\t\t\t\toTok.source = this.an5Contents[iCnt].sound;\n\t\t\t\taToken.push( oTok );\n\t\t\t\tvar oTok = new Object();\n\t\t\t\t\toTok.target = \"file_name\";\n\t\t\t\t\toTok.source = this.an5Contents[iCnt].file_name;\n\t\t\t\taToken.push( oTok );\n\t\t\t\tvar oTok = new Object();\n\t\t\t\t\toTok.target = \"name_short\";\n\t\t\t\t\toTok.source = this.an5Contents[iCnt].name_short;\n\t\t\t\taToken.push( oTok );\n\t\t\t\tvar oTok = new Object();\n\t\t\t\t\toTok.target = \"name_long\";\n\t\t\t\t\toTok.source = this.an5Contents[iCnt].name_long;\n\t\t\t\taToken.push( oTok );\n\t\t\t\tvar oTok = new Object();\n\t\t\t\t\toTok.target = \"all_tags\";\n\t\t\t\t\toTok.source = this.an5Contents[iCnt].all_tags.split(\"|\").join(\"#\");\n\t\t\t\taToken.push( oTok );\n\t\t\t\tvar oTok = new Object();\n\t\t\t\t\toTok.target = \"tags_mu\";\n\t\t\t\t\toTok.source = popuTemplate(\"templ_n5-card-tag\",n5Tags.getArrayDTO( this.an5Contents[iCnt].all_tags ) );\n\t\t\t\taToken.push( oTok );\n\t\t\t}\n\t\t}\n\t\t/*    Process mv tagS    */\n\t\tfor(var iCnt=0; iCnt < this.an5Contents.length; iCnt++){\n\t\t\tif( (this.an5Contents[iCnt].content_type === sContent_type) && (this.an5Contents[iCnt].tags.indexOf( sTag ) >= 0) ){\n\t\t\t\tvar oTok = new Object();\n\t\t\t\t\toTok.target = \"sound\";\n\t\t\t\t\toTok.source = this.an5Contents[iCnt].sound;\n\t\t\t\taToken.push( oTok );\n\t\t\t\tvar oTok = new Object();\n\t\t\t\t\toTok.target = \"file_name\";\n\t\t\t\t\toTok.source = this.an5Contents[iCnt].file_name;\n\t\t\t\taToken.push( oTok );\n\t\t\t\tvar oTok = new Object();\n\t\t\t\t\toTok.target = \"name_short\";\n\t\t\t\t\toTok.source = this.an5Contents[iCnt].name_short;\n\t\t\t\taToken.push( oTok );\n\t\t\t\tvar oTok = new Object();\n\t\t\t\t\toTok.target = \"name_long\";\n\t\t\t\t\toTok.source = this.an5Contents[iCnt].name_long;\n\t\t\t\taToken.push( oTok );\n\t\t\t\tvar oTok = new Object();\n\t\t\t\t\toTok.target = \"all_tags\";\n\t\t\t\t\toTok.source = this.an5Contents[iCnt].all_tags.split(\"|\").join(\"#\");\n\t\t\t\taToken.push( oTok );\n\t\t\t\tvar oTok = new Object();\n\t\t\t\t\toTok.target = \"tags_mu\";\n\t\t\t\t\toTok.source = popuTemplate(\"templ_n5-card-tag\",n5Tags.getArrayDTO( this.an5Contents[iCnt].all_tags ) );\n\t\t\t\taToken.push( oTok );\n\t\t\t}\n\t\t}\n\t\treturn aToken;\t\t\n\t}\n\tthis.getContentByTags = function( sTags ){\n\t\t//    Iterate, fetch and return an array of objs given a tag fragment\n\t\tvar aContainedInTags = [];\n\t\tfor(var iCnt=0; iCnt < this.an5Contents.length; iCnt++){\n\t\t\tif( this.an5Contents[iCnt].tags.indexOf( sTags ) > 0 ){\n\t\t\t\taContainedInTags.push( this.an5Contents[iCnt] );\n\t\t\t}\n\t\t}\n\t\treturn aContainedInTags;\t\t\n\t}\n\tthis.countContentByTags = function( sName_short ){\n\t\t//    Iterate, count and return total (from tags) given name (token)\n\t\tvar iCnt_total = 0;\n\t\tsName_short += \"|\";\n\t\tfor(var iCnt=0; iCnt < this.an5Contents.length; iCnt++){\n\t\t\tif( this.an5Contents[iCnt].tags.indexOf( sName_short ) > 0 ){\n\t\t\t\tiCnt_total++;\n\t\t\t}\n\t\t}\n\t\treturn iCnt_total;\n\t}\n\tthis.countContentByTag = function( sTagToken ){\n\t\t//    Iterate, count and return total (from primary tag) given name (token)\n\t\tvar iCnt_total = 0;\n\t\tfor(var iCnt=0; iCnt < this.an5Contents.length; iCnt++){\n\t\t\tif( this.an5Contents[iCnt].tag === sTagToken){\n\t\t\t\tiCnt_total++;\n\t\t\t}\n\t\t}\n\t\treturn iCnt_total;\n\t}\n\tthis.getTags = function( sName_short ){\n\t\t//    Return an array of short_names and counts\n\t\t//    Associated to this tag container\n\t\t//    Return an empty array if 0\n\t\tvar aTag_Count = [];\n\t\tvar nTag_Count = this.countContentByTag( sName_short );\n\t\tif( nTag_Count > 0 ){\n\t\t\taTag_Count.push( {source: sName_short, target: \"name_short\"});\n\t\t\taTag_Count.push( {source: nTag_Count, target: \"tag_count\"});\n\t\t}\n\t\treturn aTag_Count;\n\t}\n\tthis.hasContent = function( sName_short ){\n\t\t//    Return true if this card has any content\n\t\t//    Parse both tag and contained in tagS\n\t\tfor(var iCnt=0;iCnt < this.an5Contents.length; iCnt++){\n\t\t\tif(( this.an5Contents[iCnt].tag === sName_short ) || ( this.an5Contents[iCnt].tags.indexOf( sName_short ) >= 0)){\n\t\t\t\treturn true;\n\t\t\t}\n\t\t}\n\t\treturn false;\n\t}\n}\n\nfunction n5Content(content_type, name_short, name_long, sound, file_name, tag, tags, notification){\n\tthis.content_type = content_type;  //    PATTERN  TOOL-CSS  TOOL-JS  RESOURCE  DIALOG\n\tthis.name_short = name_short; // aka token\n\tthis.name_long = name_long;\n\tthis.sound = sound;\n\tthis.file_name = file_name;\n\tthis.tag = tag; // aka token\n\tthis.tags = \"|\" + tags + \"|\";\n\tthis.all_tags = tag + \"|\" + tags ;\n\tthis.notification = notification;\n}\n\nfunction popuTemplate(sTemplate_id, aContents){\n\t//    Return a string after swapping an assn array (objects)\n\t//    replacing pipe delm tokens in the template html\n\t//    If all the tokens have been replaced but there is still data in \n\t//    the contents array then use a new copy of the template.\n\n\tif( aContents.length > 0){\n\t\tvar $oTempl = $(\"#\" + sTemplate_id);\n\t\tvar sMUout = \"\"; //  Might contain more than one template html\n\t\tvar sMUprc = $oTempl.html(); // In process string\n\t\tfor(var iC=0; iC < aContents.length; iC++){\t\t\n\t\t\tif( sMUprc.indexOf(\"|\") <= 0){\n\t\t\t\tsMUout += sMUprc;\n\t\t\t\tsMUprc = $oTempl.html();\n\t\t\t}\n\t\t\tsMUprc = sMUprc.replace((\"|\"+aContents[iC].target+\"|\"), aContents[iC].source);\n\t\t}\n\t\tsMUout += sMUprc;\n\t\treturn sMUout;\n\t}else{\n\t\treturn \"\";\n\t}\n}\n\nfunction aJLoad( sPanel ){\n\t//    Load HTML content into dialog from the configured repo\n\n\tswitch ( sPanel ){\n\t\tcase \"templ_contents\" :\n\t\t\t$(\".templ_contents\").load( sRepo_url + \"/templ_contents.html\", function(){\n\t\t\t\tafterContentLoad();\n\t\t\t});\n\t\tbreak;\n\t\tcase \"oc_nav_content_right\" :\n\t\t\t$(\".oc_nav_content_right\").load( sRepo_url + \"/right_nav.html\");\n\t\tbreak;\n\t\tcase \"ql_nav_dropdown\" :\n\t\t\t$(\".ql_nav_dropdown\").load( sRepo_url + \"/ql_nav_dropdown.html\");\n\t\tbreak;\n\t\tcase \"modAboutThisGuide_ugc\" :\n\t\t\t$(\"#modAboutThisGuide_ugc\").load( sRepo_url + \"/modAboutThisGuide.html\");\n\t\tbreak;\n\t\tcase \"templ_footer\" :\n\t\t\t$(\"#templ_footer\").load( sRepo_url + \"/templ_footer.html\", function(){\n\t\t\t\t$(\"aside > button\").unbind().on(\"click\",function( e ) {\n\t\t\t\t\t//    Fade Alert (UGC not modal)\n\t\t\t\t\te.preventDefault();\n\t\t\t\t\toBackGroundEvent.audioTick_1();\t\n\t\t\t\t\t$(this).closest(\".callout\").fadeOut(\"slow\");\n\t\t\t\t});\n\t\t\t});\n\t\tbreak;\n\t\tcase \"modSubmitAnArticle_ugc\" :\n\t\t\t$(\"#modSubmitAnArticle_ugc\").load( sRepo_url + \"/sfdc-w2l-article.html\", function(){\n\t\t\t\t$(\"#cmdSubmitAnArticle--form\").on(\"click\", function ( e ) {\n\t\t\t\t\t//    Submit an Article was well, submitted\n\t\t\t\t\tvar bOk = true;\n\t\t\t\t\te.preventDefault();\n\t\t\t\t\t$(\"#sfdc-w2l--form input, textarea\").each(function(){\n\t\t\t\t\t\tif( $(this).val().length === 0 ) bOk = false;\n\t\t\t\t\t});\n\t\t\t\t\tif( bOk ){\n\t\t\t\t\t\toBackGroundEvent.playAudioFile( 17 );    //    zipper\n\t\t\t\t\t\toBackGroundEvent.displayMsg(\"Submitting Your Article\");\n\t\t\t\t\t\t$(\"#modLoading\").foundation(\"open\");\t\t\t\t\n\t\t\t\t\t\tsetTimeout( function( ){\n\t\t\t\t\t\t\t//    Populate repo\n\t\t\t\t\t\t\t$(\".sfdc-w2l--input__repo\").val( sRepo_url );\n\t\t\t\t\t\t\t$(\"#modLoading\").foundation(\"close\");\n\t\t\t\t\t\t\t$(\"#sfdc-w2l--form\").submit();\n\t\t\t\t\t\t}, 800);\n\t\t\t\t\t}else{\n\t\t\t\t\t\toBackGroundEvent.playAudioFile( 10 );    //    beep errorish\n\t\t\t\t\t\toBackGroundEvent.displayMsg(\"Please fill out Entire Form\");\n\t\t\t\t\t}\n\t\t\t\t});\n\t\t\t});\n\t\tbreak;\n\t}\n}\n\nfunction aJTab( sPanel, sData_all_tags ){\n\t//    Create or reuse a tab and make its location that had from an href\n\t//    I am assuming that only PATTERN class content are being launched in this tab\n\t//\n\t//    Converting the all-tags string to markup before it is persisted\n\n\toBackGroundEvent.aJTab( sPanel, popuTemplate(\"templ_n5-card-tag\", n5Tags.getArrayDTO( sData_all_tags.split(\"#\").join(\"|\") ) ) );\n}\nfunction hashThis( sIn ){\n\tvar shaObj = new jsSHA(\"SHA-256\", \"TEXT\");\n\tshaObj.setHMACKey(\"eplsg\", \"TEXT\");\n\tshaObj.update( sIn );\n\treturn shaObj.getHMAC(\"HEX\");\n}\n\nfunction afterContentLoad(){\n    //    Document ready has fired and the content template is loaded | Init the n5 Cards\n\n\t$(\".n5c-ugc-source\").each(function(){\n\t\t//    Objectify the content markup\n\t\tvar data_content_type = $(this).attr(\"data-content_type\");\n\t\tvar data_name_short = $(this).attr(\"data-name_short\");\n\t\tvar data_name_long = $(this).attr(\"data-name_long\");\n\t\tvar data_sound = $(this).attr(\"data-sound\");\n\t\tvar data_file_name = $(this).attr(\"data-file_name\");\n\t\tvar data_tag = $(this).attr(\"data-tag\");\n\t\tvar data_tags = $(this).attr(\"data-tags\");\n\t\tvar data_notification = $(this).attr(\"data-notification\");\n\t\tn5Contents.addContent( new n5Content(data_content_type,data_name_short,data_name_long,data_sound,data_file_name,data_tag,data_tags,data_notification));\n\t});\n\n\tvar iCnt=0;\n\t$(\"[data-n5c-token]\").each(function(){\n\t\t//    Poplate templ_n5c\n\t\tiCnt++;\n\t\tvar aCard =[];\n\t\t\tvar oTok = new Object();\n\t\t\toTok.target = \"token\";\n\t\t\toTok.source = $(this).attr(\"data-n5c-token\");\n\t\t\taCard.push( oTok );\n\t\t\tvar oTok = new Object();\n\t\t\toTok.target = \"count\";\n\t\t\toTok.source = iCnt;\n\t\t\taCard.push( oTok );\n\t\t\taCard.push( oTok );\n\t\t\taCard.push( oTok );\n\t\t$(this).html( popuTemplate(\"templ_n5c\", aCard) );\n\t});\n\t\n\t$(\".n5-card\").each(function(){\n\t\tvar sTagToken = $( this ).attr(\"data-n5c-token\");  //  attrib on the card\t\n\t\tvar sTagName_short = n5Tags.getTag( sTagToken ).name_short;\n\t\tvar sTagSummary    = n5Tags.getTag( sTagToken ).summary;\n\t\t//    Populate the cards caption and summary\n\t\t$( this ).find(\".n5-card--caption-1-h3\").html(  sTagName_short );\n\t\t$( this ).find(\".n5-card--summary-1 > p\").html( sTagSummary );\n\t\t//    Render tag labels /w count into card container\n\t\t//    Primary Tag\n\t\tvar $oCardContainer = $( this ).find(\".n5-card--img-1\");\n\t\t$oCardContainer.html( popuTemplate(\"templ_tag_label_count_primary\",\n\t\t\tn5Contents.getTags( sTagToken ) ));\n\t\t//    Associated TagS\n\t\tif( n5Contents.countContentByTags( sTagToken ) > 0 ){\n\t\t\tvar aTags = n5Contents.getContentByTags( sTagToken );\n\t\t\tfor(var iC=0; iC < aTags.length; iC++){\n\t\t\t\tn5Tags.addCardSub( sTagToken, aTags[iC].tag ); // Increment counters\n\t\t\t}\n\t\t\t$oCardContainer.html( $oCardContainer.html() + popuTemplate(\"templ_tag_label_count\",\n\t\t\tn5Tags.getCardSubAll( sTagToken )) );\n\t\t}\n\t\t//    Populate Reveal Modal Dialogs (ugc) via template (zoomed nav n5c state)\n\t\t//    Populate the templates name_short and summary tokens and id the 3 tables\n\t\tvar aToken =[{source: sTagName_short , target: \"name_short\"},\n\t\t{source: sTagSummary , target: \"summary\"},\n\t\t{source: sTagName_short+\"_PATTERN\" , target: \"name_short_PATTERN\"},\n\t\t{source: sTagName_short+\"_JS-TOOL\" , target: \"name_short_JS-TOOL\"},\n\t\t{source: sTagName_short+\"_JS-RESOURCE\" , target: \"name_short_JS-RESOURCE\"}];\n\t\t$(\"#\"+ $(this).attr(\"id\")+\"--mod__ugc\").html(popuTemplate(\"templ_n5-card-mod-details\", aToken ));\n\n\t\t$(\"#\"+ sTagName_short+\"_PATTERN\").html(popuTemplate(\"templ_n5-card-mod-details_tr_PATTERN\", n5Contents.getContentButtonsByType(\"PATTERN\",sTagToken) ));\n\t\t$(\"#\"+ sTagName_short+\"_JS-TOOL\").html(popuTemplate(\"templ_n5-card-mod-details_tr_JS-TOOL\", n5Contents.getContentButtonsByType(\"JS-TOOL\",sTagToken) ));\n\t\t$(\"#\"+ sTagName_short+\"_JS-RESOURCE\").html(popuTemplate(\"templ_n5-card-mod-details_tr_JS-RESOURCE\", n5Contents.getContentButtonsByType(\"JS-RESOURCE\",sTagToken) ));\n\t\t//  Hide Details Element if empty\n\t\tif( $(\"#\"+ sTagName_short+\"_PATTERN\").html() === \"\" ){\n\t\t\t$(\"#\"+ sTagName_short+\"_PATTERN\").closest(\"details\").addClass(\"hide\");\n\t\t}\n\t\tif( $(\"#\"+ sTagName_short+\"_JS-TOOL\").html() === \"\" ){\n\t\t\t$(\"#\"+ sTagName_short+\"_JS-TOOL\").closest(\"details\").addClass(\"hide\");\n\t\t}\n\t\tif( $(\"#\"+ sTagName_short+\"_JS-RESOURCE\").html() === \"\" ){\n\t\t\t$(\"#\"+ sTagName_short+\"_JS-RESOURCE\").closest(\"details\").addClass(\"hide\");\n\t\t}\n\t});\n\t$(\".tool-cmd--a\").on(\"click\", function( e ){\n\t\t//    Tool Buttons Wire Up\n\t\tvar sSoundCode = $(this).attr(\"data-sound\");\n\t\toBackGroundEvent.playAudioFile( sSoundCode );    //    From sound attr on anchor\n\t\t//$(\".rev-modal\").foundation(\"close\");\n\t\t$(\"#modLoading\").foundation(\"open\");\t\t\t\t\n\t\toBackGroundEvent.runTool( $( this ).attr(\"data-tool-cmd-action\") );\n\t\tsetTimeout( function( ){\n\t\t\t$(\"#modLoading\").foundation(\"close\");\n\t\t}, 800);\n\t\te.preventDefault();\n\t});\n}\n\n$( document ).ready(function(){\n\t//    Fire up the Zurb Foundation 6 RWD framework\n\t$( document ).foundation();\n\n\toBackGroundEvent.playAudioFile( ( Math.floor((Math.random()*2) ) === 0) ? 6 : 4 ); //  Random Intro sound\n\n\t//    Startup Application Init Logic\n\n\tif( localStorage.getItem(\"repo_name\") === null ){\n\t\tsRepo_url = sRepo_url_demo;\n\t\t$(\"#modGetGitRepo\").foundation(\"open\");\n\t\t$(\"#txtRepo_name\").focus();\n\t}else{\n\t\t//    A repo URL exists in local storage, so let's use it\n\t\tsRepo_url = localStorage.getItem(\"repo_name\");\n\t}\n\tif( localStorage.getItem(\"sound_switch\") !== \"false\" ){\n\t\t$(\".store-sound-switch--a > i\").removeClass(\"fa-volume-off fa-volume-up\").addClass(\"fa-volume-up\");\n\t}else{\n\t\t$(\".store-sound-switch--a > i\").removeClass(\"fa-volume-off fa-volume-up\").addClass(\"fa-volume-off\");\n\t}\n\t//   ugc driver\n\taJLoad(\"templ_contents\");\n\taJLoad(\"oc_nav_content_right\");\n\taJLoad(\"ql_nav_dropdown\");\n\taJLoad(\"modAboutThisGuide_ugc\");\n\taJLoad(\"templ_footer\");\n\taJLoad(\"modSubmitAnArticle_ugc\");\n\n/*\n\t$('.owl-carousel').owlCarousel({\n\t    loop:true,\n\t    margin:10,\n\t    nav:false,\n\t    autoplay:true,\n\t    autoplayTimeout:2400,\n\t    autoplayHoverPause:true,\n\t    responsive:{\n\t        0:{\n\t            items:1\n\t        },\n\t        600:{\n\t            items:3\n\t        },\n\t        1000:{\n\t            items:5\n\t        }\n\t    }\n\t});\n*/\n\t$(\"#cmdOffCanvMyClip\").on(\"click\", \"*\", function( e ) {\n\t\t//    Off Canvas\n\t\toBackGroundEvent.playAudioFile( 17 );    //    ?\n\t});\n\t$(\".fa-paper-plane\").on(\"click\", function( e ){\n\t\t$(\"#cmdOffCanvMyClip\").click();\n\t\te.preventDefault();\n\t});\n\n\t$(document).on('closed.zf.reveal', '#modGetGitRepo[data-reveal]', function() {\n\t\t//    The config modal was closed - Use default SITE repo if none in local storage\n\t\tif( $(\"#txtRepo_name\").val() === \"\"){\n\t\t\tif( localStorage.getItem(\"repo_name\") === null ){\n\t\t\t\tsRepo_url = sRepo_url_demo;\n\t\t\t\tlocalStorage.setItem(\"repo_name\", sRepo_url);\n\t\t\t\toBackGroundEvent.displayMsg(  \"No Style Guide connected\\nLoading Demo\" );\n\t\t\t}else{\n\t\t\t\toBackGroundEvent.displayMsg(  \"No Changes.\" );\n\t\t\t}\n\t\t}\n\t});\n\n\t$(\"#cmdRepo-new\").on(\"click\", function( e ){\n\t\t//    The [Custom Repo] button on the Config Modal\n\t\t//    was explicitly clicked\n\t\tvar sURL = $(\"#txtRepo_name\").val();\n\t\tif( sURL === \"\" ){\n\t\t\toBackGroundEvent.displayMsg(  \"Invalid Style Guide\\n\" + sURL );\n\t\t}else{\n\t\t\tisValidRepo( sURL );\n\t\t}\n\t\te.preventDefault();\n\t});\n\n\tfunction isValidRepo( sURL ){\n\t\t//    Get json arr of hash - find url\n\t\tif(sURL.indexOf( \"github.io\" ) <= 0 ){// Entered a hash\n\t\t\t$.getJSON( \"http://neodigm.github.io/ever-present-living-style-guide-site/section9.json\", function( json_sec9 ) {\n\t\t\t\tvar iCnt =0;\n\t\t\t \t$.each( json_sec9, function( key, val ) {\n\t\t\t \t\tif( val === sURL ){\n\t\t\t\t\t\tsURL=json_sec9[(iCnt+1)];\n\t\t\t\t\t\t$(\"#txtElm_repo\").val( sURL );\n\t\t\t\t\t\t$(\"#modElm\").foundation(\"open\");\n\t\t\t\t\t\treturn false;\n\t\t\t \t\t}\n\t\t\t \t\tiCnt++;\n\t\t\t\t});\n\t\t\t});\n\t\t}else{//    Entered a plain old gh repo\n\t\t\tconnectRepoNew( sURL );\n\t\t}\n\t}\n\n\t$(\"#cmdElm-sub\").on(\"click\", function( e ){\n\t\t//    The [Submit Email Address] button on the Config Modal\n\t\t//    was explicitly clicked\n\t\tvar sURL = $(\"#txtElm_repo\").val();\n\t\tif( sURL === \"\" ){\n\t\t\toBackGroundEvent.displayMsg(  \"Invalid Style Guide\\n\" + sURL );\n\t\t}else{//    Is this a valid email?\n\n\t\t\t$.getJSON( sURL+\"/section9.json\", function( json_sec9 ) {\n\t\t\t\tvar sElm = hashThis( $(\"#txtElm\").val().toLowerCase() );\n\t\t\t\tvar iCnt =0;\n\t\t\t \t$.each( json_sec9, function( key, val ) {\n\t\t\t \t\tif( val === sElm ){\n\t\t\t\t\t\toBackGroundEvent.displayMsg(  \"Email is Valid\\n\" + $(\"#txtElm\").val() );\n\t\t\t\t\t\tconnectRepoNew( sURL );\n\t\t\t\t\t\toBackGroundEvent.playAudioFile( 11 );    //    the living ...\n\t\t\t\t\t\twindow.close();\n\t\t\t\t\t\tiCnt = -1;\n\t\t\t\t\t\treturn false;\n\t\t\t \t\t}\n\t\t\t \t\tiCnt++;\n\t\t\t\t});\n\t\t\t\tif(iCnt >= 0){\n\t\t\t\t\toBackGroundEvent.playAudioFile( 10 );    //    error\n\t\t\t\t\toBackGroundEvent.displayMsg(  \"Invalid Email Address \" + sElm );\n\t\t\t\t\twindow.close();\n\t\t\t\t}\n\t\t\t});\n\t\t}\n\t\te.preventDefault();\n\t});\n\n\tfunction connectRepoNew( sURL ){\n\t\t//\n\t\tsRepo_url = sURL;\n\t\tlocalStorage.setItem(\"repo_name\", sRepo_url);\n\t\toBackGroundEvent.displayMsg(  \"Connected to Style Guide\" );\n\t}\n\n\t$(\".store-repo-dialog--a\").on(\"click\", function(e){\n\t\t//    Cog Clicked\n\t\toBackGroundEvent.playAudioFile( 7 );    //    ping\n\t\tif( localStorage.getItem(\"repo_name\") !== null ){\n\t\t\t//  Not doing this anymore ... $(\"#txtRepo_name\").val( localStorage.getItem(\"repo_name\") );\n\t\t}\n\t\t$(\"#modGetGitRepo\").foundation(\"open\");\n\t\te.preventDefault();\n\t});\n\n\t$(\".store-repo-set--a\").on(\"click\", function(e){\n\t\t//    Temp dev events - DELETE later\n\t\tlocalStorage.setItem(\"repo_name\", \"ltdc_ux_cookbook\");\n\t\te.preventDefault();\n\t});\n\t$(\".store-repo-get--a\").on(\"click\", function(e){\n\t\t//    Notify the local storage vars / check console.log as well\n\n\t\tconsole.clear()\n\t\tconsole.group(\"Local Storage\");\n\t\t\toBackGroundEvent.displayMsg( \"repo_name: \" + localStorage.getItem(\"repo_name\") );\n\t\t\tconsole.log(\"repo_name: \" + localStorage.getItem(\"repo_name\"));\n\n\t\t\toBackGroundEvent.displayMsg( \"article: \" + localStorage.getItem(\"eplsg-template--article\") );\n\t\t\tconsole.log(\"article: \" + localStorage.getItem(\"eplsg-template--article\"));\n\n\t\t\toBackGroundEvent.displayMsg( \"sound_switch: \" + localStorage.getItem(\"sound_switch\") );\n\t\t\tconsole.log(\"sound_switch: \" + localStorage.getItem(\"sound_switch\"));\n\n\t\t\tconsole.groupCollapsed(\"MyClipboard\");\n\t\t\t\tconsole.log(\"MyClipboard: \" + localStorage.getItem(\"MyClipboard\"));\n\t\t\tconsole.groupEnd();\n\t\tconsole.groupEnd();\n\n\t\tconsole.group(\"Chrome Storage\");\n\t        chrome.storage.local.get(\"myclipboard_summary\" , function(fetchedData){\n\t            NotfChromeStor_value = fetchedData[\"myclipboard_summary\"];\n\t            console.log(  \"Tool Summary: \" + NotfChromeStor_value );\n\t        });\n\t        chrome.storage.local.get(\"myclipboard_temp\" , function(fetchedData){\n\t            NotfChromeStor_value = fetchedData[\"myclipboard_temp\"];\n\t            console.log(  \"Tool Report: \" + NotfChromeStor_value );\n\t        });\n\t\tconsole.groupEnd();\n\n\t\te.preventDefault();\n\t});\n\t$(\".store-repo-clear--a\").on(\"click\", function(e){\n\t\t//    Temp dev events - DELETE later\n\t\tlocalStorage.removeItem(\"repo_name\");\n\t\tlocalStorage.removeItem(\"sound_switch\");\n\t\tchrome.storage.local.clear(function() {\n\t\t    var error = chrome.runtime.lastError;\n\t\t    if (error) {\n\t\t        console.error(error);\n\t\t    }\n\t\t});\n\t\te.preventDefault();\n\t});\n\t$(\".store-sound-switch--a\").on(\"click\", function(e){\n\t\t//  Check LS val, update LS val, and change icon on button\n\n\t\tif( localStorage.getItem(\"sound_switch\") !== \"false\" ){\n\t\t\tlocalStorage.setItem(\"sound_switch\", \"false\");\n\t\t\t$(\".store-sound-switch--a > i\").removeClass(\"fa-volume-off fa-volume-up\").addClass(\"fa-volume-off\");\n\t\t}else{\n\t\t\tlocalStorage.setItem(\"sound_switch\", \"true\");\n\t\t\t$(\".store-sound-switch--a > i\").removeClass(\"fa-volume-off fa-volume-up\").addClass(\"fa-volume-up\");\n\t\t\toBackGroundEvent.playAudioFile( 1 );    //    ping\n\t\t}\n\t\te.preventDefault();\n\t});\n});\n\n$( window ).load(function(){ \n\n});\n\n$('.close-button:not(.callout)').click(function( e ) {\n\t//    Sound | Audio ping close\n\toBackGroundEvent.audioTick_1();\t\n});\n\n$( document ).bind(\"ajaxComplete\", function(){\n\t$( document ).foundation();\n\n\t//    Init Expand all cards\n\t//TweenLite.to( $(\".n5-card:even\"), 1.8, {height: \"256px\"});\n\t//TweenLite.to( $(\".n5-card:odd\"),  1.0, {heimght: \"256px\"});\n\t$(\".n5-card\").each(function(){\n\t\tvar wasOpened = localStorage.getItem( $(this).attr(\"data-n5c-token\") );\n\t\tif( typeof wasOpened !== typeof null ){\n\t\t\tvar nTime = ( Math.floor((Math.random()*2) ) === 0) ? 1.0 : 2.0;\n\t\t\tTweenLite.to( $(this),  nTime, {height: \"256px\"});\n\t\t\t$( this ).find(\".fa\").removeClass(\"fa-chevron-down\").addClass(\"fa-chevron-up\");\n\t\t}\n\t});\n\n\t$(\".href-loc-stor-wrap-templ\").unbind().on(\"click\",function( e ){\n\t\t//    Left Nav Menu Click OR any in-doc click\n\t\te.preventDefault();\n\t\toBackGroundEvent.audioAlert();\n\t\t\n\t\tvar sFilNam = e.target.pathname; //    This contains the extension path\n\t\tsFilNam = sFilNam.substring(sFilNam.lastIndexOf( \"/\" ) + 1);\n\n\t\tif( sFilNam.substring(0, 2) === \"--\" ){\n\t\t\t//  Open the reveal by attr naming convention\n\t\t\t//  May need to wait for the off canvas to close\n\t\t\tvar sSoundCode = $(this).attr(\"data-sound\");\n\t\t\tif( typeof sSoundCode === typeof undefined ){ sSoundCode = 1; }\n\t\t\tsetTimeout( function( ){\n\t\t\t\t$(\"[data-content-link=\" + sFilNam + \"]\").foundation(\"open\");\n\t\t\t\toBackGroundEvent.playAudioFile( sSoundCode );    //    From sound attr on anchor\n\t\t\t}, 320);\n\t\t}else{\n\t\t\taJTab( sRepo_url + \"/\" + sFilNam, $(this).attr(\"data-all-tags\") );\n\t\t}\n\t});\n\n\t$(\".n5-card\").unbind().on(\"click\", function( e ){\n\t\t//  Pop into modal - open by naming convention\n\t\tvar sTagToken = $( this ).attr(\"data-n5c-token\");\n\t\tif( n5Contents.hasContent( $( this ).attr(\"data-n5c-token\") )){\n\t\t\t$(\"#\"+ $(this).attr(\"id\")+\"--mod\").foundation(\"open\");\n\t\t\toBackGroundEvent.playAudioFile( 3 );     //    wind whiz\n\t\t}else{\n\t\t\toBackGroundEvent.playAudioFile( 10 );    //    beep errorish\n\t\t}\n\t\te.preventDefault();\n\t});\n\n\t$( \".n5-card\" ).hover(\n\t\tfunction() {\n\t\t\t//    mouseover\n\t\t\tTweenLite.to( this, 4, {ease: Expo.easeOut, backgroundPosition: \"-444px 0px\"});\n\t\t}, function() {\n\t\t\t//    mouseout\n\t\t}\n\t);\n\n\t$(\".n5-card--caption-1\").unbind().on(\"click\", function( e ){\n\t\t//    Iconify or expand card\n\n\t\tvar n5c = $( this ).closest(\".n5-card\");\n\t\tvar n5c_sumr = $( n5c ).children(\".n5-card--summary-1\");\n\t\t//    Get Ref to I element to change chevron icon\n\t\tvar n5c_i = $( \"#\"+n5c.attr(\"id\")+\" .n5-card--iconarrow-1 .fa\" ).first();\n\n\t\tif( $( n5c_i ).hasClass(\"fa-chevron-down\") ){\n\t\t\t//    open\n\t\t\toBackGroundEvent.playAudioFile( 18 );    //    mechanical whirl\n\t\t\t$( n5c_i ).removeClass(\"fa-chevron-down\").addClass(\"fa-chevron-up\");\n\t\t\tTweenLite.to( n5c, 1, {ease: Expo.easeOut, height: \"256px\"});\n\t\t\tTweenLite.to( n5c_sumr, 1.2, {ease: Expo.easeOut, delay:0.4, height: \"64px\"});\n    \t\t//  Persist open state\n\t\t    localStorage.setItem( $(this).children(\"h3\").html() , \"1\");\n\t\t}else{\n\t\t\t//    close\n\t\t\toBackGroundEvent.playAudioFile( 8 );    //    alien whirl\n\t\t\t$( n5c_i ).removeClass(\"fa-chevron-up\").addClass(\"fa-chevron-down\");\n\t\t\tTweenLite.to( n5c_sumr, .8, {ease: Expo.easeOut, height: \"0px\"});\n\t\t\tTweenLite.to( n5c, 1, {ease: Expo.easeOut, height: \"48px\"});\n    \t\t//  Remove open state\n\t\t    localStorage.removeItem( $(this).children(\"h3\").html() );\n\t\t}\n\t\te.preventDefault();\n\t\te.stopPropagation();\n\t});\n\n\t$(\".cmd--dropdown\").on(\"click\", function(){\n\t\t//  Quick Links Spoken Audio - 12\n\t\toBackGroundEvent.playAudioFile( 12 );\n\t});\n});\n\tfunction occurrences(string, subString, allowOverlapping) {\n\t\t//  Return the number of occurences of one string within another\n\t    string += \"\";\n\t    subString += \"\";\n\t    if (subString.length <= 0) return (string.length + 1);\n\n\t    var n = 0,\n\t        pos = 0,\n\t        step = allowOverlapping ? 1 : subString.length;\n\n\t    while (true) {\n\t        pos = string.indexOf(subString, pos);\n\t        if (pos >= 0) {\n\t            ++n;\n\t            pos += step;\n\t        } else break;\n\t    }\n\t    return n;\n\t}\n}\ncatch( e ){\n\tconsole.log(\"Error | \" + e.message);\n}\n",
 			"file": "/C/neo/neos_proj/2016/neos_ux_cookbook/ever-present-living-style-guide/ext/scott_c_krause/js/oscillation-overthruster.js",
+			"file_size": 29780,
+			"file_write_time": 131197435551734662,
 			"settings":
 			{
 				"buffer_size": 29004,
@@ -175,7 +135,7 @@
 			"file": "pod-1.json",
 			"settings":
 			{
-				"buffer_size": 600,
+				"buffer_size": 594,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -184,7 +144,7 @@
 			"file": "pod-2.json",
 			"settings":
 			{
-				"buffer_size": 3040,
+				"buffer_size": 3035,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -193,7 +153,7 @@
 			"file": "pod-3.json",
 			"settings":
 			{
-				"buffer_size": 3040,
+				"buffer_size": 3035,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -211,7 +171,7 @@
 			"file": "vid-1.json",
 			"settings":
 			{
-				"buffer_size": 599,
+				"buffer_size": 594,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -220,7 +180,7 @@
 			"file": "vid-2.json",
 			"settings":
 			{
-				"buffer_size": 599,
+				"buffer_size": 594,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -229,7 +189,7 @@
 			"file": "vid-3.json",
 			"settings":
 			{
-				"buffer_size": 599,
+				"buffer_size": 594,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -238,7 +198,7 @@
 			"file": "vid-4.json",
 			"settings":
 			{
-				"buffer_size": 599,
+				"buffer_size": 595,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -247,7 +207,7 @@
 			"file": "wrd-1.json",
 			"settings":
 			{
-				"buffer_size": 3519,
+				"buffer_size": 3514,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -256,7 +216,7 @@
 			"file": "wrd-2.json",
 			"settings":
 			{
-				"buffer_size": 2767,
+				"buffer_size": 2762,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -265,7 +225,7 @@
 			"file": "wrd-3.json",
 			"settings":
 			{
-				"buffer_size": 3268,
+				"buffer_size": 5495,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -274,7 +234,7 @@
 			"file": "wrd-4.json",
 			"settings":
 			{
-				"buffer_size": 2767,
+				"buffer_size": 828,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -310,12 +270,20 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/C/neo/neos_proj/2016/neos_ux_cookbook/ever-present-living-style-guide"
+	],
 	"file_history":
 	[
+		"/C/neo/neos_proj/2016/is-ecom-labs/index.html",
+		"/C/neo/neos_proj/2016/littleoverlord/img/lol_lgo_brand-01.svg",
+		"/C/neo/neos_proj/2016/neos_ux_cookbook/ever-present-living-style-guide/ext/scott_c_krause/ever_present_living_style_guide.html",
+		"/C/neo/neos_proj/2016/is-ecom-labs/faq-modal.html",
+		"/C/neo/neos_proj/2016/littleoverlord/index.html",
 		"/C/neo/neos_proj/2016/is-ecom-labs/faq.html",
 		"/C/neo/neos_proj/2016/littleoverlord/content/vid-1.json",
 		"/C/neo/neos_proj/2016/littleoverlord/publish.bat",
-		"/C/neo/neos_proj/2016/littleoverlord/index.html",
 		"/C/neo/neos_proj/2016/littleoverlord/json/video_1.json",
 		"/C/neo/neos_proj/2016/neos_ux_cookbook/ever-present-living-style-guide/ext/scott_c_krause/js/ever_present_living_style_guide.js",
 		"/C/neo/neos_proj/2016/littleoverlord/wtf.html",
@@ -350,6 +318,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"occurrences",
 			"ccard-thn",
 			"playAudioRand",
 			"playAudioFile",
@@ -476,8 +445,7 @@
 			"data-title_",
 			"data-title-short",
 			"ccard callout warning",
-			"sText",
-			"makeId"
+			"sText"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -495,38 +463,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/C/neo/neos_proj/2016/littleoverlord/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 52337,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 25903.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		},
 		{
@@ -534,123 +472,7 @@
 			"sheets":
 			[
 				{
-					"buffer": 1,
-					"file": "/C/neo/neos_proj/2016/is-ecom-labs/faq-modal.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 20220,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								417,
-								417
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/C/neo/neos_proj/2016/neos_ux_cookbook/ever-present-living-style-guide/ext/scott_c_krause/ever_present_living_style_guide.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1742,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								334,
-								334
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 14,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/C/neo/neos_proj/2016/littleoverlord/img/lol_lgo_brand-01.svg",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 11413,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								9124,
-								9124
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/XML/XML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 15,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/C/neo/neos_proj/2016/is-ecom-labs/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 11844,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 16,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
+					"buffer": 0,
 					"file": "/C/neo/neos_proj/2016/neos_ux_cookbook/ever-present-living-style-guide/ext/scott_c_krause/js/oscillation-overthruster.js",
 					"semi_transient": false,
 					"settings":
@@ -662,8 +484,8 @@
 						"selection":
 						[
 							[
-								5457,
-								5457
+								28590,
+								28590
 							]
 						],
 						"settings":
@@ -673,14 +495,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 23219.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 19,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 1,
 					"file": "/C/neo/neos_proj/2016/neos_ux_cookbook/ever-present-living-style-guide/ext/scott_c_krause/oscillation-overthruster.html",
 					"semi_transient": false,
 					"settings":
@@ -705,11 +527,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 17,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 2,
 					"file": "/C/neo/neos_proj/2016/short_message_service/proto/proto_sms_lsc_1.html",
 					"semi_transient": false,
 					"settings":
@@ -734,7 +556,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 18,
+					"stack_index": 14,
 					"type": "text"
 				}
 			]
@@ -744,49 +566,20 @@
 			"sheets":
 			[
 				{
-					"buffer": 8,
+					"buffer": 3,
 					"file": "pod-1.json",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 600,
+						"buffer_size": 594,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								588,
-								588
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "pod-2.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3040,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								147,
-								147
+								0,
+								0
 							]
 						],
 						"settings":
@@ -802,20 +595,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 10,
-					"file": "pod-3.json",
+					"buffer": 4,
+					"file": "pod-2.json",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3040,
+						"buffer_size": 3035,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								62,
-								62
+								0,
+								0
 							]
 						],
 						"settings":
@@ -827,11 +620,40 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 5,
+					"file": "pod-3.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3035,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
 					"file": "pod-4.json",
 					"semi_transient": false,
 					"settings":
@@ -856,111 +678,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "vid-1.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 599,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								62,
-								62
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
 					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
-					"file": "vid-2.json",
+					"buffer": 7,
+					"file": "vid-1.json",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 599,
+						"buffer_size": 594,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								62,
-								62
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "vid-3.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 599,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								399,
-								399
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "vid-4.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 599,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								62,
-								62
+								0,
+								0
 							]
 						],
 						"settings":
@@ -976,20 +711,78 @@
 					"type": "text"
 				},
 				{
-					"buffer": 16,
-					"file": "wrd-1.json",
+					"buffer": 8,
+					"file": "vid-2.json",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3519,
+						"buffer_size": 594,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								70,
-								70
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "vid-3.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 594,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "vid-4.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 595,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1005,20 +798,49 @@
 					"type": "text"
 				},
 				{
-					"buffer": 17,
-					"file": "wrd-2.json",
+					"buffer": 11,
+					"file": "wrd-1.json",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2767,
+						"buffer_size": 3514,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								180,
-								180
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "wrd-2.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2762,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1030,16 +852,16 @@
 						"translation.y": 44.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 18,
+					"buffer": 13,
 					"file": "wrd-3.json",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3268,
+						"buffer_size": 5495,
 						"regions":
 						{
 						},
@@ -1059,24 +881,24 @@
 						"translation.y": 48.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 19,
+					"buffer": 14,
 					"file": "wrd-4.json",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2767,
+						"buffer_size": 828,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2668,
-								2668
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1088,7 +910,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -1128,7 +950,7 @@
 		"cols":
 		[
 			0.0,
-			0.901875,
+			0.191271602226,
 			0.931640625,
 			1.0
 		],
@@ -1177,7 +999,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
@@ -1185,7 +1007,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 103.0,
+	"side_bar_width": 270.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
