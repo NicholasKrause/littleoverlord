@@ -164,6 +164,9 @@ body.theme__night {
 	color: #FEFFC2;
 	margin: 0;
 }
+.prinav--p__active {
+	color: #EE4444 !important;
+}
 .theme__night .prinav--li p:hover{
 	color: #B4BA6C;
 }
@@ -345,6 +348,9 @@ input:checked~.switch-paddle {
 	background-color: #7D2A35;
 	height: 54px;
 }
+.theme__night .title-bar {
+	opacity: 0.8;
+}
 .drop-shadow {
 	-webkit-transition: -webkit-transform .15s linear;
 	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
@@ -510,7 +516,8 @@ href="cv/resume_nicholas_krause.pdf" target="_blank">Download CV</a>
 <span class="label color-back__lol02">#EE0000</span>
 <span class="label color-back__lol03">#917A56</span>
 <span class="label color-back__lol04">#B4BA6C</span>
-<span class="label color-back__lol05">#FEFFC2</span>
+<span class="label color-back__lol05">#FEFFC2</span> 
+
 -->
 									</aside>
 									<aside class="ccard callout warning"
@@ -836,6 +843,8 @@ Photoshop CS6 Print and Web graphics
 			//    Prime Nav
 			$(".prinav--a").on("click", function( e ){
 				playAudioRand( [1,4] );
+				$(".prinav--p__active").removeClass("prinav--p__active");
+				$( this ).find("p").addClass("prinav--p__active");
 				$(".content-section").addClass("blind");
 				CnfState.prinv = $( this ).attr("data-prinv");				
 				$( "#js-" + CnfState.prinv ).removeClass("blind");
