@@ -72,7 +72,7 @@ body.theme__night {
 	cursor: pointer;
 	border-color: #EE0000;
  }
-.ccard:hover::before {
+.js-cntnt--asd .ccard:hover::before {
     content:"";
     position: absolute;
     top: -96px; left: -96px;
@@ -106,7 +106,7 @@ body.theme__night {
 }
 .ccard-summary {
 	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 15px;
+	font-size: 17px;
 	font-weight: normal;
 	line-height: 1.4em;
 	color: #222;
@@ -486,7 +486,7 @@ Curated Snark
 						</div>
 						<div class="column small-12 medium-12 large-3">
 							<section class="row">
-								<div id="js-cntnt--asd__hom" class="column small-12">
+								<div id="js-cntnt--asd__hom" class="column small-12 js-cntnt--asd">
 									<!--  content aside   begin  -->
 									<aside class="ccard callout warning"
 									data-title_short="wiki_api">
@@ -548,7 +548,7 @@ href="http://nicholaskrause.github.io/ign_code_foo_2016/front-end-responsive.htm
 					<section class="row">
 						<div class="column small-12 medium-12 large-9">
 							<section class="row">
-								<div id="js-cntnt--art__abt" class="column small-12">
+								<div id="js-cntnt--art__abt" class="column small-12 js-cntnt--asd">
 									<!--  content article begin  -->
 <p class="caption_static caption--p__opensans">Nicholas Krause is experienced with social media campaigns and has the ability to communicate  in an engaging and exciting manner to customers over the internet. Nicholas understands that a strong and consistent virtual presence is key to overcoming others in a competitive market.
 </p>
@@ -575,7 +575,7 @@ Photoshop CS6 Print and Web graphics
 						</div>
 						<div class="column small-12 medium-12 large-3">
 							<section class="row">
-								<div id="js-cntnt--asd__abt" class="column small-12">
+								<div id="js-cntnt--asd__abt" class="column small-12 js-cntnt--asd">
 									<!--  content aside   begin  -->
 									<!--  content aside   end  -->
 								</div>
@@ -596,7 +596,7 @@ Photoshop CS6 Print and Web graphics
 						</div>
 						<div class="column small-12 medium-12 large-3">
 							<section class="row">
-								<div id="js-cntnt--asd__vid" class="column small-12">
+								<div id="js-cntnt--asd__vid" class="column small-12 js-cntnt--asd">
 									<!--  content aside   begin  -->
 									<!--  content aside   end  -->
 								</div>
@@ -617,7 +617,7 @@ Photoshop CS6 Print and Web graphics
 						</div>
 						<div class="column small-12 medium-12 large-3">
 							<section class="row">
-								<div id="js-cntnt--asd__wrd" class="column small-12">
+								<div id="js-cntnt--asd__wrd" class="column small-12 js-cntnt--asd">
 									<!--  content aside   begin  -->
 									<!--  content aside   end  -->
 								</div>
@@ -638,7 +638,7 @@ Photoshop CS6 Print and Web graphics
 						</div>
 						<div class="column small-12 medium-12 large-3">
 							<section class="row">
-								<div id="js-cntnt--asd__pod" class="column small-12">
+								<div id="js-cntnt--asd__pod" class="column small-12 js-cntnt--asd">
 									<!--  content aside   begin  -->
 									<!--  content aside   end  -->
 								</div>
@@ -664,7 +664,7 @@ Photoshop CS6 Print and Web graphics
 						</div>
 						<div class="column small-12 medium-12 large-3">
 							<section class="row">
-								<div id="js-cntnt--asd__cnt" class="column small-12">
+								<div id="js-cntnt--asd__cnt" class="column small-12 js-cntnt--asd">
 									<!--  content aside   begin  -->
 									<figure class="text-center">
 <a href="contact.vcf">
@@ -990,16 +990,16 @@ function Artc(artc_type, json){
 	this.author           = json.author;
 	this.title_long       = json.title_long;
 	this.summary_quote    = json.summary_quote;
-	this.body_1           = swapJSON2MU( json.body_1 );
+	this.body_1           = swapJSON2MD( json.body_1 );
 	this.img_1_alt        = json.img_1.alt;
 	this.img_1_src        = json.img_1.src;
-	this.body_2           = swapJSON2MU( json.body_2 );
+	this.body_2           = swapJSON2MD( json.body_2 );
 	this.img_2_alt        = json.img_2.alt;
 	this.img_2_src        = json.img_2.src;
-	this.body_3           = swapJSON2MU( json.body_3 );
+	this.body_3           = swapJSON2MD( json.body_3 );
 	this.img_3_alt        = json.img_3.alt;
 	this.img_3_src        = json.img_3.src;
-	this.body_4           = swapJSON2MU( json.body_4 );
+	this.body_4           = swapJSON2MD( json.body_4 );
 	this.img_4_alt        = json.img_4.alt;
 	this.img_4_src        = json.img_4.src;
 	this.tags             = json.tags;
@@ -1023,10 +1023,10 @@ window.addEventListener("popstate", function( e ) {
 	}
 });
 //    Utils
-function swapJSON2MU( json ){
-	var MU = "";
-	MU = json.split("---").join("<br><br>");
-	return MU;
+function swapJSON2MD( json ){ // Mark Down translation
+	var MD = "";
+	MD = json.split("---").join("<br><br>");
+	return MD;
 }
 function makeId( title_short ){
 	return title_short.toLowerCase().replace(/\W+/g,"-");
