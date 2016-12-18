@@ -429,7 +429,7 @@ Curated Snark
 				</section>
 
 				<div data-sticky-container>
-				  <div class="prinav title-bar" data-sticky data-options="marginTop:0;stickyOn:small;marginBottom:900;"
+				  <div id="sticky_top" class="prinav title-bar" data-sticky data-options="marginTop:0;stickyOn:small;marginBottom:900;"
 				  yyyydata-btm-anchor="copyr:bottom"
 				  yyyydata-anchor="copyr"
 				  yyyydata-margin-top="1"
@@ -517,7 +517,6 @@ href="cv/resume_nicholas_krause.pdf" target="_blank">Download CV</a>
 <span class="label color-back__lol03">#917A56</span>
 <span class="label color-back__lol04">#B4BA6C</span>
 <span class="label color-back__lol05">#FEFFC2</span> 
-
 -->
 									</aside>
 									<aside class="ccard callout warning"
@@ -884,7 +883,7 @@ function postContent(){
 			}else{
 				history.pushState({"uid_hash":sHash, "prinv": CnfState.prinv }, sHash, "#" + sHash);
 			}
-//$(document).foundation(); //  Issue with top bar not sticky past orig scroll point
+			$("#sticky_top").foundation("_calc", true);  //  Issue with top bar not sticky past orig scroll point
 		}
 	});
 	//    Card Artc hover
