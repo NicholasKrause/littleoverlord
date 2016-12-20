@@ -812,8 +812,6 @@ Photoshop CS6 Print and Web graphics
 			$(document).foundation();
 				getContent();
 				$(".prinav--nav__hamb").click(function(){ playAudioRand( [3,4] );false }); // off-canvas hamb safari mobile hack
-				//$(".close-button").click(function(){  playAudioFile( 8 ); }); // nope
-		
 				history.replaceState({"uid_hash":"prinv_hom"}, document.location, "#prinv_hom");
 
 			//    theme switch
@@ -841,13 +839,12 @@ Photoshop CS6 Print and Web graphics
 			}
 			//    Prime Nav
 			$(".prinav--a").on("click", function( e ){
-				playAudioRand( [1,4] );
+				if( (Math.floor(Math.random() * 10) + 1) >= 9 ) playAudioRand( [1,4] );
 				$(".prinav--p__active").removeClass("prinav--p__active");
 				$( this ).find("p").addClass("prinav--p__active");
 				$(".content-section").addClass("blind");
 				CnfState.prinv = $( this ).attr("data-prinv");				
 				$( "#js-" + CnfState.prinv ).removeClass("blind");
-
 //WHAT!
 				if( !CnfState.hist ){
 					CnfState.hist = true;
