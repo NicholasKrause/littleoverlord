@@ -59,9 +59,23 @@ body.theme__night {
 	height: inherit !important;
 }
 .ccard__expand:hover {
-	cursor: default !important;
+	/*cursor: default !important;*/
 }
+.ccard-chev {
+    position: absolute;
+    float: right;
+    top: 8px;
+    right: 12px;
+}
+.theme__night .ccard-chev {
+	color: #B4BA6C !important;
+}
+.theme__night .ccard-chev:hover {
+	color: #7D2A35 !important;
+}
+.theme__day .ccard-chev {
 
+}
 .theme__day .ccard {
 	border-color: #917A56;
 }
@@ -107,6 +121,7 @@ body.theme__night {
 .ccard-summary {
 	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 17px;
+	/*font-size:calc(.6em + .6vw);*/
 	font-weight: normal;
 	line-height: 1.4em;
 	color: #222;
@@ -489,7 +504,8 @@ Curated Snark
 								<div id="js-cntnt--asd__hom" class="column small-12 js-cntnt--asd">
 									<!--  content aside   begin  -->
 									<aside class="ccard callout warning"
-									data-title_short="wiki_api">
+									data-title_short="resume">
+									<i class="ccard-chev fa-brand__focal fa fa-chevron-down fa-lg"></i>
 <p class="caption--p__pattaya color-text__lol3 text-center"
 style="margin-bottom: 4px;">Resume / CV
 </p>
@@ -520,7 +536,8 @@ href="cv/resume_nicholas_krause.pdf" target="_blank">Download CV</a>
 -->
 									</aside>
 									<aside class="ccard callout warning"
-									data-title_short="wiki_api">
+									data-title_short="portfolio">
+									<i class="ccard-chev fa-brand__focal fa fa-chevron-down fa-lg"></i>
 <p class="caption--p__pattaya color-text__lol3 text-center"
 style="margin-bottom: 4px;">Writing Examples
 </p>
@@ -705,6 +722,7 @@ Photoshop CS6 Print and Web graphics
 <template id="templ_ccard">
 	<article class="ccard callout warning"
 	data-title_short="|title_short_id|">
+		<i class="ccard-chev fa-brand__focal fa fa-chevron-down fa-lg"></i>
 		<h1  class="ccard-title">|title_short|</h1>
 		<h2  class="ccard-subtitle">|author| / |read_time| / |pub_date|</h2>
 		<section class="row">
@@ -867,7 +885,7 @@ Photoshop CS6 Print and Web graphics
 //    We've loaded the content, let us bind
 function postContent(){
 	//    Card Artc Click
-	$(".ccard").on("click", function( e ){
+	$(".YYYYccard").on("click", function( e ){
 		if( $( this ).hasClass("ccard__expand") ){
 			$( this ).removeClass("ccard__expand");
 		}else{
@@ -875,6 +893,27 @@ function postContent(){
 			playAudioRand( [3, 5] );
 			$(".ccard").each(function(){ $( this ).removeClass("ccard__expand"); }); 
 			$( this ).addClass("ccard__expand");
+			if( !CnfState.hist ){
+				CnfState.hist = true;
+			}else{
+				history.pushState({"uid_hash":sHash, "prinv": CnfState.prinv }, sHash, "#" + sHash);
+			}
+			$("#sticky_top").foundation("_calc", true);  //  Issue with top bar not sticky past orig scroll point
+		}
+	});
+	//  Card icon font click
+	$(".ccard-chev").on("click", function(){
+		$(".fa-chevron-up").removeClass("fa-chevron-up").addClass("fa-chevron-down");
+		var $card = $( this ).parent();
+		if( $card.hasClass("ccard__expand") ){
+			$( this ).removeClass("fa-chevron-up").addClass("fa-chevron-down");
+			$card.removeClass("ccard__expand");
+		}else{
+			$( this ).removeClass("fa-chevron-down").addClass("fa-chevron-up");
+			var sHash = makeId( $card.attr("data-title_short") );
+			playAudioRand( [3, 5] );
+			$(".ccard").each(function(){ $( this ).removeClass("ccard__expand"); });
+			$card.addClass("ccard__expand");
 			if( !CnfState.hist ){
 				CnfState.hist = true;
 			}else{
