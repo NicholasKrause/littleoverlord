@@ -746,9 +746,15 @@ Photoshop CS6 Print and Web graphics
 				<figure class="text-center"><img src="|img_3_src|" alt="|img_3_alt|"></figure>
 				<p class="ccard-summary">|body_4|</p>
 				<figure class="text-center"><img src="|img_4_src|" alt="|img_4_alt|"></figure>
+				|templ_ccard|
 			</div>
 		</section>
 	</article>
+</template>
+<template id="templ_soundcloud">
+	<iframe width="100%" height="96" scrolling="no" frameborder="no"
+	src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/|sound_cloud|&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=false">
+	</iframe>
 </template>
 			</div>
 		</div>
@@ -1004,6 +1010,7 @@ function Artcs(){
 				aCcard.push( {"target": "img_4_src", "source": artc.img_4_src} );
 				aCcard.push( {"target": "img_4_alt", "source": artc.img_4_alt} );
 				aCcard.push( {"target": "thumbnail", "source": artc.thumbnail} );
+				aCcard.push( {"target": "templ_ccard", "source": artc.soundcloud} );
 			sMU += popuTemplate("templ_ccard", aCcard);
 
 		});
@@ -1033,7 +1040,8 @@ function Artc(artc_type, json){
 	this.img_4_src        = json.img_4.src;
 	this.tags             = json.tags;
 	this.thumbnail        = determineTN( artc_type, this.tags );
-	this.isHom            = false;    //  Is on the home page
+	this.soundcloud       = makeSoundcloud( json.soundcloud );
+	this.isHom            = false;    //  Is on the home page - not used
 }
 //    History
 window.addEventListener("popstate", function( e ) {
@@ -1052,6 +1060,13 @@ window.addEventListener("popstate", function( e ) {
 	}
 });
 //    Utils
+function makeSoundcloud( json ){ // Return populated template of soundcloud
+	if( typeof json !== "undefined" ){
+		return popuTemplate("templ_soundcloud", [{"target": "sound_cloud", "source": json }]);
+	}else{
+		return " ";
+	}
+}
 function swapJSON2MD( json ){ // Mark Down translation
 	var MD = "";
 	MD = json.split("---").join("<br><br>");

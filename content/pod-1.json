@@ -1,18 +1,18 @@
 {
 	"article": [{
-		"title_short": "A Dog walks into a bar",
-		"title_long": "An introduction to the ZX81",
+		"title_short": "UX User Interview",
+		"title_long": "Interviewing user regarding transportation",
 		"author": "Trevor C. Goodchild",
 		"read_time": "3 min read",
 		"pub_date": "7/4/1893",
 		"theme": "",
-		"summary_quote": "twas a dark and stormy knight",
+		"summary_quote": "Getting to Work",
 		"tags": [
-			"GAMES",
+			"GEAR",
 			"WRESTLING",
 			"MOVIES",
 			"COMICS",
-			"GEAR"
+			"GAMES"
 		],
 		"body_1": "",
 		"img_1": {
@@ -33,6 +33,7 @@
 		"img_4": {
 			"alt": "",
 			"src": ""
-		}
+		},
+		"soundcloud": "216476277"
 	}]
 }
