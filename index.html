@@ -59,7 +59,7 @@ body.theme__night {
 	height: inherit !important;
 }
 .ccard__expand:hover {
-	/*cursor: default !important;*/
+	cursor: default !important;
 }
 .ccard-chev {
     position: absolute;
@@ -885,24 +885,14 @@ Photoshop CS6 Print and Web graphics
 //    We've loaded the content, let us bind
 function postContent(){
 	//    Card Artc Click
-	$(".YYYYccard").on("click", function( e ){
-		if( $( this ).hasClass("ccard__expand") ){
-			$( this ).removeClass("ccard__expand");
-		}else{
-			var sHash = makeId( $( this ).attr("data-title_short") );
-			playAudioRand( [3, 5] );
-			$(".ccard").each(function(){ $( this ).removeClass("ccard__expand"); }); 
-			$( this ).addClass("ccard__expand");
-			if( !CnfState.hist ){
-				CnfState.hist = true;
-			}else{
-				history.pushState({"uid_hash":sHash, "prinv": CnfState.prinv }, sHash, "#" + sHash);
-			}
-			$("#sticky_top").foundation("_calc", true);  //  Issue with top bar not sticky past orig scroll point
+	$(".ccard").on("click", function( e ){
+		if( !$( this ).hasClass("ccard__expand") ){
+			$( this ).find("i").click();
 		}
 	});
-	//  Card icon font click
-	$(".ccard-chev").on("click", function(){
+	//  Card Chevron icon font click
+	$(".ccard-chev").on("click", function( e ){
+		e.stopPropagation()
 		$(".fa-chevron-up").removeClass("fa-chevron-up").addClass("fa-chevron-down");
 		var $card = $( this ).parent();
 		if( $card.hasClass("ccard__expand") ){
@@ -911,7 +901,7 @@ function postContent(){
 		}else{
 			$( this ).removeClass("fa-chevron-down").addClass("fa-chevron-up");
 			var sHash = makeId( $card.attr("data-title_short") );
-			playAudioRand( [3, 5] );
+			if( (Math.floor(Math.random() * 10) + 1) >= 9 ) playAudioRand( [3, 5] );
 			$(".ccard").each(function(){ $( this ).removeClass("ccard__expand"); });
 			$card.addClass("ccard__expand");
 			if( !CnfState.hist ){
@@ -923,7 +913,7 @@ function postContent(){
 		}
 	});
 	//    Card Artc hover
-$( ".ccard" ).hover(
+$( ".YYYYccard" ).hover(
 	function() {
 		tweenMxHeroBG.pause();
 	}, function() {
