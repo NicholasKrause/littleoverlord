@@ -62,6 +62,10 @@ body.theme__night {
 	height: 256px;
 }
 
+.ccard_youtube {
+	height: 320px !important;
+}
+
 .ccard__expand {
 	height: inherit !important;
 }
@@ -574,7 +578,7 @@ href="http://nicholaskrause.github.io/ign_code_foo_2016/front-end-responsive.htm
 							<section class="row">
 								<div id="js-cntnt--art__abt" class="column small-12 js-cntnt--asd">
 									<!--  content article begin  -->
-<p class="caption_static caption--p__opensans">Enter Nicholas Krause. I’v experience with social campaigns. I compel customers over the Internet. I know that a strong and consistent omni-channel presence is key to thriving in a competitive market.
+<p class="caption_static caption--p__opensans">Enter Nicholas Krause. I’v experience with social campaigns. I compel and engage over the Internet. I know that a fresh and consistent omni-channel presence is key to thriving in a competitive market.
 </p>
 <br>
 <p class="caption_static caption--p__opensans">
@@ -754,7 +758,8 @@ Photoshop CS6 Print and Web graphics
 				<figure class="text-center"><img src="|img_3_src|" alt="|img_3_alt|"></figure>
 				<p class="ccard-summary">|body_4|</p>
 				<figure class="text-center"><img src="|img_4_src|" alt="|img_4_alt|"></figure>
-				|templ_ccard|
+				|templ_soundcloud|
+				|templ_youtube|
 			</div>
 		</section>
 	</article>
@@ -764,8 +769,8 @@ Photoshop CS6 Print and Web graphics
 	src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/|soundcloud_token|&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=false">
 	</iframe>
 </template>
-<template id="templ_soundcloud">
-	<iframe width="560" height="315"
+<template id="templ_youtube">
+	<iframe class="ccard_youtube" width="560" height="315"
 	src="https://www.youtube.com/embed/|youtube_token|" frameborder="0" allowfullscreen>
 	</iframe>
 </template>
@@ -1024,7 +1029,8 @@ function Artcs(){
 				aCcard.push( {"target": "img_4_src", "source": artc.img_4_src} );
 				aCcard.push( {"target": "img_4_alt", "source": artc.img_4_alt} );
 				aCcard.push( {"target": "thumbnail", "source": artc.thumbnail} );
-				aCcard.push( {"target": "templ_ccard", "source": artc.soundcloud} );
+				aCcard.push( {"target": "templ_soundcloud", "source": artc.soundcloud} );
+				aCcard.push( {"target": "templ_youtube", "source": artc.youtube} );
 			sMU += popuTemplate("templ_ccard", aCcard);
 
 		});
@@ -1055,6 +1061,7 @@ function Artc(artc_type, json){
 	this.tags             = json.tags;
 	this.thumbnail        = determineTN( artc_type, this.tags );
 	this.soundcloud       = makeSoundcloud( json.soundcloud );
+	this.youtube		  = makeYoutube( json.youtube );
 	this.isHom            = false;    //  Is on the home page - not used
 }
 //    History
@@ -1075,8 +1082,15 @@ window.addEventListener("popstate", function( e ) {
 });
 //    Utils
 function makeSoundcloud( json ){ // Return populated template of soundcloud
-	if( typeof json !== "undefined" ){
+	if( typeof json !== "undefined" && json !== ""){
 		return popuTemplate("templ_soundcloud", [{"target": "soundcloud_token", "source": json }]);
+	}else{
+		return " ";
+	}
+}
+function makeYoutube( json ){ // Return populated template of youtube
+	if( typeof json !== "undefined" && json !== ""){
+		return popuTemplate("templ_youtube", [{"target": "youtube_token", "source": json }]);
 	}else{
 		return " ";
 	}
