@@ -253,13 +253,13 @@ table {width: 100%;}
 	margin: 2px 0 6px 0;
     border: 0;
     height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(145, 122, 86, 1), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right,rgba(0,0,0,0),rgba(145,122,86,1), rgba(0,0,0,0));
 }
 .theme__night hr { 
 	margin: 2px 0 6px 0;
     border: 0;
     height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(238, 0, 0, 1), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right,rgba(0,0,0,0),rgba(238,0,0,1),rgba(0,0,0,0));
 }
 .theme__day .fa-brand {color: #B4BA6C;}
 .theme__day .fa-brand:hover {color: #FEFFC2;}
@@ -273,8 +273,8 @@ table {width: 100%;}
 .hero--header {
 	height: 120px;
 	background: #7D2A35;
-	background-image: url( img/lol_hero_star_bg_1.png );
-	background-image: url( img/lol_hero_star_bg_1.png ), linear-gradient(#7D2A35, #ff0000);
+	background-image: url(img/lol_hero_star_bg_1.png);
+	background-image: url(img/lol_hero_star_bg_1.png),linear-gradient(#7D2A35,#ff0000);
 	padding-top: 10px;
 }
 .caption--p__roboto{
@@ -574,12 +574,14 @@ href="http://nicholaskrause.github.io/ign_code_foo_2016/front-end-responsive.htm
 							<section class="row">
 								<div id="js-cntnt--art__abt" class="column small-12 js-cntnt--asd">
 									<!--  content article begin  -->
-<p class="caption_static caption--p__opensans">Nicholas Krause is experienced with social media campaigns and has the ability to communicate  in an engaging and exciting manner to customers over the internet. Nicholas understands that a strong and consistent virtual presence is key to overcoming others in a competitive market.
+<p class="caption_static caption--p__opensans">Enter Nicholas Krause. I’v experience with social campaigns. I compel customers over the Internet. I know that a strong and consistent omni-channel presence is key to thriving in a competitive market.
 </p>
 <br>
-<hr>
+<p class="caption_static caption--p__opensans">
+The Little Overlord site is a technical plateau. It is the sum of my learning. It's a SPA (Single Page App), PWA (Progressive Web App), RWD (Responsive Web Design) and it engages with animation and audio.  This is a mobile first and offline first smartphone destination.
+</p>
 <br>
-<p class="caption_static caption--p__righteous">
+<p class="caption_static caption--p__opensans">
 Photoshop CS6 Print and Web graphics
 </p>
 <ul style="list-style-type: circle;">
@@ -759,7 +761,12 @@ Photoshop CS6 Print and Web graphics
 </template>
 <template id="templ_soundcloud">
 	<iframe width="100%" height="96" scrolling="no" frameborder="no"
-	src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/|sound_cloud|&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=false">
+	src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/|soundcloud_token|&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=false">
+	</iframe>
+</template>
+<template id="templ_soundcloud">
+	<iframe width="560" height="315"
+	src="https://www.youtube.com/embed/|youtube_token|" frameborder="0" allowfullscreen>
 	</iframe>
 </template>
 			</div>
@@ -772,7 +779,7 @@ Photoshop CS6 Print and Web graphics
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TimelineMax.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>-->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.3.1/vivus.min.js"></script>
 <script type="text/javascript" src="https://vjs.zencdn.net/5.11.6/video.js"></script>
 <!--  <script type="text/javascript" src="js/skrollr.min.js"></script>
@@ -885,6 +892,7 @@ Photoshop CS6 Print and Web graphics
 					sHash = makeId( $( this ).attr("data-title_short") );
 					history.pushState({"uid_prinv":sHash, "prinv": CnfState.prinv }, sHash, "#" + sHash);
 				}
+				$("#sticky_top").foundation("_calc", true);  //  Issue with top bar not sticky past orig scroll point
 			});
 			//  Por Temo, clone side content onto other "page" states
 			//  TODO make sticky
@@ -935,8 +943,8 @@ $( ".YYYYccard" ).hover(
 		tweenMxHeroBG.play();
 	}
 );
-
 	console.log("Dude, what up?  Nick da K in da house!");
+	$("#sticky_top").foundation("_calc", true);  //  Issue with top bar not sticky past orig scroll point
 }
 //    Content fetch and render
 var artcs = new Artcs(); 
@@ -1068,7 +1076,7 @@ window.addEventListener("popstate", function( e ) {
 //    Utils
 function makeSoundcloud( json ){ // Return populated template of soundcloud
 	if( typeof json !== "undefined" ){
-		return popuTemplate("templ_soundcloud", [{"target": "sound_cloud", "source": json }]);
+		return popuTemplate("templ_soundcloud", [{"target": "soundcloud_token", "source": json }]);
 	}else{
 		return " ";
 	}
