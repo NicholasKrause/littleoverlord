@@ -62,8 +62,8 @@ body.theme__night {
 	height: 256px;
 }
 
-.ccard_youtube {
-	height: 320px !important;
+.ccard_tall {
+	height: 360px !important;
 }
 
 .ccard__expand {
@@ -735,7 +735,7 @@ Photoshop CS6 Print and Web graphics
 				</footer>
 				<!-- Page Content end -->
 <template id="templ_ccard">
-	<article class="ccard callout warning"
+	<article class="ccard |theme| callout warning"
 	data-title_short="|title_short_id|">
 		<i class="ccard-chev fa-brand__focal fa fa-chevron-down fa-lg"></i>
 		<h1  class="ccard-title">|title_short|</h1>
@@ -750,6 +750,7 @@ Photoshop CS6 Print and Web graphics
 				<hr>					
 			</div>
 			<div class="column small-12 medium-9">
+				|templ_youtube|
 				<p class="ccard-summary">|body_1|</p>
 				<figure class="text-center"><img src="|img_1_src|" alt="|img_1_alt|"></figure>
 				<p class="ccard-summary">|body_2|</p>
@@ -759,7 +760,6 @@ Photoshop CS6 Print and Web graphics
 				<p class="ccard-summary">|body_4|</p>
 				<figure class="text-center"><img src="|img_4_src|" alt="|img_4_alt|"></figure>
 				|templ_soundcloud|
-				|templ_youtube|
 			</div>
 		</section>
 	</article>
@@ -834,20 +834,20 @@ Photoshop CS6 Print and Web graphics
  
 		function playAudioFile( nSound ) {
 		    //    Play MP3 if sound toggle is true
-		    	if( CnfState.audio === true ){
-					try{
-				        var oSrc = oAudContx.createBufferSource();
-				        var volume = oAudContx.createGain();
-				        oSrc.buffer = aAudioBuffer[nSound];
-				        volume.gain.value = 0.0;
-				        oSrc.connect(volume);  
-				        volume.connect(oAudContx.destination);
-				        oSrc.connect(oAudContx.destination);
-				        volume.gain.value = 0.0;
-				        oSrc.start(oAudContx.currentTime);
-			 		}
-			 		catch( e ){}
-		 		}
+			if( CnfState.audio === true ){
+				try{
+					var oSrc = oAudContx.createBufferSource();
+					var volume = oAudContx.createGain();
+					oSrc.buffer = aAudioBuffer[nSound];
+					volume.gain.value = 0.0;
+					oSrc.connect(volume);  
+					volume.connect(oAudContx.destination);
+					oSrc.connect(oAudContx.destination);
+					volume.gain.value = 0.0;
+					oSrc.start(oAudContx.currentTime);
+				}
+				catch( e ){}
+			}
 		};
 		function playAudioRand( aSound ){
 			//    Either Or
@@ -859,7 +859,7 @@ Photoshop CS6 Print and Web graphics
 				$(".prinav--nav__hamb").click(function(){ playAudioRand( [3,4] );false }); // off-canvas hamb safari mobile hack
 				history.replaceState({"uid_hash":"prinv_hom"}, document.location, "#prinv_hom");
 
-			//    theme switch
+			//    theme switch (whole page theme not the card theme)
 			$("#js-prinav-switch").on("change", function( e ){
 				if( $( this ).attr("data-theme") === "theme__day" ){
 					playAudioRand( [3, 4] );
@@ -935,7 +935,7 @@ function postContent(){
 			if( !CnfState.hist ){
 				CnfState.hist = true;
 			}else{
-				history.pushState({"uid_hash":sHash, "prinv": CnfState.prinv }, sHash, "#" + sHash);
+				history.pushState({"uid_hash":sHash, "prinv": CnfState.prinv }, sHash, "#" + CnfState.prinv + "?" + sHash);
 			}
 			$("#sticky_top").foundation("_calc", true);  //  Issue with top bar not sticky past orig scroll point
 		}
@@ -1012,10 +1012,12 @@ function Artcs(){
 		aArtcsFtl.forEach(function(artc, index) {		
 			var aCcard =[];
 				aCcard.push( {"target": "title_short", "source": artc.title_short} );
+				aCcard.push( {"target": "title_short_id", "source": artc.title_short_id} );
 				aCcard.push( {"target": "author", "source": artc.author} );
 				aCcard.push( {"target": "read_time", "source": artc.read_time} );
 				aCcard.push( {"target": "pub_date", "source": artc.pub_date} );
 				aCcard.push( {"target": "summary_quote", "source": artc.summary_quote} );
+				aCcard.push( {"target": "theme", "source": artc.theme} );
 				aCcard.push( {"target": "body_1", "source": artc.body_1} );
 				aCcard.push( {"target": "img_1_src", "source": artc.img_1_src} );
 				aCcard.push( {"target": "img_1_alt", "source": artc.img_1_alt} );
@@ -1046,6 +1048,7 @@ function Artc(artc_type, json){
 	this.author           = json.author;
 	this.title_long       = json.title_long;
 	this.summary_quote    = json.summary_quote;
+	this.theme			  = json.theme;
 	this.body_1           = swapJSON2MD( json.body_1 );
 	this.img_1_alt        = json.img_1.alt;
 	this.img_1_src        = json.img_1.src;
@@ -1068,14 +1071,14 @@ function Artc(artc_type, json){
 window.addEventListener("popstate", function( e ) {
 	if (typeof e.state.uid_hash !== "undefined") {
 		if( e.state.uid_hash === "prinv_hom" ){
-				$(".ccard").each(function(){ $( this ).removeClass("ccard__expand"); }); 
+				//$(".ccard").each(function(){ $( this ).removeClass("ccard__expand"); }); 
 		}else{
 			//if( !$( "[data-title_short='"+e.state.uid_hash +"']" ).hasClass("faq-panel__active") ){
-				CnfState.hist = false;
+				//CnfState.hist = false;
 				if( e.state.prinv !== CnfState.prinv ){
-					$("[data-prinv='prinv_abt']").click();
+					//$("[data-prinv='prinv_abt']").click();
 				}
-				$(  "[data-title_short='"+e.state.uid_hash +"']"  ).click();	
+				//$(  "[data-title_short='"+e.state.uid_hash +"']"  ).click();	
 			//}
 		}	
 	}
@@ -1101,6 +1104,7 @@ function swapJSON2MD( json ){ // Mark Down translation
 	return MD;
 }
 function makeId( title_short ){
+console.log( title_short.toLowerCase().replace(/\W+/g,"-") );
 	return title_short.toLowerCase().replace(/\W+/g,"-");
 }
 function determineTN( artc_type, tags ){
