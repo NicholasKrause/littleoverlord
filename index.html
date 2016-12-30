@@ -211,6 +211,11 @@ body.theme__night {
 }
 /* Small only */
 @media screen and (max-width: 39.9375em) {
+	.ccard_youtube {
+		margin-left: 32px !important;
+		width: 400px;
+		height: 255px;
+	}
 	.prinav--li {
 		width: 10vw;
 	}
@@ -230,6 +235,10 @@ body.theme__night {
 
 /* Medium only */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+	.ccard_youtube {
+		width: 560px;
+		height: 315px;
+	}
 	.prinav--li {
 		width: 10vw;
 	}
@@ -249,7 +258,10 @@ body.theme__night {
 
 /* Large only */
 @media screen and (min-width: 64em) and (max-width: 74.9375em) {
-
+	.ccard_youtube {
+		width: 560px;
+		height: 315px;
+	}
 }
 
 table {width: 100%;}
@@ -769,8 +781,9 @@ Photoshop CS6 Print and Web graphics
 	src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/|soundcloud_token|&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=false">
 	</iframe>
 </template>
-<template id="templ_youtube">
-	<iframe class="ccard_youtube" width="560" height="315"
+<template id="templ_youtube" class="text-center">
+	<iframe class="ccard_youtube" width="100%" height="315"
+	style="YYYYmin-height: 22vw;"
 	src="https://www.youtube.com/embed/|youtube_token|" frameborder="0" allowfullscreen>
 	</iframe>
 </template>
