@@ -995,7 +995,7 @@ function getContent(){
 		getContent(); // recur
 	});
 }
-function genMainContent( target_id, source_id, Num2Grab){ //  TODO How are you going to bind?
+function genMainContent( target_id, source_id, Num2Grab){
 	var nCnt = 0;
 	$( "#"+source_id+" .ccard" ).each(function(){
 		if( nCnt++ < Num2Grab ){
