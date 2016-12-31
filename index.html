@@ -541,14 +541,11 @@ style="margin-bottom: 4px;">Resume / CV
 <hr>
 <p class="caption--p__roboto color-text__lol1 text-justify">Hire an innovative problem solver. I can help you create content that reaches more people.
 </p>
-<br>
+<br><br>
 <a class="button small expanded alert hollow"
 href="cv/resume_nicholas_krause.pdf" target="_blank">Download CV</a>
 <hr>
-<nav class="text-center">
-	<a href="https://github.com/NicholasKrause"
-	target="blank"><i class="fa-brand__focal fa fa-github-alt fa-2x"></i></a>
-</nav>
+
 <br>
 <div class="text-center">
 	<img class="drop-shadow" src="img/mr_magoozy.png">
@@ -609,6 +606,11 @@ Photoshop CS6 Print and Web graphics
 	<li><p class="caption_static caption--p__righteous">Photo touchup and enhancement
 	</p></li>
 </ul>
+<nav class="text-center">
+<hr>
+	<a class="button small alert"
+href="https://github.com/NicholasKrause" target="_blank"><h1 class="caption--h1__amaticsc text-center">Fork Me on Github</h1></a>
+</nav>
 
 									<!--  content article end  -->
 								</div>
@@ -1126,6 +1128,7 @@ function swapJSON2MD( json ){ // Mark Down translation
 		MD = MD.split("-B-").join("<span class='md__bold'>");
 		MD = MD.split("-I-").join("<span class='md__italic'>");
 		MD = MD.split("-E-").join("</span>");
+		MD = MD.split("-HR-").join("<hr>");
 	}
 	return MD;
 }
