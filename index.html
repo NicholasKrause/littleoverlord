@@ -37,6 +37,12 @@ type="text/css">
 type="text/css">		
 <meta name="google-site-verification" content="dUgDRKt8aTN_LAm9oP28gPQCt7ssFgG0hVtsu3Ce6Yw" />
 <style>
+md__italic {
+	text-decoration: italic;
+}
+md__bold {
+	text-decoration: bold;
+}
 lol-email::after {
 	content: attr(data-domain);
 }
@@ -325,7 +331,7 @@ table {width: 100%;}
 	font-family: "Amatic SC", cursive;
 	font-size: 2.2em;
 	font-weight: 500;
-	line-height: 1.6;
+	line-height: 1.4;
 	color:#EE0000;
 }
 
@@ -333,7 +339,7 @@ table {width: 100%;}
 	font-family: "Amatic SC", cursive;
 	font-size: 2.2em;
 	font-weight: 500;
-	line-height: 1.6;
+	line-height: 1.4;
 	color:#FEFFC2;
 }
 
@@ -1124,6 +1130,9 @@ function swapJSON2MD( json ){ // Mark Down translation
 	if( typeof json !== "undefined" ){
 		MD = json.split("---").join("<br><br>");
 		MD = MD.split("-DQ-").join("&quot;");
+		MD = MD.split("-B-").join("<span class='md__bold'>");
+		MD = MD.split("-I-").join("<span class='md__italic'>");
+		MD = MD.split("-E-").join("</span>");
 	}
 	return MD;
 }
