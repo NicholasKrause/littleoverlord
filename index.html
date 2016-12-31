@@ -1121,8 +1121,10 @@ function makeYoutube( json ){ // Return populated template of youtube
 }
 function swapJSON2MD( json ){ // Mark Down translation
 	var MD = "";
-	MD = json.split("---").join("<br><br>");
-	MD = MD.split("-DQ-").join("&quot;");
+	if( typeof json !== "undefined" ){
+		MD = json.split("---").join("<br><br>");
+		MD = MD.split("-DQ-").join("&quot;");
+	}
 	return MD;
 }
 function makeId( title_short ){
