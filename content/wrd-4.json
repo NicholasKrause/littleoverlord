@@ -12,8 +12,7 @@
 			"GEAR",
 			"WRESTLING",
 			"MOVIES",
-			"COMICS"
-			
+			"COMICS"	
 		],
 		"body_1": "10. Thumper  - violent rhythm/music/trance inducing/visceral graphics---9. Final Fantasy XV -good characterization/first good single player final fantasy game in two over a decade/fun combat/interesting premise/great and numerous endearing nuances/ despite its many downfalls i cared about the outcome of the world and its effect on the characters.",
 		"img_1": {
@@ -32,8 +31,13 @@
 		}, 
 		"body_4": "4. Inside - unparalleled animations and atmosphere/tense all the way until the strange and cathartic ending / good length / game i will show people that don’t play games---3. Doom- best FPS campaign in many years if not ever. Music is even better if that was possible / doom slayer doesn’t give a fuck / combat is the greatest feeling combat ever / implementation of skill trees and runes at first seems bad but then ends up adding a lot to the gameplay / big surprise considering reception of multiplayer beta and lack of review codes sent out to press / best eight or so hours i’ve spent in a single video this year and in many years / excellent console versions and fantastic PC versions that would put many other AAA games to shame / After wolfenstein and DLC and DOOM ID might be my favorite developer currently",
 		"img_4": {
-			"alt": "",
+			"alt": "Doom",
 			"src": "/content/wrd-4-4.jpg"
+		},
+		"body_5": "2. The Witness - best atmosphere and visuals this year / frustrating but never unfair / a long lasting example of mastership in the craft of game development / every inch of this map is beautiful / breathtaking with fantastic gameplay to boot / evokes strange and unique emotions---1. Hitman - perhaps one of my favorite games of all time / replayability is thru the roof / played all missions to level 20 mastery and beyond / have all trophies save for one / shame there’s no platinum trophy / ps4 has long load times but looks good and PC version is fantastic / constant flow of content from summer bonus episodes to elusive targets to holiday episode / best level design in any hitman game to date / the first true realization of a moving place in time and deep mechanics and consequences for all the players actions that disrupt and alter the state of large groups of people and their many varied functions surrounding the maps / best use of episodic content i’ve ever seen and first case of it in which i prefer that to be the way it's done / great mix of humor absurdity and serious stealth action and protagonistic and surrounding story",
+		"img_5": {
+			"alt": "Hit it Man",
+			"src": "/content/wrd-4-5.jpg"
 		},
 		"soundcloud": "",
 		"youtube": ""
