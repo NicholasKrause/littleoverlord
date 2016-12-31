@@ -771,6 +771,8 @@ Photoshop CS6 Print and Web graphics
 				<figure class="text-center"><img src="|img_3_src|" alt="|img_3_alt|"></figure>
 				<p class="ccard-summary">|body_4|</p>
 				<figure class="text-center"><img src="|img_4_src|" alt="|img_4_alt|"></figure>
+				<p class="ccard-summary">|body_5|</p>
+				<figure class="text-center"><img src="|img_5_src|" alt="|img_5_alt|"></figure>
 				|templ_soundcloud|
 			</div>
 		</section>
@@ -1043,6 +1045,9 @@ function Artcs(){
 				aCcard.push( {"target": "body_4", "source": artc.body_4} );
 				aCcard.push( {"target": "img_4_src", "source": artc.img_4_src} );
 				aCcard.push( {"target": "img_4_alt", "source": artc.img_4_alt} );
+				aCcard.push( {"target": "body_5", "source": artc.body_5} );
+				aCcard.push( {"target": "img_5_src", "source": artc.img_5_src} );
+				aCcard.push( {"target": "img_5_alt", "source": artc.img_5_alt} );
 				aCcard.push( {"target": "thumbnail", "source": artc.thumbnail} );
 				aCcard.push( {"target": "templ_soundcloud", "source": artc.soundcloud} );
 				aCcard.push( {"target": "templ_youtube", "source": artc.youtube} );
@@ -1074,6 +1079,9 @@ function Artc(artc_type, json){
 	this.body_4           = swapJSON2MD( json.body_4 );
 	this.img_4_alt        = json.img_4.alt;
 	this.img_4_src        = json.img_4.src;
+	this.body_5           = swapJSON2MD( json.body_5 );
+	this.img_5_alt        = json.img_5.alt;
+	this.img_5_src        = json.img_5.src;
 	this.tags             = json.tags;
 	this.thumbnail        = determineTN( artc_type, this.tags );
 	this.soundcloud       = makeSoundcloud( json.soundcloud );
