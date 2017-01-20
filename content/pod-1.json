@@ -40,6 +40,8 @@
 			"src": ""
 		},
 		"soundcloud": "216476277",
-		"youtube": ""
+		"youtube": "",
+		"show_portfolio": "false",
+		"show_blog": "true"
 	}]
 }

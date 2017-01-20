@@ -40,6 +40,8 @@
 			"src": "/content/wrd-4-5.jpg"
 		},
 		"soundcloud": "",
-		"youtube": ""
+		"youtube": "",
+		"show_portfolio": "false",
+		"show_blog": "true"
 	}]
 }

@@ -40,6 +40,8 @@
 			"src": ""
 		},
 		"soundcloud": "",
-		"youtube": "qMOuF8oskRU"
+		"youtube": "qMOuF8oskRU",
+		"show_portfolio": "false",
+		"show_blog": "true"
 	}]
 }
