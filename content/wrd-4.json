@@ -41,7 +41,7 @@
 		},
 		"soundcloud": "",
 		"youtube": "",
-		"show_portfolio": "false",
-		"show_blog": "true"
+		"show_portfolio": false,
+		"show_blog": true
 	}]
 }

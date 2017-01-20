@@ -41,7 +41,7 @@
 		},
 		"soundcloud": "216476277",
 		"youtube": "",
-		"show_portfolio": "false",
-		"show_blog": "true"
+		"show_portfolio": false,
+		"show_blog": true
 	}]
 }

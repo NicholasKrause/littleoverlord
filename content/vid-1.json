@@ -41,7 +41,7 @@
 		},
 		"soundcloud": "",
 		"youtube": "GDscTTE-P-k",
-		"show_portfolio": "false",
-		"show_blog": "true"
+		"show_portfolio": false,
+		"show_blog": true
 	}]
 }

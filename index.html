@@ -39,6 +39,16 @@ type="text/css">
 type="text/css">		
 <meta name="google-site-verification" content="dUgDRKt8aTN_LAm9oP28gPQCt7ssFgG0hVtsu3Ce6Yw" />
 <style>
+
+.show_prtf    .state--both__show {display: block;}
+.show_blog    .state--both__show {display: block;}
+
+.show_prtf    .state--prtf__show {display: block;}
+.show_blog    .state--blog__show {display: block;}
+
+.show_prtf    .state--blog__show {display: none;}
+.show_blog    .state--prtf__show {display: none;}
+
 .md__italic {
 	font-style: italic;
 }
@@ -748,7 +758,7 @@ href="https://github.com/NicholasKrause" target="_blank"><h1 class="caption--h1_
 				</footer>
 				<!-- Page Content end -->
 <template id="templ_ccard">
-	<article class="ccard |theme| callout warning"
+	<article class="ccard |show_state| |theme| callout warning"
 	data-title_short="|title_short_id|">
 		<i class="ccard-chev fa-brand__focal fa fa-chevron-down fa-lg"></i>
 		<h1  class="ccard-title">|title_short|</h1>
@@ -871,6 +881,12 @@ href="https://github.com/NicholasKrause" target="_blank"><h1 class="caption--h1_
 		}
 		$(document).ready(function(){
 			$(document).foundation();
+				//  Determine visibility blog, prtf or both
+				if( document.location.toString().indexOf( "portfolio" ) !== -1 ){
+					$("body").addClass("show_prtf");
+				}else{
+					$("body").addClass("show_blog");
+				}
 				getContent();
 				$(".prinav--nav__hamb").click(function(){ playAudioRand( [3,4] );false }); // off-canvas hamb safari mobile hack
 				history.replaceState({"uid_hash":"prinv_hom"}, document.location, "#prinv_hom");
@@ -1052,6 +1068,7 @@ function Artcs(){
 				aCcard.push( {"target": "thumbnail", "source": artc.thumbnail} );
 				aCcard.push( {"target": "templ_soundcloud", "source": artc.soundcloud} );
 				aCcard.push( {"target": "templ_youtube", "source": artc.youtube} );
+				aCcard.push( {"target": "show_state", "source": artc.show_state} );
 			sMU += popuTemplate("templ_ccard", aCcard);
 
 		});
@@ -1087,6 +1104,7 @@ function Artc(artc_type, json){
 	this.thumbnail        = determineTN( artc_type, this.tags );
 	this.soundcloud       = makeSoundcloud( json.soundcloud );
 	this.youtube		  = makeYoutube( json.youtube );
+	this.show_state       = getPortfolioStateClass( json.show_portfolio, json.show_blog );
 	this.isHom            = false;    //  Is on the home page - not used
 }
 //    History
@@ -1119,6 +1137,18 @@ function makeYoutube( json ){ // Return populated template of youtube
 	}else{
 		return " ";
 	}
+}
+function getPortfolioStateClass( prtf, blog ){ //  
+console.log( "ZEX | " + prtf + " | " + blog );
+	if( prtf && blog ){
+		return "state--both__show";
+	}
+	if( prtf ){
+		return "state--prtf__show";
+	}else{
+		return "state--blog__show";
+	}
+
 }
 function swapJSON2MD( json ){ // Mark Down translation
 	var MD = "";

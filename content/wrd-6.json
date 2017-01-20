@@ -1,0 +1,48 @@
+{
+	"article": [{
+		"title_short": "Top 10 Content Marketing Trends 2017",
+		"title_long": "Top 10 Content Marketing Trends to watch in 2017",
+		"author": "Nick",
+		"read_time": "14 min read",
+		"pub_date": "01/25/2017",
+		"theme": "",
+		"summary_quote": "",
+		"tags": [
+			"SOCIAL",
+			"GAMES",
+			"GEAR",
+			"WRESTLING",
+			"MOVIES",
+			"COMICS"
+		],
+		"body_1": "",
+		"img_1": {
+			"alt": "",
+			"src": "/content/wrd-4-1.jpg"
+		},
+		"body_2": "",
+		"img_2": {
+			"alt": "",
+			"src": "/content/wrd-4-2.png"
+		},
+		"body_3": "",
+		"img_3": {
+			"alt": "",
+			"src": "/content/wrd-4-3.jpg"
+		}, 
+		"body_4": "",
+		"img_4": {
+			"alt": "",
+			"src": "/content/wrd-4-4.jpg"
+		},
+		"body_5": "",
+		"img_5": {
+			"alt": "",
+			"src": "/content/wrd-4-5.jpg"
+		},
+		"soundcloud": "",
+		"youtube": "",
+		"show_portfolio": true,
+		"show_blog": false
+	}]
+}
