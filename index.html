@@ -596,11 +596,12 @@ href="http://nicholaskrause.github.io/ign_code_foo_2016/front-end-responsive.htm
 							<section class="row">
 								<div id="js-cntnt--art__abt" class="column small-12 js-cntnt--asd">
 									<!--  content article begin  -->
-									<article>
+									<article class="state--blog__show">
 										<p class="caption_static caption--p__opensans">
 Little Overlord is your destination for funny stuff.  Video Games, Podcasts, Podcasts about video game and games about podcasts and videos about video games and video games about um video games.
 										</p>
 									</article>
+									<article class="state--prtf__show">
 <p class="caption_static caption--p__opensans">Enter Nicholas Krause. I’v experience with social campaigns. I compel and engage over the Internet. I know that a fresh and consistent omni-channel presence is key to thriving in a competitive market.
 </p>
 <br>
@@ -621,6 +622,7 @@ Photoshop CS6 Print and Web graphics
 	<li><p class="caption_static caption--p__righteous">Photo touchup and enhancement
 	</p></li>
 </ul>
+									</article>
 <nav class="text-center">
 <hr>
 	<a class="button small alert"
@@ -1155,7 +1157,6 @@ console.log( "PRTF | BLOG ~ " + prtf + " | " + blog );
 	}else{
 		return "state--blog__show";
 	}
-
 }
 function swapJSON2MD( json ){ // Mark Down translation
 	var MD = "";
