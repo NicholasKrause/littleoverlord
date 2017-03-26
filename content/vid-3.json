@@ -1,0 +1,47 @@
+{
+	"article": [{
+		"title_short": "Must See",
+		"title_long": "Must See",
+		"author": "Trevor",
+		"read_time": "1:00 min view",
+		"pub_date": "03/26/2017",
+		"theme": "ccard_tall",
+		"summary_quote": "I laughed I cried",
+		"tags": [
+			"MOVIES",
+			"WRESTLING",
+			"GAMES",
+			"COMICS",
+			"GEAR"
+		],
+		"body_1": "I laughed I cried.  If you see only one movie this year see this touching coming of age story about a boy and his butt.",
+		"img_1": {
+			"alt": "",
+			"src": ""
+		},
+		"body_2": "",
+		"img_2": {
+			"alt": "",
+			"src": ""
+		},
+		"body_3": "",
+		"img_3": {
+			"alt": "",
+			"src": ""
+		},
+		"body_4": "",
+		"img_4": {
+			"alt": "",
+			"src": ""
+		},
+		"body_5": "",
+		"img_5": {
+			"alt": "",
+			"src": ""
+		},
+		"soundcloud": "",
+		"youtube": "XNvMHsdjx2w",
+		"show_portfolio": false,
+		"show_blog": true
+	}]
+}
