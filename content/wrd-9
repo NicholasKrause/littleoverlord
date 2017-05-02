@@ -1,0 +1,48 @@
+{
+	"article": [{
+		"title_short": "RAW Thoughts 5/1/17",
+		"title_long": "RAW Thoughts 5/1/17",
+		"author": "Nick",
+		"read_time": "10 min read",
+		"pub_date": "05/02/2017",
+		"theme": "",
+		"summary_quote": "All about that sweet sweet main event",
+		"tags": [
+			"WRESTLING",
+			"GAMES",
+			"SOCIAL",
+			"GEAR",
+			"MOVIES",
+			"COMICS"
+		],
+		"body_1": "",
+		"img_1": {
+			"alt": "Word Up",
+			"src": "/content/wrd-6-1.jpg"
+		},
+		"body_2": "-",
+		"img_2": {
+			"alt": "",
+			"src": ""
+		},
+		"body_3": "",
+		"img_3": {
+			"alt": "",
+			"src": ""
+		}, 
+		"body_4": "",
+		"img_4": {
+			"alt": "",
+			"src": ""
+		},
+		"body_5": "",
+		"img_5": {
+			"alt": "",
+			"src": ""
+		},
+		"soundcloud": "",
+		"youtube": "",
+		"show_portfolio": false,
+		"show_blog": true
+	}]
+}
