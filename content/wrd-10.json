@@ -1,0 +1,47 @@
+{
+	"article": [{
+		"title_short": "SPACEPLAN: A clicker done right",
+		"title_long": "SPACEPLAN: A clicker done right",
+		"author": "Nick",
+		"read_time": "10 min read",
+		"pub_date": "05/10/2017",
+		"theme": "",
+		"summary_quote": "Clicker of the year...so far?",
+		"tags": [
+			"GAMES",
+			"WRESTLING",
+			"MOVIES",
+			"COMICS",
+			"GEAR"
+		],
+		"body_1": "SPACEPLAN",
+		"img_1": {
+			"alt": "",
+			"src": ""
+		},
+		"body_2": "",
+		"img_2": {
+			"alt": "",
+			"src": ""
+		},
+		"body_3": "",
+		"img_3": {
+			"alt": "",
+			"src": ""
+		},
+		"body_4": "",
+		"img_4": {
+			"alt": "",
+			"src": ""
+		},
+		"body_5": "",
+		"img_5": {
+			"alt": "",
+			"src": ""
+		},
+		"soundcloud": "",
+		"youtube": "",
+		"show_portfolio": false,
+		"show_blog": true
+	}]
+}
