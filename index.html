@@ -423,32 +423,32 @@ input:checked~.switch-paddle {
 				<!-- Menu -->
 				<ul class="vertical menu">
 				    		<li class="lftnav--li">
-				    			<a class="prinav--a" href="#hom" data-prinv="prinv_hom">
+				    			<a class="prinav--a" href="#home" data-prinv="prinv_hom">
 				    				<p class="caption--p__righteous prinav--p__active text-center">HOME</p>
 				    			</a>
 				     		</li>
 				    		<li class="lftnav--li">
-				    			<a class="prinav--a" href="#pod" data-prinv="prinv_pod">
+				    			<a class="prinav--a" href="#podcasts" data-prinv="prinv_pod">
 				    				<p class="caption--p__righteous text-center">PODCASTS</p>
 				    			</a>
 				     		</li> 
 				    		<li class="lftnav--li">
-				    			<a class="prinav--a" href="#vid" data-prinv="prinv_vid">
+				    			<a class="prinav--a" href="#video" data-prinv="prinv_vid">
 				    				<p class="caption--p__righteous text-center">VIDEO</p>
 				    			</a>
 				     		</li>   			
 				    		<li class="lftnav--li">
-				    			<a class="prinav--a" href="#wrd" data-prinv="prinv_wrd">
+				    			<a class="prinav--a" href="#words" data-prinv="prinv_wrd">
 				    				<p class="caption--p__righteous text-center">WORDS</p>
 				    			</a>
 				     		</li>
 				    		<li class="lftnav--li">
-				    			<a class="prinav--a" href="#abt" data-prinv="prinv_abt">
+				    			<a class="prinav--a" href="#about" data-prinv="prinv_abt">
 				    				<p class="caption--p__righteous text-center">ABOUT</p>
 				    			</a>
 				     		</li>
 				    		<li class="lftnav--li">
-				    			<a class="prinav--a" href="#cnt" data-prinv="prinv_cnt">
+				    			<a class="prinav--a" href="#contact" data-prinv="prinv_cnt">
 				    				<p class="caption--p__righteous text-center">CONTACT</p>
 				    			</a>
 				    		</li>
@@ -494,32 +494,32 @@ Curated Snark
 				    <nav class="prinav--nav hide-for-small-only">
 				    	<ul class="prinav--ul">
 				    		<li class="prinav--li">
-				    			<a class="prinav--a" href="#hom" data-prinv="prinv_hom">
+				    			<a class="prinav--a" href="#home" data-prinv="prinv_hom">
 				    				<p class="caption--p__righteous prinav--p__active">HOME</p>
 				    			</a>
 				     		</li>
 				    		<li class="prinav--li__long prinav--li">
-				    			<a class="prinav--a" href="#pod" data-prinv="prinv_pod">
+				    			<a class="prinav--a" href="#podcasts" data-prinv="prinv_pod">
 				    				<p class="caption--p__righteous">PODCASTS</p>
 				    			</a>
 				     		</li>   	
 				    		<li class="prinav--li">
-				    			<a class="prinav--a" href="#vid" data-prinv="prinv_vid">
+				    			<a class="prinav--a" href="#video" data-prinv="prinv_vid">
 				    				<p class="caption--p__righteous">VIDEO</p>
 				    			</a>
 				     		</li>   			
 				    		<li class="prinav--li">
-				    			<a class="prinav--a" href="#wrd" data-prinv="prinv_wrd">
+				    			<a class="prinav--a" href="#words" data-prinv="prinv_wrd">
 				    				<p class="caption--p__righteous">WORDS</p>
 				    			</a>
 				     		</li>
 				    		<li class="prinav--li">
-				    			<a class="prinav--a" href="#abt" data-prinv="prinv_abt">
+				    			<a class="prinav--a" href="#about" data-prinv="prinv_abt">
 				    				<p class="caption--p__righteous">ABOUT</p>
 				    			</a>
 				     		</li>
 				    		<li class="prinav--li">
-				    			<a class="prinav--a" href="#cnt" data-prinv="prinv_cnt">
+				    			<a class="prinav--a" href="#contact" data-prinv="prinv_cnt">
 				    				<p class="caption--p__righteous">CONTACT</p>
 				    			</a>
 				    		</li>
@@ -849,7 +849,7 @@ href="https://github.com/NicholasKrause" target="_blank"><h1 class="caption--h1_
 -->
 	<script>
 		'use strict';
-		var CnfState = {"hist": true, "audio": false, "prinv": "prinv_hom"};
+		var CnfState = {"audio": false};
 		var tweenMxHeroBG = new TimelineMax();
 		var AudioContext = window.AudioContext || false; // canIuse
 
@@ -916,7 +916,7 @@ href="https://github.com/NicholasKrause" target="_blank"><h1 class="caption--h1_
 				}
 				getContent();
 				$(".prinav--nav__hamb").click(function(){ playAudioRand( [3,4] );false }); // off-canvas hamb safari mobile hack
-				history.replaceState({"uid_hash":"prinv_hom"}, document.location, "#prinv_hom");
+//history.replaceState({"uid_hash":"prinv_hom"}, document.location, "#prinv_hom");
 
 			//    theme switch (whole page theme not the card theme)
 			$("#js-prinav-switch").on("change", function( e ){
@@ -947,15 +947,17 @@ href="https://github.com/NicholasKrause" target="_blank"><h1 class="caption--h1_
 				$(".prinav--p__active").removeClass("prinav--p__active");
 				$( this ).find("p").addClass("prinav--p__active");
 				$(".content-section").addClass("blind");
-				CnfState.prinv = $( this ).attr("data-prinv");				
-				$( "#js-" + CnfState.prinv ).removeClass("blind");
+
+				//CnfState.prinv = $( this ).attr("data-prinv");				
+				//$( "#js-" + CnfState.prinv ).removeClass("blind");
 //WHAT!
-				if( !CnfState.hist ){
-					CnfState.hist = true;
-				}else{
-					sHash = makeId( $( this ).attr("data-title_short") );
-					history.pushState({"uid_prinv":sHash, "prinv": CnfState.prinv }, sHash, "#" + sHash);
-				}
+				//if( !CnfState.hist ){
+					//CnfState.hist = true;
+				//}else{
+					//sHash = makeId( $( this ).attr("data-title_short") );
+					//history.pushState({"uid_prinv":sHash, "prinv": CnfState.prinv }, sHash, "#" + sHash);
+				//}
+				$( "#js-" + $( this ).attr("data-prinv") ).removeClass("blind");
 				$("#sticky_top").foundation("_calc", true);  //  Issue with top bar not sticky past orig scroll point
 			});
 			//  Por Temo, clone side content onto other "page" states
@@ -966,7 +968,7 @@ href="https://github.com/NicholasKrause" target="_blank"><h1 class="caption--h1_
 			$("#js-cntnt--asd__vid").html( $("#js-cntnt--asd__hom").html() );
 		});  //  Document Ready
 
-		$( window ).load(function(){
+		$( window ).load(function(){  //  Deep Link		
 		});  //  Window Load
 
 //    We've loaded the content, let us bind
@@ -991,11 +993,11 @@ function postContent(){
 			if( (Math.floor(Math.random() * 10) + 1) >= 9 ) playAudioRand( [3, 5] );
 			$(".ccard").each(function(){ $( this ).removeClass("ccard__expand"); });
 			$card.addClass("ccard__expand");
-			if( !CnfState.hist ){
-				CnfState.hist = true;
-			}else{
-				history.pushState({"uid_hash":sHash, "prinv": CnfState.prinv }, sHash, "#" + CnfState.prinv + "?" + sHash);
-			}
+			//if( !CnfState.hist ){
+				//CnfState.hist = true;
+			//}else{
+				//history.pushState({"uid_hash":sHash, "prinv": CnfState.prinv }, sHash, "#" + CnfState.prinv + "?" + sHash);
+			//}
 			$("#sticky_top").foundation("_calc", true);  //  Issue with top bar not sticky past orig scroll point
 		}
 	});
@@ -1014,6 +1016,12 @@ $( ".YYYYccard" ).hover(
 	$("#svgLOL").on("click",function(){
 		$("[data-prinv='prinv_hom']")[1].click();
 	});
+
+	console.log("dl | 0 " + document.location.href);
+	if( document.location.href.toString().indexOf( "#contact" ) !== -1 ){
+		console.log("dl | 1 ");
+		$("[data-prinv='prinv_cnt']")[1].click();
+	}
 
 }// postContent end
 //    Content fetch and render
