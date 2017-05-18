@@ -618,7 +618,12 @@ Thanks for visiting Little Overlord!&nbsp; The destination for my thoughts on va
 <br><br>
 -Nicholas Krause, founder
 <br>
-<img src="img/notary_public.png">
+<br>
+<a href="https://www.google.com/partners/#i_profile;idtf=109020333178045359296"
+ target="_blank">
+ <img src="https://nicholaskrause.github.io/Certifications/img/google_adwords_certified.svg?raw=true"></a>
+<br>
+<!--
 										</p>
 									</article>
 									<article class="state--prtf__show">
@@ -976,7 +981,26 @@ href="https://github.com/NicholasKrause" target="_blank"><h1 class="caption--h1_
 			$("#js-cntnt--asd__vid").html( $("#js-cntnt--asd__hom").html() );
 		});  //  Document Ready
 
-		$( window ).load(function(){  //  Deep Link		
+		$( window ).load(function(){  //  Deep Link	
+
+			if( document.location.href.toString().indexOf( "#home-page" ) !== -1 ){
+				$("[data-prinv='prinv_hom']")[1].click();
+			}
+			if( document.location.href.toString().indexOf( "#podcasts" ) !== -1 ){
+				$("[data-prinv='prinv_pod']")[1].click();
+			}
+			if( document.location.href.toString().indexOf( "#videos" ) !== -1 ){
+				$("[data-prinv='prinv_vid']")[1].click();
+			}
+			if( document.location.href.toString().indexOf( "#articles" ) !== -1 ){
+				$("[data-prinv='prinv_wrd']")[1].click();
+			}
+			if( document.location.href.toString().indexOf( "#about-us" ) !== -1 ){
+				$("[data-prinv='prinv_abt']")[1].click();
+			}
+			if( document.location.href.toString().indexOf( "#contact-us" ) !== -1 ){
+				$("[data-prinv='prinv_cnt']")[1].click();
+			}
 		});  //  Window Load
 
 //    We've loaded the content, let us bind
@@ -1024,12 +1048,6 @@ $( ".YYYYccard" ).hover(
 	$("#svgLOL").on("click",function(){
 		$("[data-prinv='prinv_hom']")[1].click();
 	});
-
-	console.log("dl | 0 " + document.location.href);
-	if( document.location.href.toString().indexOf( "#contact" ) !== -1 ){
-		console.log("dl | 1 ");
-		$("[data-prinv='prinv_cnt']")[1].click();
-	}
 
 }// postContent end
 //    Content fetch and render
