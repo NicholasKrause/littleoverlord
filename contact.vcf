@@ -1,8 +1,9 @@
 BEGIN:VCARD
 VERSION:4.0
-PRODID:-//BBros.us llc//bvCard.com//EN
 N:Krause;Nicholas;;;
 FN:Nicholas Krause
 EMAIL:littleoverlordinteractive@gmail.com
-URL;type=pref:https://www.LittleOverLord.com/
+URL;type=pref:http://www.LittleOverLord.com/
+URL;type=github:https://github.com/NicholasKrause
+URL;type=twitter:https://twitter.com/LittleOverlord
 END:VCARD
