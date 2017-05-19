@@ -9,7 +9,7 @@
     <loc>http://www.littleoverlord.com/#podcasts</loc> 
   </url>
   <url> 
-    <loc>http://www.littleoverlord.com/#video</loc> 
+    <loc>http://www.littleoverlord.com/#videos</loc> 
   </url>
   <url> 
     <loc>http://www.littleoverlord.com/#articles</loc> 
@@ -24,7 +24,7 @@
     <loc>http://www.littleoverlord.com/#podcasts?portfolio</loc> 
   </url>
   <url> 
-    <loc>http://www.littleoverlord.com/#video?portfolio</loc> 
+    <loc>http://www.littleoverlord.com/#videos?portfolio</loc> 
   </url>
   <url> 
     <loc>http://www.littleoverlord.com/#articles?portfolio</loc> 
