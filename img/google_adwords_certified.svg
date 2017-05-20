@@ -129,98 +129,99 @@
 	<g>
 		<g>
 			<defs>
-				<path id="SVGID_1_" d="M23.95,8.366h-9.864L4.331,37.635h7.278c1.444,0,2.722-0.918,3.181-2.283l4.205-12.371l4.146,12.371
-					c0.449,1.365,1.737,2.283,3.181,2.283h7.278L23.95,8.366z"/>
+				<path id="SVGID_1_" d="M26.698,4.517H15.453L4.331,37.885h8.297c1.646,0,3.103-1.047,3.626-2.604l4.794-14.103l4.727,14.103
+					c0.512,1.557,1.98,2.604,3.626,2.604h8.297L26.698,4.517z"/>
 			</defs>
 			<clipPath id="SVGID_2_">
 				<use xlink:href="#SVGID_1_"  overflow="visible"/>
 			</clipPath>
-			<path clip-path="url(#SVGID_2_)" fill="#0F9D58" d="M33.599,37.635L23.95,8.366h-9.864l9.054,26.986
-				c0.449,1.365,1.737,2.283,3.181,2.283H33.599z"/>
+			<path clip-path="url(#SVGID_2_)" fill="#0F9D58" d="M37.698,37.885l-11-33.368H15.453l10.322,30.765
+				c0.512,1.557,1.98,2.604,3.626,2.604H37.698z"/>
 		</g>
 		<g>
 			<defs>
-				<path id="SVGID_3_" d="M23.95,8.366h-9.864L4.331,37.635h7.278c1.444,0,2.722-0.918,3.181-2.283l4.205-12.371l4.146,12.371
-					c0.449,1.365,1.737,2.283,3.181,2.283h7.278L23.95,8.366z"/>
+				<path id="SVGID_3_" d="M26.698,4.517H15.453L4.331,37.885h8.297c1.646,0,3.103-1.047,3.626-2.604l4.794-14.103l4.727,14.103
+					c0.512,1.557,1.98,2.604,3.626,2.604h8.297L26.698,4.517z"/>
 			</defs>
 			<clipPath id="SVGID_4_">
 				<use xlink:href="#SVGID_3_"  overflow="visible"/>
 			</clipPath>
 			<g clip-path="url(#SVGID_4_)">
 				
-					<image overflow="visible" opacity="0.2" enable-background="new    " width="147" height="205" xlink:href="20982991.png"  transform="matrix(0.1612 0 0 0.1628 3 7.0356)">
+					<image overflow="visible" opacity="0.2" enable-background="new    " width="147" height="205" xlink:href="20982990.png"  transform="matrix(0.1837 0 0 0.1856 2.8135 3)">
 				</image>
-				<path fill="#4285F4" d="M4.331,37.635l9.756-29.269h9.864l-9.161,26.986c-0.449,1.365-1.736,2.283-3.181,2.283H4.331z"/>
+				<path fill="#4285F4" d="M4.331,37.885L15.453,4.517h11.246L16.254,35.281c-0.512,1.557-1.979,2.604-3.626,2.604H4.331z"/>
 			</g>
 		</g>
 		<g>
 			<defs>
-				<path id="SVGID_5_" d="M23.95,8.366h-9.864L4.331,37.635h7.278c1.444,0,2.722-0.918,3.181-2.283l4.205-12.371l4.146,12.371
-					c0.449,1.365,1.737,2.283,3.181,2.283h7.278L23.95,8.366z"/>
+				<path id="SVGID_5_" d="M26.698,4.517H15.453L4.331,37.885h8.297c1.646,0,3.103-1.047,3.626-2.604l4.794-14.103l4.727,14.103
+					c0.512,1.557,1.98,2.604,3.626,2.604h8.297L26.698,4.517z"/>
 			</defs>
 			<clipPath id="SVGID_6_">
 				<use xlink:href="#SVGID_5_"  overflow="visible"/>
 			</clipPath>
 			
-				<radialGradient id="SVGID_7_" cx="655.6045" cy="675.0205" r="40.3042" gradientTransform="matrix(0.4878 0 0 0.4878 -300.1733 -305.6372)" gradientUnits="userSpaceOnUse">
+				<radialGradient id="SVGID_7_" cx="659.9951" cy="671.5137" r="45.9497" gradientTransform="matrix(0.4878 0 0 0.4878 -300.1733 -305.6372)" gradientUnits="userSpaceOnUse">
 				<stop  offset="0" style="stop-color:#263238;stop-opacity:0.2"/>
 				<stop  offset="1" style="stop-color:#263238;stop-opacity:0.02"/>
 			</radialGradient>
-			<path clip-path="url(#SVGID_6_)" fill="url(#SVGID_7_)" d="M18.994,22.98l0.02,0.068l14.585,14.586L23.95,8.366L18.994,22.98z"/>
+			<path clip-path="url(#SVGID_6_)" fill="url(#SVGID_7_)" d="M21.048,21.178l0.022,0.078l16.627,16.628l-11-33.368L21.048,21.178z"
+				/>
 		</g>
 		<g>
 			<defs>
-				<path id="SVGID_8_" d="M23.95,18.366h-9.864L4.331,47.635h7.278c1.444,0,2.722-0.918,3.181-2.283l4.205-12.371l4.146,12.371
-					c0.449,1.365,1.737,2.283,3.181,2.283h7.278L23.95,18.366z"/>
+				<path id="SVGID_8_" d="M26.698,15.917H15.453L4.331,49.285h8.297c1.646,0,3.103-1.047,3.626-2.602l4.794-14.105l4.727,14.105
+					c0.512,1.555,1.98,2.602,3.626,2.602h8.297L26.698,15.917z"/>
 			</defs>
 			<clipPath id="SVGID_9_">
 				<use xlink:href="#SVGID_8_"  overflow="visible"/>
 			</clipPath>
-			<path opacity="0.2" clip-path="url(#SVGID_9_)" fill="#FFFFFF" enable-background="new    " d="M23.901,18.532l0.049-0.166
-				h-9.864L4.331,47.635h0.059l9.697-29.103H23.901z"/>
+			<path opacity="0.2" clip-path="url(#SVGID_9_)" fill="#FFFFFF" enable-background="new    " d="M26.643,16.106l0.056-0.189
+				H15.453L4.331,49.285h0.067l11.055-33.179H26.643z"/>
 		</g>
 		<g>
 			<defs>
-				<path id="SVGID_10_" d="M23.95,18.366h-9.864L4.331,47.635h7.278c1.444,0,2.722-0.918,3.181-2.283l4.205-12.371l4.146,12.371
-					c0.449,1.365,1.737,2.283,3.181,2.283h7.278L23.95,18.366z"/>
+				<path id="SVGID_10_" d="M26.698,15.917H15.453L4.331,49.285h8.297c1.646,0,3.103-1.047,3.626-2.602l4.794-14.105l4.727,14.105
+					c0.512,1.555,1.98,2.602,3.626,2.602h8.297L26.698,15.917z"/>
 			</defs>
 			<clipPath id="SVGID_11_">
 				<use xlink:href="#SVGID_10_"  overflow="visible"/>
 			</clipPath>
-			<path opacity="0.2" clip-path="url(#SVGID_11_)" fill="#1A237E" enable-background="new    " d="M14.789,45.186
-				c-0.449,1.365-1.736,2.283-3.181,2.283H4.389l-0.059,0.166h7.278c1.444,0,2.722-0.918,3.181-2.283l9.161-26.986h-0.059
-				L14.789,45.186z"/>
+			<path opacity="0.2" clip-path="url(#SVGID_11_)" fill="#1A237E" enable-background="new    " d="M16.254,46.494
+				c-0.512,1.557-1.979,2.602-3.626,2.602h-8.23l-0.067,0.189h8.297c1.646,0,3.103-1.047,3.626-2.602l10.444-30.767h-0.067
+				L16.254,46.494z"/>
 		</g>
 		<g>
 			<defs>
-				<path id="SVGID_12_" d="M23.95,18.366h-9.864L4.331,47.635h7.278c1.444,0,2.722-0.918,3.181-2.283l4.205-12.371l4.146,12.371
-					c0.449,1.365,1.737,2.283,3.181,2.283h7.278L23.95,18.366z"/>
+				<path id="SVGID_12_" d="M26.698,15.917H15.453L4.331,49.285h8.297c1.646,0,3.103-1.047,3.626-2.602l4.794-14.105l4.727,14.105
+					c0.512,1.555,1.98,2.602,3.626,2.602h8.297L26.698,15.917z"/>
 			</defs>
 			<clipPath id="SVGID_13_">
 				<use xlink:href="#SVGID_12_"  overflow="visible"/>
 			</clipPath>
-			<path opacity="0.2" clip-path="url(#SVGID_13_)" fill="#263238" enable-background="new    " d="M26.321,47.469
-				c-1.444,0-2.722-0.918-3.181-2.283l-4.126-12.283l-0.029,0.088l4.146,12.371c0.449,1.365,1.737,2.283,3.181,2.283h7.288
-				l-0.058-0.166h-7.22V47.469z"/>
+			<path opacity="0.2" clip-path="url(#SVGID_13_)" fill="#263238" enable-background="new    " d="M29.401,49.096
+				c-1.646,0-3.104-1.045-3.626-2.602L21.07,32.49l-0.034,0.101l4.727,14.103c0.512,1.557,1.98,2.604,3.626,2.604h8.308
+				l-0.066-0.189h-8.231V49.096z"/>
 		</g>
 		<g>
 			<defs>
-				<path id="SVGID_14_" d="M23.95,8.366h-9.864L4.331,37.635h7.278c1.444,0,2.722-0.918,3.181-2.283l4.205-12.371l4.146,12.371
-					c0.449,1.365,1.737,2.283,3.181,2.283h7.278L23.95,8.366z"/>
+				<path id="SVGID_14_" d="M26.698,4.517H15.453L4.331,37.885h8.297c1.646,0,3.103-1.047,3.626-2.604l4.794-14.103l4.727,14.103
+					c0.512,1.557,1.98,2.604,3.626,2.604h8.297L26.698,4.517z"/>
 			</defs>
 			<clipPath id="SVGID_15_">
 				<use xlink:href="#SVGID_14_"  overflow="visible"/>
 			</clipPath>
-			<path opacity="0.2" clip-path="url(#SVGID_15_)" fill="#FFFFFF" enable-background="new    " d="M23.95,8.532l9.59,29.103h0.058
-				L23.95,8.366V8.532z"/>
+			<path opacity="0.2" clip-path="url(#SVGID_15_)" fill="#FFFFFF" enable-background="new    " d="M26.698,4.706l10.934,33.179
+				h0.066l-11-33.368V4.706z"/>
 		</g>
 		
-			<radialGradient id="SVGID_16_" cx="640.4336" cy="655.8154" r="64.6304" gradientTransform="matrix(0.4878 0 0 0.4878 -300.1733 -305.6372)" gradientUnits="userSpaceOnUse">
+			<radialGradient id="SVGID_16_" cx="642.7012" cy="649.6211" r="73.6821" gradientTransform="matrix(0.4878 0 0 0.4878 -300.1733 -305.6372)" gradientUnits="userSpaceOnUse">
 			<stop  offset="0" style="stop-color:#FFFFFF"/>
 			<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
 		</radialGradient>
-		<path fill="url(#SVGID_16_)" fill-opacity="0.1" d="M23.95,8.366h-9.864L4.331,37.635h7.278c1.444,0,2.722-0.918,3.181-2.283
-			l4.205-12.371l4.146,12.371c0.449,1.365,1.737,2.283,3.181,2.283h7.278L23.95,8.366z"/>
+		<path fill="url(#SVGID_16_)" fill-opacity="0.1" d="M26.698,4.517H15.453L4.331,37.885h8.297c1.646,0,3.103-1.047,3.626-2.604
+			l4.794-14.103l4.727,14.103c0.512,1.557,1.98,2.604,3.626,2.604h8.297L26.698,4.517z"/>
 	</g>
 </g>
 </svg>
