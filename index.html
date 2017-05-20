@@ -37,10 +37,8 @@ type="text/css">
 <link rel="stylesheet" href="https://vjs.zencdn.net/5.11.6/video-js.css"
 type="text/css">		
 <style>
-
 .show_prtf    .state--both__show {display: block;}
 .show_blog    .state--both__show {display: block;}
-
 
 .show_prtf    .state--prtf__show {display: block;}
 .show_blog    .state--blog__show {display: block;}
@@ -438,7 +436,7 @@ input:checked~.switch-paddle {
 				    			</a>
 				     		</li> 
 				    		<li class="lftnav--li">
-				    			<a class="prinav--a" href="#video" data-prinv="prinv_vid">
+				    			<a class="prinav--a" href="#videos data-prinv="prinv_vid">
 				    				<p class="caption--p__righteous text-center">VIDEO</p>
 				    			</a>
 				     		</li>   			
@@ -509,7 +507,7 @@ Curated Snark
 				    			</a>
 				     		</li>   	
 				    		<li class="prinav--li">
-				    			<a class="prinav--a" href="#video" data-prinv="prinv_vid">
+				    			<a class="prinav--a" href="#videos" data-prinv="prinv_vid">
 				    				<p class="caption--p__righteous">VIDEO</p>
 				    			</a>
 				     		</li>   			
@@ -519,12 +517,12 @@ Curated Snark
 				    			</a>
 				     		</li>
 				    		<li class="prinav--li">
-				    			<a class="prinav--a" href="#about" data-prinv="prinv_abt">
+				    			<a class="prinav--a" href="#about-us" data-prinv="prinv_abt">
 				    				<p class="caption--p__righteous">ABOUT</p>
 				    			</a>
 				     		</li>
 				    		<li class="prinav--li">
-				    			<a class="prinav--a" href="#contact" data-prinv="prinv_cnt">
+				    			<a class="prinav--a" href="#contact-us" data-prinv="prinv_cnt">
 				    				<p class="caption--p__righteous">CONTACT</p>
 				    			</a>
 				    		</li>
@@ -978,24 +976,20 @@ href="https://github.com/NicholasKrause" target="_blank"><h1 class="caption--h1_
 			}
 			//    Prime Nav
 			$(".prinav--a").on("click", function( e ){
+				prinav_tap( this );
 				if( (Math.floor(Math.random() * 10) + 1) >= 9 ) playAudioRand( [1,4] );
-				$(".prinav--p__active").removeClass("prinav--p__active");
-				$( this ).find("p").addClass("prinav--p__active");
-				$(".content-section").addClass("blind");
-
-				//CnfState.prinv = $( this ).attr("data-prinv");				
-				//$( "#js-" + CnfState.prinv ).removeClass("blind");
-//WHAT!
-				//if( !CnfState.hist ){
-					//CnfState.hist = true;
-				//}else{
-					//sHash = makeId( $( this ).attr("data-title_short") );
-					//history.pushState({"uid_prinv":sHash, "prinv": CnfState.prinv }, sHash, "#" + sHash);
-				//}
-				$( "#js-" + $( this ).attr("data-prinv") ).removeClass("blind");
-				$("#sticky_top").foundation("_calc", true);  //  Issue with top bar not sticky past orig scroll point
+				var tokenHref = $(this).attr("href");
+				history.pushState("", "New URL: " + tokenHref, tokenHref);
+				e.preventDefault();
 			});
-			//  Por Temo, clone side content onto other "page" states
+			function prinav_tap( el ){
+				$(".prinav--p__active").removeClass("prinav--p__active");
+				$( el ).find("p").addClass("prinav--p__active");
+				$(".content-section").addClass("blind");				
+				$( "#js-" + $( el ).attr("data-prinv") ).removeClass("blind");
+				$("#sticky_top").foundation("_calc", true);  //  Issue with top bar not sticky past orig scroll point
+			}
+			//  Por Tempo, clone side content onto other "page" states
 			//  TODO make sticky
 			$("#js-cntnt--asd__abt").html( $("#js-cntnt--asd__hom").html() );
 			$("#js-cntnt--asd__wrd").html( $("#js-cntnt--asd__hom").html() );
@@ -1004,24 +998,25 @@ href="https://github.com/NicholasKrause" target="_blank"><h1 class="caption--h1_
 		});  //  Document Ready
 
 		$( window ).load(function(){  //  Deep Link	
-
+console.log( "QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ" );
+console.log( "dl | " + $("[data-prinv='prinv_hom']").attr("href") );
 			if( document.location.href.toString().indexOf( "#home-page" ) !== -1 ){
-				$("[data-prinv='prinv_hom']")[1].click();
+				prinav_tap( $("[data-prinv='prinv_hom']")[1].attr("href") );
 			}
 			if( document.location.href.toString().indexOf( "#podcasts" ) !== -1 ){
-				$("[data-prinv='prinv_pod']")[1].click();
+				prinav_tap( $("[data-prinv='prinv_pod']")[1].attr("href") );
 			}
 			if( document.location.href.toString().indexOf( "#videos" ) !== -1 ){
-				$("[data-prinv='prinv_vid']")[1].click();
+				prinav_tap( $("[data-prinv='prinv_vid']")[1].attr("href") );
 			}
 			if( document.location.href.toString().indexOf( "#articles" ) !== -1 ){
-				$("[data-prinv='prinv_wrd']")[1].click();
+				prinav_tap( $("[data-prinv='prinv_wrd']")[1].attr("href") );
 			}
 			if( document.location.href.toString().indexOf( "#about-us" ) !== -1 ){
-				$("[data-prinv='prinv_abt']")[1].click();
+				prinav_tap( $("[data-prinv='prinv_abt']")[1].attr("href") );
 			}
 			if( document.location.href.toString().indexOf( "#contact-us" ) !== -1 ){
-				$("[data-prinv='prinv_cnt']")[1].click();
+				prinav_tap( $("[data-prinv='prinv_cnt']")[1].attr("href") );
 			}
 		});  //  Window Load
 
@@ -1230,7 +1225,7 @@ function makeYoutube( json ){ // Return populated template of youtube
 	}
 }
 function getPortfolioStateClass( prtf, blog ){ //  
-console.log( "PRTF | BLOG ~ " + prtf + " | " + blog );
+//console.log( "PRTF | BLOG ~ " + prtf + " | " + blog );
 	if( prtf && blog ){
 		return "state--both__show";
 	}
@@ -1253,7 +1248,7 @@ function swapJSON2MD( json ){ // Mark Down translation
 	return MD;
 }
 function makeId( title_short ){
-console.log( title_short.toLowerCase().replace(/\W+/g,"-") );
+//console.log( title_short.toLowerCase().replace(/\W+/g,"-") );
 	return title_short.toLowerCase().replace(/\W+/g,"-");
 }
 function determineTN( artc_type, tags ){
