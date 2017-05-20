@@ -939,6 +939,13 @@ href="https://github.com/NicholasKrause" target="_blank"><h1 class="caption--h1_
 			//    Either Or
 			playAudioFile( aSound[Math.random()+.5|0]);
 		}
+		function prinav_tap( el ){
+			$(".prinav--p__active").removeClass("prinav--p__active");
+			$( el ).find("p").addClass("prinav--p__active");
+			$(".content-section").addClass("blind");				
+			$( "#js-" + $( el ).attr("data-prinv") ).removeClass("blind");
+			$("#sticky_top").foundation("_calc", true);  //  Issue with top bar not sticky past orig scroll point
+		}
 		$(document).ready(function(){
 			$(document).foundation();
 				//  Determine visibility blog, prtf or both
@@ -949,7 +956,6 @@ href="https://github.com/NicholasKrause" target="_blank"><h1 class="caption--h1_
 				}
 				getContent();
 				$(".prinav--nav__hamb").click(function(){ playAudioRand( [3,4] );false }); // off-canvas hamb safari mobile hack
-//history.replaceState({"uid_hash":"prinv_hom"}, document.location, "#prinv_hom");
 
 			//    theme switch (whole page theme not the card theme)
 			$("#js-prinav-switch").on("change", function( e ){
@@ -982,13 +988,7 @@ href="https://github.com/NicholasKrause" target="_blank"><h1 class="caption--h1_
 				history.pushState("", "New URL: " + tokenHref, tokenHref);
 				e.preventDefault();
 			});
-			function prinav_tap( el ){
-				$(".prinav--p__active").removeClass("prinav--p__active");
-				$( el ).find("p").addClass("prinav--p__active");
-				$(".content-section").addClass("blind");				
-				$( "#js-" + $( el ).attr("data-prinv") ).removeClass("blind");
-				$("#sticky_top").foundation("_calc", true);  //  Issue with top bar not sticky past orig scroll point
-			}
+
 			//  Por Tempo, clone side content onto other "page" states
 			//  TODO make sticky
 			$("#js-cntnt--asd__abt").html( $("#js-cntnt--asd__hom").html() );
@@ -998,25 +998,23 @@ href="https://github.com/NicholasKrause" target="_blank"><h1 class="caption--h1_
 		});  //  Document Ready
 
 		$( window ).load(function(){  //  Deep Link	
-console.log( "QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ" );
-console.log( "dl | " + $("[data-prinv='prinv_hom']").attr("href") );
 			if( document.location.href.toString().indexOf( "#home-page" ) !== -1 ){
-				prinav_tap( $("[data-prinv='prinv_hom']")[1].attr("href") );
+				prinav_tap( $("[data-prinv='prinv_hom']") );
 			}
 			if( document.location.href.toString().indexOf( "#podcasts" ) !== -1 ){
-				prinav_tap( $("[data-prinv='prinv_pod']")[1].attr("href") );
+				prinav_tap( $("[data-prinv='prinv_pod']") );
 			}
 			if( document.location.href.toString().indexOf( "#videos" ) !== -1 ){
-				prinav_tap( $("[data-prinv='prinv_vid']")[1].attr("href") );
+				prinav_tap( $("[data-prinv='prinv_vid']") );
 			}
 			if( document.location.href.toString().indexOf( "#articles" ) !== -1 ){
-				prinav_tap( $("[data-prinv='prinv_wrd']")[1].attr("href") );
+				prinav_tap( $("[data-prinv='prinv_wrd']") );
 			}
 			if( document.location.href.toString().indexOf( "#about-us" ) !== -1 ){
-				prinav_tap( $("[data-prinv='prinv_abt']")[1].attr("href") );
+				prinav_tap( $("[data-prinv='prinv_abt']") );
 			}
 			if( document.location.href.toString().indexOf( "#contact-us" ) !== -1 ){
-				prinav_tap( $("[data-prinv='prinv_cnt']")[1].attr("href") );
+				prinav_tap( $("[data-prinv='prinv_cnt']").attr("href") );
 			}
 		});  //  Window Load
 
