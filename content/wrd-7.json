@@ -1,6 +1,6 @@
 {
 	"article": [{
-		"title_short": "Converting a PhotoShop design to a HTML5 UX",
+		"title_short": "Converting a PhotoShop design into an HTML5 UX",
 		"title_long": "Practical advice on converting a Photoshop design to a HTML5 UX",
 		"author": "Nick",
 		"read_time": "10 min read",
@@ -25,7 +25,7 @@
 			"alt": "Optimized CSS3",
 			"src": "/content/wrd-7-2.jpg"
 		},
-		"body_3": "-B-Typography is an obvious risk factor.-E-  If you open the PS doc and it barks about fonts then you may have an issue.  Figure out what can be handled with similar font families.  What can be handled with web fonts or maybe even SVG.  Again, manage expectations.  If the client has some fonts that are just not doable, explain the limitation and offer alternatives.--- -B-Mobile first.-E- How does this design layout on a smartphone, tablet laptop and desktop. When multiple viewports are considered the design often changes.  It's best to drive consensus on these alternate layouts early in the project.--- -B-Performance is a big deal.-E-  If the design calls for massive raster graphic images then experiment with optimized SVG.  Wherever possible utilize CSS to draw elements instead of raster graphics.--- -B-Prototype!-E- Let the client see your masterpiece early and often.  It's important that your prototypes be in interactive markup.  This will allow all the stakeholder to interact with the design early in the dev life-cycle.  At any point you can do some -I-Heuristic Evaluation-E- testing and identify defects early.---Good Luck, Nick",
+		"body_3": "-B-Typography is an obvious risk factor.-E-  If you open the PS doc and it barks about fonts then you may have an issue.  Figure out what can be handled with similar font families.  What can be handled with web fonts or maybe even SVG.  Again, manage expectations.  If the client has some fonts that are just not doable, explain the limitation and offer alternatives.--- -B-Mobile first.-E- How does this design layout on a smartphone, tablet laptop and desktop? When multiple viewports are considered the design often changes.  It's best to drive consensus on these alternate layouts early in the project.--- -B-Performance is a big deal.-E-  If the design calls for massive raster graphic images then experiment with optimized SVG.  Wherever possible utilize CSS to draw elements instead of raster graphics.--- -B-Prototype!-E- Let the client see your masterpiece early and often.  It's important that your prototypes be in interactive markup.  This will allow all the stakeholder to interact with the design early in the dev life-cycle.  At any point you can do some -I-Heuristic Evaluation-E- testing and identify defects early.---Good Luck, Nick",
 		"img_3": {
 			"alt": "",
 			"src": ""
