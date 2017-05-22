@@ -1,12 +1,12 @@
 {
 	"article": [{
-		"title_short": "Top 10 Social Marketing Trends 2018",
-		"title_long": "Top 10 Social Marketing Trends to watch in 2018",
+		"title_short": "Crafting Copy with Perspective",
+		"title_long": "Crafting Copy with Perspective",
 		"author": "Nick",
-		"read_time": "14 min read",
-		"pub_date": "01/25/2017",
+		"read_time": "3 min read",
+		"pub_date": "04/25/2017",
 		"theme": "",
-		"summary_quote": "",
+		"summary_quote": "Very clever",
 		"tags": [
 			"SOCIAL",
 			"GAMES",
@@ -15,25 +15,25 @@
 			"MOVIES",
 			"COMICS"
 		],
-		"body_1": "",
+		"body_1": "I was driving on a highway in Wisconsin when I saw a bus in my rear view. It was a casino bus and the surprising thing was that I could read the name of the casino in my mirror. The words painted on the front of the bus were backwards so that they could be read by people looking in the mirror. Very clever.---",
 		"img_1": {
-			"alt": "",
-			"src": "/content/wrd-4-1.jpg"
+			"alt": "Mirror",
+			"src": "/content/wrd-5-1.jpg"
 		},
-		"body_2": "",
+		"body_2": "---I cannot think of a clearer example of writing from the audience's perspective. I mean that is the goal, right?",
 		"img_2": {
 			"alt": "",
-			"src": "/content/wrd-4-2.png"
+			"src": ""
 		},
 		"body_3": "",
 		"img_3": {
 			"alt": "",
-			"src": "/content/wrd-4-3.jpg"
+			"src": ""
 		}, 
 		"body_4": "",
 		"img_4": {
 			"alt": "",
-			"src": "/content/wrd-4-4.jpg"
+			"src": ""
 		},
 		"body_5": "",
 		"img_5": {
@@ -42,7 +42,7 @@
 		},
 		"soundcloud": "",
 		"youtube": "",
-		"show_portfolio": false,
+		"show_portfolio": true,
 		"show_blog": false
 	}]
 }
