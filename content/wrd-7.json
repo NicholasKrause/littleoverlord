@@ -1,7 +1,7 @@
 {
 	"article": [{
 		"title_short": "Converting a PhotoShop design into an HTML5 UX",
-		"title_long": "Practical advice on converting a Photoshop design to a HTML5 UX",
+		"title_long": "Practical advice on converting a Photoshop design into an HTML5 UX",
 		"author": "Nick",
 		"read_time": "10 min read",
 		"pub_date": "05/22/2017",
@@ -15,17 +15,17 @@
 			"MOVIES",
 			"COMICS"
 		],
-		"body_1": "I think that every designer has or will be asked to convert a photoshop document into a user interface.  Much has been written about this so I thought that I would share my thoughts on the subject.",
+		"body_1": "I think that every front end developer has or will be asked to convert a Photoshop document into a user interface.  Much has been written about this so I thought that I would share my thoughts on the subject.",
 		"img_1": {
 			"alt": "Interactive HTML5",
 			"src": "/content/wrd-7-1.jpg"
 		},
-		"body_2": "-B-Ask questions and document the answers.-E-  You really don't want to pour hours of work into the design only to be told that is not what the client envisioned.  Nail down the specifics and manage expectation.  I say this because a static photoshop design cannot possibly depict all of the possible states of an interactive UI.  Simple things like button state on hover need to discussed, mediated and documented.--- -B-Think in CSS terms.-E-  Knowledge of CSS fundamentals will help you out here. When looking through the PS document imagine things like grids, floats, margins and z-indexes.  This will help you make the mental leap to CSS.  For example if the PS doc has an ever present floating button make to mental translation to position absolute.",
+		"body_2": "-B-Ask questions and document the answers.-E-  You really don't want to pour hours of work into the design only to be told that is not what the client envisioned.  Nail down the specifics and manage expectation.  I say this because a static Photoshop design cannot possibly depict all of the possible states of an interactive UI.  Simple things like button state on hover need to discussed, mediated and documented.--- -B-Think in CSS terms.-E-  Knowledge of CSS fundamentals will help you out here. When looking through the PS document imagine things like grids, floats, margins and z-indexes.  This will help you make the mental leap to CSS.  For example if the PS doc has an ever present floating button make to mental translation to position absolute.",
 		"img_2": {
 			"alt": "Optimized CSS3",
 			"src": "/content/wrd-7-2.jpg"
 		},
-		"body_3": "-B-Typography is an obvious risk factor.-E-  If you open the PS doc and it barks about fonts then you may have an issue.  Figure out what can be handled with similar font families.  What can be handled with web fonts or maybe even SVG.  Again, manage expectations.  If the client has some fonts that are just not doable, explain the limitation and offer alternatives.--- -B-Mobile first.-E- How does this design layout on a smartphone, tablet laptop and desktop? When multiple viewports are considered the design often changes.  It's best to drive consensus on these alternate layouts early in the project.--- -B-Performance is a big deal.-E-  If the design calls for massive raster graphic images then experiment with optimized SVG.  Wherever possible utilize CSS to draw elements instead of raster graphics.--- -B-Prototype!-E- Let the client see your masterpiece early and often.  It's important that your prototypes be in interactive markup.  This will allow all the stakeholder to interact with the design early in the dev life-cycle.  At any point you can do some -I-Heuristic Evaluation-E- testing and identify defects early.---Good Luck, Nick",
+		"body_3": "-B-Typography is an obvious risk factor.-E-  If you open the PS doc and it barks about fonts then you may have an issue.  Sort out what can be handled with similar font families.  What can be handled with web fonts or maybe even SVG.  Again, manage expectations.  If the client has some fonts that are just not doable, explain the limitation and offer alternatives.--- -B-Mobile first.-E- How does this design layout on a smartphone, tablet laptop and desktop? When multiple viewports are considered the design often changes.  It's best to drive consensus on these alternate layouts early in the project.--- -B-Performance is a big deal.-E-  If the design calls for massive raster graphic images then experiment with optimized SVG.  Wherever possible utilize CSS to draw elements instead of raster graphics.--- -B-Prototype!-E- Let the client see your masterpiece early and often.  It's important that your prototypes be in interactive markup.  This will allow all the stakeholder to interact with the design early in the dev life-cycle.  At any point you can do some -I-Heuristic Evaluation-E- testing and identify defects early.---Good Luck, Nick",
 		"img_3": {
 			"alt": "",
 			"src": ""
