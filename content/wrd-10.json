@@ -18,7 +18,7 @@
 		"body_1": "I think that every front end developer has or will be asked to convert a Photoshop document into a user interface.  Much has been written about this so I thought that I would share my considered thoughts on the subject.",
 		"img_1": {
 			"alt": "Interactive HTML5",
-			"src": "/content/wrd-7-1.jpg"
+			"src": "/content/wrd-10-1.jpg"
 		},
 		"body_2": "-B-Ask questions and document the answers.-E-  You really don't want to pour hours of work into the design only to be told that is not what the client envisioned.  Nail down the specifics and manage expectation.  I say this because a static Photoshop design cannot possibly depict all of the possible states of an interactive UI.  Simple things like button state on hover need to discussed, mediated and documented.--- -B-Think in CSS terms.-E-  Knowledge of CSS fundamentals will help you out here. When looking through the PS document imagine things like grids, floats, margins and z-indexes.  This will help you make the mental leap to CSS.  For example if the PS doc has an ever present floating button make to mental translation to position absolute.",
 		"img_2": {
