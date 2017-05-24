@@ -25,12 +25,12 @@
 			"alt": "",
 			"src": ""
 		},
-		"body_3": "What we need to do is make the FAQ more relevant and credible. It needs to be driven by a trusted source that can intuit by context what a user’s question is likely to be. In my situation that was the customer service department. They provided a detailed list of every possible question that a user could have on each page sorted by likelihood. Cool.---As the copywriter just I needed break it down into simple, easy to understand jargon-free assistance. I implement an information architecture allowing the questions fit into categories.There needed to be a many-to-many relationship between categories and questions, because the same question might exist under different categories. As my contribution to the microcopy universe, I created a button titled --DQ--Ask a Question--DQ--. See what I did there? I planted the notion that these questions are submitted by actual end users.",
+		"body_3": "What we need to do is make the FAQ more relevant and credible. It needs to be driven by a trusted source that can intuit by context what a user’s question is likely to be. In my situation that was the customer service department. They provided a detailed list of every possible question that a user could have on each page sorted by likelihood. Cool.---As the copywriter just I needed break it down into simple, easy to understand jargon-free assistance. I implement an information architecture allowing the questions fit into categories.There needed to be a many-to-many relationship between categories and questions, because the same question might exist under different categories. As my contribution to the microcopy universe, I created a button titled -DQ-Ask a Question-DQ-. See what I did there? I planted the notion that these questions are submitted by actual end users.",
 		"img_3": {
 			"alt": "",
 			"src": ""
 		}, 
-		"body_4": "",
+		"body_4": "As the UX developer I needed to facilitate the information scent and provide discoverability. The layout was a collection of categorized (#materialdesign) collapsible cards. An ever present search facility and sub-category jump menu meant that any question could be found with just a few taps. I also used the JavaScript history API so the back and forward buttons could be used to traverse the question cards without leaving the page (SPA).---Finally, let's make our FAQ contextually relevant. We can that by creating deep-links to specific questions throughout our website. Anywhere the user may get confused there should be a contextual FAQ link. These links can point to a category of questions or to a specific question. How convenient!",
 		"img_4": {
 			"alt": "",
 			"src": ""
