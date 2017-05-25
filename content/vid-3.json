@@ -1,0 +1,47 @@
+{
+	"article": [{
+		"title_short": "Castlevania",
+		"title_long": "Castlevania",
+		"author": "Nick",
+		"read_time": "1:26 min view",
+		"pub_date": "05/25/2017",
+		"theme": "ccard_tall",
+		"summary_quote": "Who killed Dracula?",
+		"tags": [
+			"GAMES",
+			"WRESTLING",
+			"MOVIES",
+			"COMICS",
+			"GEAR"
+		],
+		"body_1": "Words words words words",
+		"img_1": {
+			"alt": "",
+			"src": ""
+		},
+		"body_2": "",
+		"img_2": {
+			"alt": "",
+			"src": ""
+		},
+		"body_3": "",
+		"img_3": {
+			"alt": "",
+			"src": ""
+		},
+		"body_4": "",
+		"img_4": {
+			"alt": "",
+			"src": ""
+		},
+		"body_5": "",
+		"img_5": {
+			"alt": "",
+			"src": ""
+		},
+		"soundcloud": "",
+		"youtube": "https://www.youtube.com/watch?v=iIMrFnl5NiA",
+		"show_portfolio": false,
+		"show_blog": true
+	}]
+}
