@@ -41,7 +41,7 @@
 		},
 		"soundcloud": "",
 		"youtube": "https://www.youtube.com/watch?v=iIMrFnl5NiA",
-		"show_portfolio": flase,
+		"show_portfolio": false,
 		"show_blog": true
 	}]
 }
