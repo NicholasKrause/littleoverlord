@@ -8,12 +8,14 @@
 		"theme": "",
 		"summary_quote": "FAQ Jargon-Free Help",
 		"tags": [
-			"SOCIAL",
-			"GAMES",
-			"GEAR",
-			"WRESTLING",
-			"MOVIES",
-			"COMICS"
+"TECH",
+"COMICS",
+"DESIGN",
+"GAMES",
+"GEAR",
+"MOVIES",
+"SOCIAL",
+"WRESTLING"
 		],
 		"body_1": "Recently I was tasked with creating a Frequently Asked Questions page for an e-commerce site. Herein I describe my adventures.---The FAQ has a rich history beginning way back in the Internet stone-age.  Unfortunately the venerable FAQ has fallen on hard times. Many poor FAQs have degraded into marketing points instead of actual helpful guidance. However, I do think that there may be a bright future for the old FAQ. Today’s new and shiny technologies seek to anticipate users’ needs through machine learning. By aggregating past requests they can recommend better future requests. In a way that is what a FAQ was meant to do.",
 		"img_1": {

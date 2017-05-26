@@ -8,12 +8,14 @@
 		"theme": "",
 		"summary_quote": "Think in CSS terms",
 		"tags": [
-			"SOCIAL",
-			"GAMES",
-			"GEAR",
-			"WRESTLING",
-			"MOVIES",
-			"COMICS"
+"TECH",
+"COMICS",
+"DESIGN",
+"GAMES",
+"GEAR",
+"MOVIES",
+"SOCIAL",
+"WRESTLING"
 		],
 		"body_1": "I think that every front end developer has or will be asked to convert a Photoshop document into a user interface.  Much has been written about this so I thought that I would share my considered thoughts on the subject.",
 		"img_1": {
