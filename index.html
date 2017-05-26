@@ -632,7 +632,7 @@ Thanks for visiting Little Overlord!&nbsp; The destination for my thoughts on va
 										<br><br>
 										<a class="button small warning radius"
 										href="http://www.LittleOverlord.com/index.html#words?portfolio">
-										<h1 class="caption--h1__amaticsc text-center">Portfolio<br>Resume | CV</h1></a>
+										<h1 class="js-prtf--a caption--h1__amaticsc text-center">Portfolio<br>Resume | CV</h1></a>
 
 										</nav>
 
@@ -956,11 +956,18 @@ Thanks for visiting Little Overlord!&nbsp; The destination for my thoughts on va
 		$(document).ready(function(){
 			$(document).foundation();
 				//  Determine visibility blog, prtf or both
-				if( document.location.toString().indexOf( "portfolio" ) !== -1 ){
-					$("body").addClass("show_prtf");
-				}else{
-					$("body").addClass("show_blog");
+				$(".js-prtf--a").on("click", function( e ){
+					isPrtf();
+				});
+				function isPrtf(){
+					if( document.location.toString().indexOf( "portfolio" ) !== -1 ){
+						$("body").addClass("show_prtf");
+					}else{
+						$("body").addClass("show_blog");
+					}
 				}
+				isPrtf();
+
 				getContent();
 				$(".prinav--nav__hamb").click(function(){ playAudioRand( [3,4] );false }); // off-canvas hamb safari mobile hack
 
@@ -1067,7 +1074,7 @@ $( ".YYYYccard" ).hover(
 	$("#sticky_top").foundation("_calc", true);  //  Issue with top bar not sticky past orig scroll point
 
 	// logo click home svg
-	$("#svgLOL").on("click",function(){
+	$("#svgLOL").on("click", function(){
 		$("[data-prinv='prinv_hom']")[1].click();
 	});
 
