@@ -3,39 +3,39 @@
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" 
   xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url> 
-    <loc>http://www.littleoverlord.com/</loc> 
+    <loc>http://www.littleoverlord.com/index.html</loc> 
   </url>
   <url> 
-    <loc>http://www.littleoverlord.com/#podcasts</loc> 
+    <loc>http://www.littleoverlord.com/index.html#podcasts</loc> 
   </url>
   <url> 
-    <loc>http://www.littleoverlord.com/#videos</loc> 
+    <loc>http://www.littleoverlord.com/index.html#videos</loc> 
   </url>
   <url> 
-    <loc>http://www.littleoverlord.com/#articles</loc> 
+    <loc>http://www.littleoverlord.com/index.html#articles</loc> 
   </url>
   <url> 
-    <loc>http://www.littleoverlord.com/#about-us</loc> 
+    <loc>http://www.littleoverlord.com/index.html#about-us</loc> 
   </url>
   <url> 
-    <loc>http://www.littleoverlord.com/#contact-us</loc> 
+    <loc>http://www.littleoverlord.com/index.html#contact-us</loc> 
   </url>
   <url> 
-    <loc>http://www.littleoverlord.com/#podcasts?portfolio</loc> 
+    <loc>http://www.littleoverlord.com/index.html#podcasts?portfolio</loc> 
   </url>
   <url> 
-    <loc>http://www.littleoverlord.com/#videos?portfolio</loc> 
+    <loc>http://www.littleoverlord.com/index.html#videos?portfolio</loc> 
   </url> 
   <url> 
-    <loc>http://www.littleoverlord.com/#articles?portfolio</loc> 
+    <loc>http://www.littleoverlord.com/index.html#articles?portfolio</loc> 
   </url>
   <url> 
-    <loc>http://www.littleoverlord.com/#about-us?portfolio</loc> 
+    <loc>http://www.littleoverlord.com/index.html#about-us?portfolio</loc> 
   </url>
   <url> 
-    <loc>http://www.littleoverlord.com/#contact-us?portfolio</loc> 
+    <loc>http://www.littleoverlord.com/index.html#contact-us?portfolio</loc> 
   </url>
   <url>  
-    <loc>http://www.littleoverlord.com/cv/resume_nicholas_krause.pdf</loc> 
+    <loc>http://www.littleoverlord.com/index.htmlcv/resume_nicholas_krause.pdf</loc> 
   </url>
 </urlset>
