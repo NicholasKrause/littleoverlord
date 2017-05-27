@@ -567,10 +567,10 @@ Curated Snark
 									<figure class="resp_full_height"></figure>
 
 <p class="caption--p__amaticsc color-text__lol3 text-center"
-style="margin-bottom: 4px;">Writing Examples
+style="margin-bottom: 4px;">Writing Samples
 </p>
 <hr>
-<p class="caption--p__roboto color-text__lol1 text-center" style="margin-bottom: 2px;">Style, tone and voice.
+<p class="caption--p__roboto color-text__lol1 text-center" style="margin-bottom: 8px;">Style Tone Voice
 </p>
 <a class="button expanded alert"
 style="margin-bottom: 4px;"
@@ -580,10 +580,7 @@ style="margin-bottom: 4px;"
 href="http://zerolimitmagazine.com/author/nicholas/" target="_blank">Zero Limit</a>
 <a class="button expanded success"
 href="http://nicholaskrause.github.io/ign_code_foo_2016/front-end-responsive.html" target="_blank">Interactive Desgin</a>
-<a class="button small expanded alert hollow"
-href="cv/resume_nicholas_krause.pdf" target="_blank">Download CV</a>
-<hr>
-<br>
+
 <div class="text-center">
 	<img class="drop-shadow" src="img/nick.jpg">
 </div>
@@ -608,6 +605,9 @@ style="margin-bottom: 12px;">Download CV</a>
 	<img class="drop-shadow" src="img/mr_magoozy.png">
 </div>
 <br>
+<a class="button small expanded secondary hollow"
+href="cv/nicholas_krause_google_android_nanodegree.pdf" target="_blank">
+Google Android Java Nanodegree</a>
 <a href="https://www.google.com/partners/#i_profile;idtf=109020333178045359296"
  target="_blank">
  <img src="/img/google_adwords_certified.svg"></a>
@@ -615,12 +615,6 @@ style="margin-bottom: 12px;">Download CV</a>
 <a href="https://www.google.com/partners/#i_profile;idtf=109020333178045359296"
  target="_blank">
  <img src="/img/google_analytics_certified.svg"></a>
-<br>
-<a class="button small expanded secondary hollow"
-href="cv/nicholas_krause_google_android_nanodegree.pdf" target="_blank">
-Google Android Java Nanodegree</a>
-
-
 <!--
 <p class="ccard-summary text-left">I’ve experience and work ethic. I can write copy, design images and program interactive websites.
 </p>
@@ -847,8 +841,8 @@ Thanks for visiting Little Overlord!&nbsp; The destination for my thoughts on va
 	<article class="ccard |show_state| |theme| callout warning"
 	data-title_short="|title_short_id|">
 		<i class="ccard-chev fa-brand__focal fa fa-chevron-down fa-lg"></i>
-		<h1  class="ccard-title">|title_short|</h1>
-		<h2  class="ccard-subtitle">|author| / |read_time| / |pub_date|</h2>
+		<h2  class="ccard-title">|title_short|</h2>
+		<h3  class="ccard-subtitle">|author| / |read_time| / |pub_date|</h3>
 
 		<section class="row">
 			<div class="column small-12 medium-3 text-center">
@@ -1078,6 +1072,9 @@ function postContent(){
 			if( (Math.floor(Math.random() * 10) + 1) >= 9 ) playAudioRand( [3, 5] );
 			$(".ccard").each(function(){ $( this ).removeClass("ccard__expand"); });
 			$card.addClass("ccard__expand");
+			sHash = $card.find("h2").text();
+			$("h1.caption--h1__amaticsc:visible").text(sHash);
+			document.title = sHash;
 			//if( !CnfState.hist ){
 				//CnfState.hist = true;
 			//}else{
