@@ -566,9 +566,9 @@ Curated Snark
 									<i class="ccard-chev fa-brand__focal fa fa-chevron-down fa-lg"></i>
 									<figure class="resp_full_height"></figure>
 
-<p class="caption--p__amaticsc color-text__lol3 text-center"
+<h2 class="caption--p__amaticsc color-text__lol3 text-center"
 style="margin-bottom: 4px;">Writing Samples
-</p>
+</h2>
 <hr>
 <p class="caption--p__roboto color-text__lol1 text-center" style="margin-bottom: 8px;">Style Tone Voice
 </p>
@@ -854,7 +854,7 @@ Thanks for visiting Little Overlord!&nbsp; The destination for my thoughts on va
 				<hr>
 			</div>
 			<div class="column small-12 medium-9">
-<p class="|caption_class| hide-for-small-only">|caption|</p>
+				<p class="|caption_class| hide-for-small-only">|caption|</p>
 				|templ_youtube|
 				<p class="ccard-summary">|body_1|</p>
 				<figure class="text-center"><img src="|img_1_src|" alt="|img_1_alt|"></figure>
@@ -1073,8 +1073,10 @@ function postContent(){
 			$(".ccard").each(function(){ $( this ).removeClass("ccard__expand"); });
 			$card.addClass("ccard__expand");
 			sHash = $card.find("h2").text();
-			$("h1.caption--h1__amaticsc:visible").text(sHash);
-			document.title = sHash;
+			if( sHash.length > 0){
+				$("h1.caption--h1__amaticsc:visible").text(sHash);
+				document.title = sHash;
+			}
 			//if( !CnfState.hist ){
 				//CnfState.hist = true;
 			//}else{
@@ -1321,4 +1323,12 @@ function setPageThread(name, { popular, expires, activeClass } = {}){
 	console.log( "Popular | ", popular );
 }
 	</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-54278542-2', 'auto');
+  ga('send', 'pageview');
+</script>
 </html>
