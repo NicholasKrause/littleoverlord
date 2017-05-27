@@ -30,12 +30,13 @@ https://nicholaskrause.github.io/ign_code_foo_2016/
 type="text/css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans|Righteous|Amatic+SC"
 type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Eater" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css"
 type="text/css" media="all">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
-type="text/css">
-<link rel="stylesheet" href="https://vjs.zencdn.net/5.11.6/video-js.css"
-type="text/css">
+<!-- link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+type="text/css" -->
+<!-- link rel="stylesheet" href="https://vjs.zencdn.net/5.11.6/video-js.css"
+type="text/css" -->
 <style>
 
 .show_prtf    .state--both__show {display: block;}
@@ -124,6 +125,17 @@ body.theme__night {
     width: 768px;
     height: 768px;
     z-index:-1;
+}
+.ccard-caption {
+font-size: 48px;
+background: -webkit-linear-gradient(#7D2A35, #fff3d9);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+line-height: .8;
+text-align: center;
+color: #7D2A35;
+font-family: 'Eater', cursive;
+margin: 12px, 0 !important;
 }
 .ccard-title {
 	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -264,7 +276,7 @@ body.theme__night {
 		width: 12vw;
 	}
 	.ccard-thn {
-		width: 56%;
+		width: 54%;
 		min-width: inherit;
 	}
 }
@@ -433,11 +445,6 @@ input:checked~.switch-paddle {
 				    			</a>
 				     		</li>
 				    		<li class="lftnav--li">
-				    			<a class="prinav--a" href="#podcasts" data-prinv="prinv_pod">
-				    				<p class="caption--p__righteous text-center">PODCASTS</p>
-				    			</a>
-				     		</li>
-				    		<li class="lftnav--li">
 				    			<a class="prinav--a" href="#videos data-prinv="prinv_vid">
 				    				<p class="caption--p__righteous text-center">VIDEO</p>
 				    			</a>
@@ -445,6 +452,11 @@ input:checked~.switch-paddle {
 				    		<li class="lftnav--li">
 				    			<a class="prinav--a" href="#articles" data-prinv="prinv_wrd">
 				    				<p class="caption--p__righteous text-center">WORDS</p>
+				    			</a>
+				     		</li>
+				    		<li class="lftnav--li">
+				    			<a class="prinav--a" href="#podcasts" data-prinv="prinv_pod">
+				    				<p class="caption--p__righteous text-center">PODCASTS</p>
 				    			</a>
 				     		</li>
 				    		<li class="lftnav--li">
@@ -503,11 +515,6 @@ Curated Snark
 				    				<p class="caption--p__righteous prinav--p__active">HOME</p>
 				    			</a>
 				     		</li>
-				    		<li class="prinav--li__long prinav--li">
-				    			<a class="prinav--a" href="#podcasts" data-prinv="prinv_pod">
-				    				<p class="caption--p__righteous">PODCASTS</p>
-				    			</a>
-				     		</li>
 				    		<li class="prinav--li">
 				    			<a class="prinav--a" href="#videos" data-prinv="prinv_vid">
 				    				<p class="caption--p__righteous">VIDEO</p>
@@ -516,6 +523,11 @@ Curated Snark
 				    		<li class="prinav--li">
 				    			<a class="prinav--a" href="#words" data-prinv="prinv_wrd">
 				    				<p class="caption--p__righteous">WORDS</p>
+				    			</a>
+				     		</li>
+				    		<li class="prinav--li__long prinav--li">
+				    			<a class="prinav--a" href="#podcasts" data-prinv="prinv_pod">
+				    				<p class="caption--p__righteous">PODCASTS</p>
 				    			</a>
 				     		</li>
 				    		<li class="prinav--li">
@@ -834,6 +846,7 @@ Thanks for visiting Little Overlord!&nbsp; The destination for my thoughts on va
 		<i class="ccard-chev fa-brand__focal fa fa-chevron-down fa-lg"></i>
 		<h1  class="ccard-title">|title_short|</h1>
 		<h2  class="ccard-subtitle">|author| / |read_time| / |pub_date|</h2>
+
 		<section class="row">
 			<div class="column small-12 medium-3 text-center">
 				<img class="ccard-thn"
@@ -844,6 +857,7 @@ Thanks for visiting Little Overlord!&nbsp; The destination for my thoughts on va
 				<hr>
 			</div>
 			<div class="column small-12 medium-9">
+<p class="|caption_class| hide-for-small-only">|caption|</p>
 				|templ_youtube|
 				<p class="ccard-summary">|body_1|</p>
 				<figure class="text-center"><img src="|img_1_src|" alt="|img_1_alt|"></figure>
@@ -855,7 +869,7 @@ Thanks for visiting Little Overlord!&nbsp; The destination for my thoughts on va
 				<figure class="text-center"><img src="|img_4_src|" alt="|img_4_alt|"></figure>
 				<p class="ccard-summary">|body_5|</p>
 				<figure class="text-center"><img src="|img_5_src|" alt="|img_5_alt|"></figure>
-				|templ_soundcloud|
+				<!--  |templ_soundcloud|  -->
 			</div>
 		</section>
 	</article>
@@ -867,7 +881,6 @@ Thanks for visiting Little Overlord!&nbsp; The destination for my thoughts on va
 </template>
 <template id="templ_youtube" class="text-center">
 	<iframe class="ccard_youtube" width="100%" height="315"
-	style="YYYYmin-height: 22vw;"
 	src="https://www.youtube.com/embed/|youtube_token|" frameborder="0" allowfullscreen>
 	</iframe>
 </template>
@@ -881,10 +894,11 @@ Thanks for visiting Little Overlord!&nbsp; The destination for my thoughts on va
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TimelineMax.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
-<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>-->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.3.1/vivus.min.js"></script>
+<!--  
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+<script type="text/javascript" src="js/skrollr.min.js"></script>
 <script type="text/javascript" src="https://vjs.zencdn.net/5.11.6/video.js"></script>
-<!--  <script type="text/javascript" src="js/skrollr.min.js"></script>
 <script type="text/javascript">
     //var s = skrollr.init({
     //render: function(data) {
@@ -1153,6 +1167,8 @@ function Artcs(){
 				aCcard.push( {"target": "pub_date", "source": artc.pub_date} );
 				aCcard.push( {"target": "summary_quote", "source": artc.summary_quote} );
 				aCcard.push( {"target": "theme", "source": artc.theme} );
+				aCcard.push( {"target": "caption", "source": artc.caption} );
+				aCcard.push( {"target": "caption_class", "source": artc.caption_class} );
 				aCcard.push( {"target": "body_1", "source": artc.body_1} );
 				aCcard.push( {"target": "img_1_src", "source": artc.img_1_src} );
 				aCcard.push( {"target": "img_1_alt", "source": artc.img_1_alt} );
@@ -1188,6 +1204,8 @@ function Artc(artc_type, json){
 	this.title_long       = json.title_long;
 	this.summary_quote    = json.summary_quote;
 	this.theme			  = json.theme;
+	this.caption		  = json.caption;
+	this.caption_class	  = json.caption_class;
 	this.body_1           = swapJSON2MD( json.body_1 );
 	this.img_1_alt        = json.img_1.alt;
 	this.img_1_src        = json.img_1.src;

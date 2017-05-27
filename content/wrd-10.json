@@ -7,6 +7,8 @@
 		"pub_date": "05/26/2017",
 		"theme": "",
 		"summary_quote": "FAQ Jargon-Free Help",
+		"caption": "",
+		"caption_class": "",
 		"tags": [
 "SOCIAL",
 "LOL",
@@ -29,7 +31,7 @@
 			"alt": "",
 			"src": ""
 		},
-		"body_3": "What we need to do is make the FAQ more -B-relevant and credible-E-. It needs to be driven by a trusted source that can intuit by context what a user’s question is likely to be. In my situation that was the customer service department. They provided a detailed list of every possible question that a user could have on each page sorted by likelihood. Cool.---As the copywriter I just needed break it down into simple, easy to understand -B-jargon-free assistance-E-. I implement an information architecture allowing the questions fit into categories.There needed to be a many-to-many relationship between categories and questions, because the same question might exist under different categories. As my contribution to the microcopy universe, I created a button titled -DQ-Ask a Question-DQ-. See what I did there? I planted the notion that these questions are submitted by actual end users. It goes without saying that great care was taken to integrate the list of SEO keywords that I have tattooed on my forearm.",
+		"body_3": "What we need to do is make the FAQ more -B-relevant and credible-E-. It needs to be driven by a trusted source that can intuit by context what a user’s question is likely to be. In my situation that was the customer service department. They provided a detailed list of every possible question that a user could have on each page sorted by likelihood. Cool.---As the copywriter I just needed break it down into simple, easy to understand -B-jargon-free assistance-E-. I implement an information architecture allowing the questions fit into categories. Because the same question might exist more than once I needed a many-to-many relationship between categories and questions. As my contribution to the microcopy universe, I created a button titled -DQ-Ask a Question-DQ-. See what I did there? I planted the notion that these questions are submitted by actual end users. It goes without saying that great care was taken to integrate the list of SEO keywords that I have tattooed on my forearm.",
 		"img_3": {
 			"alt": "",
 			"src": ""
