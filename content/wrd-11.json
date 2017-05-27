@@ -1,0 +1,52 @@
+{
+	"article": [{
+		"title_short": "How Dead Cells conquered my roguelike fatigue",
+		"title_long": "How Dead Cells conquered my roguelike fatigue",
+		"author": "Nick",
+		"read_time": "10 min read",
+		"pub_date": "05/27/2017",
+		"theme": "",
+		"summary_quote": "",
+		"tags": [
+"GAMES",
+"LOL",
+"TECH",
+"COMICS",
+"DESIGN",
+"WRESTLING",
+"GEAR",
+"MOVIES",
+"SOCIAL",
+"WRESTLING"
+		],
+		"body_1": "Dead Cells",
+		"img_1": {
+			"alt": "wrestling",
+			"src": "/content/wrd-9-1.jpg"
+		},
+		"body_2": "",
+		"img_2": {
+			"alt": "",
+			"src": ""
+		},
+		"body_3": "",
+		"img_3": {
+			"alt": "",
+			"src": ""
+		},
+		"body_4": "",
+		"img_4": {
+			"alt": "",
+			"src": ""
+		},
+		"body_5": "",
+		"img_5": {
+			"alt": "",
+			"src": ""
+		},
+		"soundcloud": "",
+		"youtube": "",
+		"show_portfolio": false,
+		"show_blog": true
+	}]
+}
