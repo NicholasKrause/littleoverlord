@@ -545,6 +545,11 @@ Curated Snark
 				    </nav>
 				  </div>
 				</div>
+
+<figure class="js-spinner text-center">
+<img src="/img/AdWords.gif">
+</figure>
+
 				<section id="js-prinv_hom" class="content-section">
 					<h1 class="caption--h1__amaticsc text-center">Home</h1>
 					<section class="row">
@@ -1124,6 +1129,7 @@ function getContent(){
 				//genMainContent( "js-cntnt--art__hom", "js-cntnt--art__pod", 2);
 				genMainContent( "js-cntnt--art__hom", "js-cntnt--art__vid", 2);
 				postContent();  // bind
+				$(".js-spinner").remove();
 			}
 		}}
 	}).done(function( axjsn ) {
