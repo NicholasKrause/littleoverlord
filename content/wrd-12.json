@@ -1,0 +1,54 @@
+{
+	"article": [{
+		"title_short": "Google and Udacity's Android Nanodegree",
+		"title_long": "Google and Udacity's Android Nanodegree",
+		"author": "Nick",
+		"read_time": "10 min read",
+		"pub_date": "5/31/2017",
+		"theme": "",
+		"summary_quote": "Learning Java and Mobile development skills",
+		"caption": "",
+		"caption_class": "",
+		"tags": [
+"TECH",
+"LOL",
+"TECH",
+"COMICS",
+"DESIGN",
+"GAMES",
+"GEAR",
+"MOVIES",
+"SOCIAL",
+"WRESTLING"
+		],
+		"body_1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit risus ac purus placerat, quis pulvinar tellus elementum. Maecenas sagittis id enim vel euismod. Sed sed lorem id leo finibus pellentesque.",
+		"img_1": {
+			"alt": "Google Android Java Mobile App",
+			"src": "/content/wrd-12-1.gif"
+		},
+		"body_2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit risus ac purus placerat, quis pulvinar tellus elementum. Maecenas sagittis id enim vel euismod. Sed sed lorem id leo finibus pellentesque.",
+		"img_2": {
+			"alt": "Google Android Java Mobile App",
+			"src": "/content/wrd-12-2.gif"
+		},
+		"body_3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit risus ac purus placerat, quis pulvinar tellus elementum. Maecenas sagittis id enim vel euismod. Sed sed lorem id leo finibus pellentesque.",
+		"img_3": {
+			"alt": "Google Android Java Mobile App",
+			"src": "/content/wrd-12-3.gif"
+		},
+		"body_4": "",
+		"img_4": {
+			"alt": "",
+			"src": ""
+		},
+		"body_5": "",
+		"img_5": {
+			"alt": "",
+			"src": ""
+		},
+		"soundcloud": "",
+		"youtube": "",
+		"show_portfolio": true,
+		"show_blog": false
+	}]
+}
