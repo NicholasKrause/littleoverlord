@@ -47,6 +47,8 @@
 			"alt": "",
 			"src": ""
 		},
+		"see_also_btn_1": ["Tour Guide App","https://github.com/NicholasKrause/AndroidTourGuideApp"],
+		"see_also_btn_2": ["News API App","https://github.com/NicholasKrause/AndroidNewsApp"],
 		"soundcloud": "",
 		"youtube": "",
 		"show_portfolio": true,
