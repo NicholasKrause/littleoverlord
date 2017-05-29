@@ -590,6 +590,34 @@ Curated Snark
 								<div id="js-cntnt--asd__hom" class="column small-12 js-cntnt--asd">
 									<!--  content aside   begin  -->
 
+									<aside class="ccard callout warning state--prtf__show"
+									data-title_short="resume">
+									<i class="ccard-chev fa-brand__focal fa fa-chevron-down fa-lg"></i>
+									<figure class="resp_full_height"></figure>
+									<figure class="resp_full_height"></figure>
+
+<div class="text-center">
+	<img class="drop-shadow" src="img/mr_magoozy.png">
+</div>
+<br>
+<hr>
+<a class="button small expanded alert hollow"
+href="cv/resume_nicholas_krause.pdf" target="_blank"
+style="margin-bottom: 12px;">Resume | CV</a>
+<figure class="resp_half_height"></figure>
+<a class="button small expanded secondary hollow"
+href="cv/nicholas_krause_google_android_nanodegree.pdf" target="_blank">
+Google Android Java Nanodegree</a>
+<a href="https://www.google.com/partners/#i_profile;idtf=109020333178045359296"
+ target="_blank">
+ <img src="/img/google_adwords_certified.svg"></a>
+<br>
+<a href="https://www.google.com/partners/#i_profile;idtf=109020333178045359296"
+ target="_blank">
+ <img src="/img/google_analytics_certified.svg"></a>
+
+									</aside>
+									
 									<aside class="ccard callout warning state--prtf__show ccard__expand"
 									data-title_short="portfolio">
 									<i class="ccard-chev fa-brand__focal fa fa-chevron-down fa-lg"></i>
@@ -619,33 +647,7 @@ href="http://nicholaskrause.github.io/ign_code_foo_2016/front-end-responsive.htm
 
 									</aside>
 
-									<aside class="ccard callout warning state--prtf__show"
-									data-title_short="resume">
-									<i class="ccard-chev fa-brand__focal fa fa-chevron-down fa-lg"></i>
-									<figure class="resp_full_height"></figure>
-									<figure class="resp_full_height"></figure>
 
-<div class="text-center">
-	<img class="drop-shadow" src="img/mr_magoozy.png">
-</div>
-<br>
-<hr>
-<a class="button small expanded alert hollow"
-href="cv/resume_nicholas_krause.pdf" target="_blank"
-style="margin-bottom: 12px;">Resume | CV</a>
-<br>
-<a class="button small expanded secondary hollow"
-href="cv/nicholas_krause_google_android_nanodegree.pdf" target="_blank">
-Google Android Java Nanodegree</a>
-<a href="https://www.google.com/partners/#i_profile;idtf=109020333178045359296"
- target="_blank">
- <img src="/img/google_adwords_certified.svg"></a>
-<br>
-<a href="https://www.google.com/partners/#i_profile;idtf=109020333178045359296"
- target="_blank">
- <img src="/img/google_analytics_certified.svg"></a>
-
-									</aside>
 									<!--  content aside   end  -->
 								</div>
 							</section>
@@ -969,19 +971,21 @@ Thanks for visiting Little Overlord!&nbsp; The destination for my thoughts on va
 		function playAudioFile( nSound ) {
 		    //    Play MP3 if sound toggle is true
 /*
-			if( CnfState.audio === true ){
-				try{
-					var oSrc = oAudContx.createBufferSource();
-					var volume = oAudContx.createGain();
-					oSrc.buffer = aAudioBuffer[nSound];
-					volume.gain.value = 0.0;
-					oSrc.connect(volume);
-					volume.connect(oAudContx.destination);
-					oSrc.connect(oAudContx.destination);
-					volume.gain.value = 0.0;
-					oSrc.start(oAudContx.currentTime);
+		    if( portfolio ){
+				if( CnfState.audio === true ){
+					try{
+						var oSrc = oAudContx.createBufferSource();
+						var volume = oAudContx.createGain();
+						oSrc.buffer = aAudioBuffer[nSound];
+						volume.gain.value = 0.0;
+						oSrc.connect(volume);
+						volume.connect(oAudContx.destination);
+						oSrc.connect(oAudContx.destination);
+						volume.gain.value = 0.0;
+						oSrc.start(oAudContx.currentTime);
+					}
+					catch( e ){}
 				}
-				catch( e ){}
 			}
 */
 		};
@@ -996,6 +1000,7 @@ Thanks for visiting Little Overlord!&nbsp; The destination for my thoughts on va
 			$( "#js-" + $( el ).attr("data-prinv") ).removeClass("blind");
 			$("#sticky_top").foundation("_calc", true);  //  Issue with top bar not sticky past orig scroll point
 		}
+		var portfolio = false;
 		$(document).ready(function(){
 			$(document).foundation();
 				//  Determine visibility blog, prtf or both
@@ -1006,8 +1011,10 @@ Thanks for visiting Little Overlord!&nbsp; The destination for my thoughts on va
 				function isPrtf(){
 					if( document.location.toString().indexOf( "portfolio" ) !== -1 ){
 						$("body").addClass("show_prtf");
+						portfolio = true;
 					}else{
 						$("body").addClass("show_blog");
+						portfolio = false;
 					}
 				}
 				isPrtf();
