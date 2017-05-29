@@ -895,9 +895,14 @@ Thanks for visiting Little Overlord!&nbsp; The destination for my thoughts on va
 				<p class="ccard-summary">|body_5|</p>
 				<figure class="text-center"><img src="|img_5_src|" alt="|img_5_alt|"></figure>
 				<!--  |templ_soundcloud|  -->
+				|templ_seealso_1||templ_seealso_2|
 			</div>
 		</section>
 	</article>
+</template>
+<template id="templ_seealso" class="text-center">
+	<a class="see_also_btn button alert radius"
+	href="|see_also_btn_x_href|">|see_also_btn_x_text|</a>
 </template>
 <template id="templ_soundcloud">
 	<iframe width="100%" height="96" scrolling="no" frameborder="no"
@@ -1224,6 +1229,8 @@ function Artcs(){
 				aCcard.push( {"target": "templ_soundcloud", "source": artc.soundcloud} );
 				aCcard.push( {"target": "templ_youtube", "source": artc.youtube} );
 				aCcard.push( {"target": "show_state", "source": artc.show_state} );
+				aCcard.push( {"target": "templ_seealso_1", "source": artc.see_also_btn_1} );
+				aCcard.push( {"target": "templ_seealso_2", "source": artc.see_also_btn_2} );
 			sMU += popuTemplate("templ_ccard", aCcard);
 
 		});
@@ -1262,6 +1269,10 @@ function Artc(artc_type, json){
 	this.soundcloud       = makeSoundcloud( json.soundcloud );
 	this.youtube		  = makeYoutube( json.youtube );
 	this.show_state       = getPortfolioStateClass( json.show_portfolio, json.show_blog );
+	this.see_also_btn_1   = makeSeeAlso(json.see_also_btn_1, "1");
+	this.see_also_btn_2   = makeSeeAlso(json.see_also_btn_2, "2");
+
+console.log("stuff | " + this.see_also_btn_1);
 	this.isHom            = false;    //  Is on the home page - not used
 }
 //    History
@@ -1283,6 +1294,13 @@ window.addEventListener("popstate", function( e ) {
 */
 });
 //    Utils
+function makeSeeAlso( json, btnNum ){ // Gen buttons - return MU string
+	if( typeof json !== "undefined" && json !== ""){
+		return popuTemplate("templ_seealso", [{"target": "see_also_btn_x_text", "source": json[0] },{"target": "see_also_btn_x_href", "source": json[1] }]);
+	}else{
+		return " ";
+	}
+}
 function makeSoundcloud( json ){ // Return populated template of soundcloud
 	if( typeof json !== "undefined" && json !== ""){
 		return popuTemplate("templ_soundcloud", [{"target": "soundcloud_token", "source": json }]);
