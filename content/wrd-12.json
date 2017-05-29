@@ -21,7 +21,7 @@
 "SOCIAL",
 "WRESTLING"
 		],
-		"body_1": "My start with Java programming came via a nanodegree supplied by the learning company Udacity and Google. The course took me around three months to complete, but provided to be quite useful and the perfect introduction to Java.",
+		"body_1": "My start with Java programming came via a nanodegree from Udacity and Google. The course took me around three months to complete, but provided to be quite useful and the perfect introduction to Java.",
 		"img_1": {
 			"alt": "Google Android Java Mobile App",
 			"src": "/content/wrd-12-1.gif"
@@ -32,7 +32,7 @@
 			"alt": "Google Android Java Mobile App",
 			"src": "/content/wrd-12-2.gif"
 		},
-		"body_3": "The nanodegree course covered topics such as Java programming for Android devices, JSON parsing, MySQL, and more. All of these tools aided in creating some pretty complex Android applications. The animated gifs in this article highlight my work in the course. The apps I designed included a travel guide app, inventor app, and news app.",
+		"body_3": "The nanodegree course covered topics such as Java programming for Android devices, JSON parsing, SQLite, and more. All of these tools aided in creating some pretty complex Android applications. The animated gifs in this article highlight my work in the course. The apps I designed included a travel guide app, inventor app, and news app.",
 		"img_3": {
 			"alt": "Google Android Java Mobile App",
 			"src": "/content/wrd-12-3.gif"
