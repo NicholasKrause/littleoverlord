@@ -1,8 +1,8 @@
 
 {
 	"article": [{
-		"title_short": "Google and Udacity's Android Nanodegree",
-		"title_long": "Google and Udacity's Android Nanodegree",
+		"title_short": "NJPW Dominion",
+		"title_long": "NJPW Dominion",
 		"author": "Nick",
 		"read_time": "5 min read",
 		"pub_date": "5/30/2017",
@@ -11,7 +11,7 @@
 		"caption": "",
 		"caption_class": "",
 		"tags": [
-"TECH",
+"WRESTLING",
 "LOL",
 "TECH",
 "COMICS",
@@ -20,25 +20,25 @@
 "GEAR",
 "MOVIES",
 "SOCIAL",
-"WRESTLING"
+"TECH"
 		],
-		"body_1": "My start with Java programming came via a nanodegree from Udacity and Google. The course took me around three months to complete, but provided to be quite useful and the perfect introduction to Java.",
+		"body_1": "NJPW Dominion",
 		"img_1": {
-			"alt": "Google Android Java Mobile App",
-			"src": "/content/wrd-12-1.gif"
+			"alt": "",
+			"src": ""
 		},
 
-		"body_2": "Whether you like it or not, the internet of things is encroaching on just about every device we own. From cars to digital signage, kitchen appliances and watches, Android is increasingly a part of our lives in more ways than the average person might suspect. The current estimate is that roughly 2 billion people use Android devices every day.",
+		"body_2": "",
 		"img_2": {
-			"alt": "Google Android Java Mobile App",
-			"src": "/content/wrd-12-2.gif"
+			"alt": "",
+			"src": ""
 		},
-		"body_3": "The nanodegree course covered topics such as Java programming for Android devices, JSON parsing, SQLite, and more. All of these tools aided in creating some pretty complex Android applications. The animated gifs in this article highlight my work in the course. The apps I designed included a travel guide app, inventor app, and news app.",
+		"body_3": "",
 		"img_3": {
-			"alt": "Google Android Java Mobile App",
-			"src": "/content/wrd-12-3.gif"
+			"alt": "",
+			"src": ""
 		},
-		"body_4": "Be on the lookout for a Little Overlord app on the Google Play store in the near future.",
+		"body_4": "",
 		"img_4": {
 			"alt": "",
 			"src": ""
@@ -48,8 +48,6 @@
 			"alt": "",
 			"src": ""
 		},
-		"see_also_btn_1": ["Tour Guide App","https://github.com/NicholasKrause/AndroidTourGuideApp"],
-		"see_also_btn_2": ["News API App","https://github.com/NicholasKrause/AndroidNewsApp"],
 		"soundcloud": "",
 		"youtube": "",
 		"show_portfolio": false,
