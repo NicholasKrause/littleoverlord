@@ -4,10 +4,10 @@
 		"title_short": "NJPW Dominion Preview",
 		"title_long": "NJPW Dominion Preview",
 		"author": "Nick",
-		"read_time": "15 min read",
-		"pub_date": "5/30/2017",
+		"read_time": "10 min read",
+		"pub_date": "5/31/2017",
 		"theme": "",
-		"summary_quote": "The six star rematch",
+		"summary_quote": "The six star rematch!",
 		"caption": "NJPW Dominion",
 		"caption_class": "ccard-caption",
 		"tags": [
@@ -22,10 +22,10 @@
 "SOCIAL",
 "TECH"
 		],
-		"body_1": "NJPW Dominion",
+			"body_1": "Dominion preview coming 5/31.",
 		"img_1": {
-			"alt": "Naito vs Tanahashi",
-			"src": "/content/wrd-13-1.jpg"
+			"alt": "Dominion",
+			"src": "/content/wrd-13-2.jpg"
 		},
 
 		"body_2": "",
