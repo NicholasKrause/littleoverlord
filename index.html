@@ -590,7 +590,7 @@ Curated Snark
 								<div id="js-cntnt--asd__hom" class="column small-12 js-cntnt--asd">
 									<!--  content aside   begin  -->
 
-									<aside class="ccard callout warning state--prtf__show"
+									<aside class="ccard callout warning state--prtf__show ccard__expand"
 									data-title_short="resume">
 									<i class="ccard-chev fa-brand__focal fa fa-chevron-down fa-lg"></i>
 									<figure class="resp_full_height"></figure>
@@ -1017,6 +1017,7 @@ Thanks for visiting Little Overlord!&nbsp; The destination for my thoughts on va
 					if( document.location.toString().indexOf( "portfolio" ) !== -1 ){
 						$("body").addClass("show_prtf");
 						portfolio = true;
+						$("#js-theme--input").click();
 					}else{
 						$("body").addClass("show_blog");
 						portfolio = false;
@@ -1090,6 +1091,9 @@ Thanks for visiting Little Overlord!&nbsp; The destination for my thoughts on va
 
 //    We've loaded the content, let us bind
 function postContent(){
+	if( portfolio ){//  If prtf turn on day theme
+		$("#js-theme--input").click();
+	}
 	//    Card Artc Click
 	$(".ccard").on("click", function( e ){
 		if( !$( this ).hasClass("ccard__expand") ){
@@ -1271,8 +1275,6 @@ function Artc(artc_type, json){
 	this.show_state       = getPortfolioStateClass( json.show_portfolio, json.show_blog );
 	this.see_also_btn_1   = makeSeeAlso(json.see_also_btn_1, "1");
 	this.see_also_btn_2   = makeSeeAlso(json.see_also_btn_2, "2");
-
-console.log("stuff | " + this.see_also_btn_1);
 	this.isHom            = false;    //  Is on the home page - not used
 }
 //    History
