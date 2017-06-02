@@ -358,8 +358,8 @@ table {width: 100%;}
 .hero--header {
 	height: 120px;
 	background: #D6E055;
-	background-image: url(../img/lol_hero_star_bg_1.png);
-	background-image: url(../img/lol_hero_star_bg_1.png),linear-gradient(#D6E055,#ff0000);
+	background-image: url(../img/lol_hero_bg_prtf.png);
+	background-image: url(../img/lol_hero_bg_prtf.png),linear-gradient(#C6FFFA,#2E95A3);
 	padding-top: 10px;
 }
 .caption--p__roboto{

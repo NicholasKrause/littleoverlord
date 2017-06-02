@@ -102,10 +102,15 @@
 			//if( (Math.floor(Math.random() * 3) + 1) >= 2 ) $("#js-theme--input").click(); // 2 in 3
 			//if( (Math.random()+.5|0) === 1 ) $("#js-theme--input").click(); // 0 or 1
 			//    Hero Ani
-			new Vivus("svgLOL", {duration: 96}, function(){
+			if( $("#svgLOL").length > 0 ){
+				new Vivus("svgLOL", {duration: 96}, function(){
+					$("#svgLgo").removeClass("blind");
+					new Vivus("svgLgo", {duration: 176}, function(){ moveHeroBg(); });
+				});
+			} else {
 				$("#svgLgo").removeClass("blind");
 				new Vivus("svgLgo", {duration: 176}, function(){ moveHeroBg(); });
-			});
+			}
 			function moveHeroBg(){
 				var width = 2400, speed = 48, duration = width / speed,
 				endPosition = width - (speed / 48);
