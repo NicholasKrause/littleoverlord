@@ -2,8 +2,8 @@ BEGIN:VCARD
 VERSION:4.0
 N:Krause;Nicholas;;;
 FN:Nicholas Krause
-EMAIL:littleoverlordinteractive@gmail.com
-URL;type=pref:http://www.LittleOverLord.com/
+EMAIL:littleoverlordinteractive+resume@gmail.com
+URL;type=pref:http://www.LittleOverLord.com/portfolio.html
 URL;type=github:https://github.com/NicholasKrause
 URL;type=twitter:https://twitter.com/LittleOverlord
 END:VCARD

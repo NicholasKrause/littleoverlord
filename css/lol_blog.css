@@ -1,0 +1,430 @@
+
+/*  lol index */
+/*
+#7D2A35 #EE0000 #C6ba8b #B4BA6C #FEFFC2
+*/
+/*  lol index */
+/*  lol prtf  */
+/*
+https://color.adobe.com/agave-color-theme-387108/edit/?copy=true
+
+#2E95A3
+#50B8B4
+#C6FFFA
+#E2FFA8
+#D6E055
+*/
+/*  lol prtf  */
+
+/*Foundation overrides*/
+.theme__day .off-canvas-wrapper{
+	background-color: #7D2A35;
+}
+.theme__night .off-canvas-wrapper{
+	background-color: #C6ba8b;
+}
+.theme__day .off-canvas{
+	background-color: #7D2A35;
+}
+.theme__night .off-canvas{
+	background-color: #C6ba8b;
+}
+.theme__night .off-canvas-content {
+	background-color: #C6ba8b;
+}
+.switch-paddle {
+	background-color: #C6ba8b;
+}
+input:checked~.switch-paddle {
+    background: #7D2A35;
+}
+.title-bar {
+	background-color: #7D2A35;
+	height: 54px;
+}
+.theme__night .title-bar {
+	opacity: 0.8;
+}
+.drop-shadow {
+	-webkit-transition: -webkit-transform .15s linear;
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5);
+	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.5);
+}
+/*Foundation overrides*/
+
+.show_prtf    .state--both__show {display: block;}
+.show_blog    .state--both__show {display: block;}
+
+.show_prtf    .state--prtf__show {display: block;}
+.show_blog    .state--blog__show {display: block;}
+.show_prtf    .state--blog__show {display: none;}
+.show_blog    .state--prtf__show {display: none;}
+
+.show_prtf    .state--prtf__show-inline {display: inline;}
+.show_blog    .state--blog__show-inline {display: inline;}
+.show_prtf    .state--blog__show-inline {display: none;}
+.show_blog    .state--prtf__show-inline {display: none;}
+
+.spinner--figure {
+position: fixed;
+z-index: 999;
+height: 96px;
+width: 96px;
+overflow: show;
+margin: auto;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+}
+
+.md__italic {
+	font-style: italic;
+}
+.md__bold {
+	font-weight: 600;
+}
+lol-email::after {
+	content: attr(data-domain);
+}
+lol-email::before {
+	content: attr(data-user);
+}
+
+body.theme__night {
+	background-color: #C6ba8b !important;
+}
+.resp_full_height {height: 14px;margin: 0;} .resp_half_height {height: 8px;margin: 0;} .resp_qtr_height {height: 4px;margin: 0;}
+::selection {
+    background: #fff600;
+    color: #7D2A35;
+    text-shadow: none;
+}
+.ccard {
+	padding: 8 !important;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	border-radius: 6px 24px;
+	height: 256px;
+}
+.ccard_tall {
+	height: 446px !important;
+}
+.ccard__expand {
+	height: inherit !important;
+}
+.ccard__expand:hover {
+	cursor: default !important;
+}
+.ccard-chev {
+    position: absolute;
+    float: right;
+    top: 8px;
+    right: 12px;
+	cursor: pointer;
+}
+.theme__night .ccard-chev {
+	color: #B4BA6C !important;
+}
+.theme__night .ccard-chev:hover {
+	color: #7D2A35 !important;
+}
+
+.theme__day .ccard {
+	border-color: #C6ba8b;
+}
+.theme__night .ccard {
+	border-color: #7D2A35;
+}
+.ccard:hover {
+	cursor: pointer;
+	border-color: #EE0000;
+ }
+.js-cntnt--asd .ccard:hover::before {
+    content:"";
+    position: absolute;
+    top: -96px; left: -96px;
+    background:#fff3d9 url("../img/lol_hero_star_bg.png") no-repeat;
+    /*-webkit-animation: ccard_anim_bg 6s infinite;*/
+    animation: ccard_anim_bg 6s infinite;
+    width: 768px;
+    height: 768px;
+    z-index:-1;
+}
+.ccard-caption {
+font-size: 48px;
+background: -webkit-linear-gradient(#7D2A35, #cea79b);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+line-height: 1.2;
+text-align: center;
+color: #7D2A35;
+font-family: 'Eater', cursive;
+margin: 12px, 0 !important;
+}
+.ccard-caption__prtf {
+font-size: 56px;
+background: -webkit-linear-gradient(#C6ba8b, #fff3d9);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+line-height: 1.2;
+text-align: center;
+font-family: 'Righteous', cursive;
+margin: 12px, 0 !important;
+ text-transform: uppercase;
+}
+.ccard-title {
+	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1.2em;
+	font-weight: 500;
+	line-height: 1.5;
+	color: #7D2A35;
+	text-align: center;
+}
+.ccard-subtitle {
+	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: .8em;
+	font-weight: 300;
+	line-height: .8;
+	color: #7D2A35;
+	text-align: center;
+	margin-bottom: 12px;
+}
+.ccard-thn {
+	width: 62%;
+	height: auto;
+}
+.ccard-summary {
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 19px;
+	/*font-size:calc(.6em + .6vw);*/
+	font-weight: normal;
+	line-height: 1.4em;
+	color: #222;
+}
+
+@keyframes ccard_anim_bg {
+    50% {transform: rotate(90deg);}
+}
+.theme__day footer p {
+	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: .8em;
+	font-weight: 500;
+	line-height: .9;
+	text-align: center;
+	color: #C6ba8b;
+}
+.theme__night footer p {
+	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: .8em;
+	font-weight: 500;
+	line-height: .9;
+	text-align: center;
+	color: #FEFFC2;
+}
+
+.prinav {
+	overflow: hidden;
+}
+.prinav--nav {
+	overflow: hidden;
+	margin: 0 8vw !important;
+}
+.prinav--nav__hamb {
+	margin-top: 6px;
+}
+.prinav--ul {
+	list-style-type: none;
+}
+.prinav--li {
+	float: left;
+	margin: 6px 10px 14px 10px;
+	width: 6vw;
+}
+.prinav--li__long {
+	width: 8vw;
+}
+.theme__day .prinav--li p{
+	color: #B4BA6C;
+	margin: 0;
+}
+.theme__day .prinav--li p:hover{
+	color: #FEFFC2;
+}
+.theme__night .prinav--li p{
+	color: #FEFFC2;
+	margin: 0;
+}
+.prinav--p__active {
+	color: #EE4444 !important;
+}
+.theme__night .prinav--li p:hover{
+	color: #B4BA6C;
+}
+.theme__day .lftnav--li p{
+	color: #B4BA6C;
+	margin: 0;
+}
+.theme__day .lftnav--li p:hover{
+	color: #FEFFC2;
+}
+.theme__night .lftnav--li p{
+	color: #FEFFC2;
+	margin: 0;
+}
+.theme__night .lftnav--li p:hover{
+	color: #B4BA6C;
+}
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+	.ccard_youtube {
+		margin-left: 6px !important;
+		width: 300px;
+		height: 169px;
+	}
+	.prinav--li {
+		width: 10vw;
+	}
+	.prinav--li__long {
+		width: 12vw;
+	}
+	.ccard-thn {
+		width: 24%;
+		min-width: inherit;
+	}
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
+
+}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+	.ccard_youtube {
+		width: 560px;
+		height: 315px;
+	}
+	.prinav--li {
+		width: 10vw;
+	}
+	.prinav--li__long {
+		width: 12vw;
+	}
+	.ccard-thn {
+		width: 54%;
+		min-width: inherit;
+	}
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+
+}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+	.ccard_youtube {
+		width: 560px;
+		height: 315px;
+	}
+}
+
+table {width: 100%;}
+.theme__day hr {
+	margin: 2px 0 6px 0;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right,rgba(0,0,0,0),rgba(145,122,86,1), rgba(0,0,0,0));
+}
+.theme__night hr {
+	margin: 2px 0 6px 0;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right,rgba(0,0,0,0),rgba(238,0,0,1),rgba(0,0,0,0));
+}
+.theme__day .fa-brand {color: #B4BA6C;}
+.theme__day .fa-brand:hover {color: #7D2A35;}
+
+.theme__night .fa-brand {color: #FEFFC2;}
+.theme__night .fa-brand:hover {color: #7D2A35;}
+
+.fa-brand__focal {color: #7D2A35;}
+.fa-brand__focal:hover {color: #EE0000;}
+
+.hero--header {
+	height: 120px;
+	background: #7D2A35;
+	background-image: url(../img/lol_hero_star_bg_1.png);
+	background-image: url(../img/lol_hero_star_bg_1.png),linear-gradient(#7D2A35,#ff0000);
+	padding-top: 10px;
+}
+.caption--p__roboto{
+	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: .88em;
+	font-weight: 500;
+	line-height: 1.5;
+}
+.caption--p__opensans{
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1.4em;
+	font-weight: 500;
+	line-height: 1.5;
+}
+.theme__day   .caption_static { color: #7D2A35; }
+.theme__night .caption_static { color: #FEFFC2; }
+
+.caption--p__righteous{
+	font-family: "Righteous", cursive;
+	font-size: 1.1em;
+	font-weight: 400;
+	line-height: 1.5;
+}
+.caption--p__amaticsc{
+	font-family: "Amatic SC", cursive;
+	font-size: 1.6em;
+	font-weight: 400;
+	line-height: 1.24;
+	margin-bottom: 8px;
+}
+
+.theme__day .caption--h1__amaticsc{
+	font-family: "Amatic SC", cursive;
+	font-size: 2.2em;
+	font-weight: 500;
+	line-height: 1.4;
+	color:#EE0000;
+}
+
+.theme__night .caption--h1__amaticsc{
+	font-family: "Amatic SC", cursive;
+	font-size: 2.2em;
+	font-weight: 500;
+	line-height: 1.4;
+	color:#FEFFC2;
+}
+
+.color-text__black{color: #000;}
+.color-text__white{color: #FFF;}
+.color-back__black{background-color: #000;}
+.color-back__white{background-color: #FFF;}
+
+.color-text__lol1{color:#7D2A35;}
+.color-text__lol2{color:#EE0000;}
+.color-text__lol3{color:#C6ba8b;}
+.color-text__lol4{color:#B4BA6C;}
+.color-text__lol5{color:#FEFFC2;}
+
+.color-back__lol01{background-color:#7D2A35;}
+.color-back__lol02{background-color:#EE0000;}
+.color-back__lol03{background-color:#C6ba8b;}
+.color-back__lol04{background-color:#B4BA6C;}
+.color-back__lol05{background-color:#FEFFC2;}
+
+.resp_full_height {height: 14px;}
+.resp_full_height {height: 8px;}
+.no-padding {padding: 0 !important;}
+.blind {display: none;}
