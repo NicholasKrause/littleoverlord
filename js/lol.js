@@ -261,8 +261,19 @@ function Artcs(){
 			if( artc_type === "hom" ){
 
 			}else{
+console.log( "prtf filt 0 | " + value.show_state );
+console.log( "prtf filt 2 | " + portfolio );
+console.log( "prtf filt 3 | " + value.artc_type )
 				if( value.artc_type === artc_type ){ //    wrd, vid or pod
-					return true;
+					if( portfolio ){
+						if( (value.show_state === "state--prtf__show") || (value.show_state === "state--both__show") ){
+							return true;
+						}
+					}else{
+						if( (value.show_state === "state--blog__show") || (value.show_state === "state--both__show") ){
+							return true;
+						}
+					}
 				}
 				return false;
 			}
