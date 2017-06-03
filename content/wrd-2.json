@@ -48,7 +48,7 @@
 		},
 		"soundcloud": "",
 		"youtube": "",
-		"show_portfolio": true,
+		"show_portfolio": false,
 		"show_blog": true
 	}]
 }
