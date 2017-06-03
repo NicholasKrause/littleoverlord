@@ -127,10 +127,10 @@ body.theme__night {
 	cursor: pointer;
 }
 .theme__night .ccard-chev {
-	color: #C6FFFA !important;
+	color: #1D5D66 !important;
 }
 .theme__night .ccard-chev:hover {
-	color: #D6E055 !important;
+	color: #EDBA08 !important;
 }
 
 .theme__day .ccard {
@@ -189,7 +189,7 @@ margin: 12px, 0 !important;
 	font-size: .8em;
 	font-weight: 300;
 	line-height: .8;
-	color: #D6E055;
+	color: #1D5D66;
 	text-align: center;
 	margin-bottom: 12px;
 }
@@ -255,7 +255,7 @@ margin: 12px, 0 !important;
 	color: #E2FFA8;
 }
 .theme__night .prinav--li p{
-	color: #E2FFA8;
+	color: #1D5D66;
 	margin: 0;
 }
 .prinav--p__active {
@@ -359,7 +359,7 @@ table {width: 100%;}
 	height: 120px;
 	background: #D6E055;
 	background-image: url(../img/lol_hero_bg_prtf.png);
-	background-image: url(../img/lol_hero_bg_prtf.png),linear-gradient(#C6FFFA,#2E95A3);
+	background-image: url(../img/lol_hero_bg_prtf.png),linear-gradient(#2E95A3,#C6FFFA);
 	padding-top: 10px;
 }
 .caption--p__roboto{

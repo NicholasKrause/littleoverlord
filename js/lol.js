@@ -108,8 +108,12 @@
 					new Vivus("svgLgo", {duration: 176}, function(){ moveHeroBg(); });
 				});
 			} else {
-				$("#svgLgo").removeClass("blind");
-				new Vivus("svgLgo", {duration: 176}, function(){ moveHeroBg(); });
+				if( $("#svgLgo").length > 0 ){
+					$("#svgLgo").removeClass("blind");
+					new Vivus("svgLgo", {duration: 176}, function(){ moveHeroBg(); });
+				}else{
+					moveHeroBg();
+				}
 			}
 			function moveHeroBg(){
 				var width = 2400, speed = 48, duration = width / speed,
@@ -261,9 +265,6 @@ function Artcs(){
 			if( artc_type === "hom" ){
 
 			}else{
-console.log( "prtf filt 0 | " + value.show_state );
-console.log( "prtf filt 2 | " + portfolio );
-console.log( "prtf filt 3 | " + value.artc_type )
 				if( value.artc_type === artc_type ){ //    wrd, vid or pod
 					if( portfolio ){
 						if( (value.show_state === "state--prtf__show") || (value.show_state === "state--both__show") ){
