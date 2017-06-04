@@ -46,6 +46,8 @@
 			"alt": "",
 			"src": ""
 		},
+		"see_also_btn_1": ["JavaScript Gist","https://gist.github.com/NicholasKrause"],
+		"see_also_btn_2": ["More Interactive Design","http://nicholaskrause.github.io/ign_code_foo_2016/scrabble.html"],
 		"soundcloud": "",
 		"youtube": "",
 		"show_portfolio": true,
