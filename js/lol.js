@@ -68,6 +68,10 @@
 		var portfolio = false;
 		$(document).ready(function(){
 			$(document).foundation();
+				//  Call back from SFDC Web-2-Lead
+				if( document.location.toString().indexOf( "thanks" ) !== -1 ){
+					$("#thanks_dialog").foundation("open");
+				}
 				//  Determine visibility blog, prtf or both
 				$(".js-prtf--a").on("click", function( e ){
 					window.location.href = $( this ).attr("href");
