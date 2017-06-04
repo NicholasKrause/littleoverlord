@@ -15,6 +15,33 @@ https://color.adobe.com/agave-color-theme-387108/edit/?copy=true
 #2E95A3
 */
 /*  lol prtf  */
+/*  Simple CSS tooltip*/
+/* Tooltip container */
+.tuletip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* tuletip text */
+.tuletip .tuletiptext {
+    visibility: hidden;
+    width: 256px;
+    background-color: #2E95A3;
+    color: #E2FFA8;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+ 
+    /* Position the tuletip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tuletip text when you mouse over the tuletip container */
+.tuletip:hover .tuletiptext {
+    visibility: visible;
+}
 
 /*Foundation overrides*/
 .theme__day .off-canvas-wrapper{
