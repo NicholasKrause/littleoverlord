@@ -28,6 +28,57 @@ https://nicholaskrause.github.io/ign_code_foo_2016/
 		<link rel="manifest" href="/manifest.json">
 		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff0000">
 		<meta name="theme-color" content="#ff0000">
+<style>
+body.theme__night { background-color: rgb(46, 149, 163) !important; }
+.theme__night .off-canvas-wrapper { background-color: rgb(46, 149, 163); }
+.theme__night .off-canvas { background-color: rgb(46, 149, 163); }
+.theme__night .fa-brand { color: rgb(226, 255, 168); }
+.prinav--p__active { color: rgb(238, 68, 68) !important; }
+.caption--p__righteous { font-family: Righteous, cursive; font-size: 1.1em; font-weight: 400; line-height: 1.5; }
+.theme__night .lftnav--li p { color: rgb(226, 255, 168); margin: 0px; }
+.theme__night .off-canvas-content { background-color: rgb(46, 149, 163); }
+.hero--header { height: 120px; background: url("../img/lol_hero_bg_prtf.png") rgb(214, 224, 85), linear-gradient(rgb(46, 149, 163), rgb(198, 255, 250)); padding-top: 10px; }
+.caption--p__roboto { font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 0.88em; font-weight: 500; line-height: 1.5; }
+.resp_full_height { height: 8px; margin: 0px; }
+.title-bar { background-color: rgb(214, 224, 85); height: 54px; }
+.prinav { overflow: hidden; }
+.theme__night .title-bar { opacity: 0.8; }
+.prinav--nav__hamb { margin-top: 6px; }
+.prinav--nav { overflow: hidden; margin: 0px 8vw !important; }
+.prinav--ul { list-style-type: none; }
+.prinav--li { float: left; margin: 6px 10px 14px; width: 6vw; }
+.theme__night .prinav--li p { color: rgb(29, 93, 102); margin: 0px; }
+.prinav--li__long { width: 8vw; }
+.theme__night .caption--h1__amaticsc { font-family: "Amatic SC", cursive; font-size: 2.2em; font-weight: 500; line-height: 1.4; color: rgb(226, 255, 168); }
+.ccard { position: relative; overflow: hidden; z-index: 1; border-radius: 6px 24px; height: 256px; }
+.show_prtf .state--both__show { display: block; }
+.theme__night .ccard { border-color: rgb(214, 224, 85); }
+.ccard-chev { position: absolute; float: right; top: 8px; right: 12px; cursor: pointer; }
+.fa-brand__focal { color: rgb(214, 224, 85); }
+.theme__night .ccard-chev { color: rgb(47, 111, 120) !important; }
+.ccard-title { font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 1.2em; font-weight: 500; line-height: 1.5; color: rgb(46, 149, 163); text-align: center; }
+.ccard-subtitle { font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 0.8em; font-weight: 300; line-height: 0.8; color: rgb(29, 93, 102); text-align: center; margin-bottom: 12px; }
+.ccard__expand { height: inherit !important; }
+.show_prtf .state--prtf__show { display: block; }
+.drop-shadow { transition: -webkit-transform 0.15s linear; box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 6px; }
+.blind { display: none; }
+.show_prtf .state--blog__show { display: none; }
+.caption--p__opensans { font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 1.4em; font-weight: 500; line-height: 1.5; }
+.theme__night .caption_static { color: rgb(226, 255, 168); }
+.theme__night hr { margin: 2px 0px 6px; border: 0px; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(238, 0, 0), rgba(0, 0, 0, 0)); }
+.resp_half_height { height: 8px; margin: 0px; }
+.caption--p__amaticsc { font-family: "Amatic SC", cursive; font-size: 1.6em; font-weight: 400; line-height: 1.24; margin-bottom: 8px; }
+.color-text__lol3 { color: rgb(46, 149, 163); }
+.color-text__lol2 { color: rgb(80, 184, 180); }
+.ccard_tall { height: 446px !important; }
+.ccard-thn { width: 62%; height: auto; }
+.ccard-summary { font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 19px; font-weight: normal; line-height: 1.4em; color: rgb(34, 34, 34); }
+.ccard-caption { font-size: 48px; background: -webkit-linear-gradient(top, rgb(46, 149, 163), rgb(255, 243, 217)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; line-height: 1.2; text-align: center; color: rgb(214, 224, 85); font-family: Eater, cursive; }
+.md__italic { font-style: italic; }
+.md__bold { font-weight: 600; }
+.ccard-caption__prtf { font-size: 56px; background: -webkit-linear-gradient(top, rgb(46, 149, 163), rgb(255, 243, 217)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; line-height: 1.2; text-align: center; font-family: Righteous, cursive; text-transform: uppercase; }
+.resp_qtr_height { height: 4px; margin: 0px; }
+</style>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css"
 type="text/css">
@@ -437,7 +488,7 @@ Thanks for visiting Little Overlord!&nbsp; The destination for my thoughts on va
 <article id="contact_form_dialog" class="reveal" data-reveal>
 	<form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
 		<button class="close-button" data-close aria-label="Close modal" type="button">
-			<i class="fa fa-times-circle-o fa-lg" style="color: #D6E055;"></i>
+			<i class="fa fa-times-circle-o fa-lg" style="color: #A3AB41;"></i>
 		</button>
 		<figure class="resp_full_height"></figure>
 		<br><br>
@@ -485,7 +536,7 @@ Thanks for visiting Little Overlord!&nbsp; The destination for my thoughts on va
 			<div class="column small-4"><br></div>
 			<div class="column small-4">
 				<input class="button expanded" type="submit" name="submit" value="Contact Nick"
-				style="background-color: #D6E055;">
+				style="background-color: #A3AB41;">
 			</div>
 			<div class="column small-4"><br></div>
 		</section>
