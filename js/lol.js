@@ -163,7 +163,19 @@
 		});  //  Window Load
 
 //    We've loaded the content, let us bind
-function postContent(){
+	function postContent(){ // Simple inline validation
+	$( "#contact_form" ).on("submit", function( e ){
+		if( $( "#last_name" ).val() === ""){
+			$("#last_name").addClass("field__required");
+			setTimeout(function(){ $("input").removeClass("field__required") }, 3200);
+			e.preventDefault();
+		}
+		if( $( "#email" ).val() === ""){
+			$("#email").addClass("field__required");
+			setTimeout(function(){ $("input").removeClass("field__required") }, 3200);
+			e.preventDefault();
+		}
+	});
 	if( portfolio ){//  If prtf turn on day theme
 		//$("#js-theme--input").click();
 	}

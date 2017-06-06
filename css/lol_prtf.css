@@ -15,6 +15,10 @@ https://color.adobe.com/agave-color-theme-387108/edit/?copy=true
 #2E95A3
 */
 /*  lol prtf  */
+.field__required { 
+	border-left-color: #FF0000;
+	border-left-width: 2px;
+}
 /*  Simple CSS tooltip*/
 /* Tooltip container */
 .tuletip {

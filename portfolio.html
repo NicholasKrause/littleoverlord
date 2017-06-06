@@ -247,7 +247,7 @@ href="http://nicholaskrause.github.io/ign_code_foo_2016/front-end-responsive.htm
 <!--  cv/nicholas_krause_bing_ads_certification.pdf  -->
 
 	<a class="" href="http://ads.bingads.microsoft.com/en-us/training-accreditation-find-a-pro-directory?MemberID=953cbb6a-3445-429c-9423-517aec2f47af" target="_blank">
-		<img src="/img/BingAds_Accredited_Badge.png" alt="BingAds Accredited">
+		<img class="drop-shadow" src="/img/BingAds_Accredited_Badge.png" alt="BingAds Accredited">
 	</a>
 </aside>
 <br>
@@ -256,9 +256,6 @@ href="http://nicholaskrause.github.io/ign_code_foo_2016/front-end-responsive.htm
 		<img src="/img/contact_nick.png" alt="Contact Nick">
 	</a>
 </aside>
-
-
-
 
 
 									<!--  content aside   end  -->
@@ -450,7 +447,7 @@ Thanks for visiting Little Overlord!&nbsp; The destination for my thoughts on va
 	</div>
 </article>
 <article id="contact_form_dialog" class="reveal" data-reveal>
-	<form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+	<form id="contact_form" action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" novalidate="novalidate">
 		<button class="close-button" data-close aria-label="Close modal" type="button">
 			<i class="fa fa-times-circle-o fa-lg" style="color: #A3AB41;"></i>
 		</button>
@@ -466,10 +463,7 @@ Thanks for visiting Little Overlord!&nbsp; The destination for my thoughts on va
 		<!--  value="neostudios.com@gmail.com">                                       -->
 		<!--  ----------------------------------------------------------------------  -->
 
-		<input id="first_name" placeholder="* First Name" maxlength="40" name="first_name" size="20" type="text" />
-		<figure class="resp_qtr_height"></figure>
-
-		<input id="last_name" placeholder="* Last Name" maxlength="80" name="last_name" size="20" type="text" />
+		<input id="last_name" placeholder="* Name" maxlength="80" name="last_name" size="20" type="text" />
 		<figure class="resp_qtr_height"></figure>
 
 		<input id="email" placeholder="* Email" maxlength="80" name="email" size="20" type="email" />
@@ -478,7 +472,7 @@ Thanks for visiting Little Overlord!&nbsp; The destination for my thoughts on va
 		<input id="company" placeholder="Company" maxlength="40" name="company" size="20" type="text" />
 		<figure class="resp_qtr_height"></figure>
 
-		<textarea placeholder="Comment" name="description"></textarea>
+		<textarea placeholder="Comment" name="description" rows="6"></textarea>
 		<figure class="resp_full_height"></figure>
 		<input id="lead_source" name="lead_source"
 		type="hidden"
@@ -499,7 +493,7 @@ Thanks for visiting Little Overlord!&nbsp; The destination for my thoughts on va
 		<section class="row">
 			<div class="column small-4"><br></div>
 			<div class="column small-4">
-				<input class="button expanded" type="submit" name="submit" value="Contact Nick"
+				<input class="button expanded caption--p__amaticsc" type="submit" name="submit" value="Contact Nick"
 				style="background-color: #A3AB41;">
 			</div>
 			<div class="column small-4"><br></div>

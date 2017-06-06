@@ -15,7 +15,10 @@ https://color.adobe.com/agave-color-theme-387108/edit/?copy=true
 #D6E055
 */
 /*  lol prtf  */
-
+.field__required { 
+	border-left-color: #FF0000;
+	border-left-width: 2px;
+}
 /*Foundation overrides*/
 .theme__day .off-canvas-wrapper{
 	background-color: #7D2A35;
