@@ -252,7 +252,11 @@ function getContent(){
 				$("#js-cntnt--art__vid").append( artcs.render("vid") );
 				$("#js-cntnt--art__pod").append( artcs.render("pod") );
 				//    Replicate content on home page
-				genMainContent( "js-cntnt--art__hom", "js-cntnt--art__wrd", 4);
+				if( portfolio ){
+					genMainContent( "js-cntnt--art__hom", "js-cntnt--art__wrd", 6);
+				}else{
+					genMainContent( "js-cntnt--art__hom", "js-cntnt--art__wrd", 4);
+				}
 				//genMainContent( "js-cntnt--art__hom", "js-cntnt--art__pod", 2);
 				genMainContent( "js-cntnt--art__hom", "js-cntnt--art__vid", 2);
 				postContent();  // bind
