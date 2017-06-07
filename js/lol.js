@@ -35,7 +35,6 @@
 
 		function playAudioFile( nSound ) {
 		    //    Play MP3 if sound toggle is true
-/*
 		    if( portfolio ){
 				if( CnfState.audio === true ){
 					try{
@@ -52,7 +51,7 @@
 					catch( e ){}
 				}
 			}
-*/
+
 		};
 		function playAudioRand( aSound ){
 			//    Either Or
@@ -71,6 +70,7 @@
 				//  Call back from SFDC Web-2-Lead
 				if( document.location.toString().indexOf( "thanks" ) !== -1 ){
 					$("#thanks_dialog").foundation("open");
+					playAudioFile(4);
 				}
 				//  Determine visibility blog, prtf or both
 				$(".js-prtf--a").on("click", function( e ){
@@ -164,17 +164,22 @@
 
 //    We've loaded the content, let us bind
 	function postContent(){ // Simple inline validation
-	$( "#contact_form" ).on("submit", function( e ){
+	$( ".js-submit-contact_form" ).on("click", function( e ){
 		if( $( "#last_name" ).val() === ""){
 			$("#last_name").addClass("field__required");
 			setTimeout(function(){ $("input").removeClass("field__required") }, 3200);
 			e.preventDefault();
+			playAudioFile(2);
+			return true;
 		}
 		if( $( "#email" ).val() === ""){
 			$("#email").addClass("field__required");
-			setTimeout(function(){ $("input").removeClass("field__required") }, 3200);
+			setTimeout(function(){ $("input").removeClass("field__required") }, 3600);
 			e.preventDefault();
+			playAudioFile(2);
+			return true;
 		}
+		document.getElementById("contact_form").submit();
 	});
 	if( portfolio ){//  If prtf turn on day theme
 		//$("#js-theme--input").click();
