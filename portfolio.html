@@ -223,7 +223,7 @@ style="margin-bottom: 4px;">Writing Samples
 </div>
 -->
 <hr>
-<p class="caption--p__roboto text-center" style="margin-bottom: 8px;color: #797F30;">Style Tone Voice
+<p class="caption--p__roboto text-center" style="margin-bottom: 8px;color: #797F30;">Style &nbsp;Tone &nbsp;Voice
 </p>
 <a class="button expanded hollow alert radius"
 style="margin-bottom: 4px;"
@@ -251,13 +251,44 @@ href="http://nicholaskrause.github.io/ign_code_foo_2016/front-end-responsive.htm
 		<img class="drop-shadow" src="/img/BingAds_Accredited_Badge.png" alt="BingAds Accredited">
 	</a>
 </aside>
+
 <br>
-<aside class="text-center">
-	<a data-open="contact_form_dialog">
-		<img src="/img/contact_nick.png" alt="Contact Nick">
-	</a>
+
+<aside class="flipcrd-wrap">
+  <div class="flipcrd-cont">
+    <div class="flipcrd flipcrd__front">
+		<a data-open="contact_form_dialog">
+			<img src="/img/contact_nick.png" alt="Contact Nick">
+		</a>
+    </div>
+    <div class="flipcrd flipcrd__back">
+		<a data-open="contact_form_dialog">
+			<img src="/img/contact_hi.png" alt="Contact Nick">
+		</a>
+    </div>
+  </div>
 </aside>
 
+<script>
+TweenLite.set(".flipcrd-wrap", {perspective:800});
+TweenLite.set(".flipcrd-cont", {transformStyle:"preserve-3d"});
+TweenLite.set(".flipcrd__back", {rotationY:-180});
+TweenLite.set([".flipcrd__back", ".flipcrd__front"], {backfaceVisibility:"hidden"});
+
+$(".flipcrd-wrap").hover(
+  function() {
+    TweenLite.to($(this).find(".flipcrd-cont"), 1.2, {rotationY:180, ease:Back.easeOut});
+  },
+  function() {
+    TweenLite.to($(this).find(".flipcrd-cont"), 1.2, {rotationY:0, ease:Back.easeOut});
+  }
+);
+setInterval(function(){
+	if( (Math.floor(Math.random() * (2 - 0 + 1)) + 0) == 2 ){
+		TweenMax.staggerTo($(".flipcrd-cont"), 1, {rotationY:-180, repeat:1, yoyo:true}, 0.1);
+	}
+}, 8600);
+</script>
 
 									<!--  content aside   end  -->
 								</div>
@@ -496,7 +527,9 @@ data-user="LittleOverlordInteractive" data-domain="GMail.com">@</lol-email>
 		<input id="company" placeholder="Company" maxlength="40" name="company" size="20" type="text" />
 		<figure class="resp_qtr_height"></figure>
 
-		<textarea placeholder="Comment" name="description" rows="6"></textarea>
+<textarea placeholder="Comment" name="description" rows="6">
+I visited your portfolio and would like to talk to you about ...
+</textarea>
 		<figure class="resp_full_height"></figure>
 		<input id="lead_source" name="lead_source"
 		type="hidden"

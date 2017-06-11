@@ -14,6 +14,22 @@ https://color.adobe.com/agave-color-theme-387108/edit/?copy=true
 #E2FFA8
 #2E95A3
 */
+/* GSAP Flip card */
+.flipcrd-wrap{
+	width:110px;
+	height:110px;
+	position:relative;
+	float:left;
+	left: 18%;
+	cursor:pointer;
+	-webkit-font-smoothing:antialiased;
+}
+.flipcrd{
+	position:absolute;
+	width:110px;
+	height:110px;
+	overflow:hidden;
+}
 /*  lol prtf  */
 .field__required { 
 	border-left-color: #FF0000;
