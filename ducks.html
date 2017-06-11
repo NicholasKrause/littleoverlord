@@ -1,4 +1,7 @@
 <html>
+<head>
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+</head>
 <body>
 	<a href="https://chicago.craigslist.org/search/nch/wri" target="_blank">CL search north chic writing</a><hr>
 	<a href="https://chicago.craigslist.org/search/nch/med" target="_blank">CL search north chic media</a><hr>
@@ -7,13 +10,7 @@
 	<a href="https://milwaukee.craigslist.org/search/med" target="_blank">CL search milwaukee media</a><hr>
 	<a href="https://milwaukee.craigslist.org/search/mar" target="_blank">CL search milwaukee marketing</a><hr>
 	<hr>
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
-<!--  If necessary, please modify the charset parameter to specify the        -->
-<!--  character set of your HTML page.                                        -->
-<!--  ----------------------------------------------------------------------  -->
-
-<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+	<br><br>
 
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: Please add the following <FORM> element to your page.             -->
@@ -24,26 +21,34 @@
 <input type=hidden name="oid" value="00D6A000000wjaa">
 <input type=hidden name="retURL" value="http://www.LittleOverlord.com/ducks.html?thanks">
 
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
-<!--  these lines if you wish to test in debug mode.                          -->
-<!--  <input type="hidden" name="debug" value=1>                              -->
-<!--  <input type="hidden" name="debugEmail"                                  -->
-<!--  value="neostudios.com@gmail.com">                                       -->
-<!--  ----------------------------------------------------------------------  -->
+<label for="last_name">Name</label><br>
+<input  id="last_name" maxlength="80" name="last_name" size="20" type="text" />
+<br><br>
 
-<label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
 
-<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+<label for="email">Email</label><br>
+<input  id="email" maxlength="80" name="email" size="20" type="text" />
+<br><br>
 
-<label for="company">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
 
-<label for="title">Title</label><input  id="title" maxlength="40" name="title" size="20" type="text" /><br>
+<label for="company">Company</label><br>
+<input  id="company" maxlength="40" name="company" size="20" type="text" />
+<br><br>
 
-<label for="description">Description</label><textarea name="description"></textarea><br>
+
+<label for="title">Subject</label><br>
+<input  id="title" maxlength="40" name="title" size="20" type="text" 
+value="Regarding JOB NAME"/>
+<br><br>
+
+
+<label for="description">Message</label><br>
+<textarea name="description">I believe that I can help you manage your Adwords PPC campaigns.  I've experience in content marketing and social engagement.  Attached please find my resume and contact information. </textarea>
+<br><br>
+
 
 		<input id="lead_source" name="lead_source"
-		type="text"
+		type="hidden"
 		value="LittleOverlord_prtf_targeted">
 
 <input type="submit" name="submit">
