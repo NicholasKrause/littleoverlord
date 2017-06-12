@@ -268,13 +268,13 @@ href="http://nicholaskrause.github.io/ign_code_foo_2016/front-end-responsive.htm
     </div>
   </div>
 </aside>
+<br>
 
 <script>
 TweenLite.set(".flipcrd-wrap", {perspective:800});
 TweenLite.set(".flipcrd-cont", {transformStyle:"preserve-3d"});
 TweenLite.set(".flipcrd__back", {rotationY:-180});
 TweenLite.set([".flipcrd__back", ".flipcrd__front"], {backfaceVisibility:"hidden"});
-
 $(".flipcrd-wrap").hover(
   function() {
     TweenLite.to($(this).find(".flipcrd-cont"), 1.2, {rotationY:180, ease:Back.easeOut});
