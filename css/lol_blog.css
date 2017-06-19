@@ -223,6 +223,7 @@ margin: 12px, 0 !important;
 	font-weight: normal;
 	line-height: 1.4em;
 	color: #222;
+	letter-spacing: 0.0625em;
 }
 
 @keyframes ccard_anim_bg {
