@@ -283,6 +283,7 @@ margin: 12px, 0 !important;
 }
 .prinav--nav__hamb {
 	margin-top: 6px;
+	cursor: pointer;
 }
 .prinav-sect {
 	display: grid;
@@ -399,13 +400,13 @@ table {width: 100%;}
     background-image: linear-gradient(to right,rgba(0,0,0,0),rgba(238,0,0,1),rgba(0,0,0,0));
 }
 .theme__day .fa-brand {color: #C6FFFA;}
-.theme__day .fa-brand:hover {color: #D6E055;}
+.theme__day .fa-brand:hover {color: #edba08;}
 
 .theme__night .fa-brand {color: #E2FFA8;}
-.theme__night .fa-brand:hover {color: #D6E055;}
+.theme__night .fa-brand:hover {color: #edba08;}
 
 .fa-brand__focal {color: #D6E055;}
-.fa-brand__focal:hover {color: #50B8B4;}
+.fa-brand__focal:hover {color: #edba08;}
 
 .hero--header {
 	height: 120px;
