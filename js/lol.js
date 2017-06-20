@@ -473,8 +473,10 @@ function popuTemplate( sTemplate_id, aContents ){
 		return "";
 	}
 }
+/*
 function setPageThread(name, { popular, expires, activeClass } = {}){
 	//  Setting a Default for Named Parameters
 	console.log( "Name | ", name );
 	console.log( "Popular | ", popular );
 }
+*/
