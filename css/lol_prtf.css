@@ -284,15 +284,19 @@ margin: 12px, 0 !important;
 .prinav--nav__hamb {
 	margin-top: 6px;
 }
-.prinav--ul {
+.prinav-sect {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+}
+.QQQQprinav--ul {
 	list-style-type: none;
 }
-.prinav--li {
+.QQQQprinav--li {
 	float: left;
 	margin: 6px 10px 14px 10px;
 	width: 6vw;
 }
-.prinav--li__long {
+.QQQQprinav--li__long {
 	width: 8vw;
 }
 .theme__day .prinav--li p{
@@ -333,10 +337,10 @@ margin: 12px, 0 !important;
 		width: 300px;
 		height: 169px;
 	}
-	.prinav--li {
+	.QQQQprinav--li {
 		width: 10vw;
 	}
-	.prinav--li__long {
+	.QQQQprinav--li__long {
 		width: 12vw;
 	}
 	.ccard-thn {
@@ -356,10 +360,10 @@ margin: 12px, 0 !important;
 		width: 560px;
 		height: 315px;
 	}
-	.prinav--li {
+	.QQQQprinav--li {
 		width: 10vw;
 	}
-	.prinav--li__long {
+	.QQQQprinav--li__long {
 		width: 12vw;
 	}
 	.ccard-thn {
