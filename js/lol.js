@@ -142,6 +142,9 @@
 		});  //  Document Ready
 
 		$( window ).load(function(){  //  Deep Link
+
+		});  //  Window Load
+		function doDeepLink(){
 			if( document.location.href.toString().indexOf( "#home-page" ) !== -1 ){
 				prinav_tap( $("[data-prinv='prinv_hom']") );
 			}
@@ -160,7 +163,26 @@
 			if( document.location.href.toString().indexOf( "#contact-us" ) !== -1 ){
 				prinav_tap( $("[data-prinv='prinv_cnt']").attr("href") );
 			}
-		});  //  Window Load
+			//  article deep link
+
+			if( document.location.href.toString().indexOf( "article=" ) !== -1 ){
+				var title_short = gup("article", document.location.href.toString() );
+				// There will be more than one, but only one will be visible
+				var $deep = $( "[data-title_short='" + title_short + "']" );
+				$deep[0].click();
+				$('html, body').animate({
+					scrollTop: ($deep.offset().top - 76)
+				}, 2000); 	
+			}
+		}
+		function gup( name, url ) {
+			if (!url) url = location.href;
+			name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+			var regexS = "[\\?&]"+name+"=([^&#]*)";
+			var regex = new RegExp( regexS );
+			var results = regex.exec( url );
+			return results == null ? null : results[1];
+		}
 
 //    We've loaded the content, let us bind
 	function postContent(){ // Simple inline validation
@@ -181,9 +203,6 @@
 		}
 		document.getElementById("contact_form").submit();
 	});
-	if( portfolio ){//  If prtf turn on day theme
-		//$("#js-theme--input").click();
-	}
 	//    Card Artc Click
 	$(".ccard").on("click", function( e ){
 		if( !$( this ).hasClass("ccard__expand") ){
@@ -209,11 +228,6 @@
 				$("h1.caption--h1__amaticsc:visible").text(sHash);
 				document.title = sHash;
 			}
-			//if( !CnfState.hist ){
-				//CnfState.hist = true;
-			//}else{
-				//history.pushState({"uid_hash":sHash, "prinv": CnfState.prinv }, sHash, "#" + CnfState.prinv + "?" + sHash);
-			//}
 			$("#sticky_top").foundation("_calc", true);  //  Issue with top bar not sticky past orig scroll point
 		}
 	});
@@ -225,14 +239,15 @@ $( ".YYYYccard" ).hover(
 		tweenMxHeroBG.play();
 	}
 );
-	console.log("Dude, what up?  Nick da K in da house!");
+
 	$("#sticky_top").foundation("_calc", true);  //  Issue with top bar not sticky past orig scroll point
 
 	// logo click home svg
 	$("#svgLOL").on("click", function(){
 		$("[data-prinv='prinv_hom']")[1].click();
 	});
-
+	doDeepLink();
+	console.log("Dude, what up?  Nick da K in da house!");
 }// postContent end
 //    Content fetch and render
 var artcs = new Artcs();
