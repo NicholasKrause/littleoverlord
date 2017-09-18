@@ -148,6 +148,9 @@
 			if( document.location.href.toString().indexOf( "#home-page" ) !== -1 ){
 				prinav_tap( $("[data-prinv='prinv_hom']") );
 			}
+			if( document.location.href.toString().indexOf( "#home" ) !== -1 ){
+				prinav_tap( $("[data-prinv='prinv_hom']") );
+			}
 			if( document.location.href.toString().indexOf( "#podcasts" ) !== -1 ){
 				prinav_tap( $("[data-prinv='prinv_pod']") );
 			}
@@ -157,13 +160,16 @@
 			if( document.location.href.toString().indexOf( "#articles" ) !== -1 ){
 				prinav_tap( $("[data-prinv='prinv_wrd']") );
 			}
+			if( document.location.href.toString().indexOf( "#words" ) !== -1 ){
+				prinav_tap( $("[data-prinv='prinv_wrd']") );
+			}
 			if( document.location.href.toString().indexOf( "#about-us" ) !== -1 ){
 				prinav_tap( $("[data-prinv='prinv_abt']") );
 			}
 			if( document.location.href.toString().indexOf( "#contact-us" ) !== -1 ){
 				prinav_tap( $("[data-prinv='prinv_cnt']").attr("href") );
 			}
-			//  article deep link
+			//  specific article deep link
 
 			if( document.location.href.toString().indexOf( "article=" ) !== -1 ){
 				var title_short = gup("article", document.location.href.toString() );
