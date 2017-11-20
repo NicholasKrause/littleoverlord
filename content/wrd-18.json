@@ -1,0 +1,54 @@
+{
+	"article": [{
+		"title_short": "Power Struggle Preview",
+		"title_long": "Power Struggle Preview",
+		"author": "Nick",
+		"read_time": "15 min read",
+		"pub_date": "11/3/2017",
+		"theme": "",
+		"summary_quote": "",
+		"caption": "POWER STRUGGLE",
+		"caption_class": "ccard-caption",
+		"tags": [
+"WRESTLING",
+"LOL",
+"TECH",
+"COMICS",
+"DESIGN",
+"GAMES",
+"GEAR",
+"MOVIES",
+"SOCIAL",
+"WRESTLING"
+		],
+		"body_1": "Hello",
+		"img_1": {
+			"alt": "",
+			"src": ""
+		},
+		"body_2": "",
+		"img_2": {
+			"alt": "",
+			"src": ""
+		},
+		"body_3": "",
+		"img_3": {
+			"alt": "",
+			"src": ""
+		},
+		"body_4": "",
+		"img_4": {
+			"alt": "",
+			"src": ""
+		},
+		"body_5": "",
+		"img_5": {
+			"alt": "",
+			"src": ""
+		},
+		"soundcloud": "",
+		"youtube": "",
+		"show_portfolio": false,
+		"show_blog": true
+	}]
+}
