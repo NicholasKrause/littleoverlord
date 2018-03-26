@@ -1,0 +1,54 @@
+{
+	"article": [{
+			"title_short": "NJPW Strong Style Evolved",
+		"title_long": "New Japan Pro Wrestling Strong Style Evolved",
+		"author": "Nick",
+		"read_time": "20 min read",
+		"pub_date": "3/25/18",
+		"theme": "",
+		"summary_quote": "Bullet Club vs The Golden Lovers. I'm not crying.",
+		"caption": "Strong Style Evolved",
+		"caption_class": "ccard-caption",
+		"tags": [
+"WRESTLING",
+"LOL",
+"TECH",
+"COMICS",
+"DESIGN",
+"GAMES",
+"GEAR",
+"MOVIES",
+"SOCIAL",
+"WRESTLING"
+		],
+		"body_1": "",
+		"img_1": {
+			"alt": "",
+			"src": "content/"
+		},
+		"body_2": "",
+		"img_2": {
+			"alt": "",
+			"src": ""
+		},
+		"body_3": "",
+		"img_3": {
+			"alt": "",
+			"src": ""
+		},
+		"body_4": "",
+		"img_4": {
+			"alt": "",
+			"src": ""
+		},
+		"body_5": "",
+		"img_5": {
+			"alt": "",
+			"src": ""
+		},
+		"soundcloud": "",
+		"youtube": "",
+		"show_portfolio": false,
+		"show_blog": true
+	}]
+}
