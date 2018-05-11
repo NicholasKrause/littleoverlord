@@ -62,6 +62,6 @@
 		"soundcloud": "",
 		"youtube": "",
 		"show_portfolio": true,
-		"show_blog": true
+		"show_blog": false
 	}]
 }
