@@ -1,0 +1,54 @@
+{
+	"article": [{
+			"title_short": "Best of the Super Jr. 25 May 17",
+		"title_long": "Best of the Super Jr. 25 May 17",
+		"author": "Nick",
+		"read_time": "20 min read",
+		"pub_date": "5/18/2018",
+		"theme": "",
+		"summary_quote": "Taiji Ishimori makes company debut versus Will Ospreay. Other Block A matches.",
+		"caption": "Best of Super Jr BLOCK A",
+		"caption_class": "ccard-caption",
+		"tags": [
+"WRESTLING",
+"LOL",
+"TECH",
+"COMICS",
+"DESIGN",
+"GAMES",
+"GEAR",
+"MOVIES",
+"SOCIAL",
+"WRESTLING"
+		],
+		"body_1": "",
+		"img_1": {
+			"alt": "Best of Super Jr",
+			"src": "content/wrd-2-1.jpg"
+		},
+		"body_2": "",
+		"img_2": {
+			"alt": "",
+			"src": ""
+		},
+		"body_3": "",
+		"img_3": {
+			"alt": "",
+			"src": ""
+		},
+		"body_4": "",
+		"img_4": {
+			"alt": "",
+			"src": ""
+		},
+		"body_5": "",
+		"img_5": {
+			"alt": "",
+			"src": ""
+		},
+		"soundcloud": "",
+		"youtube": "",
+		"show_portfolio": false,
+		"show_blog": true
+	}]
+}
