@@ -1,0 +1,56 @@
+{
+	"article": [{
+		"title_short": "FAQs of Life | A Content Creation Challenge",
+		"title_long": "FAQs of Life | A Content Creation Challenge",
+		"author": "Nick",
+		"read_time": "16 min read",
+		"pub_date": "05/26/2017",
+		"theme": "",
+		"summary_quote": "FAQ Jargon-Free Help",
+		"caption": "",
+		"caption_class": "",
+		"tags": [
+"SOCIAL",
+"LOL",
+"TECH",
+"COMICS",
+"DESIGN",
+"GAMES",
+"GEAR",
+"MOVIES",
+"SOCIAL",
+"WRESTLING"
+		],
+		"body_1": "Recently I was tasked with creating a Frequently Asked Questions page for an e-commerce site. Herein I describe my adventures.---The FAQ has a rich history beginning way back in the Internet stone-age.  Unfortunately the venerable FAQ has fallen on hard times. Many poor FAQs have degraded into marketing points instead of actual helpful guidance. However, I do think that there may be a bright future for the old FAQ. Today’s new and shiny technologies seek to anticipate users’ needs through machine learning. By aggregating past requests they can recommend better future requests. In a way that is what a FAQ was meant to do.",
+		"img_1": {
+			"alt": "Frequently Asked Questions",
+			"src": "/content/wrd-10-1.png"
+		},
+		"body_2": "",
+		"img_2": {
+			"alt": "",
+			"src": ""
+		},
+		"body_3": "What we need to do is make the FAQ more -B-relevant and credible-E-. It needs to be driven by a trusted source that can intuit by context what a user’s question is likely to be. In my situation that was the customer service department. They provided a detailed list of every possible question that a user could have on each page sorted by likelihood. Cool.---As the copywriter I just needed break it down into simple, easy to understand -B-jargon-free assistance-E-. I implement an information architecture allowing the questions fit into categories. Because the same question might exist more than once I needed a many-to-many relationship between categories and questions. As my contribution to the microcopy universe, I created a button titled -DQ-Ask a Question-DQ-. See what I did there? I planted the notion that these questions are submitted by actual end users. It goes without saying that great care was taken to integrate the list of SEO keywords that I have tattooed on my forearm.",
+		"img_3": {
+			"alt": "",
+			"src": ""
+		}, 
+		"body_4": "As the UX developer I needed to facilitate the information scent and provide discoverability. The layout was a collection of categorized (#materialdesign) collapsible cards. An ever present search facility and sub-category jump menu meant that any question could be found with just a few taps. I also used the JavaScript history API so the back and forward buttons could be used to traverse the question cards without leaving the page (SPA).---Finally, let's make our FAQ contextually relevant. We can do that by creating deep-links to specific questions throughout our website. Anywhere the user may get confused there should be a contextual FAQ link. These links can point to a category of questions or to a specific question. -B-How convenient!-E-",
+		"img_4": {
+			"alt": "",
+			"src": ""
+		},
+		"body_5": "Hope that helps,---Nick",
+		"img_5": {
+			"alt": "",
+			"src": ""
+		},
+		"see_also_btn_1": ["JavaScript Gist","https://gist.github.com/NicholasKrause"],
+		"see_also_btn_2": ["Gamified Password Management","https://www.arcanus55.com/trust/key/vault/gamified_authentication_and_password_management_explained.html"],
+		"soundcloud": "",
+		"youtube": "",
+		"show_portfolio": true,
+		"show_blog": false
+	}]
+}

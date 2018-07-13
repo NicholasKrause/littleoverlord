@@ -1,0 +1,57 @@
+{
+	"article": [{
+		"title_short": "Google and Udacity's Android Nanodegree",
+		"title_long": "Google and Udacity's Android Nanodegree",
+		"author": "Nick",
+		"read_time": "5 min read",
+		"pub_date": "5/30/2017",
+		"theme": "",
+		"summary_quote": "Learning Java and Mobile development skills",
+		"caption": "",
+		"caption_class": "",
+		"tags": [
+"TECH",
+"LOL",
+"TECH",
+"COMICS",
+"DESIGN",
+"GAMES",
+"GEAR",
+"MOVIES",
+"SOCIAL",
+"WRESTLING"
+		],
+		"body_1": "My Java journey began with a nanodegree from Udacity and Google. The course took me around three months to complete, but proved to be quite useful and the perfect introduction to Java.",
+		"img_1": {
+			"alt": "Google Android Java Mobile App",
+			"src": "/content/wrd-8-1.gif"
+		},
+
+		"body_2": "Like it or not, the internet of things is encroaching on just about every device we own. From cars to digital signage, kitchen appliances and watches, Android is increasingly a part of our lives in more ways than the average person might suspect. The current estimate is that roughly -B-2 billion-E- people use Android devices every day.",
+		"img_2": {
+			"alt": "Google Android Java Mobile App",
+			"src": "/content/wrd-8-2.gif"
+		},
+		"body_3": "The nanodegree course covered topics such as Java programming for Android devices, asynchrony, JSON parsing, SQLite, and more. All of these tools aided in creating some pretty complex Android applications. The animated GIFs in this article highlight my work in the course. The apps I designed included a travel guide app, inventor app, and news app.",
+		"img_3": {
+			"alt": "Google Android Java Mobile App",
+			"src": "/content/wrd-8-3.gif"
+		},
+		"body_4": "Be on the lookout for a Little Overlord app on the Google Play store in the near future.",
+		"img_4": {
+			"alt": "",
+			"src": ""
+		},
+		"body_5": "",
+		"img_5": {
+			"alt": "",
+			"src": ""
+		},
+		"see_also_btn_1": ["Tour Guide App","https://github.com/NicholasKrause/AndroidTourGuideApp"],
+		"see_also_btn_2": ["News API App","https://github.com/NicholasKrause/AndroidNewsApp"],
+		"soundcloud": "",
+		"youtube": "",
+		"show_portfolio": true,
+		"show_blog": false
+	}]
+}
