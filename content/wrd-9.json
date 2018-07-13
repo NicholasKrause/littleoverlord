@@ -1,0 +1,56 @@
+{
+	"article": [{
+		"title_short": "Page Performance and the Digital Marketer",
+		"title_long": "As a digital marketer landing page performance should matter",
+		"author": "Nick",
+		"read_time": "10 min read",
+		"pub_date": "06/19/2017",
+		"theme": "",
+		"summary_quote": "This short article is more about the Why than the How",
+		"caption": "",
+		"caption_class": "",
+		"tags": [
+"SOCIAL",
+"LOL",
+"TECH",
+"COMICS",
+"DESIGN",
+"GAMES",
+"GEAR",
+"MOVIES",
+"SOCIAL",
+"WRESTLING"
+		],
+		"body_1": "",
+		"img_1": {
+			"alt": "",
+			"src": "content/wrd-9-1.png"
+		},
+		"body_2": "As a digital marketer landing page performance should matter. A single 600k jpeg and all your hard work is undone.  By no means do you need to be a performance expert but you should know which way the wind blows (trends).  This short article is more about the -B-Why-E- than the How.---I suspect that you are already laser focused on -B-mobile micro-moments-E-.  That is exactly -B-why-E- performance matters.  Mobile browsers often have limited bandwidth and mobile processors might be overburdened with angry candy bird crushes.---Google's perspective is easy to understand. If your site cannot adequately service a mobile request then your site is not meeting the needs of the searcher.  That is not good for you, the user or Google.",
+		"img_2": {
+			"alt": "",
+			"src": ""
+		},
+		"body_3": "Performance optimization is a very technical discipline. You probably have skilled people to help you with this but they need direction. They might need to be reminded just how important a performant mobile experience is. Believe me when I say it's all about trade offs.  Think of landing page optimization as a budget.  If you add something you need to take something away. Tough love, I know but it’s something only a friend would tell you.----B-Okay here is the practical wisdom...-E- ---Use -I-Page Speed Insights-E-. Its quick and easy. I like PSI because it looks at things from a SEM perspective. In one minute it can tell you if you have a problem in plain English.  It will even compress your images for you! Other tools will give you a more technical waterfall report but I think PSI is perfect for the digital marketer.",
+		"img_3": {
+			"alt": "",
+			"src": ""
+		},
+		"body_4": "Use -I-Chrome Dev Tools-E- Audit.  I know it sound geeky but with a few clicks you can understand the issues most likely affecting your Above the Fold performance.  Open dev tools, click on the audit tab then click Run.  The browser will then give you a breakdown of the page performance and give you suggestions.  Again there many tools that do this but I like this approach because it’s quick and easy to establish a baseline. I typically watch for unused CSS.  This is something that can be fixed by abstracting the landing page from the rest of the site.---Use Google's -I-Mobile Friendly-E- test.  This tool will tell you if your landing page lays out properly on a mobile / tablet device.  Hopefully it does!  The #RWD revolution has come and gone. Be aware of common gotchas like, button sizes and -B-please-E- do not use a full page email subscription popup.---Sincerely hope that helps,---Nick",
+		"img_4": {
+			"alt": "",
+			"src": ""
+		},
+		"body_5": "",
+		"img_5": {
+			"alt": "",
+			"src": ""
+		},
+		"see_also_btn_1": ["Arcanus 55 Product Sheet","https://www.arcanus55.com/ethereum/cryptocurrency/Arcanus_55_Private_Wealth_Safe_v1_2.pdf"],
+		"see_also_btn_2": ["#Arcanus55 PWA Performance","https://twitter.com/arcanus_55/status/1017577172775645184"],
+		"soundcloud": "",
+		"youtube": "",
+		"show_portfolio": true,
+		"show_blog": false
+	}]
+}
